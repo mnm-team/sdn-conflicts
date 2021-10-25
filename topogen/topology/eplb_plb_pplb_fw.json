@@ -1,0 +1,221 @@
+{
+    "sdn_testbed_spec:testbed": {
+        "autostart": false,
+        "apps": {
+            "eplb": {
+                "targetSwitches": [
+                    "router1",
+                    "router4"
+                ],
+                "configs": [
+                    {
+                        "id": 1,
+                        "proxyConfigs": [
+                            {
+                                "proxy": "pc2",
+                                "servers": [
+                                    "pc2",
+                                    "pc3"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "proxyConfigs": [
+                            {
+                                "proxy": "pc2",
+                                "servers": [
+                                    "pc3",
+                                    "pc4"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "plb": {
+                "configs": [
+                    {
+                        "id": 1,
+                        "bw_time": 5,
+                        "invariantsConfigs": [
+                            {
+                                "targetSwitch": "router1",
+                                "bw_threshold": 10
+                            }
+                        ]
+                    }
+                ]
+            },
+            "fw": {
+                "configs": [
+                    {
+                        "id": 1,
+                        "bw_time": 5,
+                        "invariantsConfigs": [
+                            {
+                                "targetSwitch": "router1",
+                                "bw_port_threshold": 25,
+                                "bw_flow_threshold": 10,
+                                "host_conn_limit": 5,
+                                "ip_proto_filter": [
+                                    "icmp"
+                                ]
+                            },
+                            {
+                                "targetSwitch": "router2",
+                                "bw_port_threshold": 25,
+                                "bw_flow_threshold": 10,
+                                "host_conn_limit": 5,
+                                "ip_proto_filter": [
+                                    "udp"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "pplb4d": {
+                "targetSwitches": [
+                    "router2",
+                    "router3"
+                ],
+                "configs": [
+                    {
+                        "id": 1,
+                        "servers": [
+                            "pc2",
+                            "pc3",
+                            "pc4"
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "servers": [
+                            "pc2",
+                            "pc3"
+                        ]
+                    }
+                ]
+            },
+            "pplb4s": {
+                "targetSwitches": [
+                    "router2",
+                    "router3"
+                ],
+                "configs": [
+                    {
+                        "id": 1,
+                        "servers": [
+                            "pc1"
+                        ]
+                    }
+                ]
+            }
+        },
+        "trafficProfiles": [
+            "cbr",
+            "vbr",
+            "bursty"
+        ],
+        "trafficTypes": [
+            "udp",
+            "tcp"
+        ],
+        "switches": [
+            {
+                "id": "router1"
+            },
+            {
+                "id": "router2"
+            },
+            {
+                "id": "router3"
+            },
+            {
+                "id": "router4"
+            }
+        ],
+        "hosts": [
+            {
+                "id": "pc1",
+                "source": true
+            },
+            {
+                "id": "pc2"
+            },
+            {
+                "id": "pc3"
+            },
+            {
+                "id": "pc4"
+            }
+        ],
+        "edges": [
+            {
+                "id": 0,
+                "nodes": [
+                    "router1",
+                    "pc1"
+                ]
+            },
+            {
+                "id": 1,
+                "nodes": [
+                    "router1",
+                    "router2"
+                ]
+            },
+            {
+                "id": 2,
+                "nodes": [
+                    "router1",
+                    "router3"
+                ]
+            },
+            {
+                "id": 3,
+                "nodes": [
+                    "router2",
+                    "router3"
+                ]
+            },
+            {
+                "id": 4,
+                "nodes": [
+                    "router2",
+                    "router4"
+                ]
+            },
+            {
+                "id": 5,
+                "nodes": [
+                    "router3",
+                    "router4"
+                ]
+            },
+            {
+                "id": 6,
+                "nodes": [
+                    "router4",
+                    "pc2"
+                ]
+            },
+            {
+                "id": 7,
+                "nodes": [
+                    "router4",
+                    "pc3"
+                ]
+            },
+            {
+                "id": 8,
+                "nodes": [
+                    "router4",
+                    "pc4"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,331 @@
+module sdn_testbed_spec {
+
+  yang-version "1";
+  namespace "uri:yang:sdn";
+
+  prefix "sdn_testbed_spec";
+
+  typedef nodeId {
+      type string {
+         pattern "router[0-9]{1,2}|pc[0-9]{1,2}"; 
+      }
+      description "This is an identifier for a switch or host. The id of a switch or host which will be used for constructing a switch or host name with the pattern router[id] or pc[id].";
+  }
+
+  typedef switchId {
+      type string {
+         pattern "router[0-9]{1,2}"; 
+      }
+      description "This is an identifier for a switch or host. The id of a switch or host which will be used for constructing a switch or host name with the pattern router[id] or pc[id].";
+  }
+
+  typedef proto {
+      type string {
+         pattern "ip|tcp|udp"; 
+      }
+      description "The choice is either a string that identifies udp or tcp traffic. If ip is given as pattern, all other keys will be ignored.";
+  }
+
+  typedef hostId {
+    type string {
+       pattern "pc[0-9]{1,2}"; 
+    }
+    description "This is an identifier for a switch or host. The id of a switch or host which will be used for constructing a switch or host name with the pattern router[id] or pc[id].";
+  }
+
+  grouping eplbProxyConfig {
+    leaf proxy {
+      type hostId;
+    }
+    leaf-list servers {
+      type hostId;
+      min-elements 2;
+    }
+  }
+
+  grouping eplbConfig {
+    leaf id {
+      type uint8;
+    }
+    list proxyConfigs {
+      key "proxy";
+      uses eplbProxyConfig;
+    }
+  }
+
+  grouping eplb {
+    leaf-list targetSwitches {
+      type switchId;
+    }
+    list configs {
+      key "id";
+      uses eplbConfig;
+    }
+  }
+
+  grouping hsHostConfig {
+    leaf frontend {
+      type hostId;
+    }
+    leaf backend {
+      type hostId;
+    }
+  }
+
+  grouping hsConfig {
+    leaf id {
+      type uint8;
+    }
+    list hostConfigs {
+      key "frontend";
+      uses hsHostConfig;
+    }
+  }
+
+  grouping hs {
+    leaf-list targetSwitches {
+      type switchId;
+    }
+    list configs {
+      key "id";
+      uses hsConfig;
+    }
+  }
+
+  grouping plbInvariantsConfig {
+    leaf targetSwitch {
+      type switchId;
+    }
+    leaf bw_threshold {
+      type uint8;
+    }
+    leaf-list excluded_ports {
+      type uint8;
+    }
+  }
+
+  grouping plbConfig {
+    leaf id {
+      type uint8;
+    }
+    leaf bw_time {
+      type uint8;
+    }
+    list invariantsConfigs {
+      key "targetSwitch";
+      uses plbInvariantsConfig;
+    }
+  }
+  
+  grouping plb {
+    list configs {
+      key "id";
+      uses plbConfig;
+    }
+  }
+
+  grouping pplbConfig {
+    leaf id {
+      type uint8;
+    }
+    leaf-list servers {
+      type hostId;
+      min-elements 1;
+    }
+  }
+
+  grouping pplb4s {
+    leaf-list targetSwitches {
+      type switchId;
+    }
+    list configs {
+      key "id";
+      uses pplbConfig;
+    }
+  }
+
+  grouping pplb4d {
+    leaf-list targetSwitches {
+      type switchId;
+    }
+    list configs {
+      key "id";
+      uses pplbConfig;
+    }
+  }
+
+  grouping peInvariantsConfig {
+    leaf targetSwitch {
+      type switchId;
+    }
+    leaf-list protos {
+      type proto;
+      min-elements 1;
+    }
+    leaf-list jumps {
+      type switchId;
+      min-elements 1;
+    }
+  }
+
+  grouping peConfig {
+    leaf id {
+      type uint8;
+    }
+    list invariantsConfigs {
+      key "targetSwitch";
+      uses peInvariantsConfig;
+      min-elements 1;
+    }
+  }
+
+  grouping pe {
+    leaf-list targetSwitches {
+      type switchId;
+    }
+    list configs {
+      key "id";
+      uses peConfig;
+    }
+  }
+
+  grouping fwInvariantsConfig {
+    leaf targetSwitch {
+      type switchId;
+    }
+    leaf bw_port_threshold {
+      type uint8;
+    }
+    leaf bw_flow_threshold {
+      type uint8;
+    }
+  }
+
+  grouping fwConfig {
+    leaf id {
+      type uint8;
+    }
+    leaf bw_time {
+      type uint8;
+    }
+    list invariantsConfigs {
+      key "targetSwitch";
+      uses fwInvariantsConfig;
+    }
+  }
+
+  grouping fw {
+    list configs {
+      key "id";
+      uses fwConfig;
+    }
+  }
+
+  grouping apps {
+    container eplb {
+      uses eplb;
+    }
+    container plb {
+      uses plb;
+    }
+    container fw {
+      uses fw;
+    }
+    container pplb4d {
+      uses pplb4d;
+    }
+    container pplb4s {
+      uses pplb4s;
+    }
+    container hs {
+      uses hs;
+    }
+    container pe {
+      uses pe;
+    }
+  }
+
+  grouping edge {
+    leaf-list nodes {
+      type nodeId;
+      min-elements 2;
+      max-elements 2;
+    }
+    description "An edge in the testbed is defined by the ids of two connected switches or a connection between a switch and a host. ";
+  }
+
+  typedef trafficProfile {
+    type enumeration {
+      enum cbr;
+      enum vbr;
+      enum bursty;
+    }
+  }
+
+  typedef trafficType {
+    type enumeration {
+      enum tcp;
+      enum udp;
+    }
+  }
+  
+  container testbed {
+
+    leaf topologyId {
+        type string;
+        description "Unique identifer for the topology.";
+    }
+
+    leaf autostart {
+      type boolean;
+      default "true";
+    }
+
+    container apps {
+      uses apps;
+      description "List of unique apps and their configurations. All app types that are defined for a switch must be specified once with a given number of configurations.";
+    }
+    
+    leaf-list trafficProfiles {
+      type trafficProfile;
+      description "Traffic profile can be cbr, vbr or bursty";
+    }
+
+    leaf-list trafficTypes {
+      type trafficType;
+      description "Traffic type can be tcp or udp";
+    }
+
+    list switches {
+      key "id";
+      min-elements 2;
+      leaf id {
+        type switchId;
+      }
+      description "List of unique switches in the testbed.";
+    }
+
+    list hosts {
+      key "id";
+      min-elements 3;
+      leaf id {
+        type hostId;
+      }
+      leaf source {
+        type boolean;
+        default "false";
+      }
+      description "List of host nodes in the topology. The source attribute specifies wheather a host will be used as a source for network traffic in a test configuration. Default is false, so host will be a sink.";
+    }
+
+    list edges {
+      key "id";
+      min-elements 4;
+      leaf id {
+        type uint8;
+      }
+      uses edge;
+    }
+  }
+}
+

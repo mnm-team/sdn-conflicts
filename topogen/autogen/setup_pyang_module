@@ -1,0 +1,30 @@
+#!/bin/bash
+# TODO check if pip is installed
+# TODO check the python version?
+
+pyangmodule=sdn_testbed_spec.py 
+pyangmodel=sdn_testbed_spec.yang 
+
+pyang=$(pip list | grep -w -c "pyang")
+if [[ "$pyang" != "1" ]]; then
+  echo "Installing pyang"
+  pip install pyang
+fi
+
+pyangbind=$(pip list | grep -w -c "pyangbind")
+if [[ "$pyangbind" != "1" ]]; then
+  echo "Installing pyangbind"
+  pip install pyangbind
+fi
+
+# validate the YANG model
+echo "Validating the YANG model: "$pyangmodel
+pyang -f tree $pyangmodel || exit 1
+
+# create a python module for reading a model instance into python classes
+echo "Creating a python module from the YANG model definition: "$pyangmodule
+PYBINDPLUGIN=`/usr/bin/env python -c \
+'import pyangbind; import os; print ("{}/plugin".format(os.path.dirname(pyangbind.__file__)))'` || exit 1
+pyang --plugindir $PYBINDPLUGIN -f pybind -o $pyangmodule $pyangmodel || exit 1
+
+exit 0

@@ -1,0 +1,699 @@
+{
+    "sdn_testbed_spec:testbed": {
+        "topologyId": "hcmut_net",
+        "autostart": false,
+        "apps": {
+            "eplb": {
+                "targetSwitches": [
+                    "router4"
+                ],
+                "configs": [
+                    {
+                        "id": 1,
+                        "proxyConfigs": [
+                            {
+                                "proxy": "pc2",
+                                "servers": [
+                                    "pc2",
+                                    "pc3",
+                                    "pc4"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "plb": {
+                "configs": [
+                    {
+                        "id": 1,
+                        "bw_time": 5,
+                        "invariantsConfigs": [
+                            {
+                                "targetSwitch": "router2",
+                                "bw_threshold": 10
+                            }
+                        ]
+                    }
+                ]
+            },
+            "fw": {
+                "configs": [
+                    {
+                        "id": 1,
+                        "bw_time": 5,
+                        "invariantsConfigs": [
+                            {
+                                "targetSwitch": "router1",
+                                "bw_port_threshold": 25,
+                                "bw_flow_threshold": 10
+                            }
+                        ]
+                    }
+                ]
+            },
+            "pplb4s": {
+                "targetSwitches": [
+                    "router3"
+                ],
+                "configs": [
+                    {
+                        "id": 1,
+                        "servers": [
+                            "pc1"
+                        ]
+                    }
+                ]
+            },
+            "hs": {
+                "targetSwitches": [
+                    "router2",
+                    "router3"
+                ],
+                "configs": [
+                    {
+                        "id": 1,
+                        "hostConfigs": [
+                            {
+                                "frontend": "pc5",
+                                "backend": "pc6"
+                            },
+                            {
+                                "frontend": "pc7",
+                                "backend": "pc8"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "pe": {
+                "targetSwitches": [
+                    "router1"
+                ],
+                "configs": [
+                    {
+                        "id": 1,
+                        "invariantsConfigs": [
+                            {
+                                "targetSwitch": "router1",
+                                "protos": [
+                                    "ip",
+                                    "tcp",
+                                    "udp"
+                                ],
+                                "jumps": [
+                                    "router3",
+                                    "router2"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "trafficProfiles": [
+            "cbr",
+            "vbr",
+            "bursty"
+        ],
+        "trafficTypes": [
+            "udp",
+            "tcp"
+        ],
+        "switches": [
+            {
+                "id": "router1"
+            },
+            {
+                "id": "router2"
+            },
+            {
+                "id": "router3"
+            },
+            {
+                "id": "router4"
+            },
+            {
+                "id": "router5"
+            },
+            {
+                "id": "router6"
+            },
+            {
+                "id": "router7"
+            },
+            {
+                "id": "router8"
+            },
+            {
+                "id": "router9"
+            },
+            {
+                "id": "router10"
+            },
+            {
+                "id": "router11"
+            },
+            {
+                "id": "router12"
+            },
+            {
+                "id": "router13"
+            },
+            {
+                "id": "router14"
+            },
+            {
+                "id": "router15"
+            },
+            {
+                "id": "router16"
+            },
+            {
+                "id": "router17"
+            },
+            {
+                "id": "router18"
+            },
+            {
+                "id": "router19"
+            },
+            {
+                "id": "router20"
+            },
+            {
+                "id": "router21"
+            },
+            {
+                "id": "router22"
+            },
+            {
+                "id": "router23"
+            },
+            {
+                "id": "router24"
+            },
+            {
+                "id": "router25"
+            },
+            {
+                "id": "router26"
+            }
+        ],
+        "hosts": [
+            {
+                "id": "pc1"
+            },
+            {
+                "id": "pc2"
+            },
+            {
+                "id": "pc3",
+                "source": true
+            },
+            {
+                "id": "pc4"
+            },
+            {
+                "id": "pc5"
+            },
+            {
+                "id": "pc6"
+            },
+            {
+                "id": "pc7",
+                "source": true
+            },
+            {
+                "id": "pc8",
+                "source": true
+            },
+            {
+                "id": "pc9"
+            },
+            {
+                "id": "pc10"
+            },
+            {
+                "id": "pc11",
+                "source": true
+            },
+            {
+                "id": "pc12"
+            },
+            {
+                "id": "pc13",
+                "source": true
+            },
+            {
+                "id": "pc14",
+                "source": true
+            },
+            {
+                "id": "pc15"
+            },
+            {
+                "id": "pc16"
+            },
+            {
+                "id": "pc17"
+            },
+            {
+                "id": "pc18"
+            },
+            {
+                "id": "pc19"
+            },
+            {
+                "id": "pc20",
+                "source": true
+            },
+            {
+                "id": "pc21",
+                "source": true
+            }
+        ],
+        "edges": [
+            {
+                "id": 0,
+                "nodes": [
+                    "router1",
+                    "pc1"
+                ]
+            },
+            {
+                "id": 1,
+                "nodes": [
+                    "router1",
+                    "pc2"
+                ]
+            },
+            {
+                "id": 2,
+                "nodes": [
+                    "router1",
+                    "router2"
+                ]
+            },
+            {
+                "id": 3,
+                "nodes": [
+                    "router2",
+                    "router4"
+                ]
+            },
+            {
+                "id": 4,
+                "nodes": [
+                    "router2",
+                    "router7"
+                ]
+            },
+            {
+                "id": 5,
+                "nodes": [
+                    "router3",
+                    "pc3"
+                ]
+            },
+            {
+                "id": 6,
+                "nodes": [
+                    "router3",
+                    "pc4"
+                ]
+            },
+            {
+                "id": 7,
+                "nodes": [
+                    "router3",
+                    "router6"
+                ]
+            },
+            {
+                "id": 8,
+                "nodes": [
+                    "router6",
+                    "router3"
+                ]
+            },
+            {
+                "id": 9,
+                "nodes": [
+                    "router4",
+                    "router5"
+                ]
+            },
+            {
+                "id": 10,
+                "nodes": [
+                    "router4",
+                    "router7"
+                ]
+            },
+            {
+                "id": 11,
+                "nodes": [
+                    "router4",
+                    "router8"
+                ]
+            },
+            {
+                "id": 12,
+                "nodes": [
+                    "router4",
+                    "router17"
+                ]
+            },
+            {
+                "id": 13,
+                "nodes": [
+                    "router4",
+                    "router16"
+                ]
+            },
+            {
+                "id": 14,
+                "nodes": [
+                    "router4",
+                    "router15"
+                ]
+            },
+            {
+                "id": 15,
+                "nodes": [
+                    "router4",
+                    "router14"
+                ]
+            },
+            {
+                "id": 16,
+                "nodes": [
+                    "router4",
+                    "router12"
+                ]
+            },
+            {
+                "id": 17,
+                "nodes": [
+                    "router4",
+                    "router11"
+                ]
+            },
+            {
+                "id": 18,
+                "nodes": [
+                    "router4",
+                    "router13"
+                ]
+            },
+            {
+                "id": 19,
+                "nodes": [
+                    "router5",
+                    "router7"
+                ]
+            },
+            {
+                "id": 20,
+                "nodes": [
+                    "router6",
+                    "router12"
+                ]
+            },
+            {
+                "id": 21,
+                "nodes": [
+                    "router12",
+                    "router6"
+                ]
+            },
+            {
+                "id": 22,
+                "nodes": [
+                    "router7",
+                    "router8"
+                ]
+            },
+            {
+                "id": 23,
+                "nodes": [
+                    "router7",
+                    "router11"
+                ]
+            },
+            {
+                "id": 24,
+                "nodes": [
+                    "router7",
+                    "router12"
+                ]
+            },
+            {
+                "id": 25,
+                "nodes": [
+                    "router7",
+                    "router13"
+                ]
+            },
+            {
+                "id": 26,
+                "nodes": [
+                    "router7",
+                    "router14"
+                ]
+            },
+            {
+                "id": 27,
+                "nodes": [
+                    "router7",
+                    "router15"
+                ]
+            },
+            {
+                "id": 28,
+                "nodes": [
+                    "router7",
+                    "router16"
+                ]
+            },
+            {
+                "id": 29,
+                "nodes": [
+                    "router7",
+                    "router17"
+                ]
+            },
+            {
+                "id": 30,
+                "nodes": [
+                    "router8",
+                    "router9"
+                ]
+            },
+            {
+                "id": 31,
+                "nodes": [
+                    "router8",
+                    "router10"
+                ]
+            },
+            {
+                "id": 32,
+                "nodes": [
+                    "router9",
+                    "pc5"
+                ]
+            },
+            {
+                "id": 33,
+                "nodes": [
+                    "router9",
+                    "pc6"
+                ]
+            },
+            {
+                "id": 34,
+                "nodes": [
+                    "router10",
+                    "pc7"
+                ]
+            },
+            {
+                "id": 35,
+                "nodes": [
+                    "router10",
+                    "pc8"
+                ]
+            },
+            {
+                "id": 36,
+                "nodes": [
+                    "router11",
+                    "pc9"
+                ]
+            },
+            {
+                "id": 37,
+                "nodes": [
+                    "router11",
+                    "pc10"
+                ]
+            },
+            {
+                "id": 38,
+                "nodes": [
+                    "router12",
+                    "router18"
+                ]
+            },
+            {
+                "id": 39,
+                "nodes": [
+                    "router18",
+                    "router12"
+                ]
+            },
+            {
+                "id": 40,
+                "nodes": [
+                    "router12",
+                    "router19"
+                ]
+            },
+            {
+                "id": 41,
+                "nodes": [
+                    "router13",
+                    "router20"
+                ]
+            },
+            {
+                "id": 42,
+                "nodes": [
+                    "router13",
+                    "router21"
+                ]
+            },
+            {
+                "id": 43,
+                "nodes": [
+                    "router14",
+                    "router22"
+                ]
+            },
+            {
+                "id": 44,
+                "nodes": [
+                    "router17",
+                    "router23"
+                ]
+            },
+            {
+                "id": 45,
+                "nodes": [
+                    "router23",
+                    "pc11"
+                ]
+            },
+            {
+                "id": 46,
+                "nodes": [
+                    "router23",
+                    "router26"
+                ]
+            },
+            {
+                "id": 47,
+                "nodes": [
+                    "router26",
+                    "pc21"
+                ]
+            },
+            {
+                "id": 48,
+                "nodes": [
+                    "router22",
+                    "pc13"
+                ]
+            },
+            {
+                "id": 49,
+                "nodes": [
+                    "router22",
+                    "router25"
+                ]
+            },
+            {
+                "id": 50,
+                "nodes": [
+                    "router25",
+                    "pc20"
+                ]
+            },
+            {
+                "id": 51,
+                "nodes": [
+                    "router20",
+                    "router24"
+                ]
+            },
+            {
+                "id": 52,
+                "nodes": [
+                    "router19",
+                    "router24"
+                ]
+            },
+            {
+                "id": 53,
+                "nodes": [
+                    "router18",
+                    "pc14"
+                ]
+            },
+            {
+                "id": 54,
+                "nodes": [
+                    "router24",
+                    "pc15"
+                ]
+            },
+            {
+                "id": 55,
+                "nodes": [
+                    "router24",
+                    "pc16"
+                ]
+            },
+            {
+                "id": 56,
+                "nodes": [
+                    "router24",
+                    "pc17"
+                ]
+            },
+            {
+                "id": 57,
+                "nodes": [
+                    "router21",
+                    "pc12"
+                ]
+            },
+            {
+                "id": 58,
+                "nodes": [
+                    "router21",
+                    "pc18"
+                ]
+            },
+            {
+                "id": 59,
+                "nodes": [
+                    "router21",
+                    "router19"
+                ]
+            }
+        ]
+    }
+}

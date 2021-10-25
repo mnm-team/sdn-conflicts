@@ -1,0 +1,9 @@
+#!/bin/bash
+
+QCOW_IMAGE_NAME="Geni_OF-INT-BB"
+
+QCOW_TEMPLATE_IMAGE="../templates/template-kvm-debian9-kernel4.9.0-13-amd64.qcow"
+
+XEN_SPEC_LIST="../specs/Geni_OF-INT-BB/xen_con0.spec,../specs/Geni_OF-INT-BB/xen_pc1.spec,../specs/Geni_OF-INT-BB/xen_pc2.spec,../specs/Geni_OF-INT-BB/xen_pc3.spec,../specs/Geni_OF-INT-BB/xen_pc4.spec,../specs/Geni_OF-INT-BB/xen_pc5.spec,../specs/Geni_OF-INT-BB/xen_pc6.spec,../specs/Geni_OF-INT-BB/xen_pc7.spec,../specs/Geni_OF-INT-BB/xen_pc8.spec,../specs/Geni_OF-INT-BB/xen_pc9.spec,../specs/Geni_OF-INT-BB/xen_pc10.spec,../specs/Geni_OF-INT-BB/xen_router1.spec,../specs/Geni_OF-INT-BB/xen_router2.spec,../specs/Geni_OF-INT-BB/xen_router3.spec,../specs/Geni_OF-INT-BB/xen_router4.spec,../specs/Geni_OF-INT-BB/xen_router5.spec,../specs/Geni_OF-INT-BB/xen_router6.spec,../specs/Geni_OF-INT-BB/xen_router7.spec,../specs/Geni_OF-INT-BB/xen_router8.spec,../specs/Geni_OF-INT-BB/xen_router9.spec,../specs/Geni_OF-INT-BB/xen_router10.spec,../specs/Geni_OF-INT-BB/xen_router11.spec,../specs/Geni_OF-INT-BB/xen_router12.spec,../specs/Geni_OF-INT-BB/xen_router13.spec,../specs/Geni_OF-INT-BB/xen_router14.spec,../specs/Geni_OF-INT-BB/xen_router15.spec,../specs/Geni_OF-INT-BB/xen_router16.spec,../specs/Geni_OF-INT-BB/xen_router17.spec,../specs/Geni_OF-INT-BB/xen_router18.spec,../specs/Geni_OF-INT-BB/xen_router19.spec,../specs/Geni_OF-INT-BB/xen_router20.spec,../specs/Geni_OF-INT-BB/xen_router21.spec,../specs/Geni_OF-INT-BB/xen_router22.spec,../specs/Geni_OF-INT-BB/xen_router23.spec,../specs/Geni_OF-INT-BB/xen_router24.spec,../specs/Geni_OF-INT-BB/xen_router25.spec,../specs/Geni_OF-INT-BB/xen_router26.spec,../specs/Geni_OF-INT-BB/xen_router27.spec,../specs/Geni_OF-INT-BB/xen_router28.spec,../specs/Geni_OF-INT-BB/xen_router29.spec,../specs/Geni_OF-INT-BB/xen_router30.spec"
+
+QCOW_TAR_LIST=""

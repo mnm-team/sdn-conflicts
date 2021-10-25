@@ -1,0 +1,225 @@
+module sdn_testbed_spec_v2 {
+
+  yang-version "1";
+  namespace "uri:yang:sdn";
+
+  prefix "sdn_testbed_spec_v2";
+
+  typedef nodeId {
+      type string {
+         pattern "router[0-9]{1,2}|pc[0-9]{1,2}"; 
+      }
+      description "This is an identifier for a switch or host. The id of a switch or host which will be used for constructing a switch or host name with the pattern router[id] or pc[id].";
+  }
+
+  typedef switchId {
+      type string {
+         pattern "router[0-9]{1,2}"; 
+      }
+      description "This is an identifier for a switch or host. The id of a switch or host which will be used for constructing a switch or host name with the pattern router[id] or pc[id].";
+  }
+
+  typedef hostId {
+    type string {
+       pattern "pc[0-9]{1,2}"; 
+    }
+    description "This is an identifier for a switch or host. The id of a switch or host which will be used for constructing a switch or host name with the pattern router[id] or pc[id].";
+  }
+
+  typedef cookie {
+    type string {
+       pattern "0x[0-9]+"; 
+    }
+    description "This is a cookie identifier for an app which it uses in its flow entries. And must be given as a pattern 0x[0-9]*.";
+  }
+
+  grouping app {
+    leaf id {
+      type string;
+    }
+    container config {
+      uses appConfig;
+    }
+    description "For v2 experiments, apps are limited to one config to keep runtimes for multiple apps at a limit.";
+  }
+
+  grouping appConfig {
+    leaf cookie {
+      type cookie;
+      mandatory "true";
+    }
+    list appInvariants {
+      key "invariantKey";
+      uses invariant;
+      description "An app can have invariants as config which will be transfered as json dict to the config file. See invariants for details.";
+    }
+    list targetSwitches {
+      key "id";
+      uses targetSwitch;
+      description "A switch can have invariants as config or assets such as references to hosts or other switches. See description of assetConfig and invariants for details.";
+    }
+    list appAssets {
+      key "id";
+      uses assetConfig;
+      description "An app can reference hosts or switches as assets. See assetConfig for details.";
+    }
+  }
+
+  grouping targetSwitch {
+    leaf id {
+      type switchId;
+    }
+    list switchInvariants {
+      key "invariantKey";
+      uses invariant;
+    }
+    list switchAssets {
+      key "id";
+      uses assetConfig;
+    }
+  }
+
+  grouping assetConfig {
+    leaf id {
+      type int8;
+    }
+    container majorAsset {
+      leaf assetKey {
+        type string;
+        mandatory "true";
+      }
+      leaf assetValue {
+        type hostId;
+        mandatory "true";
+      }
+    }
+    container minorAssets {
+      leaf assetKey {
+        type string;
+        mandatory "true";
+      }
+      leaf assetValue {
+        type nodeId;
+      }
+      leaf-list assetItems {
+        type nodeId;
+      }
+    }
+    description "The asset config can be used for two types of configuration. A one to many or one to one specification of a host to other hosts, or for specifying a list of hosts. If a majorAsset is used it will always be associated to a(several) mandatory minorAsset(s).";
+  }
+
+  grouping invariant {
+    leaf invariantKey {
+      type string;
+    }
+    leaf intValue {
+      type int8;
+    }
+    leaf stringValue {
+      type string;
+    }
+    leaf-list intItems {
+      type int8;
+    }
+    leaf-list stringItems {
+      type string;
+    }
+    description "Invariants will be mapped one to one to a dictionary. Only one type of value can be specified, a string or interger or a list of either. Use intValue or stringValue for specifing one value and the list if you want to use more than one element of a data type.";
+  }
+
+  grouping edge {
+    leaf-list nodes {
+      type nodeId;
+      min-elements 2;
+      max-elements 2;
+    }
+    description "An edge in the testbed is defined by the ids of two connected switches or a connection between a switch and a host. ";
+  }
+
+  typedef trafficProfile {
+    type enumeration {
+      enum cbr;
+      enum vbr;
+      enum bursty;
+    }
+  }
+
+  typedef trafficType {
+    type enumeration {
+      enum tcp;
+      enum udp;
+    }
+  }
+  
+  container testbed {
+
+    leaf topologyId {
+        type string;
+        description "Unique identifer for the topology.";
+    }
+
+    leaf autostart {
+      type boolean;
+      default "false";
+      description "If this boolean is set to true, the topology will be built, nodes and the controller are configured and the experiment based on this config file will be run automatically.";
+    }
+
+    leaf evaluationRun {
+      type boolean;
+      default "false";
+      description "If this boolean is set to true any errors for failed connections will be ignored to allow for evaluation of intended failures (e.g. with intended loops).";
+    }
+
+    leaf bw_difference_threshold {
+      type uint8;
+      description "All target switch ports of an app will be checked for their bandwidth and compared to this value for determining an error.";
+    }    
+
+    list apps {
+      key "id";
+      uses app;
+    }
+    
+    leaf-list trafficProfiles {
+      type trafficProfile;
+      description "Traffic profile can be cbr, vbr or bursty";
+    }
+
+    leaf-list trafficTypes {
+      type trafficType;
+      description "Traffic type can be tcp or udp";
+    }
+
+    list switches {
+      key "id";
+      min-elements 2;
+      leaf id {
+        type switchId;
+      }
+      description "List of unique switches in the testbed.";
+    }
+
+    list hosts {
+      key "id";
+      min-elements 3;
+      leaf id {
+        type hostId;
+      }
+      leaf source {
+        type boolean;
+        default "false";
+      }
+      description "List of host nodes in the topology. The source attribute specifies wheather a host will be used as a source for network traffic in a test configuration. Default is false, so host will be a sink.";
+    }
+
+    list edges {
+      key "id";
+      min-elements 4;
+      leaf id {
+        type uint8;
+      }
+      uses edge;
+    }
+  }
+}
+
