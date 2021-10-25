@@ -1,0 +1,148 @@
+fw plb eplb
+1 1 1
+udp tcp
+5 1 : 4 : 10 9
+cbr vbr bursty
+10
+7
+1 3 : 2 4 5 6 7
+random_smallworld_s10_h6_17
+
+210926_083438
+
+fw_config_local1
+{
+  "cookie": "0x800",
+  "bw_time": 3,
+  "switchConfigs": {
+    "5": {
+      "bw_flow_threshold": 2,
+      "bw_port_threshold": 3
+    },
+    "1": {
+      "bw_flow_threshold": 2,
+      "bw_port_threshold": 3
+    }
+  }
+}
+plb_config_local1
+{
+  "cookie": "0x300",
+  "bw_time": 5,
+  "switchConfigs": {
+    "4": {
+      "bw_threshold": 5
+    }
+  }
+}
+eplb_config_local1
+{
+  "appAssets": {
+    "00:16:3e:11:11:04": {
+      "proxy_ip": "192.168.1.4",
+      "servers": [
+        [
+          "192.168.1.4",
+          "00:16:3e:11:11:04"
+        ],
+        [
+          "192.168.1.5",
+          "00:16:3e:11:11:05"
+        ]
+      ]
+    },
+    "00:16:3e:11:11:06": {
+      "proxy_ip": "192.168.1.6",
+      "servers": [
+        [
+          "192.168.1.6",
+          "00:16:3e:11:11:06"
+        ],
+        [
+          "192.168.1.7",
+          "00:16:3e:11:11:07"
+        ]
+      ]
+    }
+  },
+  "cookie": "0x400"
+}gitcommitid=8f9a0ad3cd826325c10c2974e93d343d970d4315
+point 1
+fw:1:2:5 1 
+plb:1:2: 4 
+point 2
+fw:1:2:5 1 
+plb:1:3: 4 
+point 3
+fw:1:3:5 1 
+plb:1:2: 4 
+point 4
+fw:1:2:5 1 
+eplb:1:2: 10 9
+point 5
+fw:1:2:5 1 
+eplb:1:3: 10 9
+point 6
+fw:1:3:5 1 
+eplb:1:2: 10 9
+point 7
+plb:1:2: 4 
+eplb:1:2: 10 9
+point 8
+plb:1:2: 4 
+eplb:1:3: 10 9
+point 9
+plb:1:3: 4 
+eplb:1:2: 10 9
+point 10
+fw:1:2:5 1 
+plb:1:2: 4 
+eplb:1:2: 10 9
+point 11
+fw:1:2:5 1 
+plb:1:2: 4 
+eplb:1:3: 10 9
+point 12
+fw:1:2:5 1 
+plb:1:3: 4 
+eplb:1:2: 10 9
+point 13
+fw:1:2:5 1 
+plb:1:3: 4 
+eplb:1:3: 10 9
+point 14
+fw:1:2:5 1 
+plb:1:3: 4 
+eplb:1:4: 10 9
+point 15
+fw:1:2:5 1 
+plb:1:4: 4 
+eplb:1:3: 10 9
+point 16
+fw:1:3:5 1 
+plb:1:2: 4 
+eplb:1:2: 10 9
+point 17
+fw:1:3:5 1 
+plb:1:2: 4 
+eplb:1:3: 10 9
+point 18
+fw:1:3:5 1 
+plb:1:2: 4 
+eplb:1:4: 10 9
+point 19
+fw:1:3:5 1 
+plb:1:3: 4 
+eplb:1:2: 10 9
+point 20
+fw:1:3:5 1 
+plb:1:4: 4 
+eplb:1:2: 10 9
+point 21
+fw:1:4:5 1 
+plb:1:2: 4 
+eplb:1:3: 10 9
+point 22
+fw:1:4:5 1 
+plb:1:3: 4 
+eplb:1:2: 10 9

@@ -1,0 +1,62 @@
+hs pe
+1 1
+udp tcp
+4 : 16 20
+cbr vbr bursty
+21
+21
+16 : 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 17 18 19 20 21
+mwn_netzkonzept_2017_injection_run_01
+
+210930_010319
+
+hs_config_local1
+{
+  "appAssets": {
+    "00:16:3e:11:11:01": {
+      "frontend": "192.168.1.1",
+      "backend": [
+        "192.168.1.2",
+        "00:16:3e:11:11:02"
+      ]
+    }
+  },
+  "cookie": "0x440"
+}
+pe_config_local1
+{
+  "switchConfigs": {
+    "20": {
+      "switchAssets": {
+        "jumps": [
+          "4"
+        ]
+      },
+      "protos": [
+        6,
+        17
+      ]
+    },
+    "16": {
+      "switchAssets": {
+        "jumps": [
+          "4"
+        ]
+      },
+      "protos": [
+        6,
+        17
+      ]
+    }
+  },
+  "cookie": "0x990"
+}gitcommitid=3d035332fa1d3c2de63cea6c94631ae6e1032673
+point 1
+hs:1:2:4 
+pe:1:2: 16 20
+point 2
+hs:1:2:4 
+pe:1:3: 16 20
+point 3
+hs:1:3:4 
+pe:1:2: 16 20

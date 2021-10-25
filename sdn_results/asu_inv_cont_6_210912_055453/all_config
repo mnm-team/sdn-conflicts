@@ -1,0 +1,56 @@
+pplb4d fw
+1 1
+udp tcp
+3 : 3
+cbr vbr bursty
+19
+7
+5 6 7 : 1 2 3 4
+asu_inv_cont_6
+
+210912_055453
+
+pplb4d_config_local1
+{
+  "appAssets": {
+    "servers": [
+      [
+        "192.168.1.1",
+        "00:16:3e:11:11:01"
+      ],
+      [
+        "192.168.1.2",
+        "00:16:3e:11:11:02"
+      ],
+      [
+        "192.168.1.3",
+        "00:16:3e:11:11:03"
+      ],
+      [
+        "192.168.1.4",
+        "00:16:3e:11:11:04"
+      ]
+    ]
+  },
+  "cookie": "0x700"
+}
+fw_config_local1
+{
+  "cookie": "0x880",
+  "switchConfigs": {
+    "3": {
+      "bw_flow_threshold": 2,
+      "bw_port_threshold": 5
+    }
+  },
+  "bw_time": 5
+}gitcommitid=24315112d44a7595c49924f15d8b1a1d7acd410c
+point 1
+pplb4d:1:2:3 
+fw:1:2: 3
+point 2
+pplb4d:1:2:3 
+fw:1:3: 3
+point 3
+pplb4d:1:3:3 
+fw:1:2: 3

@@ -1,0 +1,45 @@
+fw plb
+1 1
+udp tcp
+9 : 3 4
+cbr vbr bursty
+15
+9
+1 2 3 4 5 : 6 7 8 9
+nr_fw_plb_4
+
+210908_140421
+
+fw_config_local1
+{
+  "cookie": "",
+  "bw_time": 5,
+  "switchConfigs": {
+    "9": {
+      "bw_flow_threshold": 2,
+      "bw_port_threshold": 5
+    }
+  }
+}
+plb_config_local1
+{
+  "cookie": "",
+  "bw_time": 5,
+  "switchConfigs": {
+    "4": {
+      "bw_threshold": 5
+    },
+    "3": {
+      "bw_threshold": 5
+    }
+  }
+}gitcommitid=7c347a84242a2b5447e378cf8ecf4fef40f1836f
+point 1
+fw:1:2:9 
+plb:1:2: 3 4
+point 2
+fw:1:2:9 
+plb:1:3: 3 4
+point 3
+fw:1:3:9 
+plb:1:2: 3 4

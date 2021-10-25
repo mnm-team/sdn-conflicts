@@ -1,0 +1,100 @@
+pe hs
+1 1
+udp tcp
+13 14 15 16 17 : 2
+cbr vbr bursty
+26
+14
+1 2 3 : 4 5 6 7 8 9 10 11 12 13 14
+back_bone_standford_pisharody_injection_run_03
+
+210930_164409
+
+pe_config_local1
+{
+  "cookie": "0x990",
+  "switchConfigs": {
+    "14": {
+      "switchAssets": {
+        "jumps": [
+          "1",
+          "2"
+        ]
+      },
+      "protos": [
+        6,
+        17
+      ]
+    },
+    "15": {
+      "switchAssets": {
+        "jumps": [
+          "1",
+          "2"
+        ]
+      },
+      "protos": [
+        6,
+        17
+      ]
+    },
+    "16": {
+      "switchAssets": {
+        "jumps": [
+          "1",
+          "2"
+        ]
+      },
+      "protos": [
+        6,
+        17
+      ]
+    },
+    "13": {
+      "switchAssets": {
+        "jumps": [
+          "1",
+          "2"
+        ]
+      },
+      "protos": [
+        6,
+        17
+      ]
+    },
+    "17": {
+      "switchAssets": {
+        "jumps": [
+          "1",
+          "2"
+        ]
+      },
+      "protos": [
+        6,
+        17
+      ]
+    }
+  }
+}
+hs_config_local1
+{
+  "cookie": "0x440",
+  "appAssets": {
+    "00:16:3e:11:11:07": {
+      "backend": [
+        "192.168.1.8",
+        "00:16:3e:11:11:08"
+      ],
+      "frontend": "192.168.1.7"
+    }
+  }
+}gitcommitid=4be0d40815912b3d29274ed7eac49ad19fee1ead
+point 1
+pe:1:2:13 14 15 16 17 
+hs:1:2: 2
+point 2
+pe:1:2:13 14 15 16 17 
+hs:1:3: 2
+point 3
+pe:1:3:13 14 15 16 17 
+hs:1:2: 2

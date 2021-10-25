@@ -1,0 +1,61 @@
+pe plb
+1 1
+udp tcp
+3 4 : 9
+cbr vbr bursty
+15
+9
+1 2 3 4 5 : 6 7 8 9
+nr_foc_4
+
+210908_084431
+
+pe_config_local1
+{
+  "switchConfigs": {
+    "4": {
+      "protos": [
+        6,
+        17
+      ],
+      "switchAssets": {
+        "jumps": [
+          "5",
+          "7"
+        ]
+      }
+    },
+    "3": {
+      "protos": [
+        6,
+        17
+      ],
+      "switchAssets": {
+        "jumps": [
+          "5",
+          "7"
+        ]
+      }
+    }
+  },
+  "cookie": ""
+}
+plb_config_local1
+{
+  "bw_time": 5,
+  "switchConfigs": {
+    "9": {
+      "bw_threshold": 10
+    }
+  },
+  "cookie": ""
+}gitcommitid=0bfbd0295e2cd4bae4664f0f5e193081670f5d4e
+point 1
+pe:1:2:3 4 
+plb:1:2: 9
+point 2
+pe:1:2:3 4 
+plb:1:3: 9
+point 3
+pe:1:3:3 4 
+plb:1:2: 9

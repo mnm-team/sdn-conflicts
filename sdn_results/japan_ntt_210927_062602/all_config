@@ -1,0 +1,177 @@
+plb pe fw
+1 1 1
+
+36 42 : 6 8 52 51 : 21 24 43 42
+
+55
+12
+6 7 8 9 10 : 1 2 3 4 5 11 12
+japan_ntt_20
+
+210927_062602
+
+plb_config_local1
+{
+  "bw_time": 5,
+  "cookie": "0x300",
+  "switchConfigs": {
+    "36": {
+      "bw_threshold": 4
+    },
+    "42": {
+      "bw_threshold": 4
+    }
+  }
+}
+pe_config_local1
+{
+  "cookie": "0x990",
+  "switchConfigs": {
+    "52": {
+      "switchAssets": {
+        "jumps": [
+          "44"
+        ]
+      },
+      "protos": [
+        6,
+        17
+      ]
+    },
+    "51": {
+      "switchAssets": {
+        "jumps": [
+          "44"
+        ]
+      },
+      "protos": [
+        6,
+        17
+      ]
+    },
+    "8": {
+      "switchAssets": {
+        "jumps": [
+          "18"
+        ]
+      },
+      "protos": [
+        6,
+        17
+      ]
+    },
+    "6": {
+      "switchAssets": {
+        "jumps": [
+          "18"
+        ]
+      },
+      "protos": [
+        6,
+        17
+      ]
+    }
+  }
+}
+fw_config_local1
+{
+  "bw_time": 5,
+  "cookie": "0x800",
+  "switchConfigs": {
+    "24": {
+      "bw_port_threshold": 5,
+      "bw_flow_threshold": 3
+    },
+    "21": {
+      "bw_port_threshold": 5,
+      "bw_flow_threshold": 3
+    },
+    "43": {
+      "bw_port_threshold": 5,
+      "bw_flow_threshold": 3
+    },
+    "42": {
+      "bw_port_threshold": 5,
+      "bw_flow_threshold": 3
+    }
+  }
+}gitcommitid=b0f33b449db5cb9310e70f185ffdae3229845187
+point 1
+plb:1:2:
+pe:1:2:
+point 2
+plb:1:2:
+pe:1:3:
+point 3
+plb:1:3:
+pe:1:2:
+point 4
+plb:1:2:
+fw:1:2:
+point 5
+plb:1:2:
+fw:1:3:
+point 6
+plb:1:3:
+fw:1:2:
+point 7
+pe:1:2:
+fw:1:2:
+point 8
+pe:1:2:
+fw:1:3:
+point 9
+pe:1:3:
+fw:1:2:
+point 10
+plb:1:2:
+pe:1:2:
+fw:1:2:
+point 11
+plb:1:2:
+pe:1:2:
+fw:1:3:
+point 12
+plb:1:2:
+pe:1:3:
+fw:1:2:
+point 13
+plb:1:2:
+pe:1:3:
+fw:1:3:
+point 14
+plb:1:2:
+pe:1:3:
+fw:1:4:
+point 15
+plb:1:2:
+pe:1:4:
+fw:1:3:
+point 16
+plb:1:3:
+pe:1:2:
+fw:1:2:
+point 17
+plb:1:3:
+pe:1:2:
+fw:1:3:
+point 18
+plb:1:3:
+pe:1:2:
+fw:1:4:
+point 19
+plb:1:3:
+pe:1:3:
+fw:1:2:
+point 20
+plb:1:3:
+pe:1:4:
+fw:1:2:
+point 21
+plb:1:4:
+pe:1:2:
+fw:1:3:
+point 22
+plb:1:4:
+pe:1:3:
+fw:1:2:

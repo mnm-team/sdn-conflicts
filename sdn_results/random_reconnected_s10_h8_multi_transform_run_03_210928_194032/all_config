@@ -1,0 +1,53 @@
+hs eplb
+1 1
+udp tcp
+6 4 7 : 3 5
+cbr vbr bursty
+10
+8
+2 3 4 : 1 5 6 7 8
+random_reconnected_s10_h8_multi_transform_run_03
+
+210928_194032
+
+hs_config_local1
+{
+  "cookie": "0x440",
+  "appAssets": {
+    "00:16:3e:11:11:07": {
+      "frontend": "192.168.1.7",
+      "backend": [
+        "192.168.1.8",
+        "00:16:3e:11:11:08"
+      ]
+    }
+  }
+}
+eplb_config_local1
+{
+  "cookie": "0x400",
+  "appAssets": {
+    "00:16:3e:11:11:08": {
+      "servers": [
+        [
+          "192.168.1.7",
+          "00:16:3e:11:11:07"
+        ],
+        [
+          "192.168.1.8",
+          "00:16:3e:11:11:08"
+        ]
+      ],
+      "proxy_ip": "192.168.1.8"
+    }
+  }
+}gitcommitid=5605f1395793bf21b6214e84ca1fe3fa41a1a3e3
+point 1
+hs:1:2:6 4 7 
+eplb:1:2: 3 5
+point 2
+hs:1:2:6 4 7 
+eplb:1:3: 3 5
+point 3
+hs:1:3:6 4 7 
+eplb:1:2: 3 5

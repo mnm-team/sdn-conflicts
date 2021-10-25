@@ -1,0 +1,62 @@
+pe fw
+1 1
+udp tcp
+3 4 : 3
+cbr vbr bursty
+15
+9
+1 2 3 4 5 : 6 7 8 9
+nr_foc_7
+
+210908_104502
+
+pe_config_local1
+{
+  "switchConfigs": {
+    "4": {
+      "protos": [
+        6,
+        17
+      ],
+      "switchAssets": {
+        "jumps": [
+          "5",
+          "7"
+        ]
+      }
+    },
+    "3": {
+      "protos": [
+        6,
+        17
+      ],
+      "switchAssets": {
+        "jumps": [
+          "5",
+          "7"
+        ]
+      }
+    }
+  },
+  "cookie": ""
+}
+fw_config_local1
+{
+  "bw_time": 5,
+  "switchConfigs": {
+    "3": {
+      "bw_flow_threshold": 5,
+      "bw_port_threshold": 7
+    }
+  },
+  "cookie": ""
+}gitcommitid=7887341427e6e9757f9a47a6d007c45e74c8fb07
+point 1
+pe:1:2:3 4 
+fw:1:2: 3
+point 2
+pe:1:2:3 4 
+fw:1:3: 3
+point 3
+pe:1:3:3 4 
+fw:1:2: 3

@@ -1,0 +1,31 @@
+eplb
+1
+udp tcp
+1 3
+cbr vbr bursty
+10
+8
+4 5 6 7 8 : 1 2 3
+random_reconnected_s10_h8_bypass_run_05
+
+210927_181621
+
+eplb_config_local1
+{
+  "cookie": "0x400",
+  "appAssets": {
+    "00:16:3e:11:11:02": {
+      "proxy_ip": "192.168.1.2",
+      "servers": [
+        [
+          "192.168.1.2",
+          "00:16:3e:11:11:02"
+        ],
+        [
+          "192.168.1.3",
+          "00:16:3e:11:11:03"
+        ]
+      ]
+    }
+  }
+}gitcommitid=8ce2650ce3b82601db34d432637597e45bc85a40

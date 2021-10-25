@@ -1,0 +1,50 @@
+pe
+1
+udp tcp
+8 6 3
+cbr vbr bursty
+21
+21
+5 7 13 17 20 : 1 2 3 4 6 8 9 10 11 12 14 15 16 18 19 21
+mwn_netzkonzept_2017_loop_run_05
+
+211003_125830
+
+pe_config_local1
+{
+  "cookie": "0x990",
+  "switchConfigs": {
+    "8": {
+      "switchAssets": {
+        "jumps": [
+          "4",
+          "3"
+        ]
+      },
+      "protos": [
+        6
+      ]
+    },
+    "3": {
+      "switchAssets": {
+        "jumps": [
+          "2",
+          "4"
+        ]
+      },
+      "protos": [
+        6
+      ]
+    },
+    "6": {
+      "switchAssets": {
+        "jumps": [
+          "8"
+        ]
+      },
+      "protos": [
+        6
+      ]
+    }
+  }
+}gitcommitid=8c6eda812f4ef7c6c539bcf5c2e21669d92a91e5

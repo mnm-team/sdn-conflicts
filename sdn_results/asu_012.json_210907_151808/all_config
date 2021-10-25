@@ -1,0 +1,55 @@
+pplb4d plb
+1 1
+udp tcp
+6 : 8
+cbr vbr bursty
+19
+7
+5 6 7 : 1 2 3 4
+asu_012.json
+
+210907_151808
+
+pplb4d_config_local1
+{
+  "appAssets": {
+    "servers": [
+      [
+        "192.168.1.1",
+        "00:16:3e:11:11:01"
+      ],
+      [
+        "192.168.1.2",
+        "00:16:3e:11:11:02"
+      ],
+      [
+        "192.168.1.3",
+        "00:16:3e:11:11:03"
+      ],
+      [
+        "192.168.1.4",
+        "00:16:3e:11:11:04"
+      ]
+    ]
+  },
+  "cookie": "0x700"
+}
+plb_config_local1
+{
+  "bw_time": 5,
+  "switchConfigs": {
+    "8": {
+      "bw_threshold": 5
+    }
+  },
+  "cookie": "0x300"
+}gitcommitid=9bf0397c12619fe6f85c0441821cb5eef8285c98
+point 1
+pplb4d:1:2:6 
+plb:1:2: 8
+point 2
+pplb4d:1:2:6 
+plb:1:3: 8
+point 3
+pplb4d:1:3:6 
+plb:1:2: 8

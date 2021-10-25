@@ -1,0 +1,63 @@
+pe
+1
+udp tcp
+3 6 7 4
+cbr vbr bursty
+10
+8
+2 3 4 6 : 1 5 7 8
+random_reconnected_s10_h8_loop_run_04
+
+211003_125753
+
+pe_config_local1
+{
+  "cookie": "0x990",
+  "switchConfigs": {
+    "6": {
+      "protos": [
+        6
+      ],
+      "switchAssets": {
+        "jumps": [
+          "2",
+          "9"
+        ]
+      }
+    },
+    "7": {
+      "protos": [
+        6
+      ],
+      "switchAssets": {
+        "jumps": [
+          "2",
+          "9"
+        ]
+      }
+    },
+    "4": {
+      "protos": [
+        6
+      ],
+      "switchAssets": {
+        "jumps": [
+          "2",
+          "9"
+        ]
+      }
+    },
+    "3": {
+      "protos": [
+        6
+      ],
+      "switchAssets": {
+        "jumps": [
+          "7",
+          "1",
+          "2"
+        ]
+      }
+    }
+  }
+}gitcommitid=8ba860591d9a36ae8d1a95058647158bec444e8a

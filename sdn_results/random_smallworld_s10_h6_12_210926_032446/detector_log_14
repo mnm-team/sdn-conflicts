@@ -1,0 +1,1292 @@
+
+
+
+2021-09-26 06:40:50.110691
+number of edges in rule graph = 0
+
+self.ft = 
+Number of rules: [0, {}]
+
+self.lc_cfl_rules = 
+Number of local conflicts by dpid: [0, {}]
+Number of local conflicts by class: [0, {}]
+
+self.hc_cfl_rules = 
+1:{}
+2:{}
+3:{}
+Number of rules causing hidden conflicts by control app: {}
+
+self.dt_cfl_rules = 
+black-hole:[]
+loops:[]
+incomplete-transform:[]
+drop:[]
+bypass:[]
+multi-transform:[]
+occlusion:[]
+injection:[]
+Number of distributed conflicts by class: {'black-hole': 0, 'loops': 0, 'incomplete-transform': 0, 'drop': 0, 'bypass': 0, 'multi-transform': 0, 'occlusion': 0, 'injection': 0}
+
+2021-09-26 06:41:22.346390
+New rule is coming, number of existing rules: [0, {}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,1) to the rule database = 0.133514404296875
+
+2021-09-26 06:41:22.355680
+New rule is coming, number of existing rules: [1, {10: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,1) to the rule database = 0.09441375732421875
+
+2021-09-26 06:41:22.365134
+New rule is coming, number of existing rules: [2, {9: 1, 10: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,2) to the rule database = 0.2193450927734375
+
+2021-09-26 06:41:22.374890
+New rule is coming, number of existing rules: [3, {9: 2, 10: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,2) to the rule database = 0.16450881958007812
+
+2021-09-26 06:41:26.481244
+New rule is coming, number of existing rules: [4, {9: 2, 10: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,3) to the rule database = 1.333475112915039
+Local Conflict - class Generalization2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:2
+Action Relationship Pattern:1
+Matchmap 1:(3, 2048, 6, '192.168.1.1', '192.168.1.4', 39634, 3414, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.4', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [1], (3, 2048, 6, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))
+
+2021-09-26 06:41:26.491993
+New rule is coming, number of existing rules: [5, {9: 2, 10: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,4) to the rule database = 1.4710426330566406
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.4', '192.168.1.1', 3414, 39634, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 2}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (2, 2048, 6, -1, '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+
+2021-09-26 06:41:26.494694
+New rule is coming, number of existing rules: [6, {9: 2, 10: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,5) to the rule database = 1.1780261993408203
+
+2021-09-26 06:41:26.496517
+New rule is coming, number of existing rules: [7, {9: 2, 10: 5}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,3) to the rule database = 0.33164024353027344
+
+2021-09-26 06:41:26.502924
+New rule is coming, number of existing rules: [8, {9: 3, 10: 5}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,1) to the rule database = 0.08296966552734375
+
+2021-09-26 06:41:26.510099
+New rule is coming, number of existing rules: [9, {9: 3, 10: 5, 1: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (6,0,1) to the rule database = 0.05245208740234375
+
+2021-09-26 06:41:26.516956
+New rule is coming, number of existing rules: [10, {9: 3, 10: 5, 6: 1, 1: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (6,0,2) to the rule database = 0.07915496826171875
+
+2021-09-26 06:41:26.521745
+New rule is coming, number of existing rules: [11, {9: 3, 10: 5, 6: 2, 1: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,2) to the rule database = 0.08344650268554688
+
+2021-09-26 06:41:30.643943
+New rule is coming, number of existing rules: [12, {9: 3, 10: 5, 6: 2, 1: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,6) to the rule database = 1.0478496551513672
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.4', '192.168.1.1', -1, 59372, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.1', 'in_port': 5}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [10], (5, 2048, 6, '192.168.1.4', '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4}))
+
+2021-09-26 06:41:30.660417
+New rule is coming, number of existing rules: [13, {9: 3, 10: 6, 6: 2, 1: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,3) to the rule database = 1.6989707946777344
+
+2021-09-26 06:41:30.663208
+New rule is coming, number of existing rules: [14, {9: 3, 10: 6, 6: 2, 1: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,1) to the rule database = 0.14257431030273438
+
+2021-09-26 06:41:30.664227
+New rule is coming, number of existing rules: [15, {9: 3, 10: 6, 5: 1, 6: 2, 1: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,4) to the rule database = 0.46944618225097656
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(1, 2048, 6, -1, '192.168.1.1', -1, -1, -1, -1)
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'tcp_src': 3414, 'tcp_dst': 39634, 'ipv4_src': '192.168.1.4'}), [OFPActionSetField(eth_src='00:16:3e:11:11:04'), OFPActionSetField(ipv4_src='192.168.1.4'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (-1, 2048, 6, '192.168.1.4', '192.168.1.1', 3414, 39634, -1, -1), ('192.168.1.4', -1, -1, -1, -1, -1, {3}))
+
+2021-09-26 06:41:30.672801
+New rule is coming, number of existing rules: [16, {9: 3, 10: 6, 5: 1, 6: 2, 1: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,7) to the rule database = 1.2617111206054688
+
+2021-09-26 06:41:34.804377
+New rule is coming, number of existing rules: [17, {9: 3, 10: 7, 5: 1, 6: 2, 1: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,8) to the rule database = 1.2717247009277344
+Local Conflict - class Generalization2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:2
+Action Relationship Pattern:1
+Matchmap 1:(3, 2048, 6, '192.168.1.1', '192.168.1.6', 43076, 3416, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.6', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [9], (3, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2}))
+
+2021-09-26 06:41:34.815929
+New rule is coming, number of existing rules: [18, {9: 3, 10: 8, 5: 1, 6: 2, 1: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,9) to the rule database = 3.5479068756103516
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.6', '192.168.1.1', 3416, 43076, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 2}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (2, 2048, 6, -1, '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.6', '192.168.1.1', 3416, 43076, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (1, 2048, 6, -1, '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+
+2021-09-26 06:41:34.820596
+New rule is coming, number of existing rules: [19, {9: 3, 10: 9, 5: 1, 6: 2, 1: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,10) to the rule database = 3.9818286895751953
+
+2021-09-26 06:41:34.825610
+New rule is coming, number of existing rules: [20, {9: 3, 10: 10, 5: 1, 6: 2, 1: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,4) to the rule database = 0.8413791656494141
+
+2021-09-26 06:41:34.835168
+New rule is coming, number of existing rules: [21, {9: 4, 10: 10, 5: 1, 6: 2, 1: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,5) to the rule database = 0.49495697021484375
+Local Conflict - class Generalization2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:2
+Action Relationship Pattern:1
+Matchmap 1:(3, 2048, 6, '192.168.1.1', '192.168.1.6', 43076, 3416, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.6', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))
+
+2021-09-26 06:41:34.844273
+New rule is coming, number of existing rules: [22, {9: 5, 10: 10, 5: 1, 6: 2, 1: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,6) to the rule database = 2.2170543670654297
+
+2021-09-26 06:41:34.847684
+New rule is coming, number of existing rules: [23, {9: 6, 10: 10, 5: 1, 6: 2, 1: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,7) to the rule database = 1.4128684997558594
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 2}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (2, 2048, 6, -1, '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (1, 2048, 6, -1, '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+
+2021-09-26 06:41:34.850440
+New rule is coming, number of existing rules: [24, {9: 7, 10: 10, 5: 1, 6: 2, 1: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,11) to the rule database = 3.966808319091797
+
+2021-09-26 06:41:34.865095
+New rule is coming, number of existing rules: [25, {9: 7, 10: 11, 5: 1, 6: 2, 1: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,1) to the rule database = 0.07915496826171875
+
+2021-09-26 06:41:34.866211
+New rule is coming, number of existing rules: [26, {1: 4, 5: 1, 6: 2, 8: 1, 9: 7, 10: 11}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,2) to the rule database = 0.18167495727539062
+
+2021-09-26 06:41:34.876490
+New rule is coming, number of existing rules: [27, {1: 4, 5: 1, 6: 2, 8: 2, 9: 7, 10: 11}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,2) to the rule database = 0.17905235290527344
+
+2021-09-26 06:41:34.877099
+New rule is coming, number of existing rules: [28, {1: 4, 5: 2, 6: 2, 8: 2, 9: 7, 10: 11}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,5) to the rule database = 0.354766845703125
+
+2021-09-26 06:41:34.878759
+New rule is coming, number of existing rules: [29, {1: 5, 5: 2, 6: 2, 8: 2, 9: 7, 10: 11}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,3) to the rule database = 0.7135868072509766
+
+2021-09-26 06:41:34.880880
+New rule is coming, number of existing rules: [30, {1: 5, 5: 3, 6: 2, 8: 2, 9: 7, 10: 11}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,4) to the rule database = 0.7994174957275391
+
+2021-09-26 06:41:34.898682
+New rule is coming, number of existing rules: [31, {1: 5, 5: 4, 6: 2, 8: 2, 9: 7, 10: 11}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,3) to the rule database = 0.29659271240234375
+
+2021-09-26 06:41:38.967924
+New rule is coming, number of existing rules: [32, {1: 5, 5: 4, 6: 2, 8: 3, 9: 7, 10: 11}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,12) to the rule database = 2.423524856567383
+
+2021-09-26 06:41:38.978051
+New rule is coming, number of existing rules: [33, {1: 5, 5: 4, 6: 2, 8: 3, 9: 7, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,8) to the rule database = 1.2056827545166016
+
+2021-09-26 06:41:38.992008
+New rule is coming, number of existing rules: [34, {1: 5, 5: 4, 6: 2, 8: 3, 9: 8, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,5) to the rule database = 0.8082389831542969
+
+2021-09-26 06:41:38.994073
+New rule is coming, number of existing rules: [35, {1: 5, 5: 5, 6: 2, 8: 3, 9: 8, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,6) to the rule database = 0.9372234344482422
+
+2021-09-26 06:41:38.996077
+New rule is coming, number of existing rules: [36, {1: 6, 5: 5, 6: 2, 8: 3, 9: 8, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,6) to the rule database = 0.9562969207763672
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, -1, -1, -1)
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'tcp_src': 3416, 'tcp_dst': 43076, 'ipv4_src': '192.168.1.7'}), [OFPActionSetField(eth_src='00:16:3e:11:11:06'), OFPActionSetField(ipv4_src='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [10], (-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1), ('192.168.1.6', -1, -1, -1, -1, -1, {3}))
+
+2021-09-26 06:41:39.008219
+New rule is coming, number of existing rules: [37, {1: 6, 5: 6, 6: 2, 8: 3, 9: 8, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,9) to the rule database = 2.6788711547851562
+
+2021-09-26 06:41:43.163142
+New rule is coming, number of existing rules: [38, {1: 6, 5: 6, 6: 2, 8: 3, 9: 9, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,1) to the rule database = 0.09298324584960938
+
+2021-09-26 06:41:43.169191
+New rule is coming, number of existing rules: [39, {1: 6, 3: 1, 5: 6, 6: 2, 8: 3, 9: 9, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (4,0,1) to the rule database = 0.09655952453613281
+
+2021-09-26 06:41:43.175983
+New rule is coming, number of existing rules: [40, {1: 6, 3: 1, 4: 1, 5: 6, 6: 2, 8: 3, 9: 9, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,10) to the rule database = 0.5767345428466797
+
+2021-09-26 06:41:43.181632
+New rule is coming, number of existing rules: [41, {1: 6, 3: 1, 4: 1, 5: 6, 6: 2, 8: 3, 9: 10, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,11) to the rule database = 0.5915164947509766
+
+2021-09-26 06:41:43.186981
+New rule is coming, number of existing rules: [42, {1: 6, 3: 1, 4: 1, 5: 6, 6: 2, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (4,0,2) to the rule database = 0.08845329284667969
+
+2021-09-26 06:41:43.190947
+New rule is coming, number of existing rules: [43, {1: 6, 3: 1, 4: 2, 5: 6, 6: 2, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,2) to the rule database = 0.08058547973632812
+
+2021-09-26 06:41:47.335096
+New rule is coming, number of existing rules: [44, {1: 6, 3: 2, 4: 2, 5: 6, 6: 2, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,3) to the rule database = 0.18215179443359375
+
+2021-09-26 06:41:47.339164
+New rule is coming, number of existing rules: [45, {1: 6, 3: 3, 4: 2, 5: 6, 6: 2, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (7,0,1) to the rule database = 0.04673004150390625
+
+2021-09-26 06:41:47.343226
+New rule is coming, number of existing rules: [46, {1: 6, 3: 3, 4: 2, 5: 6, 6: 2, 7: 1, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (6,0,3) to the rule database = 0.10204315185546875
+
+2021-09-26 06:41:47.348032
+New rule is coming, number of existing rules: [47, {1: 6, 3: 3, 4: 2, 5: 6, 6: 3, 7: 1, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (6,0,4) to the rule database = 0.1838207244873047
+
+2021-09-26 06:41:47.352656
+New rule is coming, number of existing rules: [48, {1: 6, 3: 3, 4: 2, 5: 6, 6: 4, 7: 1, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (7,0,2) to the rule database = 0.07534027099609375
+
+2021-09-26 06:41:47.363165
+New rule is coming, number of existing rules: [49, {1: 6, 3: 3, 4: 2, 5: 6, 6: 4, 7: 2, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,4) to the rule database = 0.34308433532714844
+
+2021-09-26 06:41:51.531045
+New rule is coming, number of existing rules: [50, {1: 6, 3: 4, 4: 2, 5: 6, 6: 4, 7: 2, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,5) to the rule database = 0.7350444793701172
+
+2021-09-26 06:41:51.540209
+New rule is coming, number of existing rules: [51, {1: 6, 3: 5, 4: 2, 5: 6, 6: 4, 7: 2, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (7,0,3) to the rule database = 0.4520416259765625
+
+2021-09-26 06:41:51.548765
+New rule is coming, number of existing rules: [52, {1: 6, 3: 5, 4: 2, 5: 6, 6: 4, 7: 3, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (6,0,5) to the rule database = 0.6058216094970703
+
+2021-09-26 06:41:51.559024
+New rule is coming, number of existing rules: [53, {1: 6, 3: 5, 4: 2, 5: 6, 6: 5, 7: 3, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (6,0,6) to the rule database = 0.4932880401611328
+
+2021-09-26 06:41:51.567763
+New rule is coming, number of existing rules: [54, {1: 6, 3: 5, 4: 2, 5: 6, 6: 6, 7: 3, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (7,0,4) to the rule database = 0.5385875701904297
+
+2021-09-26 06:41:55.696783
+New rule is coming, number of existing rules: [55, {1: 6, 3: 5, 4: 2, 5: 6, 6: 6, 7: 4, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,6) to the rule database = 1.1358261108398438
+
+2021-09-26 06:41:55.707143
+New rule is coming, number of existing rules: [56, {1: 6, 3: 6, 4: 2, 5: 6, 6: 6, 7: 4, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,1) to the rule database = 0.13828277587890625
+
+2021-09-26 06:41:55.716049
+New rule is coming, number of existing rules: [57, {1: 6, 2: 1, 3: 6, 4: 2, 5: 6, 6: 6, 7: 4, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,7) to the rule database = 0.8504390716552734
+
+2021-09-26 06:41:55.725753
+New rule is coming, number of existing rules: [58, {1: 6, 2: 1, 3: 6, 4: 2, 5: 7, 6: 6, 7: 4, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,8) to the rule database = 0.797271728515625
+
+2021-09-26 06:41:55.734511
+New rule is coming, number of existing rules: [59, {1: 6, 2: 1, 3: 6, 4: 2, 5: 8, 6: 6, 7: 4, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,2) to the rule database = 0.15211105346679688
+
+2021-09-26 06:41:55.740744
+New rule is coming, number of existing rules: [60, {1: 6, 2: 2, 3: 6, 4: 2, 5: 8, 6: 6, 7: 4, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,7) to the rule database = 0.2753734588623047
+
+2021-09-26 06:41:59.833352
+New rule is coming, number of existing rules: [61, {1: 6, 2: 2, 3: 7, 4: 2, 5: 8, 6: 6, 7: 4, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,8) to the rule database = 0.41866302490234375
+
+2021-09-26 06:41:59.841825
+New rule is coming, number of existing rules: [62, {1: 6, 2: 2, 3: 8, 4: 2, 5: 8, 6: 6, 7: 4, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,3) to the rule database = 0.4954338073730469
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.6', '192.168.1.3', -1, 35484, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.3', 'in_port': 5}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (5, 2048, 6, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))
+
+2021-09-26 06:41:59.848431
+New rule is coming, number of existing rules: [63, {1: 6, 2: 3, 3: 8, 4: 2, 5: 8, 6: 6, 7: 4, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,9) to the rule database = 1.2052059173583984
+
+2021-09-26 06:41:59.850217
+New rule is coming, number of existing rules: [64, {1: 6, 2: 3, 3: 8, 4: 2, 5: 9, 6: 6, 7: 4, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,7) to the rule database = 0.6117820739746094
+
+2021-09-26 06:41:59.851327
+New rule is coming, number of existing rules: [65, {1: 7, 2: 3, 3: 8, 4: 2, 5: 9, 6: 6, 7: 4, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,10) to the rule database = 0.6136894226074219
+
+2021-09-26 06:42:00.861752
+New rule is coming, number of existing rules: [66, {1: 7, 2: 3, 3: 8, 4: 2, 5: 10, 6: 6, 7: 4, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,4) to the rule database = 0.579833984375
+
+
+2021-09-26 06:42:11.195516
+Number of existing rules: [67, {1: 7, 2: 4, 3: 8, 4: 2, 5: 10, 6: 6, 7: 4, 8: 3, 9: 11, 10: 12}]
+number of edges in rule graph = 0
+number of rules to be removed = 0
+number of rules to be added = 67
+Time difference (ms) in checking hidden conflicts for rule (10,0,1) = 0.40268898010253906
+Time difference (ms) in adding rule (10,0,1) to the rule graph = 1.6417503356933594
+Time difference (ms) in checking hidden conflicts for rule (9,0,1) = 0.26726722717285156
+Time difference (ms) in adding rule (9,0,1) to the rule graph = 1.054525375366211
+Time difference (ms) in checking hidden conflicts for rule (9,0,2) = 0.23627281188964844
+Time difference (ms) in adding rule (9,0,2) to the rule graph = 1.0190010070800781
+Time difference (ms) in checking hidden conflicts for rule (10,0,2) = 0.23818016052246094
+Time difference (ms) in adding rule (10,0,2) to the rule graph = 9.74416732788086
+Time difference (ms) in checking hidden conflicts for rule (10,0,3) = 0.31566619873046875
+Time difference (ms) in adding rule (10,0,3) to the rule graph = 1.0378360748291016
+Time difference (ms) in checking hidden conflicts for rule (10,0,4) = 0.1919269561767578
+Time difference (ms) in adding rule (10,0,4) to the rule graph = 0.9624958038330078
+Time difference (ms) for multi-transform conflict check: 0.0743865966796875
+Time difference (ms) for injection conflict check: 0.05626678466796875
+Time difference (ms) for occlusion conflict check: 0.27298927307128906
+Time difference (ms) for bypass conflict check: 5.290031433105469
+Time difference (ms) in checking hidden conflicts for rule (10,0,5) = 0.14591217041015625
+Time difference (ms) in adding rule (10,0,5) to the rule graph = 1.8520355224609375
+Time difference (ms) for multi-transform conflict check: 0.072479248046875
+Time difference (ms) for injection conflict check: 0.058650970458984375
+Time difference (ms) for occlusion conflict check: 0.010013580322265625
+Time difference (ms) for bypass conflict check: 5.3462982177734375
+Time difference (ms) in checking hidden conflicts for rule (9,0,3) = 0.09965896606445312
+Time difference (ms) in checking hidden conflicts for rule (1,0,1) = 0.091552734375
+Time difference (ms) in adding rule (1,0,1) to the rule graph = 0.40531158447265625
+Time difference (ms) in checking hidden conflicts for rule (6,0,1) = 0.005245208740234375
+Time difference (ms) in adding rule (6,0,1) to the rule graph = 0.8845329284667969
+Time difference (ms) in checking hidden conflicts for rule (6,0,2) = 0.0057220458984375
+Time difference (ms) in checking hidden conflicts for rule (1,0,2) = 0.08130073547363281
+Time difference (ms) in checking hidden conflicts for rule (10,0,6) = 0.07367134094238281
+Time difference (ms) in checking hidden conflicts for rule (1,0,3) = 0.0705718994140625
+Time difference (ms) in adding rule (1,0,3) to the rule graph = 0.4563331604003906
+Time difference (ms) for multi-transform conflict check: 0.024557113647460938
+Time difference (ms) for injection conflict check: 0.021696090698242188
+Time difference (ms) for occlusion conflict check: 0.00667572021484375
+Time difference (ms) for bypass conflict check: 4.688739776611328
+Time difference (ms) in checking hidden conflicts for rule (5,0,1) = 0.09965896606445312
+Time difference (ms) in adding rule (5,0,1) to the rule graph = 0.29850006103515625
+Time difference (ms) for multi-transform conflict check: 0.01621246337890625
+Time difference (ms) for injection conflict check: 0.013828277587890625
+Time difference (ms) for occlusion conflict check: 0.00667572021484375
+Time difference (ms) for bypass conflict check: 4.522800445556641
+Time difference (ms) in checking hidden conflicts for rule (1,0,4) = 0.08726119995117188
+Time difference (ms) in checking hidden conflicts for rule (10,0,7) = 0.07915496826171875
+Time difference (ms) in adding rule (10,0,7) to the rule graph = 1.3089179992675781
+Time difference (ms) in checking hidden conflicts for rule (10,0,8) = 0.07271766662597656
+Time difference (ms) in adding rule (10,0,8) to the rule graph = 1.2927055358886719
+Time difference (ms) in checking hidden conflicts for rule (10,0,9) = 0.07176399230957031
+Time difference (ms) in adding rule (10,0,9) to the rule graph = 1.2214183807373047
+Time difference (ms) for multi-transform conflict check: 0.0171661376953125
+Time difference (ms) for injection conflict check: 0.014066696166992188
+Time difference (ms) for occlusion conflict check: 0.07534027099609375
+Time difference (ms) for bypass conflict check: 2.319812774658203
+Time difference (ms) in checking hidden conflicts for rule (10,0,10) = 0.11181831359863281
+Time difference (ms) in adding rule (10,0,10) to the rule graph = 0.5781650543212891
+Time difference (ms) for multi-transform conflict check: 0.072479248046875
+Time difference (ms) for injection conflict check: 0.125885009765625
+Time difference (ms) for occlusion conflict check: 0.00667572021484375
+Time difference (ms) for bypass conflict check: 3.754854202270508
+Time difference (ms) in checking hidden conflicts for rule (9,0,4) = 0.09989738464355469
+Time difference (ms) in checking hidden conflicts for rule (9,0,5) = 0.06866455078125
+Time difference (ms) in adding rule (9,0,5) to the rule graph = 1.0883808135986328
+Time difference (ms) in checking hidden conflicts for rule (9,0,6) = 0.07081031799316406
+Time difference (ms) in adding rule (9,0,6) to the rule graph = 1.0833740234375
+Time difference (ms) for multi-transform conflict check: 0.03910064697265625
+Time difference (ms) for injection conflict check: 0.031232833862304688
+Time difference (ms) for occlusion conflict check: 0.08225440979003906
+Time difference (ms) for bypass conflict check: 1.9679069519042969
+Time difference (ms) in checking hidden conflicts for rule (9,0,7) = 0.09369850158691406
+Time difference (ms) in checking hidden conflicts for rule (10,0,11) = 0.07510185241699219
+Time difference (ms) in adding rule (10,0,11) to the rule graph = 0.6477832794189453
+Time difference (ms) for multi-transform conflict check: 0.06628036499023438
+Time difference (ms) for injection conflict check: 0.179290771484375
+Time difference (ms) for occlusion conflict check: 0.0069141387939453125
+Time difference (ms) for bypass conflict check: 3.7806034088134766
+Time difference (ms) in checking hidden conflicts for rule (8,0,1) = 0.006198883056640625
+Time difference (ms) in adding rule (8,0,1) to the rule graph = 0.9596347808837891
+Time difference (ms) in checking hidden conflicts for rule (8,0,2) = 0.0054836273193359375
+Time difference (ms) in adding rule (8,0,2) to the rule graph = 1.6460418701171875
+Time difference (ms) in checking hidden conflicts for rule (5,0,2) = 0.08106231689453125
+Time difference (ms) in checking hidden conflicts for rule (1,0,5) = 0.07939338684082031
+Time difference (ms) in checking hidden conflicts for rule (5,0,3) = 0.08535385131835938
+Time difference (ms) in adding rule (5,0,3) to the rule graph = 0.3533363342285156
+Time difference (ms) for multi-transform conflict check: 0.10752677917480469
+Time difference (ms) for injection conflict check: 0.1513957977294922
+Time difference (ms) for occlusion conflict check: 0.06771087646484375
+Time difference (ms) for bypass conflict check: 1.9993782043457031
+Time difference (ms) in checking hidden conflicts for rule (5,0,4) = 0.09489059448242188
+Time difference (ms) in adding rule (5,0,4) to the rule graph = 0.28634071350097656
+Time difference (ms) in checking hidden conflicts for rule (8,0,3) = 0.005245208740234375
+Time difference (ms) in checking hidden conflicts for rule (10,0,12) = 0.08845329284667969
+Time difference (ms) in checking hidden conflicts for rule (9,0,8) = 0.0743865966796875
+Time difference (ms) in checking hidden conflicts for rule (5,0,5) = 0.0858306884765625
+Time difference (ms) in checking hidden conflicts for rule (1,0,6) = 0.07200241088867188
+Time difference (ms) in checking hidden conflicts for rule (5,0,6) = 0.08273124694824219
+Time difference (ms) in adding rule (5,0,6) to the rule graph = 0.29397010803222656
+Time difference (ms) for multi-transform conflict check: 0.06914138793945312
+Time difference (ms) for injection conflict check: 0.1468658447265625
+Time difference (ms) for occlusion conflict check: 0.06794929504394531
+Time difference (ms) for bypass conflict check: 2.065896987915039
+Time difference (ms) in checking hidden conflicts for rule (9,0,9) = 0.10514259338378906
+Time difference (ms) in adding rule (9,0,9) to the rule graph = 0.7479190826416016
+Time difference (ms) in checking hidden conflicts for rule (3,0,1) = 0.0057220458984375
+Time difference (ms) in adding rule (3,0,1) to the rule graph = 0.31685829162597656
+Time difference (ms) in checking hidden conflicts for rule (4,0,1) = 0.00476837158203125
+Time difference (ms) in adding rule (4,0,1) to the rule graph = 0.30422210693359375
+Time difference (ms) in checking hidden conflicts for rule (9,0,10) = 0.08034706115722656
+Time difference (ms) in adding rule (9,0,10) to the rule graph = 0.16951560974121094
+Time difference (ms) in checking hidden conflicts for rule (9,0,11) = 0.08392333984375
+Time difference (ms) in adding rule (9,0,11) to the rule graph = 0.21028518676757812
+Time difference (ms) in checking hidden conflicts for rule (4,0,2) = 0.005245208740234375
+Time difference (ms) in adding rule (4,0,2) to the rule graph = 0.16951560974121094
+Time difference (ms) in checking hidden conflicts for rule (3,0,2) = 0.00476837158203125
+Time difference (ms) in adding rule (3,0,2) to the rule graph = 0.1583099365234375
+Time difference (ms) in checking hidden conflicts for rule (3,0,3) = 0.0045299530029296875
+Time difference (ms) in adding rule (3,0,3) to the rule graph = 0.293731689453125
+Time difference (ms) in checking hidden conflicts for rule (7,0,1) = 0.0054836273193359375
+Time difference (ms) in adding rule (7,0,1) to the rule graph = 0.3063678741455078
+Time difference (ms) in checking hidden conflicts for rule (6,0,3) = 0.005245208740234375
+Time difference (ms) in adding rule (6,0,3) to the rule graph = 0.22721290588378906
+Time difference (ms) in checking hidden conflicts for rule (6,0,4) = 0.0050067901611328125
+Time difference (ms) in adding rule (6,0,4) to the rule graph = 0.24318695068359375
+Time difference (ms) in checking hidden conflicts for rule (7,0,2) = 0.00476837158203125
+Time difference (ms) in adding rule (7,0,2) to the rule graph = 0.22864341735839844
+Time difference (ms) in checking hidden conflicts for rule (3,0,4) = 0.00476837158203125
+Time difference (ms) in adding rule (3,0,4) to the rule graph = 0.579833984375
+Time difference (ms) in checking hidden conflicts for rule (3,0,5) = 0.0054836273193359375
+Time difference (ms) in adding rule (3,0,5) to the rule graph = 0.30732154846191406
+Time difference (ms) in checking hidden conflicts for rule (7,0,3) = 0.005245208740234375
+Time difference (ms) in adding rule (7,0,3) to the rule graph = 0.2760887145996094
+Time difference (ms) in checking hidden conflicts for rule (6,0,5) = 0.0050067901611328125
+Time difference (ms) in adding rule (6,0,5) to the rule graph = 0.22339820861816406
+Time difference (ms) in checking hidden conflicts for rule (6,0,6) = 0.0050067901611328125
+Time difference (ms) in checking hidden conflicts for rule (7,0,4) = 0.004291534423828125
+Time difference (ms) in checking hidden conflicts for rule (3,0,6) = 0.0040531158447265625
+Time difference (ms) in adding rule (3,0,6) to the rule graph = 0.44536590576171875
+Time difference (ms) in checking hidden conflicts for rule (2,0,1) = 0.0054836273193359375
+Time difference (ms) in adding rule (2,0,1) to the rule graph = 0.5102157592773438
+Time difference (ms) in checking hidden conflicts for rule (5,0,7) = 0.07939338684082031
+Time difference (ms) in adding rule (5,0,7) to the rule graph = 0.22149085998535156
+Time difference (ms) in checking hidden conflicts for rule (5,0,8) = 0.07748603820800781
+Time difference (ms) in adding rule (5,0,8) to the rule graph = 0.2505779266357422
+Time difference (ms) in checking hidden conflicts for rule (2,0,2) = 0.0050067901611328125
+Time difference (ms) in adding rule (2,0,2) to the rule graph = 0.24461746215820312
+Time difference (ms) in checking hidden conflicts for rule (3,0,7) = 0.0045299530029296875
+Time difference (ms) in adding rule (3,0,7) to the rule graph = 0.7936954498291016
+Time difference (ms) in checking hidden conflicts for rule (3,0,8) = 0.005245208740234375
+Time difference (ms) in adding rule (3,0,8) to the rule graph = 0.4208087921142578
+Time difference (ms) in checking hidden conflicts for rule (2,0,3) = 0.0045299530029296875
+Time difference (ms) in adding rule (2,0,3) to the rule graph = 0.4153251647949219
+Time difference (ms) in checking hidden conflicts for rule (5,0,9) = 0.1220703125
+Time difference (ms) in checking hidden conflicts for rule (1,0,7) = 0.0762939453125
+Time difference (ms) in adding rule (1,0,7) to the rule graph = 0.26917457580566406
+Time difference (ms) for multi-transform conflict check: 0.016450881958007812
+Time difference (ms) for injection conflict check: 0.014066696166992188
+Time difference (ms) for occlusion conflict check: 0.00667572021484375
+Time difference (ms) for bypass conflict check: 2.2406578063964844
+Time difference (ms) in checking hidden conflicts for rule (5,0,10) = 0.10824203491210938
+Time difference (ms) in adding rule (5,0,10) to the rule graph = 0.24366378784179688
+Time difference (ms) for multi-transform conflict check: 0.029802322387695312
+Time difference (ms) for injection conflict check: 0.026702880859375
+Time difference (ms) for occlusion conflict check: 0.07510185241699219
+Time difference (ms) for bypass conflict check: 1.7771720886230469
+Time difference (ms) in checking hidden conflicts for rule (2,0,4) = 0.0059604644775390625
+Time difference (ms) after this round of updating the rule graph = 38.693904876708984
+Average time difference (ms) in removing 0 rules from rule graph = 0
+Avarage time difference (ms) in adding 10 rules to rule graph = 1.9057989120483398
+Time difference (ms) for bypass/incomplete transform conflict check: 45.01700401306152
+
+2021-09-26 06:42:19.121454
+New rule is coming, number of existing rules: [67, {1: 7, 2: 4, 3: 8, 4: 2, 5: 10, 6: 6, 7: 4, 8: 3, 9: 11, 10: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,13) to the rule database = 1.2524127960205078
+
+2021-09-26 06:42:19.153655
+New rule is coming, number of existing rules: [68, {1: 7, 2: 4, 3: 8, 4: 2, 5: 10, 6: 6, 7: 4, 8: 3, 9: 11, 10: 13}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,12) to the rule database = 0.3514289855957031
+
+2021-09-26 06:42:24.427792
+New rule is coming, number of existing rules: [69, {1: 7, 2: 4, 3: 8, 4: 2, 5: 10, 6: 6, 7: 4, 8: 3, 9: 12, 10: 13}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,14) to the rule database = 1.6222000122070312
+Local Conflict - class Generalization2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:2
+Action Relationship Pattern:1
+Matchmap 1:(3, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, 42724, 5001)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.4', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [1], (3, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))
+
+2021-09-26 06:42:24.439308
+New rule is coming, number of existing rules: [70, {1: 7, 2: 4, 3: 8, 4: 2, 5: 10, 6: 6, 7: 4, 8: 3, 9: 12, 10: 14}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,15) to the rule database = 1.7261505126953125
+
+2021-09-26 06:42:24.441831
+New rule is coming, number of existing rules: [71, {1: 7, 2: 4, 3: 8, 4: 2, 5: 10, 6: 6, 7: 4, 8: 3, 9: 12, 10: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,16) to the rule database = 1.0042190551757812
+
+2021-09-26 06:42:24.443610
+New rule is coming, number of existing rules: [72, {1: 7, 2: 4, 3: 8, 4: 2, 5: 10, 6: 6, 7: 4, 8: 3, 9: 12, 10: 16}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,13) to the rule database = 0.7526874542236328
+
+2021-09-26 06:42:24.492830
+New rule is coming, number of existing rules: [73, {1: 7, 2: 4, 3: 8, 4: 2, 5: 10, 6: 6, 7: 4, 8: 3, 9: 13, 10: 16}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,8) to the rule database = 0.7588863372802734
+
+2021-09-26 06:42:24.494747
+New rule is coming, number of existing rules: [74, {1: 8, 2: 4, 3: 8, 4: 2, 5: 10, 6: 6, 7: 4, 8: 3, 9: 13, 10: 16}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,11) to the rule database = 0.7312297821044922
+
+2021-09-26 06:42:24.496355
+New rule is coming, number of existing rules: [75, {1: 8, 2: 4, 3: 8, 4: 2, 5: 11, 6: 6, 7: 4, 8: 3, 9: 13, 10: 16}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,9) to the rule database = 0.6661415100097656
+
+2021-09-26 06:42:24.498036
+New rule is coming, number of existing rules: [76, {1: 9, 2: 4, 3: 8, 4: 2, 5: 11, 6: 6, 7: 4, 8: 3, 9: 13, 10: 16}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,10) to the rule database = 0.5910396575927734
+
+2021-09-26 06:42:24.541148
+New rule is coming, number of existing rules: [77, {1: 10, 2: 4, 3: 8, 4: 2, 5: 11, 6: 6, 7: 4, 8: 3, 9: 13, 10: 16}]
+Time difference (ms) in checking local conflicts and adding new rule (6,0,7) to the rule database = 0.3337860107421875
+
+2021-09-26 06:42:29.693570
+New rule is coming, number of existing rules: [78, {1: 10, 2: 4, 3: 8, 4: 2, 5: 11, 6: 7, 7: 4, 8: 3, 9: 13, 10: 16}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,17) to the rule database = 1.1255741119384766
+
+2021-09-26 06:42:29.712150
+New rule is coming, number of existing rules: [79, {1: 10, 2: 4, 3: 8, 4: 2, 5: 11, 6: 7, 7: 4, 8: 3, 9: 13, 10: 17}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,11) to the rule database = 0.4305839538574219
+
+2021-09-26 06:42:29.713047
+New rule is coming, number of existing rules: [80, {1: 11, 2: 4, 3: 8, 4: 2, 5: 11, 6: 7, 7: 4, 8: 3, 9: 13, 10: 17}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,12) to the rule database = 0.31447410583496094
+
+2021-09-26 06:42:29.713725
+New rule is coming, number of existing rules: [81, {1: 11, 2: 4, 3: 8, 4: 2, 5: 12, 6: 7, 7: 4, 8: 3, 9: 13, 10: 17}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,12) to the rule database = 0.4830360412597656
+
+2021-09-26 06:42:34.932764
+New rule is coming, number of existing rules: [82, {1: 12, 2: 4, 3: 8, 4: 2, 5: 12, 6: 7, 7: 4, 8: 3, 9: 13, 10: 17}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,18) to the rule database = 0.7965564727783203
+Local Conflict - class Generalization2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:2
+Action Relationship Pattern:1
+Matchmap 1:(3, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, 53375, 5001)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.6', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [9], (3, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2}))
+
+2021-09-26 06:42:34.937387
+New rule is coming, number of existing rules: [83, {1: 12, 2: 4, 3: 8, 4: 2, 5: 12, 6: 7, 7: 4, 8: 3, 9: 13, 10: 18}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,19) to the rule database = 1.2454986572265625
+
+2021-09-26 06:42:34.939060
+New rule is coming, number of existing rules: [84, {1: 12, 2: 4, 3: 8, 4: 2, 5: 12, 6: 7, 7: 4, 8: 3, 9: 13, 10: 19}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,20) to the rule database = 0.8716583251953125
+
+2021-09-26 06:42:34.940406
+New rule is coming, number of existing rules: [85, {1: 12, 2: 4, 3: 8, 4: 2, 5: 12, 6: 7, 7: 4, 8: 3, 9: 13, 10: 20}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,14) to the rule database = 0.48351287841796875
+
+2021-09-26 06:42:34.960172
+New rule is coming, number of existing rules: [86, {1: 12, 2: 4, 3: 8, 4: 2, 5: 12, 6: 7, 7: 4, 8: 3, 9: 14, 10: 20}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,15) to the rule database = 0.9944438934326172
+Local Conflict - class Generalization2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:2
+Action Relationship Pattern:1
+Matchmap 1:(3, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, 53375, 5001)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.6', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))
+
+2021-09-26 06:42:34.965457
+New rule is coming, number of existing rules: [87, {1: 12, 2: 4, 3: 8, 4: 2, 5: 12, 6: 7, 7: 4, 8: 3, 9: 15, 10: 20}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,16) to the rule database = 0.9698867797851562
+
+2021-09-26 06:42:34.966784
+New rule is coming, number of existing rules: [88, {1: 12, 2: 4, 3: 8, 4: 2, 5: 12, 6: 7, 7: 4, 8: 3, 9: 16, 10: 20}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,17) to the rule database = 0.6079673767089844
+
+2021-09-26 06:42:34.967763
+New rule is coming, number of existing rules: [89, {1: 12, 2: 4, 3: 8, 4: 2, 5: 12, 6: 7, 7: 4, 8: 3, 9: 17, 10: 20}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,21) to the rule database = 0.7863044738769531
+
+2021-09-26 06:42:35.002475
+New rule is coming, number of existing rules: [90, {1: 12, 2: 4, 3: 8, 4: 2, 5: 12, 6: 7, 7: 4, 8: 3, 9: 17, 10: 21}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,4) to the rule database = 0.23174285888671875
+
+2021-09-26 06:42:35.004874
+New rule is coming, number of existing rules: [91, {1: 12, 2: 4, 3: 8, 4: 2, 5: 12, 6: 7, 7: 4, 8: 4, 9: 17, 10: 21}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,5) to the rule database = 0.1900196075439453
+
+2021-09-26 06:42:35.030818
+New rule is coming, number of existing rules: [92, {1: 12, 2: 4, 3: 8, 4: 2, 5: 12, 6: 7, 7: 4, 8: 5, 9: 17, 10: 21}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,13) to the rule database = 0.4189014434814453
+
+2021-09-26 06:42:35.031626
+New rule is coming, number of existing rules: [93, {1: 12, 2: 4, 3: 8, 4: 2, 5: 13, 6: 7, 7: 4, 8: 5, 9: 17, 10: 21}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,13) to the rule database = 0.5717277526855469
+
+2021-09-26 06:42:35.032577
+New rule is coming, number of existing rules: [94, {1: 13, 2: 4, 3: 8, 4: 2, 5: 13, 6: 7, 7: 4, 8: 5, 9: 17, 10: 21}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,14) to the rule database = 0.46372413635253906
+
+2021-09-26 06:42:35.072324
+New rule is coming, number of existing rules: [95, {1: 13, 2: 4, 3: 8, 4: 2, 5: 14, 6: 7, 7: 4, 8: 5, 9: 17, 10: 21}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,15) to the rule database = 0.5071163177490234
+
+2021-09-26 06:42:39.125828
+New rule is coming, number of existing rules: [96, {1: 13, 2: 4, 3: 8, 4: 2, 5: 15, 6: 7, 7: 4, 8: 5, 9: 17, 10: 21}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,18) to the rule database = 0.6840229034423828
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(2, 2048, 17, -1, '192.168.1.1', -1, -1, -1, -1)
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 42724, 'udp_src': 5001, 'ipv4_src': '192.168.1.5'}), [OFPActionSetField(eth_src='00:16:3e:11:11:04'), OFPActionSetField(ipv4_src='192.168.1.4'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (-1, 2048, 17, '192.168.1.5', '192.168.1.1', -1, -1, 5001, 42724), ('192.168.1.4', -1, -1, -1, -1, -1, {3}))
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(2, 2048, 17, -1, '192.168.1.1', -1, -1, -1, -1)
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 53375, 'udp_src': 5001, 'ipv4_src': '192.168.1.6'}), [OFPActionSetField(eth_src='00:16:3e:11:11:06'), OFPActionSetField(ipv4_src='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (-1, 2048, 17, '192.168.1.6', '192.168.1.1', -1, -1, 5001, 53375), ('192.168.1.6', -1, -1, -1, -1, -1, {3}))
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(2, 2048, 17, -1, '192.168.1.1', -1, -1, -1, -1)
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 53375, 'udp_src': 5001, 'ipv4_src': '192.168.1.7'}), [OFPActionSetField(eth_src='00:16:3e:11:11:06'), OFPActionSetField(ipv4_src='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), ('192.168.1.6', -1, -1, -1, -1, -1, {3}))
+
+2021-09-26 06:42:39.129764
+New rule is coming, number of existing rules: [97, {1: 13, 2: 4, 3: 8, 4: 2, 5: 15, 6: 7, 7: 4, 8: 5, 9: 18, 10: 21}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,22) to the rule database = 1.573801040649414
+
+2021-09-26 06:42:40.156130
+New rule is coming, number of existing rules: [98, {1: 13, 2: 4, 3: 8, 4: 2, 5: 15, 6: 7, 7: 4, 8: 5, 9: 18, 10: 22}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,23) to the rule database = 1.0523796081542969
+
+2021-09-26 06:42:40.186367
+New rule is coming, number of existing rules: [99, {1: 13, 2: 4, 3: 8, 4: 2, 5: 15, 6: 7, 7: 4, 8: 5, 9: 18, 10: 23}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,19) to the rule database = 0.7309913635253906
+
+2021-09-26 06:42:40.230133
+New rule is coming, number of existing rules: [100, {1: 13, 2: 4, 3: 8, 4: 2, 5: 15, 6: 7, 7: 4, 8: 5, 9: 19, 10: 23}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,16) to the rule database = 0.5927085876464844
+
+2021-09-26 06:42:40.231161
+New rule is coming, number of existing rules: [101, {1: 13, 2: 4, 3: 8, 4: 2, 5: 16, 6: 7, 7: 4, 8: 5, 9: 19, 10: 23}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,14) to the rule database = 0.5886554718017578
+
+2021-09-26 06:42:40.232174
+New rule is coming, number of existing rules: [102, {1: 14, 2: 4, 3: 8, 4: 2, 5: 16, 6: 7, 7: 4, 8: 5, 9: 19, 10: 23}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,17) to the rule database = 0.6213188171386719
+
+2021-09-26 06:42:44.435989
+New rule is coming, number of existing rules: [103, {1: 14, 2: 4, 3: 8, 4: 2, 5: 17, 6: 7, 7: 4, 8: 5, 9: 19, 10: 23}]
+Time difference (ms) in checking local conflicts and adding new rule (6,0,8) to the rule database = 0.3139972686767578
+
+2021-09-26 06:42:46.540307
+New rule is coming, number of existing rules: [104, {1: 14, 2: 4, 3: 8, 4: 2, 5: 17, 6: 8, 7: 4, 8: 5, 9: 19, 10: 23}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,9) to the rule database = 0.3364086151123047
+
+2021-09-26 06:42:46.546644
+New rule is coming, number of existing rules: [105, {1: 14, 2: 4, 3: 9, 4: 2, 5: 17, 6: 8, 7: 4, 8: 5, 9: 19, 10: 23}]
+Time difference (ms) in checking local conflicts and adding new rule (4,0,3) to the rule database = 0.110626220703125
+
+2021-09-26 06:42:46.557787
+New rule is coming, number of existing rules: [106, {1: 14, 2: 4, 3: 9, 4: 3, 5: 17, 6: 8, 7: 4, 8: 5, 9: 19, 10: 23}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,20) to the rule database = 0.9379386901855469
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.1', -1, -1, -1, -1)
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 42724, 'udp_src': 5001, 'ipv4_src': '192.168.1.5'}), [OFPActionSetField(eth_src='00:16:3e:11:11:04'), OFPActionSetField(ipv4_src='192.168.1.4'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (-1, 2048, 17, '192.168.1.5', '192.168.1.1', -1, -1, 5001, 42724), ('192.168.1.4', -1, -1, -1, -1, -1, {3}))
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.1', -1, -1, -1, -1)
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 53375, 'udp_src': 5001, 'ipv4_src': '192.168.1.6'}), [OFPActionSetField(eth_src='00:16:3e:11:11:06'), OFPActionSetField(ipv4_src='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (-1, 2048, 17, '192.168.1.6', '192.168.1.1', -1, -1, 5001, 53375), ('192.168.1.6', -1, -1, -1, -1, -1, {3}))
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.1', -1, -1, -1, -1)
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 53375, 'udp_src': 5001, 'ipv4_src': '192.168.1.7'}), [OFPActionSetField(eth_src='00:16:3e:11:11:06'), OFPActionSetField(ipv4_src='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), ('192.168.1.6', -1, -1, -1, -1, -1, {3}))
+
+2021-09-26 06:42:49.704371
+New rule is coming, number of existing rules: [107, {1: 14, 2: 4, 3: 9, 4: 3, 5: 17, 6: 8, 7: 4, 8: 5, 9: 20, 10: 23}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,24) to the rule database = 1.9097328186035156
+
+2021-09-26 06:42:51.780947
+New rule is coming, number of existing rules: [108, {1: 14, 2: 4, 3: 9, 4: 3, 5: 17, 6: 8, 7: 4, 8: 5, 9: 20, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,10) to the rule database = 0.3821849822998047
+
+2021-09-26 06:42:51.787523
+New rule is coming, number of existing rules: [109, {1: 14, 2: 4, 3: 10, 4: 3, 5: 17, 6: 8, 7: 4, 8: 5, 9: 20, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (7,0,5) to the rule database = 0.16307830810546875
+
+2021-09-26 06:42:51.798262
+New rule is coming, number of existing rules: [110, {1: 14, 2: 4, 3: 10, 4: 3, 5: 17, 6: 8, 7: 5, 8: 5, 9: 20, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (6,0,9) to the rule database = 0.2453327178955078
+
+2021-09-26 06:42:54.946726
+New rule is coming, number of existing rules: [111, {1: 14, 2: 4, 3: 10, 4: 3, 5: 17, 6: 9, 7: 5, 8: 5, 9: 20, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,6) to the rule database = 0.19025802612304688
+
+2021-09-26 06:42:57.017179
+New rule is coming, number of existing rules: [112, {1: 14, 2: 4, 3: 10, 4: 3, 5: 17, 6: 9, 7: 5, 8: 6, 9: 20, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,11) to the rule database = 0.49185752868652344
+
+2021-09-26 06:42:57.023820
+New rule is coming, number of existing rules: [113, {1: 14, 2: 4, 3: 11, 4: 3, 5: 17, 6: 9, 7: 5, 8: 6, 9: 20, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (7,0,6) to the rule database = 0.22745132446289062
+
+2021-09-26 06:42:57.035207
+New rule is coming, number of existing rules: [114, {1: 14, 2: 4, 3: 11, 4: 3, 5: 17, 6: 9, 7: 6, 8: 6, 9: 20, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (6,0,10) to the rule database = 0.3337860107421875
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, -1)
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 53375, 'udp_src': 5001, 'ipv4_src': '192.168.1.7'}), [OFPActionSetField(eth_src='00:16:3e:11:11:06'), OFPActionSetField(ipv4_src='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [10], (-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), ('192.168.1.6', -1, -1, -1, -1, -1, {3}))
+
+2021-09-26 06:43:00.172634
+New rule is coming, number of existing rules: [115, {1: 14, 2: 4, 3: 11, 4: 3, 5: 17, 6: 10, 7: 6, 8: 6, 9: 20, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,21) to the rule database = 1.4309883117675781
+
+2021-09-26 06:43:02.265205
+New rule is coming, number of existing rules: [116, {1: 14, 2: 4, 3: 11, 4: 3, 5: 17, 6: 10, 7: 6, 8: 6, 9: 21, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,12) to the rule database = 0.5037784576416016
+
+2021-09-26 06:43:02.271812
+New rule is coming, number of existing rules: [117, {1: 14, 2: 4, 3: 12, 4: 3, 5: 17, 6: 10, 7: 6, 8: 6, 9: 21, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,5) to the rule database = 0.14591217041015625
+
+2021-09-26 06:43:02.283188
+New rule is coming, number of existing rules: [118, {1: 14, 2: 5, 3: 12, 4: 3, 5: 17, 6: 10, 7: 6, 8: 6, 9: 21, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,18) to the rule database = 0.6215572357177734
+
+2021-09-26 06:43:06.555045
+New rule is coming, number of existing rules: [119, {1: 14, 2: 5, 3: 12, 4: 3, 5: 18, 6: 10, 7: 6, 8: 6, 9: 21, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (9,0,22) to the rule database = 0.9007453918457031
+
+2021-09-26 06:43:06.560240
+New rule is coming, number of existing rules: [120, {1: 14, 2: 5, 3: 12, 4: 3, 5: 18, 6: 10, 7: 6, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (4,0,4) to the rule database = 0.14162063598632812
+
+2021-09-26 06:43:06.563943
+New rule is coming, number of existing rules: [121, {1: 14, 2: 5, 3: 12, 4: 4, 5: 18, 6: 10, 7: 6, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,13) to the rule database = 0.37407875061035156
+
+2021-09-26 06:43:07.490468
+New rule is coming, number of existing rules: [122, {1: 14, 2: 5, 3: 13, 4: 4, 5: 18, 6: 10, 7: 6, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,14) to the rule database = 0.8141994476318359
+
+2021-09-26 06:43:07.501956
+New rule is coming, number of existing rules: [123, {1: 14, 2: 5, 3: 14, 4: 4, 5: 18, 6: 10, 7: 6, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,6) to the rule database = 0.2675056457519531
+
+2021-09-26 06:43:07.521350
+New rule is coming, number of existing rules: [124, {1: 14, 2: 6, 3: 14, 4: 4, 5: 18, 6: 10, 7: 6, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,19) to the rule database = 0.896453857421875
+
+2021-09-26 06:43:07.522694
+New rule is coming, number of existing rules: [125, {1: 14, 2: 6, 3: 14, 4: 4, 5: 19, 6: 10, 7: 6, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,15) to the rule database = 0.6418228149414062
+
+2021-09-26 06:43:07.523724
+New rule is coming, number of existing rules: [126, {1: 15, 2: 6, 3: 14, 4: 4, 5: 19, 6: 10, 7: 6, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,20) to the rule database = 0.7045269012451172
+
+2021-09-26 06:43:11.789830
+New rule is coming, number of existing rules: [127, {1: 15, 2: 6, 3: 14, 4: 4, 5: 20, 6: 10, 7: 6, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (6,0,11) to the rule database = 0.4553794860839844
+
+2021-09-26 06:43:11.797623
+New rule is coming, number of existing rules: [128, {1: 15, 2: 6, 3: 14, 4: 4, 5: 20, 6: 11, 7: 6, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (7,0,7) to the rule database = 0.6079673767089844
+
+2021-09-26 06:43:11.804517
+New rule is coming, number of existing rules: [129, {1: 15, 2: 6, 3: 14, 4: 4, 5: 20, 6: 11, 7: 7, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,15) to the rule database = 0.3628730773925781
+
+2021-09-26 06:43:17.034678
+New rule is coming, number of existing rules: [130, {1: 15, 2: 6, 3: 15, 4: 4, 5: 20, 6: 11, 7: 7, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (6,0,12) to the rule database = 0.4634857177734375
+
+2021-09-26 06:43:17.042568
+New rule is coming, number of existing rules: [131, {1: 15, 2: 6, 3: 15, 4: 4, 5: 20, 6: 12, 7: 7, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (7,0,8) to the rule database = 0.8502006530761719
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(5, 2048, 17, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1)
+Matchmap 2:(1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'udp_dst': 37517, 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.3'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (-1, 2048, 17, '192.168.1.6', '192.168.1.3', -1, -1, -1, 37517), ('192.168.1.7', -1, -1, -1, -1, -1, {1}))
+
+2021-09-26 06:43:22.293772
+New rule is coming, number of existing rules: [132, {1: 15, 2: 6, 3: 15, 4: 4, 5: 20, 6: 12, 7: 8, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,21) to the rule database = 3.619670867919922
+
+2021-09-26 06:43:22.305712
+New rule is coming, number of existing rules: [133, {1: 15, 2: 6, 3: 15, 4: 4, 5: 21, 6: 12, 7: 8, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,7) to the rule database = 0.7369518280029297
+
+2021-09-26 06:43:22.314838
+New rule is coming, number of existing rules: [134, {1: 15, 2: 7, 3: 15, 4: 4, 5: 21, 6: 12, 7: 8, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,16) to the rule database = 1.1844635009765625
+
+2021-09-26 06:43:27.504459
+New rule is coming, number of existing rules: [135, {1: 15, 2: 7, 3: 16, 4: 4, 5: 21, 6: 12, 7: 8, 8: 6, 9: 22, 10: 24}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,8) to the rule database = 0.9098052978515625
+
+
+2021-09-26 06:43:38.409699
+Number of existing rules: [136, {1: 15, 2: 8, 3: 16, 4: 4, 5: 21, 6: 12, 7: 8, 8: 6, 9: 22, 10: 24}]
+number of edges in rule graph = 78
+number of rules to be removed = 0
+number of rules to be added = 69
+Time difference (ms) in checking hidden conflicts for rule (10,0,13) = 0.4298686981201172
+Time difference (ms) in adding rule (10,0,13) to the rule graph = 1.6949176788330078
+Time difference (ms) in checking hidden conflicts for rule (9,0,12) = 0.3921985626220703
+Time difference (ms) in adding rule (9,0,12) to the rule graph = 1.3241767883300781
+Time difference (ms) in checking hidden conflicts for rule (10,0,14) = 0.37860870361328125
+Time difference (ms) in adding rule (10,0,14) to the rule graph = 1.956939697265625
+Time difference (ms) in checking hidden conflicts for rule (10,0,15) = 0.2694129943847656
+Time difference (ms) in adding rule (10,0,15) to the rule graph = 1.7697811126708984
+Time difference (ms) for multi-transform conflict check: 0.11396408081054688
+Time difference (ms) for injection conflict check: 0.06079673767089844
+Time difference (ms) for occlusion conflict check: 0.3533363342285156
+Time difference (ms) for bypass conflict check: 7.761240005493164
+Time difference (ms) in checking hidden conflicts for rule (10,0,16) = 0.23818016052246094
+Time difference (ms) in adding rule (10,0,16) to the rule graph = 2.7837753295898438
+Time difference (ms) for multi-transform conflict check: 0.06604194641113281
+Time difference (ms) for injection conflict check: 0.11038780212402344
+Time difference (ms) for occlusion conflict check: 0.011205673217773438
+Time difference (ms) for bypass conflict check: 6.687402725219727
+Time difference (ms) in checking hidden conflicts for rule (9,0,13) = 0.14591217041015625
+Time difference (ms) in adding rule (9,0,13) to the rule graph = 0.8730888366699219
+Time difference (ms) for multi-transform conflict check: 0.01811981201171875
+Time difference (ms) for injection conflict check: 0.014066696166992188
+Time difference (ms) for occlusion conflict check: 0.0069141387939453125
+Time difference (ms) for bypass conflict check: 4.504680633544922
+Time difference (ms) in checking hidden conflicts for rule (1,0,8) = 0.11324882507324219
+Time difference (ms) in checking hidden conflicts for rule (5,0,11) = 0.07772445678710938
+Time difference (ms) in adding rule (5,0,11) to the rule graph = 0.3921985626220703
+Time difference (ms) for multi-transform conflict check: 0.016689300537109375
+Time difference (ms) for injection conflict check: 0.014543533325195312
+Time difference (ms) for occlusion conflict check: 0.0069141387939453125
+Time difference (ms) for bypass conflict check: 4.508495330810547
+Time difference (ms) in checking hidden conflicts for rule (1,0,9) = 0.09250640869140625
+Time difference (ms) in adding rule (1,0,9) to the rule graph = 1.1126995086669922
+Time difference (ms) for multi-transform conflict check: 0.045299530029296875
+Time difference (ms) for injection conflict check: 0.080108642578125
+Time difference (ms) for occlusion conflict check: 0.07462501525878906
+Time difference (ms) for bypass conflict check: 3.3266544342041016
+Time difference (ms) in checking hidden conflicts for rule (1,0,10) = 0.09846687316894531
+Time difference (ms) in adding rule (1,0,10) to the rule graph = 0.41103363037109375
+Time difference (ms) in checking hidden conflicts for rule (6,0,7) = 0.0057220458984375
+Time difference (ms) in adding rule (6,0,7) to the rule graph = 0.5834102630615234
+Time difference (ms) in checking hidden conflicts for rule (10,0,17) = 0.0820159912109375
+Time difference (ms) in checking hidden conflicts for rule (1,0,11) = 0.08821487426757812
+Time difference (ms) in adding rule (1,0,11) to the rule graph = 0.5123615264892578
+Time difference (ms) for multi-transform conflict check: 0.024557113647460938
+Time difference (ms) for injection conflict check: 0.021219253540039062
+Time difference (ms) for occlusion conflict check: 0.0069141387939453125
+Time difference (ms) for bypass conflict check: 4.549980163574219
+Time difference (ms) in checking hidden conflicts for rule (5,0,12) = 0.10061264038085938
+Time difference (ms) in adding rule (5,0,12) to the rule graph = 0.3871917724609375
+Time difference (ms) for multi-transform conflict check: 0.016927719116210938
+Time difference (ms) for injection conflict check: 0.014066696166992188
+Time difference (ms) for occlusion conflict check: 0.0069141387939453125
+Time difference (ms) for bypass conflict check: 5.795955657958984
+Time difference (ms) in checking hidden conflicts for rule (1,0,12) = 0.09369850158691406
+Time difference (ms) in adding rule (1,0,12) to the rule graph = 0.3592967987060547
+Time difference (ms) for multi-transform conflict check: 0.024557113647460938
+Time difference (ms) for injection conflict check: 0.021457672119140625
+Time difference (ms) for occlusion conflict check: 0.08654594421386719
+Time difference (ms) for bypass conflict check: 3.3004283905029297
+Time difference (ms) in checking hidden conflicts for rule (10,0,18) = 0.10037422180175781
+Time difference (ms) in adding rule (10,0,18) to the rule graph = 1.5017986297607422
+Time difference (ms) in checking hidden conflicts for rule (10,0,19) = 0.07152557373046875
+Time difference (ms) in adding rule (10,0,19) to the rule graph = 1.493215560913086
+Time difference (ms) for multi-transform conflict check: 0.017881393432617188
+Time difference (ms) for injection conflict check: 0.014543533325195312
+Time difference (ms) for occlusion conflict check: 0.07772445678710938
+Time difference (ms) for bypass conflict check: 2.0227432250976562
+Time difference (ms) in checking hidden conflicts for rule (10,0,20) = 0.10180473327636719
+Time difference (ms) in adding rule (10,0,20) to the rule graph = 3.9038658142089844
+Time difference (ms) for multi-transform conflict check: 0.08869171142578125
+Time difference (ms) for injection conflict check: 0.12230873107910156
+Time difference (ms) for occlusion conflict check: 0.00667572021484375
+Time difference (ms) for bypass conflict check: 3.8442611694335938
+Time difference (ms) in checking hidden conflicts for rule (9,0,14) = 0.10037422180175781
+Time difference (ms) in checking hidden conflicts for rule (9,0,15) = 0.07104873657226562
+Time difference (ms) in adding rule (9,0,15) to the rule graph = 1.3377666473388672
+Time difference (ms) in checking hidden conflicts for rule (9,0,16) = 0.07176399230957031
+Time difference (ms) in adding rule (9,0,16) to the rule graph = 1.3468265533447266
+Time difference (ms) for multi-transform conflict check: 0.03933906555175781
+Time difference (ms) for injection conflict check: 0.03147125244140625
+Time difference (ms) for occlusion conflict check: 0.08606910705566406
+Time difference (ms) for bypass conflict check: 1.9524097442626953
+Time difference (ms) in checking hidden conflicts for rule (9,0,17) = 0.09417533874511719
+Time difference (ms) in checking hidden conflicts for rule (10,0,21) = 0.0858306884765625
+Time difference (ms) in adding rule (10,0,21) to the rule graph = 1.2531280517578125
+Time difference (ms) for multi-transform conflict check: 0.06699562072753906
+Time difference (ms) for injection conflict check: 0.18477439880371094
+Time difference (ms) for occlusion conflict check: 0.0069141387939453125
+Time difference (ms) for bypass conflict check: 3.863096237182617
+Time difference (ms) in checking hidden conflicts for rule (8,0,4) = 0.0059604644775390625
+Time difference (ms) in adding rule (8,0,4) to the rule graph = 1.2013912200927734
+Time difference (ms) in checking hidden conflicts for rule (8,0,5) = 0.005245208740234375
+Time difference (ms) in adding rule (8,0,5) to the rule graph = 2.0766258239746094
+Time difference (ms) in checking hidden conflicts for rule (5,0,13) = 0.12922286987304688
+Time difference (ms) in checking hidden conflicts for rule (1,0,13) = 0.08630752563476562
+Time difference (ms) in checking hidden conflicts for rule (5,0,14) = 0.08654594421386719
+Time difference (ms) in adding rule (5,0,14) to the rule graph = 0.41604042053222656
+Time difference (ms) for multi-transform conflict check: 0.06961822509765625
+Time difference (ms) for injection conflict check: 0.15044212341308594
+Time difference (ms) for occlusion conflict check: 0.06866455078125
+Time difference (ms) for bypass conflict check: 2.012968063354492
+Time difference (ms) in checking hidden conflicts for rule (5,0,15) = 0.10037422180175781
+Time difference (ms) in adding rule (5,0,15) to the rule graph = 0.3952980041503906
+Time difference (ms) in checking hidden conflicts for rule (9,0,18) = 0.08344650268554688
+Time difference (ms) in adding rule (9,0,18) to the rule graph = 0.3688335418701172
+Time difference (ms) in checking hidden conflicts for rule (10,0,22) = 0.080108642578125
+Time difference (ms) in adding rule (10,0,22) to the rule graph = 0.7104873657226562
+Time difference (ms) in checking hidden conflicts for rule (10,0,23) = 0.09179115295410156
+Time difference (ms) in checking hidden conflicts for rule (9,0,19) = 0.07534027099609375
+Time difference (ms) in checking hidden conflicts for rule (5,0,16) = 0.07414817810058594
+Time difference (ms) in checking hidden conflicts for rule (1,0,14) = 0.07271766662597656
+Time difference (ms) in adding rule (1,0,14) to the rule graph = 0.5233287811279297
+Time difference (ms) for multi-transform conflict check: 0.01621246337890625
+Time difference (ms) for injection conflict check: 0.014066696166992188
+Time difference (ms) for occlusion conflict check: 0.00667572021484375
+Time difference (ms) for bypass conflict check: 4.730463027954102
+Time difference (ms) in checking hidden conflicts for rule (5,0,17) = 0.11491775512695312
+Time difference (ms) in adding rule (5,0,17) to the rule graph = 0.36072731018066406
+Time difference (ms) for multi-transform conflict check: 0.06961822509765625
+Time difference (ms) for injection conflict check: 0.15115737915039062
+Time difference (ms) for occlusion conflict check: 0.06914138793945312
+Time difference (ms) for bypass conflict check: 2.325296401977539
+Time difference (ms) in checking hidden conflicts for rule (6,0,8) = 0.0059604644775390625
+Time difference (ms) in checking hidden conflicts for rule (3,0,9) = 0.014543533325195312
+Time difference (ms) in adding rule (3,0,9) to the rule graph = 0.461578369140625
+Time difference (ms) in checking hidden conflicts for rule (4,0,3) = 0.0057220458984375
+Time difference (ms) in adding rule (4,0,3) to the rule graph = 0.3800392150878906
+Time difference (ms) in checking hidden conflicts for rule (9,0,20) = 0.08249282836914062
+Time difference (ms) in adding rule (9,0,20) to the rule graph = 0.21719932556152344
+Time difference (ms) in checking hidden conflicts for rule (10,0,24) = 0.08440017700195312
+Time difference (ms) in adding rule (10,0,24) to the rule graph = 0.5476474761962891
+Time difference (ms) in checking hidden conflicts for rule (3,0,10) = 0.005245208740234375
+Time difference (ms) in adding rule (3,0,10) to the rule graph = 0.3535747528076172
+Time difference (ms) in checking hidden conflicts for rule (7,0,5) = 0.0050067901611328125
+Time difference (ms) in adding rule (7,0,5) to the rule graph = 0.35953521728515625
+Time difference (ms) in checking hidden conflicts for rule (6,0,9) = 0.005245208740234375
+Time difference (ms) in adding rule (6,0,9) to the rule graph = 0.2753734588623047
+Time difference (ms) in checking hidden conflicts for rule (8,0,6) = 0.0050067901611328125
+Time difference (ms) in checking hidden conflicts for rule (3,0,11) = 0.004291534423828125
+Time difference (ms) in adding rule (3,0,11) to the rule graph = 0.37670135498046875
+Time difference (ms) in checking hidden conflicts for rule (7,0,6) = 0.005245208740234375
+Time difference (ms) in adding rule (7,0,6) to the rule graph = 0.37479400634765625
+Time difference (ms) in checking hidden conflicts for rule (6,0,10) = 0.0054836273193359375
+Time difference (ms) in adding rule (6,0,10) to the rule graph = 0.2753734588623047
+Time difference (ms) in checking hidden conflicts for rule (9,0,21) = 0.08487701416015625
+Time difference (ms) in adding rule (9,0,21) to the rule graph = 0.8099079132080078
+Time difference (ms) in checking hidden conflicts for rule (3,0,12) = 0.0054836273193359375
+Time difference (ms) in adding rule (3,0,12) to the rule graph = 0.5702972412109375
+Time difference (ms) in checking hidden conflicts for rule (2,0,5) = 0.005245208740234375
+Time difference (ms) in adding rule (2,0,5) to the rule graph = 0.5724430084228516
+Time difference (ms) in checking hidden conflicts for rule (5,0,18) = 0.08392333984375
+Time difference (ms) in adding rule (5,0,18) to the rule graph = 0.2677440643310547
+Time difference (ms) in checking hidden conflicts for rule (9,0,22) = 0.0858306884765625
+Time difference (ms) in adding rule (9,0,22) to the rule graph = 0.29468536376953125
+Time difference (ms) in checking hidden conflicts for rule (4,0,4) = 0.0050067901611328125
+Time difference (ms) in adding rule (4,0,4) to the rule graph = 0.22220611572265625
+Time difference (ms) in checking hidden conflicts for rule (3,0,13) = 0.00476837158203125
+Time difference (ms) in adding rule (3,0,13) to the rule graph = 0.1952648162841797
+Time difference (ms) in checking hidden conflicts for rule (3,0,14) = 0.00476837158203125
+Time difference (ms) in adding rule (3,0,14) to the rule graph = 0.6406307220458984
+Time difference (ms) in checking hidden conflicts for rule (2,0,6) = 0.005245208740234375
+Time difference (ms) in adding rule (2,0,6) to the rule graph = 0.5652904510498047
+Time difference (ms) in checking hidden conflicts for rule (5,0,19) = 0.08225440979003906
+Time difference (ms) in adding rule (5,0,19) to the rule graph = 0.5252361297607422
+Time difference (ms) for multi-transform conflict check: 0.015974044799804688
+Time difference (ms) for injection conflict check: 0.01430511474609375
+Time difference (ms) for occlusion conflict check: 0.00667572021484375
+Time difference (ms) for bypass conflict check: 2.2521018981933594
+Time difference (ms) in checking hidden conflicts for rule (1,0,15) = 0.11134147644042969
+Time difference (ms) in adding rule (1,0,15) to the rule graph = 0.35691261291503906
+Time difference (ms) for multi-transform conflict check: 0.016450881958007812
+Time difference (ms) for injection conflict check: 0.013589859008789062
+Time difference (ms) for occlusion conflict check: 0.0069141387939453125
+Time difference (ms) for bypass conflict check: 2.2068023681640625
+Time difference (ms) in checking hidden conflicts for rule (5,0,20) = 0.110626220703125
+Time difference (ms) in adding rule (5,0,20) to the rule graph = 0.2880096435546875
+Time difference (ms) for multi-transform conflict check: 0.030040740966796875
+Time difference (ms) for injection conflict check: 0.027418136596679688
+Time difference (ms) for occlusion conflict check: 0.0782012939453125
+Time difference (ms) for bypass conflict check: 1.7118453979492188
+Time difference (ms) in checking hidden conflicts for rule (6,0,11) = 0.0057220458984375
+Time difference (ms) in adding rule (6,0,11) to the rule graph = 0.400543212890625
+Time difference (ms) in checking hidden conflicts for rule (7,0,7) = 0.0057220458984375
+Time difference (ms) in adding rule (7,0,7) to the rule graph = 0.3311634063720703
+Time difference (ms) in checking hidden conflicts for rule (3,0,15) = 0.0050067901611328125
+Time difference (ms) in adding rule (3,0,15) to the rule graph = 0.7410049438476562
+Time difference (ms) in checking hidden conflicts for rule (6,0,12) = 0.005245208740234375
+Time difference (ms) in checking hidden conflicts for rule (7,0,8) = 0.0050067901611328125
+Time difference (ms) in checking hidden conflicts for rule (5,0,21) = 0.09250640869140625
+Time difference (ms) in adding rule (5,0,21) to the rule graph = 0.3135204315185547
+Time difference (ms) in checking hidden conflicts for rule (2,0,7) = 0.0050067901611328125
+Time difference (ms) in adding rule (2,0,7) to the rule graph = 0.33164024353027344
+Time difference (ms) in checking hidden conflicts for rule (3,0,16) = 0.0050067901611328125
+Time difference (ms) in adding rule (3,0,16) to the rule graph = 0.3185272216796875
+Time difference (ms) in checking hidden conflicts for rule (2,0,8) = 0.00476837158203125
+Time difference (ms) in adding rule (2,0,8) to the rule graph = 0.3457069396972656
+Time difference (ms) after this round of updating the rule graph = 42.76275634765625
+Average time difference (ms) in removing 0 rules from rule graph = 0
+Avarage time difference (ms) in adding 10 rules to rule graph = 1.2902021408081055
+Time difference (ms) for bypass/incomplete transform conflict check: 47.888994216918945
+
+
+2021-09-26 06:43:48.603633
+number of edges in rule graph = 156
+((3, 0, 2), (0, '192.168.1.3')) {((9, 0, 11), (4, 0, 2), (3, 0, 2), (0, '192.168.1.3')): ((-1, 2048, 6, '192.168.1.2', '192.168.1.3', -1, -1, -1, -1), -1), ((3, 0, 2), (0, '192.168.1.3')): ((2, 2048, 6, -1, '192.168.1.3', -1, -1, -1, -1), -1)}
+((8, 0, 6), (9, 0, 21)) {((5, 0, 13), (8, 0, 6), (9, 0, 21)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, 53375), 1), ((8, 0, 6), (9, 0, 21)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, -1), 1), ((5, 0, 16), (8, 0, 6), (9, 0, 21)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, 37244), 1)}
+((8, 0, 6), (9, 0, 17)) {((5, 0, 13), (8, 0, 6), (9, 0, 17)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), 2), ((8, 0, 6), (9, 0, 17)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), 2)}
+((10, 0, 21), (0, '192.168.1.1')) {((8, 0, 6), (9, 0, 21), (10, 0, 21), (0, '192.168.1.1')): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), -1), ((5, 0, 13), (8, 0, 6), (9, 0, 21), (10, 0, 21), (0, '192.168.1.1')): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), -1), ((10, 0, 21), (0, '192.168.1.1')): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), -1)}
+((9, 0, 5), (8, 0, 1)) {((10, 0, 8), (9, 0, 5), (8, 0, 1)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), 1), ((9, 0, 5), (8, 0, 1)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), 1), ((10, 0, 9), (9, 0, 5), (8, 0, 1)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', 43076, 3416, -1, -1), 1)}
+((2, 0, 8), (3, 0, 16)) {((2, 0, 8), (3, 0, 16)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.3', -1, -1, -1, -1), 1), ((5, 0, 19), (2, 0, 8), (3, 0, 16)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.3', -1, -1, -1, 37517), 1)}
+((3, 0, 3), (7, 0, 1)) {((3, 0, 3), (7, 0, 1)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.4', -1, -1, -1, -1), 1)}
+((8, 0, 5), (5, 0, 14)) {((10, 0, 23), (9, 0, 19), (8, 0, 5), (5, 0, 14)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 53375, -1), 4), ((9, 0, 16), (8, 0, 5), (5, 0, 14)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 53375, 5001), 4), ((10, 0, 18), (9, 0, 16), (8, 0, 5), (5, 0, 14)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 53375, 5001), 4), ((8, 0, 5), (5, 0, 14)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 53375, -1), 4), ((10, 0, 19), (9, 0, 16), (8, 0, 5), (5, 0, 14)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 53375, 5001), 4)}
+((8, 0, 5), (5, 0, 17)) {((8, 0, 5), (5, 0, 17)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 37244, -1), 4), ((10, 0, 23), (9, 0, 19), (8, 0, 5), (5, 0, 17)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 37244, -1), 4)}
+((6, 0, 1), (0, '192.168.1.4')) {((10, 0, 3), (1, 0, 1), (6, 0, 1), (0, '192.168.1.4')): ((-1, 2048, 6, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1), -1), ((6, 0, 1), (0, '192.168.1.4')): ((1, 2048, 6, -1, '192.168.1.4', -1, -1, -1, -1), -1), ((10, 0, 4), (1, 0, 1), (6, 0, 1), (0, '192.168.1.4')): ((-1, 2048, 6, '192.168.1.1', '192.168.1.4', 39634, 3414, -1, -1), -1)}
+((3, 0, 4), (0, '192.168.1.3')) {((3, 0, 4), (0, '192.168.1.3')): ((3, 2048, 6, -1, '192.168.1.3', -1, -1, -1, -1), -1), ((6, 0, 4), (7, 0, 2), (3, 0, 4), (0, '192.168.1.3')): ((-1, 2048, 6, '192.168.1.4', '192.168.1.3', -1, -1, -1, -1), -1)}
+((9, 0, 15), (8, 0, 4)) {((9, 0, 15), (8, 0, 4)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), 1), ((10, 0, 19), (9, 0, 15), (8, 0, 4)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, 53375, 5001), 1), ((10, 0, 18), (9, 0, 15), (8, 0, 4)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), 1)}
+((10, 0, 23), (9, 0, 19)) {((10, 0, 23), (9, 0, 19)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, -1, -1), 1)}
+((3, 0, 5), (7, 0, 3)) {((3, 0, 5), (7, 0, 3)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.5', -1, -1, -1, -1), 1)}
+((8, 0, 3), (9, 0, 7)) {((5, 0, 2), (8, 0, 3), (9, 0, 7)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1), 2), ((8, 0, 3), (9, 0, 7)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1), 2)}
+((8, 0, 3), (9, 0, 9)) {((8, 0, 3), (9, 0, 9)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, -1, -1, -1), 1), ((5, 0, 5), (8, 0, 3), (9, 0, 9)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, 52756, -1, -1), 1), ((5, 0, 2), (8, 0, 3), (9, 0, 9)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, 43076, -1, -1), 1)}
+((9, 0, 3), (10, 0, 5)) {((9, 0, 3), (10, 0, 5)): ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', 3414, 39634, -1, -1), 2)}
+((9, 0, 3), (10, 0, 2)) {((9, 0, 3), (10, 0, 2)): ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', 3414, 39634, -1, -1), 1)}
+((9, 0, 8), (8, 0, 2)) {((10, 0, 12), (9, 0, 8), (8, 0, 2)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', -1, -1, -1, -1), 1), ((9, 0, 8), (8, 0, 2)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', -1, -1, -1, -1), 1)}
+((2, 0, 5), (5, 0, 18)) {((3, 0, 12), (2, 0, 5), (5, 0, 18)): ((-1, 2048, 17, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), 1), ((2, 0, 5), (5, 0, 18)): ((-1, 2048, 17, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), 1)}
+((3, 0, 6), (2, 0, 1)) {((3, 0, 6), (2, 0, 1)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), 1)}
+((8, 0, 2), (5, 0, 6)) {((8, 0, 2), (5, 0, 6)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', 52756, -1, -1, -1), 4), ((10, 0, 12), (9, 0, 8), (8, 0, 2), (5, 0, 6)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', 52756, -1, -1, -1), 4)}
+((8, 0, 2), (5, 0, 3)) {((10, 0, 12), (9, 0, 8), (8, 0, 2), (5, 0, 3)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', 43076, -1, -1, -1), 4), ((10, 0, 8), (9, 0, 6), (8, 0, 2), (5, 0, 3)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', 43076, 3416, -1, -1), 4), ((10, 0, 9), (9, 0, 6), (8, 0, 2), (5, 0, 3)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', 43076, 3416, -1, -1), 4), ((8, 0, 2), (5, 0, 3)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', 43076, -1, -1, -1), 4), ((9, 0, 6), (8, 0, 2), (5, 0, 3)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', 43076, 3416, -1, -1), 4)}
+((10, 0, 17), (1, 0, 12)) {((10, 0, 17), (1, 0, 12)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.5', -1, -1, 57073, -1), 4)}
+((10, 0, 17), (1, 0, 9)) {((10, 0, 17), (1, 0, 9)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.5', -1, -1, 42724, -1), 4)}
+((9, 0, 9), (10, 0, 2)) {((9, 0, 9), (10, 0, 2)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, -1, -1, -1), 1), ((8, 0, 3), (9, 0, 9), (10, 0, 2)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, -1, -1, -1), 1), ((5, 0, 5), (8, 0, 3), (9, 0, 9), (10, 0, 2)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, 52756, -1, -1), 1), ((5, 0, 2), (8, 0, 3), (9, 0, 9), (10, 0, 2)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, 43076, -1, -1), 1)}
+((9, 0, 9), (10, 0, 11)) {((9, 0, 9), (10, 0, 11)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1), 2), ((5, 0, 2), (8, 0, 3), (9, 0, 9), (10, 0, 11)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1), 2), ((8, 0, 3), (9, 0, 9), (10, 0, 11)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1), 2)}
+((2, 0, 4), (3, 0, 7)) {((2, 0, 4), (3, 0, 7)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.3', -1, -1, -1, -1), 1), ((5, 0, 9), (2, 0, 4), (3, 0, 7)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.3', -1, 35484, -1, -1), 1)}
+((9, 0, 13), (10, 0, 22)) {((9, 0, 13), (10, 0, 22)): ((-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, 5001, 42724), 1)}
+((3, 0, 7), (0, '192.168.1.3')) {((5, 0, 8), (2, 0, 2), (3, 0, 7), (0, '192.168.1.3')): ((-1, 2048, 6, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), -1), ((3, 0, 7), (0, '192.168.1.3')): ((1, 2048, 6, -1, '192.168.1.3', -1, -1, -1, -1), -1)}
+((8, 0, 1), (5, 0, 4)) {((10, 0, 9), (9, 0, 5), (8, 0, 1), (5, 0, 4)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', 43076, 3416, -1, -1), 1), ((10, 0, 8), (9, 0, 5), (8, 0, 1), (5, 0, 4)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), 1), ((8, 0, 1), (5, 0, 4)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), 1)}
+((9, 0, 14), (10, 0, 20)) {((9, 0, 14), (10, 0, 20)): ((-1, 2048, 17, '192.168.1.6', '192.168.1.1', -1, -1, 5001, 53375), 2)}
+((9, 0, 14), (10, 0, 22)) {((9, 0, 14), (10, 0, 22)): ((-1, 2048, 17, '192.168.1.6', '192.168.1.1', -1, -1, 5001, 53375), 1)}
+((2, 0, 7), (3, 0, 16)) {((5, 0, 21), (2, 0, 7), (3, 0, 16)): ((-1, 2048, 17, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), 1), ((2, 0, 7), (3, 0, 16)): ((-1, 2048, 17, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), 1)}
+((3, 0, 8), (2, 0, 3)) {((3, 0, 8), (2, 0, 3)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.7', -1, -1, -1, -1), 1)}
+((10, 0, 19), (9, 0, 16)) {((10, 0, 19), (9, 0, 16)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, 53375, 5001), 2)}
+((10, 0, 19), (9, 0, 15)) {((10, 0, 19), (9, 0, 15)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, 53375, 5001), 1)}
+((6, 0, 4), (7, 0, 2)) {((6, 0, 4), (7, 0, 2)): ((-1, 2048, 6, '192.168.1.4', '192.168.1.3', -1, -1, -1, -1), 1)}
+((2, 0, 6), (5, 0, 20)) {((3, 0, 14), (2, 0, 6), (5, 0, 20)): ((-1, 2048, 17, '192.168.1.3', '192.168.1.7', -1, -1, 37517, -1), 4), ((2, 0, 6), (5, 0, 20)): ((-1, 2048, 17, '192.168.1.3', '192.168.1.7', -1, -1, 37517, -1), 4)}
+((3, 0, 9), (4, 0, 3)) {((3, 0, 9), (4, 0, 3)): ((-1, 2048, 17, '192.168.1.3', '192.168.1.2', -1, -1, -1, -1), 1)}
+((5, 0, 6), (0, '192.168.1.6')) {((10, 0, 12), (9, 0, 8), (8, 0, 2), (5, 0, 6), (0, '192.168.1.6')): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', 52756, -1, -1, -1), -1), ((5, 0, 6), (0, '192.168.1.6')): ((2, 2048, 6, '192.168.1.1', '192.168.1.7', 52756, -1, -1, -1), -1)}
+((10, 0, 18), (9, 0, 16)) {((10, 0, 18), (9, 0, 16)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, 53375, 5001), 2)}
+((10, 0, 18), (9, 0, 15)) {((10, 0, 18), (9, 0, 15)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), 1)}
+((6, 0, 7), (0, '192.168.1.4')) {((1, 0, 12), (6, 0, 7), (0, '192.168.1.4')): ((-1, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, 57073, -1), -1), ((10, 0, 14), (1, 0, 10), (6, 0, 7), (0, '192.168.1.4')): ((-1, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1), -1), ((1, 0, 9), (6, 0, 7), (0, '192.168.1.4')): ((-1, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, 42724, -1), -1), ((6, 0, 7), (0, '192.168.1.4')): ((1, 2048, 17, -1, '192.168.1.4', -1, -1, -1, -1), -1)}
+((2, 0, 1), (5, 0, 7)) {((2, 0, 1), (5, 0, 7)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), 1), ((3, 0, 6), (2, 0, 1), (5, 0, 7)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), 1)}
+((3, 0, 10), (7, 0, 5)) {((3, 0, 10), (7, 0, 5)): ((-1, 2048, 17, '192.168.1.3', '192.168.1.4', -1, -1, -1, -1), 1)}
+((9, 0, 12), (0, '192.168.1.2')) {((10, 0, 13), (9, 0, 12), (0, '192.168.1.2')): ((-1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, -1, -1), -1), ((9, 0, 12), (0, '192.168.1.2')): ((3, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1), -1)}
+((6, 0, 6), (7, 0, 4)) {((6, 0, 6), (7, 0, 4)): ((-1, 2048, 6, '192.168.1.5', '192.168.1.3', -1, -1, -1, -1), 1)}
+((9, 0, 10), (0, '192.168.1.2')) {((9, 0, 10), (0, '192.168.1.2')): ((2, 2048, 6, -1, '192.168.1.2', -1, -1, -1, -1), -1), ((3, 0, 1), (4, 0, 1), (9, 0, 10), (0, '192.168.1.2')): ((-1, 2048, 6, '192.168.1.3', '192.168.1.2', -1, -1, -1, -1), -1)}
+((3, 0, 11), (7, 0, 6)) {((3, 0, 11), (7, 0, 6)): ((-1, 2048, 17, '192.168.1.3', '192.168.1.5', -1, -1, -1, -1), 1)}
+((5, 0, 4), (0, '192.168.1.6')) {((5, 0, 4), (0, '192.168.1.6')): ((2, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), -1), ((10, 0, 9), (9, 0, 5), (8, 0, 1), (5, 0, 4), (0, '192.168.1.6')): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', 43076, 3416, -1, -1), -1), ((10, 0, 8), (9, 0, 5), (8, 0, 1), (5, 0, 4), (0, '192.168.1.6')): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), -1)}
+((6, 0, 11), (7, 0, 7)) {((6, 0, 11), (7, 0, 7)): ((-1, 2048, 17, '192.168.1.4', '192.168.1.3', -1, -1, -1, -1), 1)}
+((1, 0, 10), (6, 0, 7)) {((10, 0, 14), (1, 0, 10), (6, 0, 7)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1), 1), ((1, 0, 10), (6, 0, 7)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1), 1)}
+((2, 0, 3), (5, 0, 10)) {((3, 0, 8), (2, 0, 3), (5, 0, 10)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.7', 35484, -1, -1, -1), 4), ((2, 0, 3), (5, 0, 10)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.7', 35484, -1, -1, -1), 4)}
+((3, 0, 12), (2, 0, 5)) {((3, 0, 12), (2, 0, 5)): ((-1, 2048, 17, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), 1)}
+((5, 0, 5), (8, 0, 3)) {((5, 0, 5), (8, 0, 3)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, 52756, -1, -1), 1)}
+((1, 0, 11), (10, 0, 24)) {((1, 0, 11), (10, 0, 24)): ((-1, 2048, 17, '192.168.1.5', '192.168.1.1', -1, -1, -1, 57073), 1), ((6, 0, 8), (1, 0, 11), (10, 0, 24)): ((-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, 57073), 1)}
+((2, 0, 2), (3, 0, 7)) {((2, 0, 2), (3, 0, 7)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), 1), ((5, 0, 8), (2, 0, 2), (3, 0, 7)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), 1)}
+((3, 0, 13), (0, '192.168.1.3')) {((9, 0, 22), (4, 0, 4), (3, 0, 13), (0, '192.168.1.3')): ((-1, 2048, 17, '192.168.1.2', '192.168.1.3', -1, -1, -1, -1), -1), ((3, 0, 13), (0, '192.168.1.3')): ((2, 2048, 17, -1, '192.168.1.3', -1, -1, -1, -1), -1)}
+((5, 0, 2), (8, 0, 3)) {((5, 0, 2), (8, 0, 3)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, 43076, -1, -1), 1)}
+((1, 0, 8), (10, 0, 16)) {((6, 0, 8), (1, 0, 8), (10, 0, 16)): ((-1, 2048, 17, '192.168.1.5', '192.168.1.1', -1, -1, 5001, 42724), 2), ((1, 0, 8), (10, 0, 16)): ((-1, 2048, 17, '192.168.1.5', '192.168.1.1', -1, -1, 5001, 42724), 2)}
+((1, 0, 8), (10, 0, 24)) {((6, 0, 8), (1, 0, 8), (10, 0, 24)): ((-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, 42724), 1), ((1, 0, 8), (10, 0, 24)): ((-1, 2048, 17, '192.168.1.5', '192.168.1.1', -1, -1, -1, 42724), 1)}
+((7, 0, 6), (6, 0, 10)) {((7, 0, 6), (6, 0, 10)): ((-1, 2048, 17, '192.168.1.3', '192.168.1.5', -1, -1, -1, -1), 1), ((3, 0, 11), (7, 0, 6), (6, 0, 10)): ((-1, 2048, 17, '192.168.1.3', '192.168.1.5', -1, -1, -1, -1), 1)}
+((3, 0, 15), (0, '192.168.1.3')) {((6, 0, 11), (7, 0, 7), (3, 0, 15), (0, '192.168.1.3')): ((-1, 2048, 17, '192.168.1.4', '192.168.1.3', -1, -1, -1, -1), -1), ((3, 0, 15), (0, '192.168.1.3')): ((3, 2048, 17, -1, '192.168.1.3', -1, -1, -1, -1), -1)}
+((3, 0, 14), (2, 0, 6)) {((3, 0, 14), (2, 0, 6)): ((-1, 2048, 17, '192.168.1.3', '192.168.1.7', -1, -1, -1, -1), 1)}
+((5, 0, 3), (0, '192.168.1.6')) {((10, 0, 8), (9, 0, 6), (8, 0, 2), (5, 0, 3), (0, '192.168.1.6')): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', 43076, 3416, -1, -1), -1), ((10, 0, 12), (9, 0, 8), (8, 0, 2), (5, 0, 3), (0, '192.168.1.6')): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', 43076, -1, -1, -1), -1), ((10, 0, 9), (9, 0, 6), (8, 0, 2), (5, 0, 3), (0, '192.168.1.6')): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', 43076, 3416, -1, -1), -1), ((5, 0, 3), (0, '192.168.1.6')): ((2, 2048, 6, '192.168.1.1', '192.168.1.7', 43076, -1, -1, -1), -1)}
+((5, 0, 7), (0, '192.168.1.6')) {((3, 0, 6), (2, 0, 1), (5, 0, 7), (0, '192.168.1.6')): ((-1, 2048, 6, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), -1), ((5, 0, 7), (0, '192.168.1.6')): ((1, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), -1)}
+((7, 0, 2), (3, 0, 4)) {((7, 0, 2), (3, 0, 4)): ((-1, 2048, 6, '192.168.1.4', '192.168.1.3', -1, -1, -1, -1), 1), ((6, 0, 4), (7, 0, 2), (3, 0, 4)): ((-1, 2048, 6, '192.168.1.4', '192.168.1.3', -1, -1, -1, -1), 1)}
+((8, 0, 4), (5, 0, 15)) {((10, 0, 19), (9, 0, 15), (8, 0, 4), (5, 0, 15)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, 53375, 5001), 1), ((10, 0, 18), (9, 0, 15), (8, 0, 4), (5, 0, 15)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), 1), ((8, 0, 4), (5, 0, 15)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), 1)}
+((10, 0, 24), (0, '192.168.1.1')) {((1, 0, 13), (10, 0, 24), (0, '192.168.1.1')): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, 53375), -1), ((10, 0, 24), (0, '192.168.1.1')): ((1, 2048, 17, -1, '192.168.1.1', -1, -1, -1, -1), -1), ((1, 0, 14), (10, 0, 24), (0, '192.168.1.1')): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, 37244), -1), ((6, 0, 8), (1, 0, 8), (10, 0, 24), (0, '192.168.1.1')): ((-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, 42724), -1), ((6, 0, 8), (1, 0, 11), (10, 0, 24), (0, '192.168.1.1')): ((-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, 57073), -1)}
+((1, 0, 14), (10, 0, 24)) {((1, 0, 14), (10, 0, 24)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, 37244), 1)}
+((5, 0, 19), (2, 0, 8)) {((5, 0, 19), (2, 0, 8)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.3', -1, -1, -1, 37517), 1)}
+((9, 0, 18), (10, 0, 22)) {((9, 0, 18), (10, 0, 22)): ((-1, 2048, 17, '192.168.1.2', '192.168.1.1', -1, -1, -1, -1), 1)}
+((5, 0, 1), (8, 0, -3)) {((5, 0, 1),): ((-1, 2048, 6, '192.168.1.5', '192.168.1.1', -1, 59372, -1, -1), -1)}
+((1, 0, 15), (2, 0, -3)) {((1, 0, 15),): ((-1, 2048, 17, '192.168.1.7', '192.168.1.3', -1, -1, -1, 37517), -1)}
+((9, 0, 11), (4, 0, 2)) {((9, 0, 11), (4, 0, 2)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.3', -1, -1, -1, -1), 1)}
+((9, 0, 19), (8, 0, 5)) {((9, 0, 19), (8, 0, 5)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, -1, -1), 1), ((10, 0, 23), (9, 0, 19), (8, 0, 5)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, -1, -1), 1)}
+((5, 0, 14), (0, '192.168.1.6')) {((10, 0, 19), (9, 0, 16), (8, 0, 5), (5, 0, 14), (0, '192.168.1.6')): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 53375, 5001), -1), ((10, 0, 18), (9, 0, 16), (8, 0, 5), (5, 0, 14), (0, '192.168.1.6')): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 53375, 5001), -1), ((5, 0, 14), (0, '192.168.1.6')): ((2, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 53375, -1), -1), ((10, 0, 23), (9, 0, 19), (8, 0, 5), (5, 0, 14), (0, '192.168.1.6')): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 53375, -1), -1)}
+((6, 0, 10), (0, '192.168.1.5')) {((6, 0, 10), (0, '192.168.1.5')): ((3, 2048, 17, -1, '192.168.1.5', -1, -1, -1, -1), -1), ((3, 0, 11), (7, 0, 6), (6, 0, 10), (0, '192.168.1.5')): ((-1, 2048, 17, '192.168.1.3', '192.168.1.5', -1, -1, -1, -1), -1)}
+((1, 0, 12), (6, 0, 7)) {((10, 0, 17), (1, 0, 12), (6, 0, 7)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, 57073, -1), 1), ((1, 0, 12), (6, 0, 7)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, 57073, -1), 1)}
+((9, 0, 16), (8, 0, 5)) {((10, 0, 18), (9, 0, 16), (8, 0, 5)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 53375, 5001), 1), ((9, 0, 16), (8, 0, 5)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 53375, 5001), 1), ((10, 0, 19), (9, 0, 16), (8, 0, 5)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 53375, 5001), 1)}
+((5, 0, 15), (0, '192.168.1.6')) {((5, 0, 15), (0, '192.168.1.6')): ((2, 2048, 17, -1, '192.168.1.6', -1, -1, -1, -1), -1), ((10, 0, 19), (9, 0, 15), (8, 0, 4), (5, 0, 15), (0, '192.168.1.6')): ((-1, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, 53375, 5001), -1), ((10, 0, 18), (9, 0, 15), (8, 0, 4), (5, 0, 15), (0, '192.168.1.6')): ((-1, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), -1)}
+((10, 0, 5), (0, '192.168.1.1')) {((9, 0, 3), (10, 0, 5), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', 3414, 39634, -1, -1), -1), ((10, 0, 5), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', 3414, 39634, -1, -1), -1)}
+((1, 0, 13), (10, 0, 21)) {((1, 0, 13), (10, 0, 21)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), 2)}
+((1, 0, 13), (10, 0, 24)) {((1, 0, 13), (10, 0, 24)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, 53375), 1)}
+((9, 0, 17), (10, 0, 20)) {((5, 0, 13), (8, 0, 6), (9, 0, 17), (10, 0, 20)): ((-1, 2048, 17, '192.168.1.6', '192.168.1.1', -1, -1, 5001, 53375), 2), ((9, 0, 17), (10, 0, 20)): ((-1, 2048, 17, '192.168.1.6', '192.168.1.1', -1, -1, 5001, 53375), 2)}
+((9, 0, 17), (10, 0, 22)) {((5, 0, 13), (8, 0, 6), (9, 0, 17), (10, 0, 22)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), 1), ((9, 0, 17), (10, 0, 22)): ((-1, 2048, 17, '192.168.1.6', '192.168.1.1', -1, -1, 5001, 53375), 1)}
+((5, 0, 12), (8, 0, -3)) {((5, 0, 12),): ((-1, 2048, 17, '192.168.1.5', '192.168.1.1', -1, -1, -1, 57073), -1)}
+((10, 0, 4), (1, 0, 1)) {((10, 0, 4), (1, 0, 1)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.4', 39634, 3414, -1, -1), 1)}
+((1, 0, 2), (10, 0, 7)) {((1, 0, 2), (10, 0, 7)): ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', -1, -1, -1, -1), 1), ((6, 0, 2), (1, 0, 2), (10, 0, 7)): ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', -1, -1, -1, -1), 1)}
+((1, 0, 2), (10, 0, 5)) {((6, 0, 2), (1, 0, 2), (10, 0, 5)): ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', 3414, 39634, -1, -1), 2), ((1, 0, 2), (10, 0, 5)): ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', 3414, 39634, -1, -1), 2)}
+((7, 0, 7), (3, 0, 15)) {((7, 0, 7), (3, 0, 15)): ((-1, 2048, 17, '192.168.1.4', '192.168.1.3', -1, -1, -1, -1), 1), ((6, 0, 11), (7, 0, 7), (3, 0, 15)): ((-1, 2048, 17, '192.168.1.4', '192.168.1.3', -1, -1, -1, -1), 1)}
+((9, 0, 22), (4, 0, 4)) {((9, 0, 22), (4, 0, 4)): ((-1, 2048, 17, '192.168.1.2', '192.168.1.3', -1, -1, -1, -1), 1)}
+((10, 0, 7), (0, '192.168.1.1')) {((10, 0, 7), (0, '192.168.1.1')): ((1, 2048, 6, -1, '192.168.1.1', -1, -1, -1, -1), -1), ((6, 0, 2), (1, 0, 2), (10, 0, 7), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', -1, -1, -1, -1), -1), ((6, 0, 2), (1, 0, 3), (10, 0, 7), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', -1, 59372, -1, -1), -1)}
+((1, 0, 3), (10, 0, 7)) {((1, 0, 3), (10, 0, 7)): ((-1, 2048, 6, '192.168.1.5', '192.168.1.1', -1, 59372, -1, -1), 1), ((6, 0, 2), (1, 0, 3), (10, 0, 7)): ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', -1, 59372, -1, -1), 1)}
+((3, 0, 16), (0, '192.168.1.3')) {((5, 0, 19), (2, 0, 8), (3, 0, 16), (0, '192.168.1.3')): ((-1, 2048, 17, '192.168.1.7', '192.168.1.3', -1, -1, -1, 37517), -1), ((5, 0, 21), (2, 0, 7), (3, 0, 16), (0, '192.168.1.3')): ((-1, 2048, 17, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), -1), ((3, 0, 16), (0, '192.168.1.3')): ((1, 2048, 17, -1, '192.168.1.3', -1, -1, -1, -1), -1)}
+((5, 0, 10), (0, '192.168.1.6')) {((5, 0, 10), (0, '192.168.1.6')): ((1, 2048, 6, '192.168.1.3', '192.168.1.7', 35484, -1, -1, -1), -1), ((3, 0, 8), (2, 0, 3), (5, 0, 10), (0, '192.168.1.6')): ((-1, 2048, 6, '192.168.1.3', '192.168.1.7', 35484, -1, -1, -1), -1)}
+((10, 0, 6), (1, 0, 4)) {((10, 0, 6), (1, 0, 4)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.5', 59372, -1, -1, -1), 4)}
+((7, 0, 5), (6, 0, 9)) {((7, 0, 5), (6, 0, 9)): ((-1, 2048, 17, '192.168.1.3', '192.168.1.4', -1, -1, -1, -1), 1), ((3, 0, 10), (7, 0, 5), (6, 0, 9)): ((-1, 2048, 17, '192.168.1.3', '192.168.1.4', -1, -1, -1, -1), 1)}
+((1, 0, 9), (6, 0, 7)) {((1, 0, 9), (6, 0, 7)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, 42724, -1), 1), ((10, 0, 15), (1, 0, 9), (6, 0, 7)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, 42724, 5001), 1), ((10, 0, 17), (1, 0, 9), (6, 0, 7)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, 42724, -1), 1)}
+((10, 0, 22), (0, '192.168.1.1')) {((9, 0, 18), (10, 0, 22), (0, '192.168.1.1')): ((-1, 2048, 17, '192.168.1.2', '192.168.1.1', -1, -1, -1, -1), -1), ((9, 0, 13), (10, 0, 22), (0, '192.168.1.1')): ((-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, 5001, 42724), -1), ((5, 0, 13), (8, 0, 6), (9, 0, 17), (10, 0, 22), (0, '192.168.1.1')): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), -1), ((10, 0, 22), (0, '192.168.1.1')): ((2, 2048, 17, -1, '192.168.1.1', -1, -1, -1, -1), -1), ((8, 0, 6), (9, 0, 21), (10, 0, 22), (0, '192.168.1.1')): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, -1), -1), ((5, 0, 13), (8, 0, 6), (9, 0, 21), (10, 0, 22), (0, '192.168.1.1')): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, 53375), -1), ((9, 0, 14), (10, 0, 22), (0, '192.168.1.1')): ((-1, 2048, 17, '192.168.1.6', '192.168.1.1', -1, -1, 5001, 53375), -1), ((5, 0, 16), (8, 0, 6), (9, 0, 21), (10, 0, 22), (0, '192.168.1.1')): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, 37244), -1)}
+((5, 0, 11), (8, 0, -3)) {((5, 0, 11),): ((-1, 2048, 17, '192.168.1.5', '192.168.1.1', -1, -1, -1, 42724), -1)}
+((10, 0, 1), (9, 0, 1)) {((10, 0, 1), (9, 0, 1)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.2', -1, -1, -1, -1), 1)}
+((1, 0, 1), (6, 0, 1)) {((10, 0, 4), (1, 0, 1), (6, 0, 1)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.4', 39634, 3414, -1, -1), 1), ((10, 0, 3), (1, 0, 1), (6, 0, 1)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1), 1), ((1, 0, 1), (6, 0, 1)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1), 1)}
+((6, 0, 3), (0, '192.168.1.4')) {((6, 0, 3), (0, '192.168.1.4')): ((3, 2048, 6, -1, '192.168.1.4', -1, -1, -1, -1), -1), ((3, 0, 3), (7, 0, 1), (6, 0, 3), (0, '192.168.1.4')): ((-1, 2048, 6, '192.168.1.3', '192.168.1.4', -1, -1, -1, -1), -1)}
+((4, 0, 3), (9, 0, 20)) {((4, 0, 3), (9, 0, 20)): ((-1, 2048, 17, '192.168.1.3', '192.168.1.2', -1, -1, -1, -1), 1), ((3, 0, 9), (4, 0, 3), (9, 0, 20)): ((-1, 2048, 17, '192.168.1.3', '192.168.1.2', -1, -1, -1, -1), 1)}
+((9, 0, 21), (10, 0, 21)) {((9, 0, 21), (10, 0, 21)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), 2), ((5, 0, 13), (8, 0, 6), (9, 0, 21), (10, 0, 21)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), 2), ((8, 0, 6), (9, 0, 21), (10, 0, 21)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), 2)}
+((9, 0, 21), (10, 0, 22)) {((9, 0, 21), (10, 0, 22)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, -1), 1), ((5, 0, 16), (8, 0, 6), (9, 0, 21), (10, 0, 22)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, 37244), 1), ((8, 0, 6), (9, 0, 21), (10, 0, 22)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, -1), 1), ((5, 0, 13), (8, 0, 6), (9, 0, 21), (10, 0, 22)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, 53375), 1)}
+((5, 0, 8), (2, 0, 2)) {((5, 0, 8), (2, 0, 2)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), 1)}
+((1, 0, 6), (10, 0, 7)) {((1, 0, 6), (10, 0, 7)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, 52756, -1, -1), 1)}
+((4, 0, 2), (3, 0, 2)) {((9, 0, 11), (4, 0, 2), (3, 0, 2)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.3', -1, -1, -1, -1), 1), ((4, 0, 2), (3, 0, 2)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.3', -1, -1, -1, -1), 1)}
+((5, 0, 9), (2, 0, 4)) {((5, 0, 9), (2, 0, 4)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.3', -1, 35484, -1, -1), 1)}
+((10, 0, 3), (1, 0, 1)) {((10, 0, 3), (1, 0, 1)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1), 1)}
+((1, 0, 7), (2, 0, -3)) {((1, 0, 7),): ((-1, 2048, 6, '192.168.1.7', '192.168.1.3', -1, 35484, -1, -1), -1)}
+((4, 0, 1), (9, 0, 10)) {((3, 0, 1), (4, 0, 1), (9, 0, 10)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.2', -1, -1, -1, -1), 1), ((4, 0, 1), (9, 0, 10)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.2', -1, -1, -1, -1), 1)}
+((10, 0, 2), (0, '192.168.1.1')) {((5, 0, 5), (8, 0, 3), (9, 0, 9), (10, 0, 2), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, 52756, -1, -1), -1), ((5, 0, 2), (8, 0, 3), (9, 0, 9), (10, 0, 2), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, 43076, -1, -1), -1), ((10, 0, 2), (0, '192.168.1.1')): ((2, 2048, 6, -1, '192.168.1.1', -1, -1, -1, -1), -1), ((8, 0, 3), (9, 0, 9), (10, 0, 2), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, -1, -1, -1), -1), ((9, 0, 2), (10, 0, 2), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.2', '192.168.1.1', -1, -1, -1, -1), -1)}
+((1, 0, 4), (6, 0, 1)) {((10, 0, 6), (1, 0, 4), (6, 0, 1)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.4', 59372, -1, -1, -1), 1), ((1, 0, 4), (6, 0, 1)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.4', 59372, -1, -1, -1), 1)}
+((7, 0, 4), (3, 0, 4)) {((7, 0, 4), (3, 0, 4)): ((-1, 2048, 6, '192.168.1.5', '192.168.1.3', -1, -1, -1, -1), 1), ((6, 0, 6), (7, 0, 4), (3, 0, 4)): ((-1, 2048, 6, '192.168.1.5', '192.168.1.3', -1, -1, -1, -1), 1)}
+((1, 0, 5), (10, 0, 7)) {((1, 0, 5), (10, 0, 7)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, 43076, -1, -1), 1)}
+((1, 0, 5), (10, 0, 11)) {((1, 0, 5), (10, 0, 11)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1), 2)}
+((5, 0, 21), (2, 0, 7)) {((5, 0, 21), (2, 0, 7)): ((-1, 2048, 17, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), 1)}
+((7, 0, 8), (3, 0, 15)) {((7, 0, 8), (3, 0, 15)): ((-1, 2048, 17, '192.168.1.5', '192.168.1.3', -1, -1, -1, -1), 1), ((6, 0, 12), (7, 0, 8), (3, 0, 15)): ((-1, 2048, 17, '192.168.1.5', '192.168.1.3', -1, -1, -1, -1), 1)}
+((10, 0, 12), (9, 0, 8)) {((10, 0, 12), (9, 0, 8)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', -1, -1, -1, -1), 1)}
+((10, 0, 15), (1, 0, 9)) {((10, 0, 15), (1, 0, 9)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.5', -1, -1, 42724, 5001), 4)}
+((6, 0, 2), (1, 0, 3)) {((6, 0, 2), (1, 0, 3)): ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', -1, 59372, -1, -1), 4)}
+((6, 0, 2), (1, 0, 2)) {((6, 0, 2), (1, 0, 2)): ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', -1, -1, -1, -1), 1)}
+((10, 0, 14), (1, 0, 10)) {((10, 0, 14), (1, 0, 10)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1), 1)}
+((4, 0, 4), (3, 0, 13)) {((9, 0, 22), (4, 0, 4), (3, 0, 13)): ((-1, 2048, 17, '192.168.1.2', '192.168.1.3', -1, -1, -1, -1), 1), ((4, 0, 4), (3, 0, 13)): ((-1, 2048, 17, '192.168.1.2', '192.168.1.3', -1, -1, -1, -1), 1)}
+((10, 0, 9), (9, 0, 5)) {((10, 0, 9), (9, 0, 5)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', 43076, 3416, -1, -1), 1)}
+((10, 0, 9), (9, 0, 6)) {((10, 0, 9), (9, 0, 6)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', 43076, 3416, -1, -1), 2)}
+((10, 0, 8), (9, 0, 5)) {((10, 0, 8), (9, 0, 5)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), 1)}
+((10, 0, 8), (9, 0, 6)) {((10, 0, 8), (9, 0, 6)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', 43076, 3416, -1, -1), 2)}
+((7, 0, 1), (6, 0, 3)) {((3, 0, 3), (7, 0, 1), (6, 0, 3)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.4', -1, -1, -1, -1), 1), ((7, 0, 1), (6, 0, 3)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.4', -1, -1, -1, -1), 1)}
+((5, 0, 20), (0, '192.168.1.6')) {((3, 0, 14), (2, 0, 6), (5, 0, 20), (0, '192.168.1.6')): ((-1, 2048, 17, '192.168.1.3', '192.168.1.7', -1, -1, 37517, -1), -1), ((5, 0, 20), (0, '192.168.1.6')): ((1, 2048, 17, '192.168.1.3', '192.168.1.7', -1, -1, 37517, -1), -1)}
+((9, 0, 2), (10, 0, 2)) {((9, 0, 2), (10, 0, 2)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.1', -1, -1, -1, -1), 1)}
+((10, 0, 11), (0, '192.168.1.1')) {((5, 0, 2), (8, 0, 3), (9, 0, 9), (10, 0, 11), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1), -1), ((10, 0, 11), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1), -1), ((1, 0, 5), (10, 0, 11), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1), -1), ((8, 0, 3), (9, 0, 9), (10, 0, 11), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1), -1)}
+((6, 0, 12), (7, 0, 8)) {((6, 0, 12), (7, 0, 8)): ((-1, 2048, 17, '192.168.1.5', '192.168.1.3', -1, -1, -1, -1), 1)}
+((6, 0, 8), (1, 0, 8)) {((6, 0, 8), (1, 0, 8)): ((-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, 42724), 4)}
+((6, 0, 8), (1, 0, 11)) {((6, 0, 8), (1, 0, 11)): ((-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, 57073), 4)}
+((10, 0, 10), (0, '192.168.1.1')) {((9, 0, 7), (10, 0, 10), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', 3416, 43076, -1, -1), -1), ((9, 0, 4), (10, 0, 10), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', 3416, 43076, -1, -1), -1), ((10, 0, 10), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', 3416, 43076, -1, -1), -1)}
+((5, 0, 18), (0, '192.168.1.6')) {((3, 0, 12), (2, 0, 5), (5, 0, 18), (0, '192.168.1.6')): ((-1, 2048, 17, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), -1), ((5, 0, 18), (0, '192.168.1.6')): ((1, 2048, 17, -1, '192.168.1.6', -1, -1, -1, -1), -1)}
+((6, 0, 5), (0, '192.168.1.5')) {((3, 0, 5), (7, 0, 3), (6, 0, 5), (0, '192.168.1.5')): ((-1, 2048, 6, '192.168.1.3', '192.168.1.5', -1, -1, -1, -1), -1), ((6, 0, 5), (0, '192.168.1.5')): ((3, 2048, 6, -1, '192.168.1.5', -1, -1, -1, -1), -1)}
+((9, 0, 1), (0, '192.168.1.2')) {((9, 0, 1), (0, '192.168.1.2')): ((3, 2048, 6, -1, '192.168.1.2', -1, -1, -1, -1), -1), ((10, 0, 1), (9, 0, 1), (0, '192.168.1.2')): ((-1, 2048, 6, '192.168.1.1', '192.168.1.2', -1, -1, -1, -1), -1)}
+((7, 0, 3), (6, 0, 5)) {((3, 0, 5), (7, 0, 3), (6, 0, 5)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.5', -1, -1, -1, -1), 1), ((7, 0, 3), (6, 0, 5)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.5', -1, -1, -1, -1), 1)}
+((5, 0, 16), (8, 0, 6)) {((5, 0, 16), (8, 0, 6)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, 37244), 1)}
+((6, 0, 9), (0, '192.168.1.4')) {((3, 0, 10), (7, 0, 5), (6, 0, 9), (0, '192.168.1.4')): ((-1, 2048, 17, '192.168.1.3', '192.168.1.4', -1, -1, -1, -1), -1), ((6, 0, 9), (0, '192.168.1.4')): ((3, 2048, 17, -1, '192.168.1.4', -1, -1, -1, -1), -1)}
+((9, 0, 6), (8, 0, 2)) {((10, 0, 9), (9, 0, 6), (8, 0, 2)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', 43076, 3416, -1, -1), 1), ((10, 0, 8), (9, 0, 6), (8, 0, 2)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', 43076, 3416, -1, -1), 1), ((9, 0, 6), (8, 0, 2)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.7', 43076, 3416, -1, -1), 1)}
+((9, 0, 20), (0, '192.168.1.2')) {((3, 0, 9), (4, 0, 3), (9, 0, 20), (0, '192.168.1.2')): ((-1, 2048, 17, '192.168.1.3', '192.168.1.2', -1, -1, -1, -1), -1), ((9, 0, 20), (0, '192.168.1.2')): ((2, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1), -1)}
+((5, 0, 17), (0, '192.168.1.6')) {((5, 0, 17), (0, '192.168.1.6')): ((2, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 37244, -1), -1), ((10, 0, 23), (9, 0, 19), (8, 0, 5), (5, 0, 17), (0, '192.168.1.6')): ((-1, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 37244, -1), -1)}
+((9, 0, 7), (10, 0, 2)) {((5, 0, 2), (8, 0, 3), (9, 0, 7), (10, 0, 2)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', 3416, 43076, -1, -1), 1), ((9, 0, 7), (10, 0, 2)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', 3416, 43076, -1, -1), 1)}
+((9, 0, 7), (10, 0, 10)) {((5, 0, 2), (8, 0, 3), (9, 0, 7), (10, 0, 10)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', 3416, 43076, -1, -1), 2), ((9, 0, 7), (10, 0, 10)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', 3416, 43076, -1, -1), 2)}
+((3, 0, 1), (4, 0, 1)) {((3, 0, 1), (4, 0, 1)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.2', -1, -1, -1, -1), 1)}
+((5, 0, 13), (8, 0, 6)) {((5, 0, 13), (8, 0, 6)): ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, 53375), 1)}
+((9, 0, 4), (10, 0, 2)) {((9, 0, 4), (10, 0, 2)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', 3416, 43076, -1, -1), 1)}
+((9, 0, 4), (10, 0, 10)) {((9, 0, 4), (10, 0, 10)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', 3416, 43076, -1, -1), 2)}
+((10, 0, 13), (9, 0, 12)) {((10, 0, 13), (9, 0, 12)): ((-1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, -1, -1), 1)}
+
+self.ft = 
+1:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.4', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=5,type=0)], [6], (4, 2048, 6, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {5})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.1', 'in_port': 5}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [10], (5, 2048, 6, '192.168.1.4', '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 3: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 6, 'tcp_dst': 59372, 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:05'), OFPActionSetField(ipv4_src='192.168.1.5'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [10], (-1, 2048, 6, '192.168.1.4', '192.168.1.1', -1, 59372, -1, -1), ('192.168.1.5', -1, -1, -1, -1, -1, {4})), 4: (1088, 4, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.5', 'eth_type': 2048, 'ip_proto': 6, 'tcp_src': 59372, 'ipv4_src': '192.168.1.1', 'in_port': 4}), [OFPActionSetField(eth_dst='00:16:3e:11:11:04'), OFPActionSetField(ipv4_dst='192.168.1.4'), OFPActionOutput(len=16,max_len=65509,port=5,type=0)], [6], (4, 2048, 6, '192.168.1.1', '192.168.1.5', 59372, -1, -1, -1), (-1, '192.168.1.4', -1, -1, -1, -1, {5})), 5: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 6, 'tcp_dst': 43076, 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [10], (-1, 2048, 6, '192.168.1.6', '192.168.1.1', -1, 43076, -1, -1), ('192.168.1.7', -1, -1, -1, -1, -1, {4})), 6: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 6, 'tcp_dst': 52756, 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [10], (-1, 2048, 6, '192.168.1.6', '192.168.1.1', -1, 52756, -1, -1), ('192.168.1.7', -1, -1, -1, -1, -1, {4})), 7: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 6, 'tcp_dst': 35484, 'ipv4_dst': '192.168.1.3'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (-1, 2048, 6, '192.168.1.6', '192.168.1.3', -1, 35484, -1, -1), ('192.168.1.7', -1, -1, -1, -1, -1, {1})), 8: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.4', 'udp_dst': 42724, 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:05'), OFPActionSetField(ipv4_src='192.168.1.5'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [10], (-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, 42724), ('192.168.1.5', -1, -1, -1, -1, -1, {4})), 9: (1088, 4, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.5', 'eth_type': 2048, 'ip_proto': 17, 'udp_src': 42724, 'ipv4_src': '192.168.1.1', 'in_port': 4}), [OFPActionSetField(eth_dst='00:16:3e:11:11:04'), OFPActionSetField(ipv4_dst='192.168.1.4'), OFPActionOutput(len=16,max_len=65509,port=5,type=0)], [6], (4, 2048, 17, '192.168.1.1', '192.168.1.5', -1, -1, 42724, -1), (-1, '192.168.1.4', -1, -1, -1, -1, {5})), 10: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.4', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=5,type=0)], [6], (4, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {5})), 11: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.4', 'udp_dst': 57073, 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:05'), OFPActionSetField(ipv4_src='192.168.1.5'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [10], (-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, 57073), ('192.168.1.5', -1, -1, -1, -1, -1, {4})), 12: (1088, 4, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.5', 'eth_type': 2048, 'ip_proto': 17, 'udp_src': 57073, 'ipv4_src': '192.168.1.1', 'in_port': 4}), [OFPActionSetField(eth_dst='00:16:3e:11:11:04'), OFPActionSetField(ipv4_dst='192.168.1.4'), OFPActionOutput(len=16,max_len=65509,port=5,type=0)], [6], (4, 2048, 17, '192.168.1.1', '192.168.1.5', -1, -1, 57073, -1), (-1, '192.168.1.4', -1, -1, -1, -1, {5})), 13: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'udp_dst': 53375, 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [10], (-1, 2048, 17, '192.168.1.6', '192.168.1.1', -1, -1, -1, 53375), ('192.168.1.7', -1, -1, -1, -1, -1, {4})), 14: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'udp_dst': 37244, 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [10], (-1, 2048, 17, '192.168.1.6', '192.168.1.1', -1, -1, -1, 37244), ('192.168.1.7', -1, -1, -1, -1, -1, {4})), 15: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'udp_dst': 37517, 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.3'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (-1, 2048, 17, '192.168.1.6', '192.168.1.3', -1, -1, -1, 37517), ('192.168.1.7', -1, -1, -1, -1, -1, {1}))}}
+2:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.6', 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [5], (1, 2048, 6, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.3', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [3], (4, 2048, 6, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.7', 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [5], (1, 2048, 6, '192.168.1.3', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.7', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.3', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [3], (4, 2048, 6, '192.168.1.7', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 5: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.6', 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [5], (1, 2048, 17, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 6: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.7', 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [5], (1, 2048, 17, '192.168.1.3', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 7: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.3', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [3], (4, 2048, 17, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 8: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.7', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.3', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [3], (4, 2048, 17, '192.168.1.7', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))}}
+3:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.2', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [4], (4, 2048, 6, '192.168.1.3', '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 2}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (2, 2048, 6, -1, '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.4', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [7], (4, 2048, 6, '192.168.1.3', '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (3, 2048, 6, -1, '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 5: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.5', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [7], (4, 2048, 6, '192.168.1.3', '192.168.1.5', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 6: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.6', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (4, 2048, 6, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 7: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 6, -1, '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 8: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.7', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (4, 2048, 6, '192.168.1.3', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 9: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.2', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [4], (4, 2048, 17, '192.168.1.3', '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 10: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.4', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [7], (4, 2048, 17, '192.168.1.3', '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 11: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.5', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [7], (4, 2048, 17, '192.168.1.3', '192.168.1.5', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 12: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.6', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (4, 2048, 17, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 13: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 17, 'in_port': 2}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (2, 2048, 17, -1, '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 14: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.7', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (4, 2048, 17, '192.168.1.3', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 15: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 17, 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (3, 2048, 17, -1, '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 16: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 17, 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, -1, '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4}))}}
+4:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.2', 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [9], (1, 2048, 6, '192.168.1.3', '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.2', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.3', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [3], (4, 2048, 6, '192.168.1.2', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.2', 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [9], (1, 2048, 17, '192.168.1.3', '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.2', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.3', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [3], (4, 2048, 17, '192.168.1.2', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))}}
+5:{0: {1: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 6, 'tcp_dst': 59372, 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:05'), OFPActionSetField(ipv4_src='192.168.1.5'), OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [8], (-1, 2048, 6, '192.168.1.4', '192.168.1.1', -1, 59372, -1, -1), ('192.168.1.5', -1, -1, -1, -1, -1, {2})), 2: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 6, 'tcp_dst': 43076, 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [8], (-1, 2048, 6, '192.168.1.6', '192.168.1.1', -1, 43076, -1, -1), ('192.168.1.7', -1, -1, -1, -1, -1, {2})), 3: (1088, 4, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.7', 'eth_type': 2048, 'ip_proto': 6, 'tcp_src': 43076, 'ipv4_src': '192.168.1.1', 'in_port': 2}), [OFPActionSetField(eth_dst='00:16:3e:11:11:06'), OFPActionSetField(ipv4_dst='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=5,type=0)], ['host:192.168.1.6'], (2, 2048, 6, '192.168.1.1', '192.168.1.7', 43076, -1, -1, -1), (-1, '192.168.1.6', -1, -1, -1, -1, {5})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 2}), [OFPActionOutput(len=16,max_len=65509,port=5,type=0)], ['host:192.168.1.6'], (2, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {5})), 5: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 6, 'tcp_dst': 52756, 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [8], (-1, 2048, 6, '192.168.1.6', '192.168.1.1', -1, 52756, -1, -1), ('192.168.1.7', -1, -1, -1, -1, -1, {2})), 6: (1088, 4, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.7', 'eth_type': 2048, 'ip_proto': 6, 'tcp_src': 52756, 'ipv4_src': '192.168.1.1', 'in_port': 2}), [OFPActionSetField(eth_dst='00:16:3e:11:11:06'), OFPActionSetField(ipv4_dst='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=5,type=0)], ['host:192.168.1.6'], (2, 2048, 6, '192.168.1.1', '192.168.1.7', 52756, -1, -1, -1), (-1, '192.168.1.6', -1, -1, -1, -1, {5})), 7: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=5,type=0)], ['host:192.168.1.6'], (1, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {5})), 8: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.3', 'in_port': 5}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (5, 2048, 6, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 9: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 6, 'tcp_dst': 35484, 'ipv4_dst': '192.168.1.3'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (-1, 2048, 6, '192.168.1.6', '192.168.1.3', -1, 35484, -1, -1), ('192.168.1.7', -1, -1, -1, -1, -1, {1})), 10: (1088, 4, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.7', 'eth_type': 2048, 'ip_proto': 6, 'tcp_src': 35484, 'ipv4_src': '192.168.1.3', 'in_port': 1}), [OFPActionSetField(eth_dst='00:16:3e:11:11:06'), OFPActionSetField(ipv4_dst='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=5,type=0)], ['host:192.168.1.6'], (1, 2048, 6, '192.168.1.3', '192.168.1.7', 35484, -1, -1, -1), (-1, '192.168.1.6', -1, -1, -1, -1, {5})), 11: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.4', 'udp_dst': 42724, 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:05'), OFPActionSetField(ipv4_src='192.168.1.5'), OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [8], (-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, 42724), ('192.168.1.5', -1, -1, -1, -1, -1, {2})), 12: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.4', 'udp_dst': 57073, 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:05'), OFPActionSetField(ipv4_src='192.168.1.5'), OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [8], (-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, 57073), ('192.168.1.5', -1, -1, -1, -1, -1, {2})), 13: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'udp_dst': 53375, 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [8], (-1, 2048, 17, '192.168.1.6', '192.168.1.1', -1, -1, -1, 53375), ('192.168.1.7', -1, -1, -1, -1, -1, {2})), 14: (1088, 4, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.7', 'eth_type': 2048, 'ip_proto': 17, 'udp_src': 53375, 'ipv4_src': '192.168.1.1', 'in_port': 2}), [OFPActionSetField(eth_dst='00:16:3e:11:11:06'), OFPActionSetField(ipv4_dst='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=5,type=0)], ['host:192.168.1.6'], (2, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 53375, -1), (-1, '192.168.1.6', -1, -1, -1, -1, {5})), 15: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 17, 'in_port': 2}), [OFPActionOutput(len=16,max_len=65509,port=5,type=0)], ['host:192.168.1.6'], (2, 2048, 17, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {5})), 16: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'udp_dst': 37244, 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [8], (-1, 2048, 17, '192.168.1.6', '192.168.1.1', -1, -1, -1, 37244), ('192.168.1.7', -1, -1, -1, -1, -1, {2})), 17: (1088, 4, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.7', 'eth_type': 2048, 'ip_proto': 17, 'udp_src': 37244, 'ipv4_src': '192.168.1.1', 'in_port': 2}), [OFPActionSetField(eth_dst='00:16:3e:11:11:06'), OFPActionSetField(ipv4_dst='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=5,type=0)], ['host:192.168.1.6'], (2, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, 37244, -1), (-1, '192.168.1.6', -1, -1, -1, -1, {5})), 18: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 17, 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=5,type=0)], ['host:192.168.1.6'], (1, 2048, 17, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {5})), 19: (1088, 4, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'udp_dst': 37517, 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.3'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (-1, 2048, 17, '192.168.1.6', '192.168.1.3', -1, -1, -1, 37517), ('192.168.1.7', -1, -1, -1, -1, -1, {1})), 20: (1088, 4, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.7', 'eth_type': 2048, 'ip_proto': 17, 'udp_src': 37517, 'ipv4_src': '192.168.1.3', 'in_port': 1}), [OFPActionSetField(eth_dst='00:16:3e:11:11:06'), OFPActionSetField(ipv4_dst='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=5,type=0)], ['host:192.168.1.6'], (1, 2048, 17, '192.168.1.3', '192.168.1.7', -1, -1, 37517, -1), (-1, '192.168.1.6', -1, -1, -1, -1, {5})), 21: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.3', 'in_port': 5}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (5, 2048, 17, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))}}
+6:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.4'], (1, 2048, 6, -1, '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.1', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [1], (4, 2048, 6, '192.168.1.4', '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.4'], (3, 2048, 6, -1, '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.3', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [7], (4, 2048, 6, '192.168.1.4', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 5: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.5', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=5,type=0)], ['host:192.168.1.5'], (3, 2048, 6, -1, '192.168.1.5', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {5})), 6: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.5', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.3', 'in_port': 5}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [7], (5, 2048, 6, '192.168.1.5', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 7: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 17, 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.4'], (1, 2048, 17, -1, '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 8: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.1', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [1], (4, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 9: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 17, 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.4'], (3, 2048, 17, -1, '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 10: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.5', 'eth_type': 2048, 'ip_proto': 17, 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=5,type=0)], ['host:192.168.1.5'], (3, 2048, 17, -1, '192.168.1.5', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {5})), 11: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.3', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [7], (4, 2048, 17, '192.168.1.4', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 12: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.5', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.3', 'in_port': 5}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [7], (5, 2048, 17, '192.168.1.5', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))}}
+7:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.4', 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [6], (1, 2048, 6, '192.168.1.3', '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.3', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [3], (4, 2048, 6, '192.168.1.4', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.5', 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [6], (1, 2048, 6, '192.168.1.3', '192.168.1.5', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.5', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.3', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [3], (4, 2048, 6, '192.168.1.5', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 5: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.4', 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [6], (1, 2048, 17, '192.168.1.3', '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 6: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.3', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.5', 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [6], (1, 2048, 17, '192.168.1.3', '192.168.1.5', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 7: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.3', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [3], (4, 2048, 17, '192.168.1.4', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 8: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.5', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.3', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [3], (4, 2048, 17, '192.168.1.5', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))}}
+8:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.6', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [5], (4, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.7', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [5], (4, 2048, 6, '192.168.1.1', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.7', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.1', 'in_port': 2}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [9], (2, 2048, 6, '192.168.1.7', '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.6', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [5], (4, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 5: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.7', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [5], (4, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 6: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.7', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.1', 'in_port': 2}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [9], (2, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4}))}}
+9:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.2', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.2'], (3, 2048, 6, -1, '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.2', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.1', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [10], (4, 2048, 6, '192.168.1.2', '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 3: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'tcp_src': 3414, 'tcp_dst': 39634, 'ipv4_src': '192.168.1.4'}), [OFPActionSetField(eth_src='00:16:3e:11:11:04'), OFPActionSetField(ipv4_src='192.168.1.4'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [10], (-1, 2048, 6, '192.168.1.4', '192.168.1.1', 3414, 39634, -1, -1), ('192.168.1.4', -1, -1, -1, -1, -1, {3})), 4: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'tcp_src': 3416, 'tcp_dst': 43076, 'ipv4_src': '192.168.1.6'}), [OFPActionSetField(eth_src='00:16:3e:11:11:06'), OFPActionSetField(ipv4_src='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [10], (-1, 2048, 6, '192.168.1.6', '192.168.1.1', 3416, 43076, -1, -1), ('192.168.1.6', -1, -1, -1, -1, -1, {3})), 5: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.6', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 6: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 6, 'tcp_src': 43076, 'tcp_dst': 3416, 'ipv4_src': '192.168.1.1', 'in_port': 3}), [OFPActionSetField(eth_dst='00:16:3e:11:11:07'), OFPActionSetField(ipv4_dst='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.1', '192.168.1.6', 43076, 3416, -1, -1), (-1, '192.168.1.7', -1, -1, -1, -1, {1})), 7: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'tcp_src': 3416, 'tcp_dst': 43076, 'ipv4_src': '192.168.1.7'}), [OFPActionSetField(eth_src='00:16:3e:11:11:06'), OFPActionSetField(ipv4_src='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [10], (-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1), ('192.168.1.6', -1, -1, -1, -1, -1, {3})), 8: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.7', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.1', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 9: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.7', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.1', 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [10], (1, 2048, 6, '192.168.1.7', '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 10: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.2', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 2}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.2'], (2, 2048, 6, -1, '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 11: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.2', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.3', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [4], (4, 2048, 6, '192.168.1.2', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 12: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.2', 'eth_type': 2048, 'ip_proto': 17, 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.2'], (3, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 13: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 42724, 'udp_src': 5001, 'ipv4_src': '192.168.1.5'}), [OFPActionSetField(eth_src='00:16:3e:11:11:04'), OFPActionSetField(ipv4_src='192.168.1.4'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [10], (-1, 2048, 17, '192.168.1.5', '192.168.1.1', -1, -1, 5001, 42724), ('192.168.1.4', -1, -1, -1, -1, -1, {3})), 14: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 53375, 'udp_src': 5001, 'ipv4_src': '192.168.1.6'}), [OFPActionSetField(eth_src='00:16:3e:11:11:06'), OFPActionSetField(ipv4_src='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [10], (-1, 2048, 17, '192.168.1.6', '192.168.1.1', -1, -1, 5001, 53375), ('192.168.1.6', -1, -1, -1, -1, -1, {3})), 15: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.6', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 16: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 5001, 'udp_src': 53375, 'ipv4_src': '192.168.1.1', 'in_port': 3}), [OFPActionSetField(eth_dst='00:16:3e:11:11:07'), OFPActionSetField(ipv4_dst='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, 53375, 5001), (-1, '192.168.1.7', -1, -1, -1, -1, {1})), 17: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 53375, 'udp_src': 5001, 'ipv4_src': '192.168.1.7'}), [OFPActionSetField(eth_src='00:16:3e:11:11:06'), OFPActionSetField(ipv4_src='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [10], (-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), ('192.168.1.6', -1, -1, -1, -1, -1, {3})), 18: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.2', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.1', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [10], (4, 2048, 17, '192.168.1.2', '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 19: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.7', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 20: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.2', 'eth_type': 2048, 'ip_proto': 17, 'in_port': 2}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.2'], (2, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 21: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.7', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.1', 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [10], (1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 22: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.2', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.3', 'in_port': 4}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [4], (4, 2048, 17, '192.168.1.2', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2}))}}
+10:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.2', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [9], (3, 2048, 6, '192.168.1.1', '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 2}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (2, 2048, 6, -1, '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.4', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [1], (3, 2048, 6, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 4: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 6, 'tcp_src': 39634, 'tcp_dst': 3414, 'ipv4_src': '192.168.1.1', 'in_port': 3}), [OFPActionSetField(eth_dst='00:16:3e:11:11:04'), OFPActionSetField(ipv4_dst='192.168.1.4'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [1], (3, 2048, 6, '192.168.1.1', '192.168.1.4', 39634, 3414, -1, -1), (-1, '192.168.1.4', -1, -1, -1, -1, {1})), 5: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'tcp_src': 3414, 'tcp_dst': 39634, 'ipv4_src': '192.168.1.4'}), [OFPActionSetField(eth_src='00:16:3e:11:11:04'), OFPActionSetField(ipv4_src='192.168.1.4'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (-1, 2048, 6, '192.168.1.4', '192.168.1.1', 3414, 39634, -1, -1), ('192.168.1.4', -1, -1, -1, -1, -1, {3})), 6: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.5', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [1], (3, 2048, 6, '192.168.1.1', '192.168.1.5', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 7: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (1, 2048, 6, -1, '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 8: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.6', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [9], (3, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 9: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 6, 'tcp_src': 43076, 'tcp_dst': 3416, 'ipv4_src': '192.168.1.1', 'in_port': 3}), [OFPActionSetField(eth_dst='00:16:3e:11:11:06'), OFPActionSetField(ipv4_dst='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [9], (3, 2048, 6, '192.168.1.1', '192.168.1.6', 43076, 3416, -1, -1), (-1, '192.168.1.6', -1, -1, -1, -1, {2})), 10: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'tcp_src': 3416, 'tcp_dst': 43076, 'ipv4_src': '192.168.1.6'}), [OFPActionSetField(eth_src='00:16:3e:11:11:06'), OFPActionSetField(ipv4_src='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (-1, 2048, 6, '192.168.1.6', '192.168.1.1', 3416, 43076, -1, -1), ('192.168.1.6', -1, -1, -1, -1, -1, {3})), 11: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'tcp_src': 3416, 'tcp_dst': 43076, 'ipv4_src': '192.168.1.7'}), [OFPActionSetField(eth_src='00:16:3e:11:11:06'), OFPActionSetField(ipv4_src='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1), ('192.168.1.6', -1, -1, -1, -1, -1, {3})), 12: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 6, 'ipv4_dst': '192.168.1.7', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [9], (3, 2048, 6, '192.168.1.1', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 13: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.2', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [9], (3, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 14: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.4', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [1], (3, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 15: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.4', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 5001, 'udp_src': 42724, 'ipv4_src': '192.168.1.1', 'in_port': 3}), [OFPActionSetField(eth_dst='00:16:3e:11:11:05'), OFPActionSetField(ipv4_dst='192.168.1.5'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [1], (3, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, 42724, 5001), (-1, '192.168.1.5', -1, -1, -1, -1, {1})), 16: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 42724, 'udp_src': 5001, 'ipv4_src': '192.168.1.5'}), [OFPActionSetField(eth_src='00:16:3e:11:11:04'), OFPActionSetField(ipv4_src='192.168.1.4'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (-1, 2048, 17, '192.168.1.5', '192.168.1.1', -1, -1, 5001, 42724), ('192.168.1.4', -1, -1, -1, -1, -1, {3})), 17: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.5', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [1], (3, 2048, 17, '192.168.1.1', '192.168.1.5', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 18: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.6', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [9], (3, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 19: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 5001, 'udp_src': 53375, 'ipv4_src': '192.168.1.1', 'in_port': 3}), [OFPActionSetField(eth_dst='00:16:3e:11:11:06'), OFPActionSetField(ipv4_dst='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [9], (3, 2048, 17, '192.168.1.1', '192.168.1.6', -1, -1, 53375, 5001), (-1, '192.168.1.6', -1, -1, -1, -1, {2})), 20: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 53375, 'udp_src': 5001, 'ipv4_src': '192.168.1.6'}), [OFPActionSetField(eth_src='00:16:3e:11:11:06'), OFPActionSetField(ipv4_src='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (-1, 2048, 17, '192.168.1.6', '192.168.1.1', -1, -1, 5001, 53375), ('192.168.1.6', -1, -1, -1, -1, -1, {3})), 21: (1024, 2, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'udp_dst': 53375, 'udp_src': 5001, 'ipv4_src': '192.168.1.7'}), [OFPActionSetField(eth_src='00:16:3e:11:11:06'), OFPActionSetField(ipv4_src='192.168.1.6'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), ('192.168.1.6', -1, -1, -1, -1, -1, {3})), 22: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'in_port': 2}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (2, 2048, 17, -1, '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 23: (256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.7', 'in_port': 3}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [9], (3, 2048, 17, '192.168.1.1', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 24: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (1, 2048, 17, -1, '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))}}
+Number of rules: [136, {1: 15, 2: 8, 3: 16, 4: 4, 5: 21, 6: 12, 7: 8, 8: 6, 9: 22, 10: 24}]
+
+self.lc_cfl_rules = 
+1:{0: {2: [(3, 'class Correlation2 (local conflicts)', (2, 4, 1))], 3: []}}
+10:{0: {2: [(5, 'class Correlation2 (local conflicts)', (2, 4, 1)), (10, 'class Correlation2 (local conflicts)', (2, 4, 1)), (11, 'class Correlation2 (local conflicts)', (2, 4, 1))], 3: [(4, 'class Generalization2 (local conflicts)', (2, 2, 1))], 4: [], 5: [], 7: [(5, 'class Correlation1 (local conflicts)', (1, 4, 1)), (10, 'class Correlation2 (local conflicts)', (2, 4, 1)), (11, 'class Correlation2 (local conflicts)', (2, 4, 1))], 8: [(9, 'class Generalization2 (local conflicts)', (2, 2, 1))], 9: [], 10: [], 11: [], 14: [(15, 'class Generalization2 (local conflicts)', (2, 2, 1))], 15: [], 18: [(19, 'class Generalization2 (local conflicts)', (2, 2, 1))], 19: [], 22: [(16, 'class Correlation1 (local conflicts)', (1, 4, 1)), (20, 'class Correlation1 (local conflicts)', (1, 4, 1)), (21, 'class Correlation1 (local conflicts)', (1, 4, 1))], 24: [(16, 'class Correlation1 (local conflicts)', (1, 4, 1)), (20, 'class Correlation1 (local conflicts)', (1, 4, 1)), (21, 'class Correlation1 (local conflicts)', (1, 4, 1))]}}
+5:{0: {8: [(9, 'class Correlation2 (local conflicts)', (2, 4, 1))], 9: [], 21: [(19, 'class Correlation1 (local conflicts)', (1, 4, 1))]}}
+9:{0: {16: [], 5: [(6, 'class Generalization2 (local conflicts)', (2, 2, 1))], 6: [], 9: [(7, 'class Correlation1 (local conflicts)', (1, 4, 1))], 21: [(17, 'class Correlation1 (local conflicts)', (1, 4, 1))], 15: [(16, 'class Generalization2 (local conflicts)', (2, 2, 1))]}}
+Number of local conflicts by dpid: [23, {1: {'cor2': 1}, 10: {'cor1': 7, 'cor2': 5, 'gen2': 4}, 5: {'cor2': 1, 'cor1': 1}, 9: {'cor1': 2, 'gen2': 2}}]
+Number of local conflicts by class: [23, {'gen2': 6, 'cor2': 7, 'cor1': 10}]
+
+self.hc_cfl_rules = 
+1:{'hs': [((1, 0, 4), [[4], 2048, [6], ['192.168.1.1'], ['192.168.1.5'], [59372], [-1], [-1], [-1]]), ((5, 0, 3), [[2], 2048, [6], ['192.168.1.1'], ['192.168.1.7'], [43076], [-1], [-1], [-1]]), ((5, 0, 6), [[2], 2048, [6], ['192.168.1.1'], ['192.168.1.7'], [52756], [-1], [-1], [-1]]), ((5, 0, 10), [[1], 2048, [6], ['192.168.1.3'], ['192.168.1.7'], [35484], [-1], [-1], [-1]]), ((1, 0, 9), [[4], 2048, [17], ['192.168.1.1'], ['192.168.1.5'], [-1], [-1], [42724], [-1]]), ((1, 0, 12), [[4], 2048, [17], ['192.168.1.1'], ['192.168.1.5'], [-1], [-1], [57073], [-1]]), ((5, 0, 14), [[2], 2048, [17], ['192.168.1.1'], ['192.168.1.7'], [-1], [-1], [53375], [-1]]), ((5, 0, 17), [[2], 2048, [17], ['192.168.1.1'], ['192.168.1.7'], [-1], [-1], [37244], [-1]]), ((5, 0, 20), [[1], 2048, [17], ['192.168.1.3'], ['192.168.1.7'], [-1], [-1], [37517], [-1]])], 'eplb': [((10, 0, 3), [[3], 2048, [6], ['192.168.1.1'], ['192.168.1.4'], [-1], [-1], [-1], [-1]]), ((10, 0, 4), [[3], 2048, [6], ['192.168.1.1'], ['192.168.1.4'], [39634], [3414], [-1], [-1]]), ((10, 0, 8), [[3], 2048, [6], ['192.168.1.1'], ['192.168.1.6'], [-1], [-1], [-1], [-1]]), ((10, 0, 9), [[3], 2048, [6], ['192.168.1.1'], ['192.168.1.6'], [43076], [3416], [-1], [-1]]), ((9, 0, 5), [[3], 2048, [6], ['192.168.1.1'], ['192.168.1.6'], [-1], [-1], [-1], [-1]]), ((9, 0, 6), [[3], 2048, [6], ['192.168.1.1'], ['192.168.1.6'], [43076], [3416], [-1], [-1]]), ((10, 0, 14), [[3], 2048, [17], ['192.168.1.1'], ['192.168.1.4'], [-1], [-1], [-1], [-1]]), ((10, 0, 15), [[3], 2048, [17], ['192.168.1.1'], ['192.168.1.4'], [-1], [-1], [42724], [5001]]), ((10, 0, 18), [[3], 2048, [17], ['192.168.1.1'], ['192.168.1.6'], [-1], [-1], [-1], [-1]]), ((10, 0, 19), [[3], 2048, [17], ['192.168.1.1'], ['192.168.1.6'], [-1], [-1], [53375], [5001]]), ((9, 0, 15), [[3], 2048, [17], ['192.168.1.1'], ['192.168.1.6'], [-1], [-1], [-1], [-1]]), ((9, 0, 16), [[3], 2048, [17], ['192.168.1.1'], ['192.168.1.6'], [-1], [-1], [53375], [5001]])]}
+2:{}
+3:{}
+Number of rules causing hidden conflicts by control app: {'eplb': 12, 'hs': 9}
+
+self.dt_cfl_rules = 
+black-hole:[]
+loops:[]
+incomplete-transform:[([1, 0, 7], ((-1, 2048, 6, '192.168.1.6', '192.168.1.3', -1, 35484, -1, -1), [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])), ([10, 0, 5], ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', 3414, 39634, -1, -1), [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9])), ([10, 0, 11], ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1), [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10])), ([5, 0, 9], ((-1, 2048, 6, '192.168.1.6', '192.168.1.3', -1, 35484, -1, -1), [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])), ([9, 0, 7], ((-1, 2048, 6, '192.168.1.7', '192.168.1.1', 3416, 43076, -1, -1), [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10])), ([5, 0, 1], ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', -1, 59372, -1, -1), [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5])), ([9, 0, 3], ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', 3414, 39634, -1, -1), [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9])), ([1, 0, 3], ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', -1, 59372, -1, -1), [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5])), ([1, 0, 15], ((-1, 2048, 17, '192.168.1.6', '192.168.1.3', -1, -1, -1, 37517), [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])), ([10, 0, 16], ((-1, 2048, 17, '192.168.1.5', '192.168.1.1', -1, -1, 5001, 42724), [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9])), ([10, 0, 21], ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10])), ([5, 0, 19], ((-1, 2048, 17, '192.168.1.6', '192.168.1.3', -1, -1, -1, 37517), [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])), ([9, 0, 17], ((-1, 2048, 17, '192.168.1.7', '192.168.1.1', -1, -1, 5001, 53375), [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10])), ([9, 0, 13], ((-1, 2048, 17, '192.168.1.5', '192.168.1.1', -1, -1, 5001, 42724), [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9])), ([5, 0, 12], ((-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, 57073), [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5])), ([1, 0, 11], ((-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, 57073), [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]))]
+drop:[]
+bypass:[([1, 0, 3], ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', -1, 59372, -1, -1), 4)), ([5, 0, 1], ((-1, 2048, 6, '192.168.1.4', '192.168.1.1', -1, 59372, -1, -1), 4)), ([5, 0, 11], ((-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, 42724), 4)), ([1, 0, 9], ((4, 2048, 17, '192.168.1.1', '192.168.1.5', -1, -1, 42724, -1), 4)), ([1, 0, 11], ((-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, 57073), 4)), ([5, 0, 12], ((-1, 2048, 17, '192.168.1.4', '192.168.1.1', -1, -1, -1, 57073), 4)), ([1, 0, 12], ((4, 2048, 17, '192.168.1.1', '192.168.1.5', -1, -1, 57073, -1), 4))]
+multi-transform:[]
+occlusion:[]
+injection:[]
+Number of distributed conflicts by class: {'black-hole': 0, 'loops': 0, 'incomplete-transform': 16, 'drop': 0, 'bypass': 7, 'multi-transform': 0, 'occlusion': 0, 'injection': 0}

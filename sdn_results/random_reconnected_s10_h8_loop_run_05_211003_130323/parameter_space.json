@@ -1,0 +1,360 @@
+{
+    "sdn_testbed_spec_v2:testbed": {
+        "trafficTypes": [
+            "udp",
+            "tcp"
+        ],
+        "topologyId": "random_reconnected_s10_h8_loop_run_05",
+	"evaluationRun": true,
+	"switches": [
+            {
+                "id": "router9"
+            },
+            {
+                "id": "router3"
+            },
+            {
+                "id": "router6"
+            },
+            {
+                "id": "router5"
+            },
+            {
+                "id": "router2"
+            },
+            {
+                "id": "router7"
+            },
+            {
+                "id": "router1"
+            },
+            {
+                "id": "router4"
+            },
+            {
+                "id": "router10"
+            },
+            {
+                "id": "router8"
+            }
+        ],
+        "trafficProfiles": [
+            "cbr",
+            "vbr",
+            "bursty"
+        ],
+        "autostart": true,
+        "edges": [
+            {
+                "nodes": [
+                    "router7",
+                    "router2"
+                ],
+                "id": 0
+            },
+            {
+                "nodes": [
+                    "router7",
+                    "router3"
+                ],
+                "id": 1
+            },
+            {
+                "nodes": [
+                    "router7",
+                    "router1"
+                ],
+                "id": 2
+            },
+            {
+                "nodes": [
+                    "router9",
+                    "router2"
+                ],
+                "id": 3
+            },
+            {
+                "nodes": [
+                    "router9",
+                    "router3"
+                ],
+                "id": 4
+            },
+            {
+                "nodes": [
+                    "router2",
+                    "router6"
+                ],
+                "id": 5
+            },
+            {
+                "nodes": [
+                    "router2",
+                    "router1"
+                ],
+                "id": 6
+            },
+            {
+                "nodes": [
+                    "router2",
+                    "router5"
+                ],
+                "id": 7
+            },
+            {
+                "nodes": [
+                    "router2",
+                    "router4"
+                ],
+                "id": 8
+            },
+            {
+                "nodes": [
+                    "router3",
+                    "router1"
+                ],
+                "id": 9
+            },
+            {
+                "nodes": [
+                    "router3",
+                    "router8"
+                ],
+                "id": 10
+            },
+            {
+                "nodes": [
+                    "router3",
+                    "router5"
+                ],
+                "id": 11
+            },
+            {
+                "nodes": [
+                    "router6",
+                    "router5"
+                ],
+                "id": 12
+            },
+            {
+                "nodes": [
+                    "router1",
+                    "router5"
+                ],
+                "id": 13
+            },
+            {
+                "nodes": [
+                    "router1",
+                    "router4"
+                ],
+                "id": 14
+            },
+            {
+                "nodes": [
+                    "router8",
+                    "router5"
+                ],
+                "id": 15
+            },
+            {
+                "nodes": [
+                    "router10",
+                    "router4"
+                ],
+                "id": 16
+            },
+            {
+                "nodes": [
+                    "router9",
+                    "pc1"
+                ],
+                "id": 17
+            },
+            {
+                "nodes": [
+                    "router7",
+                    "pc2"
+                ],
+                "id": 18
+            },
+            {
+                "nodes": [
+                    "router7",
+                    "pc3"
+                ],
+                "id": 19
+            },
+            {
+                "nodes": [
+                    "router6",
+                    "pc4"
+                ],
+                "id": 20
+            },
+            {
+                "nodes": [
+                    "router6",
+                    "pc5"
+                ],
+                "id": 21
+            },
+            {
+                "nodes": [
+                    "router10",
+                    "pc6"
+                ],
+                "id": 22
+            },
+            {
+                "nodes": [
+                    "router8",
+                    "pc7"
+                ],
+                "id": 23
+            },
+            {
+                "nodes": [
+                    "router8",
+                    "pc8"
+                ],
+                "id": 24
+            }
+        ],
+        "apps": [
+            {
+                "config": {
+                    "cookie": "0x990",
+                    "targetSwitches": [
+                        {
+                            "switchAssets": [
+                                {
+                                    "id": 1,
+                                    "minorAssets": {
+                                        "assetKey": "jumps",
+                                        "assetItems": [
+                                            "router7",
+                                            "router1",
+					    "router2"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "switchInvariants": [
+                                {
+                                    "invariantKey": "protos",
+                                    "intItems": [
+                                        6
+                                    ]
+                                }
+                            ],
+                            "id": "router3"
+                        },
+                        {
+                            "switchAssets": [
+                                {
+                                    "id": 1,
+                                    "minorAssets": {
+                                        "assetKey": "jumps",
+                                        "assetItems": [
+                                            "router2",
+                                            "router9"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "switchInvariants": [
+                                {
+                                    "invariantKey": "protos",
+                                    "intItems": [
+                                        6
+                                    ]
+                                }
+                            ],
+                            "id": "router6"
+                        },
+                        {
+                            "switchAssets": [
+                                {
+                                    "id": 1,
+                                    "minorAssets": {
+                                        "assetKey": "jumps",
+                                        "assetItems": [
+                                            "router2",
+					    "router9"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "switchInvariants": [
+                                {
+                                    "invariantKey": "protos",
+                                    "intItems": [
+                                        6
+                                    ]
+                                }
+                            ],
+                            "id": "router7"
+                        },
+                        {
+                            "switchAssets": [
+                                {
+                                    "id": 1,
+                                    "minorAssets": {
+                                        "assetKey": "jumps",
+                                        "assetItems": [
+                                            "router2",
+					    "router9"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "switchInvariants": [
+                                {
+                                    "invariantKey": "protos",
+                                    "intItems": [
+                                        6
+                                    ]
+                                }
+                            ],
+                            "id": "router4"
+                        }
+                    ]
+                },
+                "id": "pe"
+            }
+        ],
+        "hosts": [
+            {
+    		"id": "pc1"
+            },
+            {
+                "source": true,
+                "id": "pc2"
+            },
+            {
+                "source": true,
+    		"id": "pc3"
+
+	    },
+            {
+                "source": true,
+                "id": "pc4"
+            },
+            {
+                "source": true,
+                "id": "pc5"
+            },
+            {
+                "source": true,
+                "id": "pc6"
+            },
+            {
+                "id": "pc7"
+            },
+            {
+                "id": "pc8"
+            }
+        ]
+    }
+}

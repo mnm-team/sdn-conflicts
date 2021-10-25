@@ -1,0 +1,954 @@
+
+
+
+2021-09-25 06:33:30.232703
+number of edges in rule graph = 0
+
+self.ft = 
+Number of rules: [0, {}]
+
+self.lc_cfl_rules = 
+Number of local conflicts by dpid: [0, {}]
+Number of local conflicts by class: [0, {}]
+
+self.hc_cfl_rules = 
+1:{}
+2:{}
+3:{}
+Number of rules causing hidden conflicts by control app: {}
+
+self.dt_cfl_rules = 
+occlusion:[]
+bypass:[]
+incomplete-transform:[]
+black-hole:[]
+drop:[]
+injection:[]
+loops:[]
+multi-transform:[]
+Number of distributed conflicts by class: {'occlusion': 0, 'incomplete-transform': 0, 'black-hole': 0, 'drop': 0, 'injection': 0, 'bypass': 0, 'loops': 0, 'multi-transform': 0}
+
+2021-09-25 06:34:49.664207
+New rule is coming, number of existing rules: [0, {}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,1) to the rule database = 0.09918212890625
+
+2021-09-25 06:34:49.672544
+New rule is coming, number of existing rules: [1, {14: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,1) to the rule database = 0.21028518676757812
+
+2021-09-25 06:34:49.678582
+New rule is coming, number of existing rules: [2, {8: 1, 14: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,1) to the rule database = 0.07891654968261719
+
+2021-09-25 06:34:49.685667
+New rule is coming, number of existing rules: [3, {8: 1, 10: 1, 14: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,2) to the rule database = 0.09989738464355469
+
+2021-09-25 06:34:49.704143
+New rule is coming, number of existing rules: [4, {8: 1, 10: 2, 14: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,2) to the rule database = 0.13899803161621094
+
+2021-09-25 06:34:49.722066
+New rule is coming, number of existing rules: [5, {8: 2, 10: 2, 14: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,2) to the rule database = 0.20956993103027344
+
+2021-09-25 06:34:53.843835
+New rule is coming, number of existing rules: [6, {8: 2, 10: 2, 14: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,3) to the rule database = 0.64849853515625
+
+2021-09-25 06:34:53.850555
+New rule is coming, number of existing rules: [7, {8: 2, 10: 2, 14: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,3) to the rule database = 0.4825592041015625
+
+2021-09-25 06:34:53.855697
+New rule is coming, number of existing rules: [8, {8: 3, 10: 2, 14: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,1) to the rule database = 0.09036064147949219
+
+2021-09-25 06:34:53.861609
+New rule is coming, number of existing rules: [9, {8: 3, 1: 1, 10: 2, 14: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (16,0,1) to the rule database = 0.10991096496582031
+
+2021-09-25 06:34:53.876367
+New rule is coming, number of existing rules: [10, {8: 3, 1: 1, 10: 2, 14: 3, 16: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (16,0,2) to the rule database = 0.2770423889160156
+
+2021-09-25 06:34:53.883422
+New rule is coming, number of existing rules: [11, {8: 3, 1: 1, 10: 2, 14: 3, 16: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,2) to the rule database = 0.16760826110839844
+
+2021-09-25 06:34:53.889378
+New rule is coming, number of existing rules: [12, {8: 3, 1: 2, 10: 2, 14: 3, 16: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,4) to the rule database = 0.30350685119628906
+
+2021-09-25 06:34:58.007890
+New rule is coming, number of existing rules: [13, {8: 4, 1: 2, 10: 2, 14: 3, 16: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,4) to the rule database = 0.46634674072265625
+Local Conflict - class Generalization2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:2
+Action Relationship Pattern:1
+Matchmap 1:(3, 2048, 6, '192.168.1.6', '192.168.1.3', 40930, 3463, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.3', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))
+
+2021-09-25 06:34:58.009284
+New rule is coming, number of existing rules: [14, {8: 4, 1: 2, 10: 2, 14: 4, 16: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,5) to the rule database = 1.4383792877197266
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.3', '192.168.1.6', 3463, 40930, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 1, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (1, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+
+2021-09-25 06:34:58.011581
+New rule is coming, number of existing rules: [15, {8: 4, 1: 2, 10: 2, 14: 5, 16: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,6) to the rule database = 1.2509822845458984
+
+2021-09-25 06:34:58.013367
+New rule is coming, number of existing rules: [16, {8: 4, 1: 2, 10: 2, 14: 6, 16: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,1) to the rule database = 0.0820159912109375
+
+2021-09-25 06:34:58.013917
+New rule is coming, number of existing rules: [17, {16: 2, 1: 2, 5: 1, 8: 4, 10: 2, 14: 6}]
+Time difference (ms) in checking local conflicts and adding new rule (7,0,1) to the rule database = 0.080108642578125
+
+2021-09-25 06:34:58.018655
+New rule is coming, number of existing rules: [18, {16: 2, 1: 2, 5: 1, 7: 1, 8: 4, 10: 2, 14: 6}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,5) to the rule database = 0.45228004455566406
+
+2021-09-25 06:34:58.033564
+New rule is coming, number of existing rules: [19, {16: 2, 1: 2, 5: 1, 7: 1, 8: 5, 10: 2, 14: 6}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,6) to the rule database = 0.44655799865722656
+
+2021-09-25 06:35:02.154782
+New rule is coming, number of existing rules: [20, {16: 2, 1: 2, 5: 1, 7: 1, 8: 6, 10: 2, 14: 6}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,7) to the rule database = 0.9286403656005859
+
+2021-09-25 06:35:02.160820
+New rule is coming, number of existing rules: [21, {16: 2, 1: 2, 5: 1, 7: 1, 8: 6, 10: 2, 14: 7}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,7) to the rule database = 0.8692741394042969
+
+2021-09-25 06:35:02.165972
+New rule is coming, number of existing rules: [22, {16: 2, 1: 2, 5: 1, 7: 1, 8: 7, 10: 2, 14: 7}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,8) to the rule database = 0.3345012664794922
+
+2021-09-25 06:35:06.294582
+New rule is coming, number of existing rules: [23, {16: 2, 1: 2, 5: 1, 7: 1, 8: 8, 10: 2, 14: 7}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,8) to the rule database = 1.1172294616699219
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(2, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1)
+Matchmap 2:(1024, 3, OFPMatch(oxm_fields={'tcp_dst': 40930, 'tcp_src': 3463, 'ipv4_dst': '192.168.1.6', 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.3'}), [OFPActionSetField(eth_src='00:16:3e:11:11:03'), OFPActionSetField(ipv4_src='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (-1, 2048, 6, '192.168.1.3', '192.168.1.6', 3463, 40930, -1, -1), ('192.168.1.3', -1, -1, -1, -1, -1, {3}))
+
+2021-09-25 06:35:06.302518
+New rule is coming, number of existing rules: [24, {16: 2, 1: 2, 5: 1, 7: 1, 8: 8, 10: 2, 14: 8}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,9) to the rule database = 1.0178089141845703
+
+2021-09-25 06:35:10.465489
+New rule is coming, number of existing rules: [25, {16: 2, 1: 2, 5: 1, 7: 1, 8: 8, 10: 2, 14: 9}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,10) to the rule database = 0.7998943328857422
+Local Conflict - class Generalization2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:2
+Action Relationship Pattern:1
+Matchmap 1:(3, 2048, 6, '192.168.1.6', '192.168.1.7', 55416, 3467, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.7', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.6', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))
+
+2021-09-25 06:35:10.467080
+New rule is coming, number of existing rules: [26, {16: 2, 1: 2, 5: 1, 7: 1, 8: 8, 10: 2, 14: 10}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,11) to the rule database = 3.121614456176758
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.1', '192.168.1.6', 3467, 55416, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 1, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (1, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.1', '192.168.1.6', 3467, 55416, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (2, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+
+2021-09-25 06:35:10.471059
+New rule is coming, number of existing rules: [27, {16: 2, 1: 2, 5: 1, 7: 1, 8: 8, 10: 2, 14: 11}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,12) to the rule database = 1.9445419311523438
+
+2021-09-25 06:35:10.473621
+New rule is coming, number of existing rules: [28, {16: 2, 1: 2, 5: 1, 7: 1, 8: 8, 10: 2, 14: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,2) to the rule database = 0.20503997802734375
+
+2021-09-25 06:35:10.474347
+New rule is coming, number of existing rules: [29, {16: 2, 1: 2, 5: 2, 7: 1, 8: 8, 10: 2, 14: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (7,0,2) to the rule database = 0.14281272888183594
+
+2021-09-25 06:35:10.477283
+New rule is coming, number of existing rules: [30, {16: 2, 1: 2, 5: 2, 7: 2, 8: 8, 10: 2, 14: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,9) to the rule database = 0.46634674072265625
+
+2021-09-25 06:35:10.482621
+New rule is coming, number of existing rules: [31, {16: 2, 1: 2, 5: 2, 7: 2, 8: 9, 10: 2, 14: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (20,0,1) to the rule database = 0.04315376281738281
+
+2021-09-25 06:35:10.492525
+New rule is coming, number of existing rules: [32, {16: 2, 1: 2, 20: 1, 5: 2, 7: 2, 8: 9, 10: 2, 14: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (20,0,2) to the rule database = 0.1823902130126953
+
+2021-09-25 06:35:10.500513
+New rule is coming, number of existing rules: [33, {16: 2, 1: 2, 20: 2, 5: 2, 7: 2, 8: 9, 10: 2, 14: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,10) to the rule database = 0.6356239318847656
+
+2021-09-25 06:35:14.602409
+New rule is coming, number of existing rules: [34, {16: 2, 1: 2, 20: 2, 5: 2, 7: 2, 8: 10, 10: 2, 14: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,13) to the rule database = 0.79345703125
+Local Conflict - class Generalization2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:2
+Action Relationship Pattern:1
+Matchmap 1:(3, 2048, 6, '192.168.1.6', '192.168.1.8', 40626, 3468, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.8', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.6', '192.168.1.8', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))
+
+2021-09-25 06:35:14.603683
+New rule is coming, number of existing rules: [35, {16: 2, 1: 2, 20: 2, 5: 2, 7: 2, 8: 10, 10: 2, 14: 13}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,14) to the rule database = 1.1363029479980469
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.5', '192.168.1.6', 3468, 40626, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 1, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (1, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.5', '192.168.1.6', 3468, 40626, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (2, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+
+2021-09-25 06:35:14.605239
+New rule is coming, number of existing rules: [36, {16: 2, 1: 2, 20: 2, 5: 2, 7: 2, 8: 10, 10: 2, 14: 14}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,15) to the rule database = 1.491546630859375
+
+2021-09-25 06:35:14.607089
+New rule is coming, number of existing rules: [37, {16: 2, 1: 2, 20: 2, 5: 2, 7: 2, 8: 10, 10: 2, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,3) to the rule database = 0.1990795135498047
+
+2021-09-25 06:35:14.607656
+New rule is coming, number of existing rules: [38, {16: 2, 1: 2, 20: 2, 5: 3, 7: 2, 8: 10, 10: 2, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (7,0,3) to the rule database = 0.19979476928710938
+
+2021-09-25 06:35:14.610345
+New rule is coming, number of existing rules: [39, {16: 2, 1: 2, 20: 2, 5: 3, 7: 3, 8: 10, 10: 2, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,11) to the rule database = 0.5323886871337891
+
+2021-09-25 06:35:14.614970
+New rule is coming, number of existing rules: [40, {16: 2, 1: 2, 20: 2, 5: 3, 7: 3, 8: 11, 10: 2, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,1) to the rule database = 0.06723403930664062
+
+2021-09-25 06:35:14.620303
+New rule is coming, number of existing rules: [41, {16: 2, 1: 2, 20: 2, 5: 3, 17: 1, 8: 11, 10: 2, 7: 3, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,1) to the rule database = 0.09822845458984375
+
+2021-09-25 06:35:14.629389
+New rule is coming, number of existing rules: [42, {16: 2, 1: 2, 2: 1, 20: 2, 5: 3, 17: 1, 8: 11, 10: 2, 7: 3, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (19,0,1) to the rule database = 0.04696846008300781
+
+2021-09-25 06:35:14.645722
+New rule is coming, number of existing rules: [43, {16: 2, 1: 2, 2: 1, 19: 1, 20: 2, 5: 3, 17: 1, 8: 11, 10: 2, 7: 3, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (19,0,2) to the rule database = 0.11682510375976562
+
+2021-09-25 06:35:14.651220
+New rule is coming, number of existing rules: [44, {16: 2, 1: 2, 2: 1, 19: 2, 20: 2, 5: 3, 17: 1, 8: 11, 10: 2, 7: 3, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,2) to the rule database = 0.17189979553222656
+
+2021-09-25 06:35:14.659966
+New rule is coming, number of existing rules: [45, {16: 2, 1: 2, 2: 2, 19: 2, 20: 2, 5: 3, 17: 1, 8: 11, 10: 2, 7: 3, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,3) to the rule database = 0.4279613494873047
+
+2021-09-25 06:35:14.668815
+New rule is coming, number of existing rules: [46, {16: 2, 1: 3, 2: 2, 19: 2, 20: 2, 5: 3, 17: 1, 8: 11, 10: 2, 7: 3, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,12) to the rule database = 1.2652873992919922
+
+2021-09-25 06:35:18.865608
+New rule is coming, number of existing rules: [47, {16: 2, 1: 3, 2: 2, 19: 2, 20: 2, 5: 3, 17: 1, 8: 12, 10: 2, 7: 3, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,1) to the rule database = 0.11038780212402344
+
+2021-09-25 06:35:18.871928
+New rule is coming, number of existing rules: [48, {1: 3, 2: 2, 5: 3, 7: 3, 8: 12, 10: 2, 14: 15, 16: 2, 17: 1, 18: 1, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,3) to the rule database = 0.2827644348144531
+
+2021-09-25 06:35:18.878377
+New rule is coming, number of existing rules: [49, {1: 3, 2: 2, 5: 3, 7: 3, 8: 12, 10: 3, 14: 15, 16: 2, 17: 1, 18: 1, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,4) to the rule database = 0.33545494079589844
+
+2021-09-25 06:35:18.883414
+New rule is coming, number of existing rules: [50, {1: 3, 2: 2, 5: 3, 7: 3, 8: 12, 10: 4, 14: 15, 16: 2, 17: 1, 18: 1, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,2) to the rule database = 0.2715587615966797
+
+2021-09-25 06:35:23.010290
+New rule is coming, number of existing rules: [51, {1: 3, 2: 2, 5: 3, 7: 3, 8: 12, 10: 4, 14: 15, 16: 2, 17: 1, 18: 2, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,3) to the rule database = 0.37550926208496094
+
+2021-09-25 06:35:23.016544
+New rule is coming, number of existing rules: [52, {1: 3, 2: 2, 5: 3, 7: 3, 8: 12, 10: 4, 14: 15, 16: 2, 17: 1, 18: 3, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,13) to the rule database = 0.9753704071044922
+
+2021-09-25 06:35:23.021312
+New rule is coming, number of existing rules: [53, {1: 3, 2: 2, 5: 3, 7: 3, 8: 13, 10: 4, 14: 15, 16: 2, 17: 1, 18: 3, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,4) to the rule database = 0.30922889709472656
+
+2021-09-25 06:35:23.029955
+New rule is coming, number of existing rules: [54, {1: 4, 2: 2, 5: 3, 7: 3, 8: 13, 10: 4, 14: 15, 16: 2, 17: 1, 18: 3, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (16,0,3) to the rule database = 0.43892860412597656
+
+2021-09-25 06:35:23.036633
+New rule is coming, number of existing rules: [55, {1: 4, 2: 2, 5: 3, 7: 3, 8: 13, 10: 4, 14: 15, 16: 3, 17: 1, 18: 3, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,5) to the rule database = 0.7114410400390625
+
+2021-09-25 06:35:23.041513
+New rule is coming, number of existing rules: [56, {1: 5, 2: 2, 5: 3, 7: 3, 8: 13, 10: 4, 14: 15, 16: 3, 17: 1, 18: 3, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,14) to the rule database = 0.9062290191650391
+
+2021-09-25 06:35:23.046623
+New rule is coming, number of existing rules: [57, {1: 5, 2: 2, 5: 3, 7: 3, 8: 14, 10: 4, 14: 15, 16: 3, 17: 1, 18: 3, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,4) to the rule database = 0.22864341735839844
+
+2021-09-25 06:35:27.169982
+New rule is coming, number of existing rules: [58, {1: 5, 2: 2, 5: 3, 7: 3, 8: 14, 10: 4, 14: 15, 16: 3, 17: 1, 18: 4, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,5) to the rule database = 0.2942085266113281
+
+2021-09-25 06:35:27.174095
+New rule is coming, number of existing rules: [59, {1: 5, 2: 2, 5: 3, 7: 3, 8: 14, 10: 4, 14: 15, 16: 3, 17: 1, 18: 5, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,15) to the rule database = 0.5006790161132812
+
+2021-09-25 06:35:27.179513
+New rule is coming, number of existing rules: [60, {1: 5, 2: 2, 5: 3, 7: 3, 8: 15, 10: 4, 14: 15, 16: 3, 17: 1, 18: 5, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,16) to the rule database = 0.5164146423339844
+
+2021-09-25 06:35:31.322088
+New rule is coming, number of existing rules: [61, {1: 5, 2: 2, 5: 3, 7: 3, 8: 16, 10: 4, 14: 15, 16: 3, 17: 1, 18: 5, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,6) to the rule database = 0.37670135498046875
+
+2021-09-25 06:35:31.330116
+New rule is coming, number of existing rules: [62, {1: 5, 2: 2, 5: 3, 7: 3, 8: 16, 10: 4, 14: 15, 16: 3, 17: 1, 18: 6, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,17) to the rule database = 1.6129016876220703
+
+2021-09-25 06:35:31.338727
+New rule is coming, number of existing rules: [63, {1: 5, 2: 2, 5: 3, 7: 3, 8: 17, 10: 4, 14: 15, 16: 3, 17: 1, 18: 6, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,18) to the rule database = 1.0704994201660156
+
+2021-09-25 06:35:35.477478
+New rule is coming, number of existing rules: [64, {1: 5, 2: 2, 5: 3, 7: 3, 8: 18, 10: 4, 14: 15, 16: 3, 17: 1, 18: 6, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,7) to the rule database = 0.4024505615234375
+
+2021-09-25 06:35:35.482021
+New rule is coming, number of existing rules: [65, {1: 5, 2: 2, 5: 3, 7: 3, 8: 18, 10: 4, 14: 15, 16: 3, 17: 1, 18: 7, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,19) to the rule database = 0.7205009460449219
+
+2021-09-25 06:35:35.486835
+New rule is coming, number of existing rules: [66, {1: 5, 2: 2, 5: 3, 7: 3, 8: 19, 10: 4, 14: 15, 16: 3, 17: 1, 18: 7, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,16) to the rule database = 0.58746337890625
+
+2021-09-25 06:35:35.492006
+New rule is coming, number of existing rules: [67, {1: 5, 2: 2, 5: 3, 7: 3, 8: 19, 10: 4, 14: 16, 16: 3, 17: 1, 18: 7, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,17) to the rule database = 0.6036758422851562
+
+2021-09-25 06:35:35.496835
+New rule is coming, number of existing rules: [68, {1: 5, 2: 2, 5: 3, 7: 3, 8: 19, 10: 4, 14: 17, 16: 3, 17: 1, 18: 7, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,20) to the rule database = 0.8225440979003906
+
+2021-09-25 06:35:39.626425
+New rule is coming, number of existing rules: [69, {1: 5, 2: 2, 5: 3, 7: 3, 8: 20, 10: 4, 14: 17, 16: 3, 17: 1, 18: 7, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,8) to the rule database = 1.1754035949707031
+
+2021-09-25 06:35:39.631838
+New rule is coming, number of existing rules: [70, {1: 5, 2: 2, 5: 3, 7: 3, 8: 20, 10: 4, 14: 17, 16: 3, 17: 1, 18: 8, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,21) to the rule database = 0.7617473602294922
+
+2021-09-25 06:35:39.637788
+New rule is coming, number of existing rules: [71, {1: 5, 2: 2, 5: 3, 7: 3, 8: 21, 10: 4, 14: 17, 16: 3, 17: 1, 18: 8, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (20,0,3) to the rule database = 0.1595020294189453
+
+2021-09-25 06:35:39.641102
+New rule is coming, number of existing rules: [72, {1: 5, 2: 2, 5: 3, 7: 3, 8: 21, 10: 4, 14: 17, 16: 3, 17: 1, 18: 8, 19: 2, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,22) to the rule database = 1.0442733764648438
+
+2021-09-25 06:35:43.815459
+New rule is coming, number of existing rules: [73, {1: 5, 2: 2, 5: 3, 7: 3, 8: 22, 10: 4, 14: 17, 16: 3, 17: 1, 18: 8, 19: 2, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,9) to the rule database = 1.4543533325195312
+
+2021-09-25 06:35:43.825539
+New rule is coming, number of existing rules: [74, {1: 5, 2: 2, 5: 3, 7: 3, 8: 22, 10: 4, 14: 17, 16: 3, 17: 1, 18: 9, 19: 2, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,23) to the rule database = 1.4977455139160156
+
+2021-09-25 06:35:43.830961
+New rule is coming, number of existing rules: [75, {1: 5, 2: 2, 5: 3, 7: 3, 8: 23, 10: 4, 14: 17, 16: 3, 17: 1, 18: 9, 19: 2, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,6) to the rule database = 0.5142688751220703
+
+2021-09-25 06:35:43.835803
+New rule is coming, number of existing rules: [76, {1: 6, 2: 2, 5: 3, 7: 3, 8: 23, 10: 4, 14: 17, 16: 3, 17: 1, 18: 9, 19: 2, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,3) to the rule database = 0.2040863037109375
+
+2021-09-25 06:35:43.840763
+New rule is coming, number of existing rules: [77, {1: 6, 2: 3, 5: 3, 7: 3, 8: 23, 10: 4, 14: 17, 16: 3, 17: 1, 18: 9, 19: 2, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (19,0,3) to the rule database = 0.20599365234375
+
+2021-09-25 06:35:43.844694
+New rule is coming, number of existing rules: [78, {1: 6, 2: 3, 5: 3, 7: 3, 8: 23, 10: 4, 14: 17, 16: 3, 17: 1, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,4) to the rule database = 0.23651123046875
+
+2021-09-25 06:35:43.853590
+New rule is coming, number of existing rules: [79, {1: 6, 2: 4, 5: 3, 7: 3, 8: 23, 10: 4, 14: 17, 16: 3, 17: 1, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,7) to the rule database = 0.9191036224365234
+
+2021-09-25 06:35:43.861562
+New rule is coming, number of existing rules: [80, {1: 7, 2: 4, 5: 3, 7: 3, 8: 23, 10: 4, 14: 17, 16: 3, 17: 1, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,24) to the rule database = 2.4421215057373047
+
+2021-09-25 06:35:48.060205
+New rule is coming, number of existing rules: [81, {1: 7, 2: 4, 5: 3, 7: 3, 8: 24, 10: 4, 14: 17, 16: 3, 17: 1, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,2) to the rule database = 0.15592575073242188
+
+2021-09-25 06:35:48.064196
+New rule is coming, number of existing rules: [82, {1: 7, 2: 4, 5: 3, 7: 3, 8: 24, 10: 4, 14: 17, 16: 3, 17: 2, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,25) to the rule database = 0.8931159973144531
+
+2021-09-25 06:35:48.069780
+New rule is coming, number of existing rules: [83, {1: 7, 2: 4, 5: 3, 7: 3, 8: 25, 10: 4, 14: 17, 16: 3, 17: 2, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,5) to the rule database = 0.3693103790283203
+
+2021-09-25 06:35:48.073931
+New rule is coming, number of existing rules: [84, {1: 7, 2: 4, 5: 3, 7: 3, 8: 25, 10: 5, 14: 17, 16: 3, 17: 2, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,26) to the rule database = 0.9057521820068359
+
+2021-09-25 06:35:48.078237
+New rule is coming, number of existing rules: [85, {1: 7, 2: 4, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 3, 17: 2, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,3) to the rule database = 0.1957416534423828
+
+2021-09-25 06:35:52.182944
+New rule is coming, number of existing rules: [86, {1: 7, 2: 4, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 3, 17: 3, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,4) to the rule database = 0.2498626708984375
+
+2021-09-25 06:35:52.191577
+New rule is coming, number of existing rules: [87, {1: 7, 2: 4, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 3, 17: 4, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,5) to the rule database = 0.5562305450439453
+
+2021-09-25 06:35:52.199538
+New rule is coming, number of existing rules: [88, {1: 7, 2: 5, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 3, 17: 4, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (16,0,4) to the rule database = 0.1990795135498047
+
+2021-09-25 06:35:52.208836
+New rule is coming, number of existing rules: [89, {1: 7, 2: 5, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 4, 17: 4, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (16,0,5) to the rule database = 0.9012222290039062
+
+2021-09-25 06:35:52.216749
+New rule is coming, number of existing rules: [90, {1: 7, 2: 5, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 5, 17: 4, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,6) to the rule database = 0.5960464477539062
+
+2021-09-25 06:35:52.222804
+New rule is coming, number of existing rules: [91, {1: 7, 2: 6, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 5, 17: 4, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,5) to the rule database = 0.3859996795654297
+
+2021-09-25 06:35:56.340933
+New rule is coming, number of existing rules: [92, {1: 7, 2: 6, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 5, 17: 5, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,6) to the rule database = 0.9212493896484375
+
+2021-09-25 06:35:56.346613
+New rule is coming, number of existing rules: [93, {1: 7, 2: 6, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 5, 17: 6, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,27) to the rule database = 0.8065700531005859
+
+2021-09-25 06:35:56.356740
+New rule is coming, number of existing rules: [94, {1: 7, 2: 6, 5: 3, 7: 3, 8: 27, 10: 5, 14: 17, 16: 5, 17: 6, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,28) to the rule database = 2.827167510986328
+
+2021-09-25 06:36:00.459781
+New rule is coming, number of existing rules: [95, {1: 7, 2: 6, 5: 3, 7: 3, 8: 28, 10: 5, 14: 17, 16: 5, 17: 6, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,7) to the rule database = 0.3981590270996094
+
+2021-09-25 06:36:00.468982
+New rule is coming, number of existing rules: [96, {1: 7, 2: 6, 5: 3, 7: 3, 8: 28, 10: 5, 14: 17, 16: 5, 17: 7, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,29) to the rule database = 2.492666244506836
+
+2021-09-25 06:36:00.480485
+New rule is coming, number of existing rules: [97, {1: 7, 2: 6, 5: 3, 7: 3, 8: 29, 10: 5, 14: 17, 16: 5, 17: 7, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,30) to the rule database = 1.9207000732421875
+
+2021-09-25 06:36:04.582930
+New rule is coming, number of existing rules: [98, {1: 7, 2: 6, 5: 3, 7: 3, 8: 30, 10: 5, 14: 17, 16: 5, 17: 7, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,8) to the rule database = 1.3148784637451172
+
+2021-09-25 06:36:04.591110
+New rule is coming, number of existing rules: [99, {1: 7, 2: 6, 5: 3, 7: 3, 8: 30, 10: 5, 14: 17, 16: 5, 17: 8, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,31) to the rule database = 1.5671253204345703
+
+2021-09-25 06:36:04.602663
+New rule is coming, number of existing rules: [100, {1: 7, 2: 6, 5: 3, 7: 3, 8: 31, 10: 5, 14: 17, 16: 5, 17: 8, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,18) to the rule database = 1.4681816101074219
+
+2021-09-25 06:36:04.611032
+New rule is coming, number of existing rules: [101, {1: 7, 2: 6, 5: 3, 7: 3, 8: 31, 10: 5, 14: 18, 16: 5, 17: 8, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,32) to the rule database = 1.585245132446289
+
+2021-09-25 06:36:08.700901
+New rule is coming, number of existing rules: [102, {1: 7, 2: 6, 5: 3, 7: 3, 8: 32, 10: 5, 14: 18, 16: 5, 17: 8, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,9) to the rule database = 1.4710426330566406
+
+2021-09-25 06:36:08.710700
+New rule is coming, number of existing rules: [103, {1: 7, 2: 6, 5: 3, 7: 3, 8: 32, 10: 5, 14: 18, 16: 5, 17: 9, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,33) to the rule database = 2.7260780334472656
+
+2021-09-25 06:36:08.718574
+New rule is coming, number of existing rules: [104, {1: 7, 2: 6, 5: 3, 7: 3, 8: 33, 10: 5, 14: 18, 16: 5, 17: 9, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (20,0,4) to the rule database = 0.4019737243652344
+
+2021-09-25 06:36:08.722915
+New rule is coming, number of existing rules: [105, {1: 7, 2: 6, 5: 3, 7: 3, 8: 33, 10: 5, 14: 18, 16: 5, 17: 9, 18: 9, 19: 3, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,34) to the rule database = 1.4805793762207031
+
+2021-09-25 06:36:12.836535
+New rule is coming, number of existing rules: [106, {1: 7, 2: 6, 5: 3, 7: 3, 8: 34, 10: 5, 14: 18, 16: 5, 17: 9, 18: 9, 19: 3, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,10) to the rule database = 1.773834228515625
+
+2021-09-25 06:36:12.845698
+New rule is coming, number of existing rules: [107, {1: 7, 2: 6, 5: 3, 7: 3, 8: 34, 10: 5, 14: 18, 16: 5, 17: 10, 18: 9, 19: 3, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,7) to the rule database = 0.7638931274414062
+
+2021-09-25 06:36:12.852902
+New rule is coming, number of existing rules: [108, {1: 7, 2: 7, 5: 3, 7: 3, 8: 34, 10: 5, 14: 18, 16: 5, 17: 10, 18: 9, 19: 3, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (19,0,4) to the rule database = 0.4706382751464844
+
+2021-09-25 06:36:12.857732
+New rule is coming, number of existing rules: [109, {1: 7, 2: 7, 5: 3, 7: 3, 8: 34, 10: 5, 14: 18, 16: 5, 17: 10, 18: 9, 19: 4, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,8) to the rule database = 0.5450248718261719
+
+
+2021-09-25 06:36:23.397460
+Number of existing rules: [110, {1: 7, 2: 8, 5: 3, 7: 3, 8: 34, 10: 5, 14: 18, 16: 5, 17: 10, 18: 9, 19: 4, 20: 4}]
+number of edges in rule graph = 0
+number of rules to be removed = 0
+number of rules to be added = 110
+Time difference (ms) in checking hidden conflicts for rule (14,0,1) = 0.7181167602539062
+Time difference (ms) in adding rule (14,0,1) to the rule graph = 2.0601749420166016
+Time difference (ms) in checking hidden conflicts for rule (8,0,1) = 0.018358230590820312
+Time difference (ms) in adding rule (8,0,1) to the rule graph = 4.5108795166015625
+Time difference (ms) in checking hidden conflicts for rule (10,0,1) = 0.016927719116210938
+Time difference (ms) in adding rule (10,0,1) to the rule graph = 3.7851333618164062
+Time difference (ms) in checking hidden conflicts for rule (10,0,2) = 0.01621246337890625
+Time difference (ms) in adding rule (10,0,2) to the rule graph = 1.7609596252441406
+Time difference (ms) in checking hidden conflicts for rule (8,0,2) = 0.01621246337890625
+Time difference (ms) in adding rule (8,0,2) to the rule graph = 1.2593269348144531
+Time difference (ms) in checking hidden conflicts for rule (14,0,2) = 0.4265308380126953
+Time difference (ms) in adding rule (14,0,2) to the rule graph = 9.630918502807617
+Time difference (ms) in checking hidden conflicts for rule (14,0,3) = 0.32711029052734375
+Time difference (ms) in adding rule (14,0,3) to the rule graph = 0.9593963623046875
+Time difference (ms) in checking hidden conflicts for rule (8,0,3) = 0.007152557373046875
+Time difference (ms) in adding rule (8,0,3) to the rule graph = 1.2221336364746094
+Time difference (ms) in checking hidden conflicts for rule (1,0,1) = 0.0069141387939453125
+Time difference (ms) in adding rule (1,0,1) to the rule graph = 0.47659873962402344
+Time difference (ms) in checking hidden conflicts for rule (16,0,1) = 0.0069141387939453125
+Time difference (ms) in adding rule (16,0,1) to the rule graph = 2.0613670349121094
+Time difference (ms) in checking hidden conflicts for rule (16,0,2) = 0.0073909759521484375
+Time difference (ms) in checking hidden conflicts for rule (1,0,2) = 0.0059604644775390625
+Time difference (ms) in checking hidden conflicts for rule (8,0,4) = 0.0057220458984375
+Time difference (ms) in checking hidden conflicts for rule (14,0,4) = 0.1983642578125
+Time difference (ms) in adding rule (14,0,4) to the rule graph = 0.7076263427734375
+Time difference (ms) in checking hidden conflicts for rule (14,0,5) = 0.19311904907226562
+Time difference (ms) in adding rule (14,0,5) to the rule graph = 0.7565021514892578
+Time difference (ms) for multi-transform conflict check: 0.018835067749023438
+Time difference (ms) for injection conflict check: 0.015735626220703125
+Time difference (ms) for occlusion conflict check: 0.17976760864257812
+Time difference (ms) for bypass conflict check: 0.030040740966796875
+Time difference (ms) in checking hidden conflicts for rule (14,0,6) = 0.20432472229003906
+Time difference (ms) in adding rule (14,0,6) to the rule graph = 0.4429817199707031
+Time difference (ms) for multi-transform conflict check: 0.026702880859375
+Time difference (ms) for injection conflict check: 0.019550323486328125
+Time difference (ms) for occlusion conflict check: 0.011920928955078125
+Time difference (ms) for bypass conflict check: 1136.5537643432617
+Time difference (ms) in checking hidden conflicts for rule (5,0,1) = 0.27108192443847656
+Time difference (ms) in adding rule (5,0,1) to the rule graph = 0.19121170043945312
+Time difference (ms) for multi-transform conflict check: 0.023365020751953125
+Time difference (ms) for injection conflict check: 0.013113021850585938
+Time difference (ms) for occlusion conflict check: 0.025510787963867188
+Time difference (ms) for bypass conflict check: 1181.1888217926025
+Time difference (ms) in checking hidden conflicts for rule (7,0,1) = 0.17023086547851562
+Time difference (ms) in adding rule (7,0,1) to the rule graph = 0.1990795135498047
+Time difference (ms) for multi-transform conflict check: 0.025987625122070312
+Time difference (ms) for injection conflict check: 0.0133514404296875
+Time difference (ms) for occlusion conflict check: 0.025272369384765625
+Time difference (ms) for bypass conflict check: 1151.033639907837
+Time difference (ms) in checking hidden conflicts for rule (8,0,5) = 0.009059906005859375
+Time difference (ms) in adding rule (8,0,5) to the rule graph = 0.9005069732666016
+Time difference (ms) in checking hidden conflicts for rule (8,0,6) = 0.0069141387939453125
+Time difference (ms) in checking hidden conflicts for rule (14,0,7) = 0.24890899658203125
+Time difference (ms) in adding rule (14,0,7) to the rule graph = 0.5395412445068359
+Time difference (ms) in checking hidden conflicts for rule (8,0,7) = 0.005245208740234375
+Time difference (ms) in adding rule (8,0,7) to the rule graph = 0.7150173187255859
+Time difference (ms) in checking hidden conflicts for rule (8,0,8) = 0.005245208740234375
+Time difference (ms) in checking hidden conflicts for rule (14,0,8) = 0.1995563507080078
+Time difference (ms) in adding rule (14,0,8) to the rule graph = 0.10466575622558594
+Time difference (ms) in checking hidden conflicts for rule (14,0,9) = 0.20360946655273438
+Time difference (ms) in adding rule (14,0,9) to the rule graph = 0.0743865966796875
+Time difference (ms) in checking hidden conflicts for rule (14,0,10) = 0.23889541625976562
+Time difference (ms) in adding rule (14,0,10) to the rule graph = 0.5786418914794922
+Time difference (ms) in checking hidden conflicts for rule (14,0,11) = 0.2377033233642578
+Time difference (ms) in checking hidden conflicts for rule (14,0,12) = 0.19407272338867188
+Time difference (ms) in adding rule (14,0,12) to the rule graph = 0.5078315734863281
+Time difference (ms) for multi-transform conflict check: 0.04839897155761719
+Time difference (ms) for injection conflict check: 0.026226043701171875
+Time difference (ms) for occlusion conflict check: 0.0152587890625
+Time difference (ms) for bypass conflict check: 2381.059169769287
+Time difference (ms) in checking hidden conflicts for rule (5,0,2) = 0.274658203125
+Time difference (ms) in adding rule (5,0,2) to the rule graph = 0.19240379333496094
+Time difference (ms) for multi-transform conflict check: 0.024080276489257812
+Time difference (ms) for injection conflict check: 0.012636184692382812
+Time difference (ms) for occlusion conflict check: 0.036716461181640625
+Time difference (ms) for bypass conflict check: 2420.0594425201416
+Time difference (ms) in checking hidden conflicts for rule (7,0,2) = 0.20003318786621094
+Time difference (ms) in adding rule (7,0,2) to the rule graph = 0.2167224884033203
+Time difference (ms) for multi-transform conflict check: 0.028848648071289062
+Time difference (ms) for injection conflict check: 0.012874603271484375
+Time difference (ms) for occlusion conflict check: 0.029802322387695312
+Time difference (ms) for bypass conflict check: 2475.03399848938
+Time difference (ms) in checking hidden conflicts for rule (8,0,9) = 0.010013580322265625
+Time difference (ms) in adding rule (8,0,9) to the rule graph = 0.9610652923583984
+Time difference (ms) in checking hidden conflicts for rule (20,0,1) = 0.2295970916748047
+Time difference (ms) in adding rule (20,0,1) to the rule graph = 2.1822452545166016
+Time difference (ms) in checking hidden conflicts for rule (20,0,2) = 0.1819133758544922
+Time difference (ms) in checking hidden conflicts for rule (8,0,10) = 0.00476837158203125
+Time difference (ms) in checking hidden conflicts for rule (14,0,13) = 0.2224445343017578
+Time difference (ms) in adding rule (14,0,13) to the rule graph = 0.8373260498046875
+Time difference (ms) in checking hidden conflicts for rule (14,0,14) = 0.2262592315673828
+Time difference (ms) in adding rule (14,0,14) to the rule graph = 0.07891654968261719
+Time difference (ms) for multi-transform conflict check: 0.019073486328125
+Time difference (ms) for injection conflict check: 0.0133514404296875
+Time difference (ms) for occlusion conflict check: 1148.8308906555176
+Time difference (ms) for bypass conflict check: 1148.0884552001953
+Time difference (ms) in checking hidden conflicts for rule (14,0,15) = 0.27179718017578125
+Time difference (ms) in adding rule (14,0,15) to the rule graph = 0.43511390686035156
+Time difference (ms) for multi-transform conflict check: 0.024557113647460938
+Time difference (ms) for injection conflict check: 0.0133514404296875
+Time difference (ms) for occlusion conflict check: 0.015497207641601562
+Time difference (ms) for bypass conflict check: 0.020742416381835938
+Time difference (ms) in checking hidden conflicts for rule (5,0,3) = 0.21457672119140625
+Time difference (ms) in adding rule (5,0,3) to the rule graph = 0.1773834228515625
+Time difference (ms) for multi-transform conflict check: 0.014066696166992188
+Time difference (ms) for injection conflict check: 0.011682510375976562
+Time difference (ms) for occlusion conflict check: 0.019073486328125
+Time difference (ms) for bypass conflict check: 0.01621246337890625
+Time difference (ms) in checking hidden conflicts for rule (7,0,3) = 0.10848045349121094
+Time difference (ms) in adding rule (7,0,3) to the rule graph = 0.16450881958007812
+Time difference (ms) for multi-transform conflict check: 0.014781951904296875
+Time difference (ms) for injection conflict check: 0.011920928955078125
+Time difference (ms) for occlusion conflict check: 0.0152587890625
+Time difference (ms) for bypass conflict check: 0.015974044799804688
+Time difference (ms) in checking hidden conflicts for rule (8,0,11) = 0.0050067901611328125
+Time difference (ms) in adding rule (8,0,11) to the rule graph = 1.1374950408935547
+Time difference (ms) in checking hidden conflicts for rule (17,0,1) = 0.0059604644775390625
+Time difference (ms) in adding rule (17,0,1) to the rule graph = 0.6341934204101562
+Time difference (ms) in checking hidden conflicts for rule (2,0,1) = 0.005245208740234375
+Time difference (ms) in adding rule (2,0,1) to the rule graph = 0.35500526428222656
+Time difference (ms) in checking hidden conflicts for rule (19,0,1) = 0.00476837158203125
+Time difference (ms) in adding rule (19,0,1) to the rule graph = 2.1800994873046875
+Time difference (ms) in checking hidden conflicts for rule (19,0,2) = 0.0057220458984375
+Time difference (ms) in checking hidden conflicts for rule (2,0,2) = 0.0045299530029296875
+Time difference (ms) in checking hidden conflicts for rule (1,0,3) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (8,0,12) = 0.004291534423828125
+Time difference (ms) in checking hidden conflicts for rule (18,0,1) = 0.00476837158203125
+Time difference (ms) in adding rule (18,0,1) to the rule graph = 0.16379356384277344
+Time difference (ms) in checking hidden conflicts for rule (10,0,3) = 0.00476837158203125
+Time difference (ms) in adding rule (10,0,3) to the rule graph = 0.10704994201660156
+Time difference (ms) in checking hidden conflicts for rule (10,0,4) = 0.00476837158203125
+Time difference (ms) in adding rule (10,0,4) to the rule graph = 0.13709068298339844
+Time difference (ms) in checking hidden conflicts for rule (18,0,2) = 0.0045299530029296875
+Time difference (ms) in adding rule (18,0,2) to the rule graph = 0.11157989501953125
+Time difference (ms) in checking hidden conflicts for rule (18,0,3) = 0.0045299530029296875
+Time difference (ms) in checking hidden conflicts for rule (8,0,13) = 0.0045299530029296875
+Time difference (ms) in checking hidden conflicts for rule (1,0,4) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (16,0,3) = 0.0040531158447265625
+Time difference (ms) in adding rule (16,0,3) to the rule graph = 0.5478858947753906
+Time difference (ms) in checking hidden conflicts for rule (1,0,5) = 0.0045299530029296875
+Time difference (ms) in adding rule (1,0,5) to the rule graph = 0.5407333374023438
+Time difference (ms) in checking hidden conflicts for rule (8,0,14) = 0.0050067901611328125
+Time difference (ms) in adding rule (8,0,14) to the rule graph = 0.5514621734619141
+Time difference (ms) in checking hidden conflicts for rule (18,0,4) = 0.00476837158203125
+Time difference (ms) in adding rule (18,0,4) to the rule graph = 4.422187805175781
+Time difference (ms) in checking hidden conflicts for rule (18,0,5) = 0.0054836273193359375
+Time difference (ms) in adding rule (18,0,5) to the rule graph = 0.45037269592285156
+Time difference (ms) in checking hidden conflicts for rule (8,0,15) = 0.0050067901611328125
+Time difference (ms) in adding rule (8,0,15) to the rule graph = 0.5116462707519531
+Time difference (ms) in checking hidden conflicts for rule (8,0,16) = 0.0054836273193359375
+Time difference (ms) in checking hidden conflicts for rule (18,0,6) = 0.004291534423828125
+Time difference (ms) in adding rule (18,0,6) to the rule graph = 0.4401206970214844
+Time difference (ms) in checking hidden conflicts for rule (8,0,17) = 0.0045299530029296875
+Time difference (ms) in adding rule (8,0,17) to the rule graph = 0.5156993865966797
+Time difference (ms) in checking hidden conflicts for rule (8,0,18) = 0.0050067901611328125
+Time difference (ms) in checking hidden conflicts for rule (18,0,7) = 0.004291534423828125
+Time difference (ms) in adding rule (18,0,7) to the rule graph = 0.7064342498779297
+Time difference (ms) in checking hidden conflicts for rule (8,0,19) = 0.0054836273193359375
+Time difference (ms) in adding rule (8,0,19) to the rule graph = 0.77056884765625
+Time difference (ms) in checking hidden conflicts for rule (14,0,16) = 0.186920166015625
+Time difference (ms) in adding rule (14,0,16) to the rule graph = 1.5964508056640625
+Time difference (ms) in checking hidden conflicts for rule (14,0,17) = 0.2357959747314453
+Time difference (ms) in checking hidden conflicts for rule (8,0,20) = 0.0050067901611328125
+Time difference (ms) in checking hidden conflicts for rule (18,0,8) = 0.0045299530029296875
+Time difference (ms) in checking hidden conflicts for rule (8,0,21) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (20,0,3) = 0.19812583923339844
+Time difference (ms) in checking hidden conflicts for rule (8,0,22) = 0.0045299530029296875
+Time difference (ms) in checking hidden conflicts for rule (18,0,9) = 0.004291534423828125
+Time difference (ms) in checking hidden conflicts for rule (8,0,23) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (1,0,6) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (2,0,3) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (19,0,3) = 0.004291534423828125
+Time difference (ms) in checking hidden conflicts for rule (2,0,4) = 0.0050067901611328125
+Time difference (ms) in checking hidden conflicts for rule (1,0,7) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (8,0,24) = 0.004291534423828125
+Time difference (ms) in checking hidden conflicts for rule (17,0,2) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (8,0,25) = 0.003814697265625
+Time difference (ms) in checking hidden conflicts for rule (10,0,5) = 0.0040531158447265625
+Time difference (ms) in adding rule (10,0,5) to the rule graph = 0.4284381866455078
+Time difference (ms) in checking hidden conflicts for rule (8,0,26) = 0.0050067901611328125
+Time difference (ms) in adding rule (8,0,26) to the rule graph = 0.4589557647705078
+Time difference (ms) in checking hidden conflicts for rule (17,0,3) = 0.0050067901611328125
+Time difference (ms) in adding rule (17,0,3) to the rule graph = 3.134012222290039
+Time difference (ms) in checking hidden conflicts for rule (17,0,4) = 0.0054836273193359375
+Time difference (ms) in adding rule (17,0,4) to the rule graph = 0.31685829162597656
+Time difference (ms) in checking hidden conflicts for rule (2,0,5) = 0.00476837158203125
+Time difference (ms) in adding rule (2,0,5) to the rule graph = 0.2913475036621094
+Time difference (ms) in checking hidden conflicts for rule (16,0,4) = 0.00476837158203125
+Time difference (ms) in adding rule (16,0,4) to the rule graph = 0.17118453979492188
+Time difference (ms) in checking hidden conflicts for rule (16,0,5) = 0.0050067901611328125
+Time difference (ms) in adding rule (16,0,5) to the rule graph = 0.2071857452392578
+Time difference (ms) in checking hidden conflicts for rule (2,0,6) = 0.00476837158203125
+Time difference (ms) in adding rule (2,0,6) to the rule graph = 0.19311904907226562
+Time difference (ms) in checking hidden conflicts for rule (17,0,5) = 0.00476837158203125
+Time difference (ms) in adding rule (17,0,5) to the rule graph = 0.7035732269287109
+Time difference (ms) in checking hidden conflicts for rule (17,0,6) = 0.005245208740234375
+Time difference (ms) in adding rule (17,0,6) to the rule graph = 0.4208087921142578
+Time difference (ms) in checking hidden conflicts for rule (8,0,27) = 0.005245208740234375
+Time difference (ms) in adding rule (8,0,27) to the rule graph = 0.7755756378173828
+Time difference (ms) in checking hidden conflicts for rule (8,0,28) = 0.0054836273193359375
+Time difference (ms) in checking hidden conflicts for rule (17,0,7) = 0.004291534423828125
+Time difference (ms) in adding rule (17,0,7) to the rule graph = 0.6852149963378906
+Time difference (ms) in checking hidden conflicts for rule (8,0,29) = 0.005245208740234375
+Time difference (ms) in adding rule (8,0,29) to the rule graph = 0.4596710205078125
+Time difference (ms) in checking hidden conflicts for rule (8,0,30) = 0.0050067901611328125
+Time difference (ms) in checking hidden conflicts for rule (17,0,8) = 0.004291534423828125
+Time difference (ms) in checking hidden conflicts for rule (8,0,31) = 0.004291534423828125
+Time difference (ms) in checking hidden conflicts for rule (14,0,18) = 0.2696514129638672
+Time difference (ms) in checking hidden conflicts for rule (8,0,32) = 0.00476837158203125
+Time difference (ms) in checking hidden conflicts for rule (17,0,9) = 0.004291534423828125
+Time difference (ms) in checking hidden conflicts for rule (8,0,33) = 0.004291534423828125
+Time difference (ms) in checking hidden conflicts for rule (20,0,4) = 0.22482872009277344
+Time difference (ms) in checking hidden conflicts for rule (8,0,34) = 0.00476837158203125
+Time difference (ms) in checking hidden conflicts for rule (17,0,10) = 0.004291534423828125
+Time difference (ms) in checking hidden conflicts for rule (2,0,7) = 0.004291534423828125
+Time difference (ms) in checking hidden conflicts for rule (19,0,4) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (2,0,8) = 0.003814697265625
+Time difference (ms) after this round of updating the rule graph = 62.81638145446777
+Average time difference (ms) in removing 0 rules from rule graph = 0
+Avarage time difference (ms) in adding 10 rules to rule graph = 2.772688865661621
+Time difference (ms) for bypass/incomplete transform conflict check: 11868.357181549072
+
+2021-09-25 06:36:56.704719
+New rule is coming, number of existing rules: [110, {1: 7, 2: 8, 5: 3, 7: 3, 8: 34, 10: 5, 14: 18, 16: 5, 17: 10, 18: 9, 19: 4, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,19) to the rule database = 0.5025863647460938
+
+2021-09-25 06:36:58.288443
+New rule is coming, number of existing rules: [111, {1: 7, 2: 8, 5: 3, 7: 3, 8: 34, 10: 5, 14: 19, 16: 5, 17: 10, 18: 9, 19: 4, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,35) to the rule database = 1.0306835174560547
+
+2021-09-25 06:37:11.279499
+New rule is coming, number of existing rules: [112, {1: 7, 2: 8, 5: 3, 7: 3, 8: 35, 10: 5, 14: 19, 16: 5, 17: 10, 18: 9, 19: 4, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,36) to the rule database = 1.1987686157226562
+Local Conflict - class Correlation4 (local conflicts)
+:Priority Relationship Pattern:0
+Matchmap Relationship Pattern:1
+Action Relationship Pattern:1
+Matchmap 1:(14, 2048, 17, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 14, 'ip_proto': 17, 'eth_type': 2048, 'ipv4_src': '192.168.1.3'}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [1], (14, 2048, 17, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4}))
+
+2021-09-25 06:37:11.623103
+New rule is coming, number of existing rules: [113, {1: 7, 2: 8, 5: 3, 7: 3, 8: 36, 10: 5, 14: 19, 16: 5, 17: 10, 18: 9, 19: 4, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,37) to the rule database = 1.4412403106689453
+
+2021-09-25 06:37:12.394445
+New rule is coming, number of existing rules: [114, {1: 7, 2: 8, 5: 3, 7: 3, 8: 37, 10: 5, 14: 19, 16: 5, 17: 10, 18: 9, 19: 4, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,20) to the rule database = 0.5571842193603516
+
+
+2021-09-25 06:37:25.052739
+Number of existing rules: [115, {1: 7, 2: 8, 5: 3, 7: 3, 8: 37, 10: 5, 14: 20, 16: 5, 17: 10, 18: 9, 19: 4, 20: 4}]
+number of edges in rule graph = 112
+number of rules to be removed = 1
+number of rules to be added = 5
+Time difference (ms) in removing rule (8,0,36) from the rule graph = 11.567354202270508
+Time difference (ms) in checking hidden conflicts for rule (14,0,19) = 0.21123886108398438
+Time difference (ms) in adding rule (14,0,19) to the rule graph = 0.32401084899902344
+Time difference (ms) in checking hidden conflicts for rule (8,0,35) = 0.005245208740234375
+Time difference (ms) in adding rule (8,0,35) to the rule graph = 0.4143714904785156
+Time difference (ms) in checking hidden conflicts for rule (8,0,37) = 0.0050067901611328125
+Time difference (ms) in adding rule (8,0,37) to the rule graph = 0.18978118896484375
+Time difference (ms) in checking hidden conflicts for rule (14,0,20) = 0.20194053649902344
+Time difference (ms) in adding rule (14,0,20) to the rule graph = 0.08177757263183594
+Time difference (ms) after this round of updating the rule graph = 12.577295303344727
+Average time difference (ms) in removing 1 rules from rule graph = 11.567354202270508
+Avarage time difference (ms) in adding 4 rules to rule graph = 0.2524852752685547
+Time difference (ms) for bypass/incomplete transform conflict check: 507.78841972351074
+
+
+2021-09-25 06:37:35.731660
+number of edges in rule graph = 115
+((17, 0, 8), (8, 0, 31)) {((17, 0, 8), (8, 0, 31)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.5', -1, -1, -1, -1), 1)}
+((8, 0, 6), (14, 0, 6)) {((8, 0, 6), (14, 0, 6)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.6', 3463, 40930, -1, -1), 3)}
+((8, 0, 6), (14, 0, 2)) {((8, 0, 6), (14, 0, 2)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), 1)}
+((8, 0, 33), (20, 0, 1)) {((17, 0, 9), (8, 0, 33), (20, 0, 1)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.7', -1, -1, -1, -1), 1), ((8, 0, 33), (20, 0, 1)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.7', -1, -1, -1, -1), 1)}
+((2, 0, 8), (17, 0, 5)) {((19, 0, 4), (2, 0, 8), (17, 0, 5)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.10', -1, -1, -1, -1), 1), ((2, 0, 8), (17, 0, 5)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.10', -1, -1, -1, -1), 1)}
+((17, 0, 9), (8, 0, 33)) {((17, 0, 9), (8, 0, 33)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.7', -1, -1, -1, -1), 1)}
+((8, 0, 5), (0, '192.168.1.3')) {((8, 0, 5), (0, '192.168.1.3')): ((13, 2048, 6, -1, '192.168.1.3', -1, -1, -1, -1), -1), ((14, 0, 4), (8, 0, 5), (0, '192.168.1.3')): ((-1, 2048, 6, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), -1), ((14, 0, 5), (8, 0, 5), (0, '192.168.1.3')): ((-1, 2048, 6, '192.168.1.6', '192.168.1.3', 40930, 3463, -1, -1), -1)}
+((8, 0, 32), (17, 0, 3)) {((8, 0, 32), (17, 0, 3)): ((-1, 2048, 6, '192.168.1.5', '192.168.1.10', -1, -1, -1, -1), 1), ((14, 0, 18), (8, 0, 32), (17, 0, 3)): ((-1, 2048, 6, '192.168.1.5', '192.168.1.10', -1, -1, -1, -1), 1)}
+((8, 0, 4), (14, 0, 2)) {((8, 0, 4), (14, 0, 2)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.6', -1, -1, -1, -1), 1), ((16, 0, 2), (1, 0, 2), (8, 0, 4), (14, 0, 2)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.6', -1, -1, -1, -1), 1)}
+((8, 0, 3), (1, 0, 1)) {((14, 0, 3), (8, 0, 3), (1, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.2', -1, -1, -1, -1), 1), ((8, 0, 3), (1, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.2', -1, -1, -1, -1), 1)}
+((2, 0, 5), (16, 0, 4)) {((2, 0, 5), (16, 0, 4)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.2', -1, -1, -1, -1), 1), ((17, 0, 4), (2, 0, 5), (16, 0, 4)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.2', -1, -1, -1, -1), 1)}
+((8, 0, 2), (14, 0, 12)) {((10, 0, 2), (8, 0, 2), (14, 0, 12)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', 3467, 55416, -1, -1), 3), ((8, 0, 2), (14, 0, 12)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', 3467, 55416, -1, -1), 3)}
+((8, 0, 2), (14, 0, 2)) {((8, 0, 2), (14, 0, 2)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), 1), ((10, 0, 2), (8, 0, 2), (14, 0, 2)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), 1)}
+((2, 0, 4), (1, 0, 7)) {((2, 0, 4), (1, 0, 7)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.9', -1, -1, -1, -1), 1), ((19, 0, 3), (2, 0, 4), (1, 0, 7)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.9', -1, -1, -1, -1), 1)}
+((8, 0, 1), (10, 0, 1)) {((14, 0, 1), (8, 0, 1), (10, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', -1, -1, -1, -1), 1), ((8, 0, 1), (10, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', -1, -1, -1, -1), 1), ((14, 0, 11), (8, 0, 1), (10, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', 55416, 3467, -1, -1), 1)}
+((2, 0, 7), (19, 0, 1)) {((2, 0, 7), (19, 0, 1)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.8', -1, -1, -1, -1), 1), ((17, 0, 10), (2, 0, 7), (19, 0, 1)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.8', -1, -1, -1, -1), 1)}
+((17, 0, 2), (8, 0, 25)) {((17, 0, 2), (8, 0, 25)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.1', -1, -1, -1, -1), 1)}
+((2, 0, 6), (17, 0, 5)) {((2, 0, 6), (17, 0, 5)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.10', -1, -1, -1, -1), 1), ((16, 0, 5), (2, 0, 6), (17, 0, 5)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.10', -1, -1, -1, -1), 1)}
+((17, 0, 3), (0, '192.168.1.10')) {((10, 0, 5), (8, 0, 26), (17, 0, 3), (0, '192.168.1.10')): ((-1, 2048, 6, '192.168.1.1', '192.168.1.10', -1, -1, -1, -1), -1), ((17, 0, 3), (0, '192.168.1.10')): ((2, 2048, 6, -1, '192.168.1.10', -1, -1, -1, -1), -1)}
+((8, 0, 31), (14, 0, 16)) {((17, 0, 8), (8, 0, 31), (14, 0, 16)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.5', -1, -1, -1, -1), 1), ((8, 0, 31), (14, 0, 16)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.5', -1, -1, -1, -1), 1)}
+((2, 0, 1), (19, 0, 1)) {((2, 0, 1), (19, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.8', -1, -1, -1, -1), 1), ((14, 0, 13), (8, 0, 11), (17, 0, 1), (2, 0, 1), (19, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.8', -1, -1, -1, -1), 1)}
+((8, 0, 30), (17, 0, 3)) {((8, 0, 30), (17, 0, 3)): ((-1, 2048, 6, '192.168.1.4', '192.168.1.10', -1, -1, -1, -1), 1)}
+((17, 0, 1), (2, 0, 1)) {((17, 0, 1), (2, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.8', -1, -1, -1, -1), 1), ((14, 0, 13), (8, 0, 11), (17, 0, 1), (2, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.8', -1, -1, -1, -1), 1)}
+((8, 0, 29), (0, '192.168.1.4')) {((8, 0, 29), (0, '192.168.1.4')): ((8, 2048, 6, -1, '192.168.1.4', -1, -1, -1, -1), -1), ((17, 0, 7), (8, 0, 29), (0, '192.168.1.4')): ((-1, 2048, 6, '192.168.1.10', '192.168.1.4', -1, -1, -1, -1), -1)}
+((14, 0, 19), (8, 0, 35)) {((14, 0, 19), (8, 0, 35)): ((-1, 2048, 17, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), 1)}
+((20, 0, 3), (8, 0, 22)) {((20, 0, 3), (8, 0, 22)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.9', -1, -1, -1, -1), 1)}
+((2, 0, 3), (19, 0, 1)) {((18, 0, 9), (8, 0, 23), (1, 0, 6), (2, 0, 3), (19, 0, 1)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.8', -1, -1, -1, -1), 1), ((2, 0, 3), (19, 0, 1)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.8', -1, -1, -1, -1), 1)}
+((17, 0, 6), (8, 0, 27)) {((17, 0, 6), (8, 0, 27)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.3', -1, -1, -1, -1), 1)}
+((8, 0, 28), (17, 0, 3)) {((8, 0, 28), (17, 0, 3)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.10', -1, -1, -1, -1), 1)}
+((20, 0, 2), (8, 0, 10)) {((20, 0, 2), (8, 0, 10)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.6', -1, -1, -1, -1), 1)}
+((2, 0, 2), (1, 0, 3)) {((2, 0, 2), (1, 0, 3)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.6', -1, -1, -1, -1), 1), ((19, 0, 2), (2, 0, 2), (1, 0, 3)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.6', -1, -1, -1, -1), 1)}
+((17, 0, 7), (8, 0, 29)) {((17, 0, 7), (8, 0, 29)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.4', -1, -1, -1, -1), 1)}
+((5, 0, 2), (8, 0, -3)) {((5, 0, 2),): ((-1, 2048, 6, '192.168.1.7', '192.168.1.6', 3467, 55416, -1, -1), -1)}
+((8, 0, 18), (18, 0, 4)) {((8, 0, 18), (18, 0, 4)): ((-1, 2048, 6, '192.168.1.4', '192.168.1.9', -1, -1, -1, -1), 1)}
+((20, 0, 1), (0, '192.168.1.7')) {((14, 0, 10), (8, 0, 9), (20, 0, 1), (0, '192.168.1.7')): ((-1, 2048, 6, '192.168.1.6', '192.168.1.7', -1, -1, -1, -1), -1), ((20, 0, 1), (0, '192.168.1.7')): ((1, 2048, 6, -1, '192.168.1.7', -1, -1, -1, -1), -1)}
+((8, 0, 24), (18, 0, 4)) {((19, 0, 3), (2, 0, 4), (1, 0, 7), (8, 0, 24), (18, 0, 4)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.9', -1, -1, -1, -1), 1), ((8, 0, 24), (18, 0, 4)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.9', -1, -1, -1, -1), 1)}
+((17, 0, 4), (2, 0, 5)) {((17, 0, 4), (2, 0, 5)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.2', -1, -1, -1, -1), 1)}
+((5, 0, 3), (8, 0, -3)) {((5, 0, 3),): ((-1, 2048, 6, '192.168.1.8', '192.168.1.6', 3468, 40626, -1, -1), -1)}
+((17, 0, 5), (0, '192.168.1.10')) {((16, 0, 5), (2, 0, 6), (17, 0, 5), (0, '192.168.1.10')): ((-1, 2048, 6, '192.168.1.2', '192.168.1.10', -1, -1, -1, -1), -1), ((17, 0, 5), (0, '192.168.1.10')): ((1, 2048, 6, -1, '192.168.1.10', -1, -1, -1, -1), -1)}
+((8, 0, 25), (10, 0, 1)) {((17, 0, 2), (8, 0, 25), (10, 0, 1)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.1', -1, -1, -1, -1), 1), ((8, 0, 25), (10, 0, 1)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.1', -1, -1, -1, -1), 1)}
+((16, 0, 5), (2, 0, 6)) {((16, 0, 5), (2, 0, 6)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.10', -1, -1, -1, -1), 1)}
+((14, 0, 1), (8, 0, 1)) {((14, 0, 1), (8, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', -1, -1, -1, -1), 1)}
+((5, 0, 1), (8, 0, -3)) {((5, 0, 1),): ((-1, 2048, 6, '192.168.1.3', '192.168.1.6', 3463, 40930, -1, -1), -1)}
+((8, 0, 23), (1, 0, 6)) {((18, 0, 9), (8, 0, 23), (1, 0, 6)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.8', -1, -1, -1, -1), 1), ((8, 0, 23), (1, 0, 6)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.8', -1, -1, -1, -1), 1)}
+((16, 0, 4), (0, '192.168.1.2')) {((16, 0, 4), (0, '192.168.1.2')): ((2, 2048, 6, -1, '192.168.1.2', -1, -1, -1, -1), -1), ((17, 0, 4), (2, 0, 5), (16, 0, 4), (0, '192.168.1.2')): ((-1, 2048, 6, '192.168.1.10', '192.168.1.2', -1, -1, -1, -1), -1)}
+((16, 0, 3), (1, 0, 5)) {((16, 0, 3), (1, 0, 5)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.9', -1, -1, -1, -1), 1)}
+((14, 0, 3), (8, 0, 3)) {((14, 0, 3), (8, 0, 3)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.2', -1, -1, -1, -1), 1)}
+((8, 0, 22), (18, 0, 4)) {((20, 0, 3), (8, 0, 22), (18, 0, 4)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.9', -1, -1, -1, -1), 1), ((8, 0, 22), (18, 0, 4)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.9', -1, -1, -1, -1), 1)}
+((10, 0, 5), (8, 0, 26)) {((10, 0, 5), (8, 0, 26)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.10', -1, -1, -1, -1), 1)}
+((20, 0, 4), (8, 0, 34)) {((20, 0, 4), (8, 0, 34)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.10', -1, -1, -1, -1), 1)}
+((16, 0, 2), (1, 0, 2)) {((16, 0, 2), (1, 0, 2)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.6', -1, -1, -1, -1), 1)}
+((14, 0, 2), (0, '192.168.1.6')) {((10, 0, 2), (8, 0, 2), (14, 0, 2), (0, '192.168.1.6')): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), -1), ((14, 0, 2), (0, '192.168.1.6')): ((1, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), -1)}
+((8, 0, 21), (20, 0, 1)) {((8, 0, 21), (20, 0, 1)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.7', -1, -1, -1, -1), 1), ((18, 0, 8), (8, 0, 21), (20, 0, 1)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.7', -1, -1, -1, -1), 1)}
+((10, 0, 4), (18, 0, 2)) {((10, 0, 4), (18, 0, 2)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.9', -1, -1, -1, -1), 1)}
+((1, 0, 2), (8, 0, 4)) {((1, 0, 2), (8, 0, 4)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.6', -1, -1, -1, -1), 1), ((16, 0, 2), (1, 0, 2), (8, 0, 4)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.6', -1, -1, -1, -1), 1)}
+((16, 0, 1), (0, '192.168.1.2')) {((14, 0, 3), (8, 0, 3), (1, 0, 1), (16, 0, 1), (0, '192.168.1.2')): ((-1, 2048, 6, '192.168.1.6', '192.168.1.2', -1, -1, -1, -1), -1), ((16, 0, 1), (0, '192.168.1.2')): ((3, 2048, 6, -1, '192.168.1.2', -1, -1, -1, -1), -1)}
+((14, 0, 5), (8, 0, 5)) {((14, 0, 5), (8, 0, 5)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.3', 40930, 3463, -1, -1), 1)}
+((8, 0, 20), (18, 0, 4)) {((14, 0, 17), (8, 0, 20), (18, 0, 4)): ((-1, 2048, 6, '192.168.1.5', '192.168.1.9', -1, -1, -1, -1), 1), ((8, 0, 20), (18, 0, 4)): ((-1, 2048, 6, '192.168.1.5', '192.168.1.9', -1, -1, -1, -1), 1)}
+((1, 0, 3), (8, 0, 12)) {((19, 0, 2), (2, 0, 2), (1, 0, 3), (8, 0, 12)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.6', -1, -1, -1, -1), 1), ((1, 0, 3), (8, 0, 12)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.6', -1, -1, -1, -1), 1)}
+((14, 0, 4), (8, 0, 5)) {((14, 0, 4), (8, 0, 5)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), 1)}
+((8, 0, 19), (14, 0, 16)) {((8, 0, 19), (14, 0, 16)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.5', -1, -1, -1, -1), 1), ((18, 0, 7), (8, 0, 19), (14, 0, 16)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.5', -1, -1, -1, -1), 1)}
+((14, 0, 7), (8, 0, 7)) {((14, 0, 7), (8, 0, 7)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.4', -1, -1, -1, -1), 1)}
+((10, 0, 1), (0, '192.168.1.1')) {((14, 0, 11), (8, 0, 1), (10, 0, 1), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', 55416, 3467, -1, -1), -1), ((10, 0, 1), (0, '192.168.1.1')): ((1, 2048, 6, -1, '192.168.1.1', -1, -1, -1, -1), -1), ((14, 0, 1), (8, 0, 1), (10, 0, 1), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', -1, -1, -1, -1), -1)}
+((1, 0, 1), (16, 0, 1)) {((1, 0, 1), (16, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.2', -1, -1, -1, -1), 1), ((14, 0, 3), (8, 0, 3), (1, 0, 1), (16, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.2', -1, -1, -1, -1), 1)}
+((14, 0, 6), (0, '192.168.1.6')) {((14, 0, 6), (0, '192.168.1.6')): ((-1, 2048, 6, '192.168.1.3', '192.168.1.6', 3463, 40930, -1, -1), -1), ((8, 0, 6), (14, 0, 6), (0, '192.168.1.6')): ((-1, 2048, 6, '192.168.1.3', '192.168.1.6', 3463, 40930, -1, -1), -1)}
+((8, 0, 17), (0, '192.168.1.4')) {((8, 0, 17), (0, '192.168.1.4')): ((12, 2048, 6, -1, '192.168.1.4', -1, -1, -1, -1), -1), ((18, 0, 6), (8, 0, 17), (0, '192.168.1.4')): ((-1, 2048, 6, '192.168.1.9', '192.168.1.4', -1, -1, -1, -1), -1)}
+((1, 0, 6), (2, 0, 3)) {((1, 0, 6), (2, 0, 3)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.8', -1, -1, -1, -1), 1), ((18, 0, 9), (8, 0, 23), (1, 0, 6), (2, 0, 3)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.8', -1, -1, -1, -1), 1)}
+((14, 0, 9), (0, '192.168.1.6')) {((14, 0, 9), (0, '192.168.1.6')): ((2, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), -1)}
+((8, 0, 16), (18, 0, 4)) {((8, 0, 16), (18, 0, 4)): ((-1, 2048, 6, '192.168.1.3', '192.168.1.9', -1, -1, -1, -1), 1)}
+((10, 0, 3), (0, '192.168.1.1')) {((10, 0, 3), (0, '192.168.1.1')): ((2, 2048, 6, -1, '192.168.1.1', -1, -1, -1, -1), -1), ((18, 0, 1), (10, 0, 3), (0, '192.168.1.1')): ((-1, 2048, 6, '192.168.1.9', '192.168.1.1', -1, -1, -1, -1), -1)}
+((1, 0, 7), (8, 0, 24)) {((19, 0, 3), (2, 0, 4), (1, 0, 7), (8, 0, 24)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.9', -1, -1, -1, -1), 1), ((1, 0, 7), (8, 0, 24)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.9', -1, -1, -1, -1), 1)}
+((14, 0, 8), (0, '192.168.1.5')) {((14, 0, 8), (0, '192.168.1.5')): ((3, 2048, 6, -1, '192.168.1.5', -1, -1, -1, -1), -1)}
+((10, 0, 2), (8, 0, 2)) {((10, 0, 2), (8, 0, 2)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), 1)}
+((1, 0, 4), (16, 0, 1)) {((1, 0, 4), (16, 0, 1)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.2', -1, -1, -1, -1), 1), ((18, 0, 3), (8, 0, 13), (1, 0, 4), (16, 0, 1)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.2', -1, -1, -1, -1), 1)}
+((14, 0, 11), (8, 0, 1)) {((14, 0, 11), (8, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.1', 55416, 3467, -1, -1), 1)}
+((19, 0, 1), (0, '192.168.1.8')) {((14, 0, 13), (8, 0, 11), (17, 0, 1), (2, 0, 1), (19, 0, 1), (0, '192.168.1.8')): ((-1, 2048, 6, '192.168.1.6', '192.168.1.8', -1, -1, -1, -1), -1), ((19, 0, 1), (0, '192.168.1.8')): ((1, 2048, 6, -1, '192.168.1.8', -1, -1, -1, -1), -1)}
+((1, 0, 5), (8, 0, 14)) {((16, 0, 3), (1, 0, 5), (8, 0, 14)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.9', -1, -1, -1, -1), 1), ((1, 0, 5), (8, 0, 14)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.9', -1, -1, -1, -1), 1)}
+((18, 0, 9), (8, 0, 23)) {((18, 0, 9), (8, 0, 23)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.8', -1, -1, -1, -1), 1)}
+((14, 0, 10), (8, 0, 9)) {((14, 0, 10), (8, 0, 9)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.7', -1, -1, -1, -1), 1)}
+((19, 0, 2), (2, 0, 2)) {((19, 0, 2), (2, 0, 2)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.6', -1, -1, -1, -1), 1)}
+((18, 0, 8), (8, 0, 21)) {((18, 0, 8), (8, 0, 21)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.7', -1, -1, -1, -1), 1)}
+((14, 0, 13), (8, 0, 11)) {((14, 0, 13), (8, 0, 11)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.8', -1, -1, -1, -1), 1)}
+((19, 0, 3), (2, 0, 4)) {((19, 0, 3), (2, 0, 4)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.9', -1, -1, -1, -1), 1)}
+((14, 0, 12), (0, '192.168.1.6')) {((10, 0, 2), (8, 0, 2), (14, 0, 12), (0, '192.168.1.6')): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', 3467, 55416, -1, -1), -1), ((14, 0, 12), (0, '192.168.1.6')): ((-1, 2048, 6, '192.168.1.1', '192.168.1.6', 3467, 55416, -1, -1), -1)}
+((19, 0, 4), (2, 0, 8)) {((19, 0, 4), (2, 0, 8)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.10', -1, -1, -1, -1), 1)}
+((8, 0, 15), (0, '192.168.1.3')) {((8, 0, 15), (0, '192.168.1.3')): ((12, 2048, 6, -1, '192.168.1.3', -1, -1, -1, -1), -1), ((18, 0, 5), (8, 0, 15), (0, '192.168.1.3')): ((-1, 2048, 6, '192.168.1.9', '192.168.1.3', -1, -1, -1, -1), -1)}
+((14, 0, 15), (0, '192.168.1.6')) {((14, 0, 15), (0, '192.168.1.6')): ((-1, 2048, 6, '192.168.1.5', '192.168.1.6', 3468, 40626, -1, -1), -1)}
+((8, 0, 35), (0, '192.168.1.3')) {((8, 0, 35), (0, '192.168.1.3')): ((13, 2048, 17, -1, '192.168.1.3', -1, -1, -1, -1), -1), ((14, 0, 19), (8, 0, 35), (0, '192.168.1.3')): ((-1, 2048, 17, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), -1)}
+((8, 0, 14), (18, 0, 4)) {((16, 0, 3), (1, 0, 5), (8, 0, 14), (18, 0, 4)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.9', -1, -1, -1, -1), 1), ((8, 0, 14), (18, 0, 4)): ((-1, 2048, 6, '192.168.1.2', '192.168.1.9', -1, -1, -1, -1), 1)}
+((18, 0, 5), (8, 0, 15)) {((18, 0, 5), (8, 0, 15)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.3', -1, -1, -1, -1), 1)}
+((14, 0, 14), (0, '192.168.1.5')) {((14, 0, 14), (0, '192.168.1.5')): ((3, 2048, 6, '192.168.1.6', '192.168.1.8', 40626, 3468, -1, -1), -1)}
+((7, 0, 1), (8, 0, -3)) {((7, 0, 1),): ((-1, 2048, 6, '192.168.1.3', '192.168.1.6', 3463, 40930, -1, -1), -1)}
+((8, 0, 13), (1, 0, 4)) {((18, 0, 3), (8, 0, 13), (1, 0, 4)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.2', -1, -1, -1, -1), 1), ((8, 0, 13), (1, 0, 4)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.2', -1, -1, -1, -1), 1)}
+((18, 0, 4), (0, '192.168.1.9')) {((18, 0, 4), (0, '192.168.1.9')): ((1, 2048, 6, -1, '192.168.1.9', -1, -1, -1, -1), -1), ((16, 0, 3), (1, 0, 5), (8, 0, 14), (18, 0, 4), (0, '192.168.1.9')): ((-1, 2048, 6, '192.168.1.2', '192.168.1.9', -1, -1, -1, -1), -1)}
+((14, 0, 17), (8, 0, 20)) {((14, 0, 17), (8, 0, 20)): ((-1, 2048, 6, '192.168.1.5', '192.168.1.9', -1, -1, -1, -1), 1)}
+((7, 0, 2), (8, 0, -3)) {((7, 0, 2),): ((-1, 2048, 6, '192.168.1.7', '192.168.1.6', 3467, 55416, -1, -1), -1)}
+((8, 0, 27), (0, '192.168.1.3')) {((17, 0, 6), (8, 0, 27), (0, '192.168.1.3')): ((-1, 2048, 6, '192.168.1.10', '192.168.1.3', -1, -1, -1, -1), -1), ((8, 0, 27), (0, '192.168.1.3')): ((8, 2048, 6, -1, '192.168.1.3', -1, -1, -1, -1), -1)}
+((8, 0, 12), (14, 0, 2)) {((8, 0, 12), (14, 0, 2)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.6', -1, -1, -1, -1), 1), ((19, 0, 2), (2, 0, 2), (1, 0, 3), (8, 0, 12), (14, 0, 2)): ((-1, 2048, 6, '192.168.1.8', '192.168.1.6', -1, -1, -1, -1), 1)}
+((18, 0, 7), (8, 0, 19)) {((18, 0, 7), (8, 0, 19)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.5', -1, -1, -1, -1), 1)}
+((14, 0, 16), (0, '192.168.1.5')) {((14, 0, 16), (0, '192.168.1.5')): ((1, 2048, 6, -1, '192.168.1.5', -1, -1, -1, -1), -1), ((18, 0, 7), (8, 0, 19), (14, 0, 16), (0, '192.168.1.5')): ((-1, 2048, 6, '192.168.1.9', '192.168.1.5', -1, -1, -1, -1), -1)}
+((7, 0, 3), (8, 0, -3)) {((7, 0, 3),): ((-1, 2048, 6, '192.168.1.8', '192.168.1.6', 3468, 40626, -1, -1), -1)}
+((8, 0, 11), (17, 0, 1)) {((8, 0, 11), (17, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.8', -1, -1, -1, -1), 1), ((14, 0, 13), (8, 0, 11), (17, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.8', -1, -1, -1, -1), 1)}
+((18, 0, 6), (8, 0, 17)) {((18, 0, 6), (8, 0, 17)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.4', -1, -1, -1, -1), 1)}
+((8, 0, 10), (14, 0, 2)) {((20, 0, 2), (8, 0, 10), (14, 0, 2)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.6', -1, -1, -1, -1), 1), ((8, 0, 10), (14, 0, 2)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.6', -1, -1, -1, -1), 1)}
+((18, 0, 1), (10, 0, 3)) {((18, 0, 1), (10, 0, 3)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.1', -1, -1, -1, -1), 1)}
+((14, 0, 18), (8, 0, 32)) {((14, 0, 18), (8, 0, 32)): ((-1, 2048, 6, '192.168.1.5', '192.168.1.10', -1, -1, -1, -1), 1)}
+((8, 0, 9), (20, 0, 1)) {((14, 0, 10), (8, 0, 9), (20, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.7', -1, -1, -1, -1), 1), ((8, 0, 9), (20, 0, 1)): ((-1, 2048, 6, '192.168.1.6', '192.168.1.7', -1, -1, -1, -1), 1)}
+((17, 0, 10), (2, 0, 7)) {((17, 0, 10), (2, 0, 7)): ((-1, 2048, 6, '192.168.1.10', '192.168.1.8', -1, -1, -1, -1), 1)}
+((8, 0, 8), (14, 0, 2)) {((8, 0, 8), (14, 0, 2)): ((-1, 2048, 6, '192.168.1.4', '192.168.1.6', -1, -1, -1, -1), 1)}
+((18, 0, 3), (8, 0, 13)) {((18, 0, 3), (8, 0, 13)): ((-1, 2048, 6, '192.168.1.9', '192.168.1.2', -1, -1, -1, -1), 1)}
+((14, 0, 20), (14, 0, -1)) {((14, 0, 20),): ((3, 2048, 17, '192.168.1.6', '192.168.1.5', -1, -1, -1, -1), -1)}
+((8, 0, 7), (0, '192.168.1.4')) {((14, 0, 7), (8, 0, 7), (0, '192.168.1.4')): ((-1, 2048, 6, '192.168.1.6', '192.168.1.4', -1, -1, -1, -1), -1), ((8, 0, 7), (0, '192.168.1.4')): ((13, 2048, 6, -1, '192.168.1.4', -1, -1, -1, -1), -1)}
+((18, 0, 2), (0, '192.168.1.9')) {((18, 0, 2), (0, '192.168.1.9')): ((2, 2048, 6, -1, '192.168.1.9', -1, -1, -1, -1), -1), ((10, 0, 4), (18, 0, 2), (0, '192.168.1.9')): ((-1, 2048, 6, '192.168.1.1', '192.168.1.9', -1, -1, -1, -1), -1)}
+((8, 0, 34), (17, 0, 3)) {((20, 0, 4), (8, 0, 34), (17, 0, 3)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.10', -1, -1, -1, -1), 1), ((8, 0, 34), (17, 0, 3)): ((-1, 2048, 6, '192.168.1.7', '192.168.1.10', -1, -1, -1, -1), 1)}
+((8, 0, 26), (17, 0, 3)) {((8, 0, 26), (17, 0, 3)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.10', -1, -1, -1, -1), 1), ((10, 0, 5), (8, 0, 26), (17, 0, 3)): ((-1, 2048, 6, '192.168.1.1', '192.168.1.10', -1, -1, -1, -1), 1)}
+
+self.ft = 
+1:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.2', 'in_port': 4, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=6,type=0)], [16], (4, 2048, 6, '192.168.1.6', '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {6})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 6, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.2'}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [8], (6, 2048, 6, '192.168.1.2', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.8'}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [8], (3, 2048, 6, '192.168.1.8', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.2', 'in_port': 4, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.9'}), [OFPActionOutput(len=16,max_len=65509,port=6,type=0)], [16], (4, 2048, 6, '192.168.1.9', '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {6})), 5: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 6, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.2'}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [8], (6, 2048, 6, '192.168.1.2', '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 6: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.8', 'in_port': 4, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.9'}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [2], (4, 2048, 6, '192.168.1.9', '192.168.1.8', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 7: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.8'}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [8], (3, 2048, 6, '192.168.1.8', '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4}))}}
+2:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.8', 'in_port': 8, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=7,type=0)], [19], (8, 2048, 6, '192.168.1.6', '192.168.1.8', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {7})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 7, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.8'}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [1], (7, 2048, 6, '192.168.1.8', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.8', 'in_port': 4, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.9'}), [OFPActionOutput(len=16,max_len=65509,port=7,type=0)], [19], (4, 2048, 6, '192.168.1.9', '192.168.1.8', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {7})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 7, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.8'}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [1], (7, 2048, 6, '192.168.1.8', '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 5: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.2', 'in_port': 8, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.10'}), [OFPActionOutput(len=16,max_len=65509,port=10,type=0)], [16], (8, 2048, 6, '192.168.1.10', '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {10})), 6: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.10', 'in_port': 10, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.2'}), [OFPActionOutput(len=16,max_len=65509,port=8,type=0)], [17], (10, 2048, 6, '192.168.1.2', '192.168.1.10', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {8})), 7: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.8', 'in_port': 8, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.10'}), [OFPActionOutput(len=16,max_len=65509,port=7,type=0)], [19], (8, 2048, 6, '192.168.1.10', '192.168.1.8', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {7})), 8: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.10', 'in_port': 7, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.8'}), [OFPActionOutput(len=16,max_len=65509,port=8,type=0)], [17], (7, 2048, 6, '192.168.1.8', '192.168.1.10', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {8}))}}
+5:{0: {1: (1024, 3, OFPMatch(oxm_fields={'tcp_dst': 40930, 'tcp_src': 3463, 'ipv4_dst': '192.168.1.6', 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.3'}), [OFPActionSetField(eth_src='00:16:3e:11:11:03'), OFPActionSetField(ipv4_src='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=5,type=0)], [8], (-1, 2048, 6, '192.168.1.3', '192.168.1.6', 3463, 40930, -1, -1), ('192.168.1.3', -1, -1, -1, -1, -1, {5})), 2: (1024, 3, OFPMatch(oxm_fields={'tcp_dst': 55416, 'tcp_src': 3467, 'ipv4_dst': '192.168.1.6', 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=5,type=0)], [8], (-1, 2048, 6, '192.168.1.1', '192.168.1.6', 3467, 55416, -1, -1), ('192.168.1.7', -1, -1, -1, -1, -1, {5})), 3: (1024, 3, OFPMatch(oxm_fields={'tcp_dst': 40626, 'tcp_src': 3468, 'ipv4_dst': '192.168.1.6', 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.5'}), [OFPActionSetField(eth_src='00:16:3e:11:11:08'), OFPActionSetField(ipv4_src='192.168.1.8'), OFPActionOutput(len=16,max_len=65509,port=5,type=0)], [8], (-1, 2048, 6, '192.168.1.5', '192.168.1.6', 3468, 40626, -1, -1), ('192.168.1.8', -1, -1, -1, -1, -1, {5}))}}
+7:{0: {1: (1024, 3, OFPMatch(oxm_fields={'tcp_dst': 40930, 'tcp_src': 3463, 'ipv4_dst': '192.168.1.6', 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.3'}), [OFPActionSetField(eth_src='00:16:3e:11:11:03'), OFPActionSetField(ipv4_src='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=6,type=0)], [8], (-1, 2048, 6, '192.168.1.3', '192.168.1.6', 3463, 40930, -1, -1), ('192.168.1.3', -1, -1, -1, -1, -1, {6})), 2: (1024, 3, OFPMatch(oxm_fields={'tcp_dst': 55416, 'tcp_src': 3467, 'ipv4_dst': '192.168.1.6', 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=6,type=0)], [8], (-1, 2048, 6, '192.168.1.1', '192.168.1.6', 3467, 55416, -1, -1), ('192.168.1.7', -1, -1, -1, -1, -1, {6})), 3: (1024, 3, OFPMatch(oxm_fields={'tcp_dst': 40626, 'tcp_src': 3468, 'ipv4_dst': '192.168.1.6', 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.5'}), [OFPActionSetField(eth_src='00:16:3e:11:11:08'), OFPActionSetField(ipv4_src='192.168.1.8'), OFPActionOutput(len=16,max_len=65509,port=6,type=0)], [8], (-1, 2048, 6, '192.168.1.5', '192.168.1.6', 3468, 40626, -1, -1), ('192.168.1.8', -1, -1, -1, -1, -1, {6}))}}
+8:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'in_port': 13, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=9,type=0)], [10], (13, 2048, 6, '192.168.1.6', '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {9})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 9, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.1'}), [OFPActionOutput(len=16,max_len=65509,port=13,type=0)], [14], (9, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {13})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.2', 'in_port': 13, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [1], (13, 2048, 6, '192.168.1.6', '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 4, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.2'}), [OFPActionOutput(len=16,max_len=65509,port=13,type=0)], [14], (4, 2048, 6, '192.168.1.2', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {13})), 5: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.3', 'in_port': 13, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=14,type=0)], ['host:192.168.1.3'], (13, 2048, 6, -1, '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {14})), 6: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 14, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.3'}), [OFPActionOutput(len=16,max_len=65509,port=13,type=0)], [14], (14, 2048, 6, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {13})), 7: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.4', 'in_port': 13, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=15,type=0)], ['host:192.168.1.4'], (13, 2048, 6, -1, '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {15})), 8: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 15, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.4'}), [OFPActionOutput(len=16,max_len=65509,port=13,type=0)], [14], (15, 2048, 6, '192.168.1.4', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {13})), 9: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.7', 'in_port': 13, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=10,type=0)], [20], (13, 2048, 6, '192.168.1.6', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {10})), 10: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 10, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.7'}), [OFPActionOutput(len=16,max_len=65509,port=13,type=0)], [14], (10, 2048, 6, '192.168.1.7', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {13})), 11: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.8', 'in_port': 13, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=8,type=0)], [17], (13, 2048, 6, '192.168.1.6', '192.168.1.8', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {8})), 12: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 4, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.8'}), [OFPActionOutput(len=16,max_len=65509,port=13,type=0)], [14], (4, 2048, 6, '192.168.1.8', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {13})), 13: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.2', 'in_port': 12, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.9'}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [1], (12, 2048, 6, '192.168.1.9', '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 14: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 4, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.2'}), [OFPActionOutput(len=16,max_len=65509,port=12,type=0)], [18], (4, 2048, 6, '192.168.1.2', '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {12})), 15: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.3', 'in_port': 12, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=14,type=0)], ['host:192.168.1.3'], (12, 2048, 6, -1, '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {14})), 16: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 14, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.3'}), [OFPActionOutput(len=16,max_len=65509,port=12,type=0)], [18], (14, 2048, 6, '192.168.1.3', '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {12})), 17: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.4', 'in_port': 12, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=15,type=0)], ['host:192.168.1.4'], (12, 2048, 6, -1, '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {15})), 18: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 15, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.4'}), [OFPActionOutput(len=16,max_len=65509,port=12,type=0)], [18], (15, 2048, 6, '192.168.1.4', '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {12})), 19: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.5', 'in_port': 12, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.9'}), [OFPActionOutput(len=16,max_len=65509,port=13,type=0)], [14], (12, 2048, 6, '192.168.1.9', '192.168.1.5', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {13})), 20: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 13, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.5'}), [OFPActionOutput(len=16,max_len=65509,port=12,type=0)], [18], (13, 2048, 6, '192.168.1.5', '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {12})), 21: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.7', 'in_port': 12, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.9'}), [OFPActionOutput(len=16,max_len=65509,port=10,type=0)], [20], (12, 2048, 6, '192.168.1.9', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {10})), 22: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 10, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.7'}), [OFPActionOutput(len=16,max_len=65509,port=12,type=0)], [18], (10, 2048, 6, '192.168.1.7', '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {12})), 23: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.8', 'in_port': 12, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.9'}), [OFPActionOutput(len=16,max_len=65509,port=4,type=0)], [1], (12, 2048, 6, '192.168.1.9', '192.168.1.8', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {4})), 24: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 4, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.8'}), [OFPActionOutput(len=16,max_len=65509,port=12,type=0)], [18], (4, 2048, 6, '192.168.1.8', '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {12})), 25: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'in_port': 8, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.10'}), [OFPActionOutput(len=16,max_len=65509,port=9,type=0)], [10], (8, 2048, 6, '192.168.1.10', '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {9})), 26: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.10', 'in_port': 9, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.1'}), [OFPActionOutput(len=16,max_len=65509,port=8,type=0)], [17], (9, 2048, 6, '192.168.1.1', '192.168.1.10', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {8})), 27: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.3', 'in_port': 8, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=14,type=0)], ['host:192.168.1.3'], (8, 2048, 6, -1, '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {14})), 28: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.10', 'in_port': 14, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.3'}), [OFPActionOutput(len=16,max_len=65509,port=8,type=0)], [17], (14, 2048, 6, '192.168.1.3', '192.168.1.10', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {8})), 29: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.4', 'in_port': 8, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=15,type=0)], ['host:192.168.1.4'], (8, 2048, 6, -1, '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {15})), 30: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.10', 'in_port': 15, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.4'}), [OFPActionOutput(len=16,max_len=65509,port=8,type=0)], [17], (15, 2048, 6, '192.168.1.4', '192.168.1.10', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {8})), 31: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.5', 'in_port': 8, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.10'}), [OFPActionOutput(len=16,max_len=65509,port=13,type=0)], [14], (8, 2048, 6, '192.168.1.10', '192.168.1.5', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {13})), 32: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.10', 'in_port': 13, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.5'}), [OFPActionOutput(len=16,max_len=65509,port=8,type=0)], [17], (13, 2048, 6, '192.168.1.5', '192.168.1.10', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {8})), 33: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.7', 'in_port': 8, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.10'}), [OFPActionOutput(len=16,max_len=65509,port=10,type=0)], [20], (8, 2048, 6, '192.168.1.10', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {10})), 34: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.10', 'in_port': 10, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.7'}), [OFPActionOutput(len=16,max_len=65509,port=8,type=0)], [17], (10, 2048, 6, '192.168.1.7', '192.168.1.10', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {8})), 35: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.3', 'in_port': 13, 'ip_proto': 17, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=14,type=0)], ['host:192.168.1.3'], (13, 2048, 17, -1, '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {14})), 37: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 14, 'ip_proto': 17, 'eth_type': 2048, 'ipv4_src': '192.168.1.3'}), [OFPActionOutput(len=16,max_len=65509,port=7,type=0)], [3], (14, 2048, 17, '192.168.1.3', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {7}))}}
+10:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'in_port': 1, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (1, 2048, 6, -1, '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.1'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.1', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.1'], (2, 2048, 6, -1, '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.1'}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [18], (3, 2048, 6, '192.168.1.1', '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 5: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.10', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.1'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.1', '192.168.1.10', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))}}
+14:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.6', '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 1, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (1, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.2', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.6', '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.3', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 5: (1024, 3, OFPMatch(oxm_fields={'tcp_dst': 3463, 'tcp_src': 40930, 'ipv4_dst': '192.168.1.3', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.6', '192.168.1.3', 40930, 3463, -1, -1), (-1, '192.168.1.3', -1, -1, -1, -1, {1})), 6: (1024, 3, OFPMatch(oxm_fields={'tcp_dst': 40930, 'tcp_src': 3463, 'ipv4_dst': '192.168.1.6', 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.3'}), [OFPActionSetField(eth_src='00:16:3e:11:11:03'), OFPActionSetField(ipv4_src='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (-1, 2048, 6, '192.168.1.3', '192.168.1.6', 3463, 40930, -1, -1), ('192.168.1.3', -1, -1, -1, -1, -1, {3})), 7: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.4', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.6', '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 8: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.5', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], ['host:192.168.1.5'], (3, 2048, 6, -1, '192.168.1.5', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 9: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (2, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 10: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.7', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.6', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 11: (1024, 3, OFPMatch(oxm_fields={'tcp_dst': 3467, 'tcp_src': 55416, 'ipv4_dst': '192.168.1.7', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionSetField(eth_dst='00:16:3e:11:11:01'), OFPActionSetField(ipv4_dst='192.168.1.1'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.6', '192.168.1.7', 55416, 3467, -1, -1), (-1, '192.168.1.1', -1, -1, -1, -1, {1})), 12: (1024, 3, OFPMatch(oxm_fields={'tcp_dst': 55416, 'tcp_src': 3467, 'ipv4_dst': '192.168.1.6', 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:07'), OFPActionSetField(ipv4_src='192.168.1.7'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (-1, 2048, 6, '192.168.1.1', '192.168.1.6', 3467, 55416, -1, -1), ('192.168.1.7', -1, -1, -1, -1, -1, {3})), 13: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.8', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.6', '192.168.1.8', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 14: (1024, 3, OFPMatch(oxm_fields={'tcp_dst': 3468, 'tcp_src': 40626, 'ipv4_dst': '192.168.1.8', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionSetField(eth_dst='00:16:3e:11:11:05'), OFPActionSetField(ipv4_dst='192.168.1.5'), OFPActionOutput(len=16,max_len=65509,port=2,type=0)], ['host:192.168.1.5'], (3, 2048, 6, '192.168.1.6', '192.168.1.8', 40626, 3468, -1, -1), (-1, '192.168.1.5', -1, -1, -1, -1, {2})), 15: (1024, 3, OFPMatch(oxm_fields={'tcp_dst': 40626, 'tcp_src': 3468, 'ipv4_dst': '192.168.1.6', 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.5'}), [OFPActionSetField(eth_src='00:16:3e:11:11:08'), OFPActionSetField(ipv4_src='192.168.1.8'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (-1, 2048, 6, '192.168.1.5', '192.168.1.6', 3468, 40626, -1, -1), ('192.168.1.8', -1, -1, -1, -1, -1, {3})), 16: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.5', 'in_port': 1, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], ['host:192.168.1.5'], (1, 2048, 6, -1, '192.168.1.5', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 17: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.5'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (2, 2048, 6, '192.168.1.5', '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 18: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.10', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.5'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (2, 2048, 6, '192.168.1.5', '192.168.1.10', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 19: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.3', 'in_port': 3, 'ip_proto': 17, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 17, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 20: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.5', 'in_port': 3, 'ip_proto': 17, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [], [], (3, 2048, 17, '192.168.1.6', '192.168.1.5', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, set()))}}
+16:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.2', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=5,type=0)], ['host:192.168.1.2'], (3, 2048, 6, -1, '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {5})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 5, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.2'}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [1], (5, 2048, 6, '192.168.1.2', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 5, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.2'}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [1], (5, 2048, 6, '192.168.1.2', '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.2', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=5,type=0)], ['host:192.168.1.2'], (2, 2048, 6, -1, '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {5})), 5: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.10', 'in_port': 5, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.2'}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [2], (5, 2048, 6, '192.168.1.2', '192.168.1.10', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2}))}}
+17:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.8', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.6'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (2, 2048, 6, '192.168.1.6', '192.168.1.8', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.10'}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [8], (3, 2048, 6, '192.168.1.10', '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.10', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.10'], (2, 2048, 6, -1, '192.168.1.10', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.2', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.10'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (3, 2048, 6, '192.168.1.10', '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 5: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.10', 'in_port': 1, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.10'], (1, 2048, 6, -1, '192.168.1.10', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 6: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.3', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.10'}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [8], (3, 2048, 6, '192.168.1.10', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 7: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.4', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.10'}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [8], (3, 2048, 6, '192.168.1.10', '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 8: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.5', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.10'}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [8], (3, 2048, 6, '192.168.1.10', '192.168.1.5', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 9: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.7', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.10'}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [8], (3, 2048, 6, '192.168.1.10', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 10: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.8', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.10'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (3, 2048, 6, '192.168.1.10', '192.168.1.8', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))}}
+18:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.1', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.9'}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], [10], (3, 2048, 6, '192.168.1.9', '192.168.1.1', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.9'], (2, 2048, 6, -1, '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.2', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.9'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.9', '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 1, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.9'], (1, 2048, 6, -1, '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3})), 5: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.3', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.9'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.9', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 6: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.4', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.9'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.9', '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 7: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.5', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.9'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.9', '192.168.1.5', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 8: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.7', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.9'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.9', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 9: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.8', 'in_port': 3, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.9'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.9', '192.168.1.8', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))}}
+19:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.8', 'in_port': 1, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], ['host:192.168.1.8'], (1, 2048, 6, -1, '192.168.1.8', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.8'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (2, 2048, 6, '192.168.1.8', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.8'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (2, 2048, 6, '192.168.1.8', '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.10', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.8'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (2, 2048, 6, '192.168.1.8', '192.168.1.10', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))}}
+20:{0: {1: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.7', 'in_port': 1, 'ip_proto': 6, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=2,type=0)], ['host:192.168.1.7'], (1, 2048, 6, -1, '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {2})), 2: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.7'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (2, 2048, 6, '192.168.1.7', '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 3: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.9', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.7'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (2, 2048, 6, '192.168.1.7', '192.168.1.9', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1})), 4: (256, 1, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.10', 'in_port': 2, 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.7'}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (2, 2048, 6, '192.168.1.7', '192.168.1.10', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))}}
+Number of rules: [114, {1: 7, 2: 8, 5: 3, 7: 3, 8: 36, 10: 5, 14: 20, 16: 5, 17: 10, 18: 9, 19: 4, 20: 4}]
+
+self.lc_cfl_rules = 
+8:{0: {37: []}}
+14:{0: {2: [(6, 'class Correlation2 (local conflicts)', (2, 4, 1)), (12, 'class Correlation2 (local conflicts)', (2, 4, 1)), (15, 'class Correlation2 (local conflicts)', (2, 4, 1))], 4: [(5, 'class Generalization2 (local conflicts)', (2, 2, 1))], 5: [], 6: [], 9: [(6, 'class Correlation1 (local conflicts)', (1, 4, 1)), (12, 'class Correlation2 (local conflicts)', (2, 4, 1)), (15, 'class Correlation2 (local conflicts)', (2, 4, 1))], 10: [(11, 'class Generalization2 (local conflicts)', (2, 2, 1))], 11: [], 12: [], 13: [(14, 'class Generalization2 (local conflicts)', (2, 2, 1))], 14: [], 15: []}}
+Number of local conflicts by dpid: [9, {8: {}, 14: {'gen2': 3, 'cor2': 5, 'cor1': 1}}]
+Number of local conflicts by class: [9, {'gen2': 3, 'cor2': 5, 'cor1': 1}]
+
+self.hc_cfl_rules = 
+1:{'eplb': [((14, 0, 4), [[3], 2048, [6], ['192.168.1.6'], ['192.168.1.3'], [-1], [-1], [-1], [-1]]), ((14, 0, 5), [[3], 2048, [6], ['192.168.1.6'], ['192.168.1.3'], [40930], [3463], [-1], [-1]]), ((14, 0, 10), [[3], 2048, [6], ['192.168.1.6'], ['192.168.1.7'], [-1], [-1], [-1], [-1]]), ((14, 0, 11), [[3], 2048, [6], ['192.168.1.6'], ['192.168.1.7'], [55416], [3467], [-1], [-1]]), ((14, 0, 13), [[3], 2048, [6], ['192.168.1.6'], ['192.168.1.8'], [-1], [-1], [-1], [-1]]), ((14, 0, 14), [[3], 2048, [6], ['192.168.1.6'], ['192.168.1.8'], [40626], [3468], [-1], [-1]]), ((14, 0, 19), [[3], 2048, [17], ['192.168.1.6'], ['192.168.1.3'], [-1], [-1], [-1], [-1]])], 'pplb4d': [((14, 0, 1), [[3], 2048, [6], ['192.168.1.6'], ['192.168.1.1'], [-1], [-1], [-1], [-1]]), ((14, 0, 2), [[1], 2048, [6], [-1], ['192.168.1.6'], [-1], [-1], [-1], [-1]]), ((14, 0, 4), [[3], 2048, [6], ['192.168.1.6'], ['192.168.1.3'], [-1], [-1], [-1], [-1]]), ((14, 0, 5), [[3], 2048, [6], ['192.168.1.6'], ['192.168.1.3'], [40930], [3463], [-1], [-1]]), ((14, 0, 6), [[-1], 2048, [6], ['192.168.1.3'], ['192.168.1.6'], [3463], [40930], [-1], [-1]]), ((5, 0, 1), [[-1], 2048, [6], ['192.168.1.3'], ['192.168.1.6'], [3463], [40930], [-1], [-1]]), ((14, 0, 8), [[3], 2048, [6], [-1], ['192.168.1.5'], [-1], [-1], [-1], [-1]]), ((14, 0, 9), [[2], 2048, [6], [-1], ['192.168.1.6'], [-1], [-1], [-1], [-1]]), ((14, 0, 12), [[-1], 2048, [6], ['192.168.1.1'], ['192.168.1.6'], [3467], [55416], [-1], [-1]]), ((5, 0, 2), [[-1], 2048, [6], ['192.168.1.1'], ['192.168.1.6'], [3467], [55416], [-1], [-1]]), ((20, 0, 2), [[2], 2048, [6], ['192.168.1.7'], ['192.168.1.6'], [-1], [-1], [-1], [-1]]), ((14, 0, 13), [[3], 2048, [6], ['192.168.1.6'], ['192.168.1.8'], [-1], [-1], [-1], [-1]]), ((14, 0, 14), [[3], 2048, [6], ['192.168.1.6'], ['192.168.1.8'], [40626], [3468], [-1], [-1]]), ((14, 0, 15), [[-1], 2048, [6], ['192.168.1.5'], ['192.168.1.6'], [3468], [40626], [-1], [-1]]), ((5, 0, 3), [[-1], 2048, [6], ['192.168.1.5'], ['192.168.1.6'], [3468], [40626], [-1], [-1]]), ((14, 0, 16), [[1], 2048, [6], [-1], ['192.168.1.5'], [-1], [-1], [-1], [-1]]), ((14, 0, 17), [[2], 2048, [6], ['192.168.1.5'], ['192.168.1.9'], [-1], [-1], [-1], [-1]]), ((20, 0, 3), [[2], 2048, [6], ['192.168.1.7'], ['192.168.1.9'], [-1], [-1], [-1], [-1]]), ((14, 0, 18), [[2], 2048, [6], ['192.168.1.5'], ['192.168.1.10'], [-1], [-1], [-1], [-1]]), ((20, 0, 4), [[2], 2048, [6], ['192.168.1.7'], ['192.168.1.10'], [-1], [-1], [-1], [-1]]), ((14, 0, 19), [[3], 2048, [17], ['192.168.1.6'], ['192.168.1.3'], [-1], [-1], [-1], [-1]]), ((14, 0, 20), [[3], 2048, [17], ['192.168.1.6'], ['192.168.1.5'], [-1], [-1], [-1], [-1]])]}
+2:{}
+3:{}
+Number of rules causing hidden conflicts by control app: {'eplb': 7, 'pplb4d': 22}
+
+self.dt_cfl_rules = 
+occlusion:[]
+bypass:[]
+incomplete-transform:[([5, 0, 1], ((-1, 2048, 6, '192.168.1.3', '192.168.1.6', 3463, 40930, -1, -1), [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5])), ([7, 0, 1], ((-1, 2048, 6, '192.168.1.3', '192.168.1.6', 3463, 40930, -1, -1), [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5])), ([14, 0, 6], ((-1, 2048, 6, '192.168.1.3', '192.168.1.6', 3463, 40930, -1, -1), [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 7, 7, 7, 5, 5, 7, 7, 7, 7, 7, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 7, 7, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 7, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5, 7, 7, 5, 5, 5, 7, 5, 5, 5, 5, 5]))]
+black-hole:[]
+drop:[]
+injection:[]
+loops:[]
+multi-transform:[]
+Number of distributed conflicts by class: {'occlusion': 0, 'incomplete-transform': 3, 'black-hole': 0, 'drop': 0, 'injection': 0, 'bypass': 0, 'loops': 0, 'multi-transform': 0}

@@ -1,0 +1,153 @@
+plb eplb hs
+1 1 1
+udp tcp
+4 : 10 9 : 1 5
+cbr vbr bursty
+10
+6
+5 6 : 1 2 3 4
+random_binomial_s10_h6_12
+
+210926_020517
+
+plb_config_local1
+{
+  "cookie": "0x300",
+  "switchConfigs": {
+    "4": {
+      "bw_threshold": 5
+    }
+  },
+  "bw_time": 5
+}
+eplb_config_local1
+{
+  "cookie": "0x400",
+  "appAssets": {
+    "00:16:3e:11:11:03": {
+      "servers": [
+        [
+          "192.168.1.3",
+          "00:16:3e:11:11:03"
+        ],
+        [
+          "192.168.1.4",
+          "00:16:3e:11:11:04"
+        ]
+      ],
+      "proxy_ip": "192.168.1.3"
+    },
+    "00:16:3e:11:11:01": {
+      "servers": [
+        [
+          "192.168.1.1",
+          "00:16:3e:11:11:01"
+        ],
+        [
+          "192.168.1.2",
+          "00:16:3e:11:11:02"
+        ]
+      ],
+      "proxy_ip": "192.168.1.1"
+    }
+  }
+}
+hs_config_local1
+{
+  "cookie": "0x440",
+  "appAssets": {
+    "00:16:3e:11:11:04": {
+      "backend": [
+        "192.168.1.3",
+        "00:16:3e:11:11:03"
+      ],
+      "frontend": "192.168.1.4"
+    },
+    "00:16:3e:11:11:02": {
+      "backend": [
+        "192.168.1.1",
+        "00:16:3e:11:11:01"
+      ],
+      "frontend": "192.168.1.2"
+    }
+  }
+}gitcommitid=4120db4fe96a2f8bce45cbe177aeafa307448ee1
+point 1
+plb:1:2:4 
+eplb:1:2: 10 9 
+point 2
+plb:1:2:4 
+eplb:1:3: 10 9 
+point 3
+plb:1:3:4 
+eplb:1:2: 10 9 
+point 4
+plb:1:2:4 
+hs:1:2: 1 5
+point 5
+plb:1:2:4 
+hs:1:3: 1 5
+point 6
+plb:1:3:4 
+hs:1:2: 1 5
+point 7
+eplb:1:2: 10 9 
+hs:1:2: 1 5
+point 8
+eplb:1:2: 10 9 
+hs:1:3: 1 5
+point 9
+eplb:1:3: 10 9 
+hs:1:2: 1 5
+point 10
+plb:1:2:4 
+eplb:1:2: 10 9 
+hs:1:2: 1 5
+point 11
+plb:1:2:4 
+eplb:1:2: 10 9 
+hs:1:3: 1 5
+point 12
+plb:1:2:4 
+eplb:1:3: 10 9 
+hs:1:2: 1 5
+point 13
+plb:1:2:4 
+eplb:1:3: 10 9 
+hs:1:3: 1 5
+point 14
+plb:1:2:4 
+eplb:1:3: 10 9 
+hs:1:4: 1 5
+point 15
+plb:1:2:4 
+eplb:1:4: 10 9 
+hs:1:3: 1 5
+point 16
+plb:1:3:4 
+eplb:1:2: 10 9 
+hs:1:2: 1 5
+point 17
+plb:1:3:4 
+eplb:1:2: 10 9 
+hs:1:3: 1 5
+point 18
+plb:1:3:4 
+eplb:1:2: 10 9 
+hs:1:4: 1 5
+point 19
+plb:1:3:4 
+eplb:1:3: 10 9 
+hs:1:2: 1 5
+point 20
+plb:1:3:4 
+eplb:1:4: 10 9 
+hs:1:2: 1 5
+point 21
+plb:1:4:4 
+eplb:1:2: 10 9 
+hs:1:3: 1 5
+point 22
+plb:1:4:4 
+eplb:1:3: 10 9 
+hs:1:2: 1 5

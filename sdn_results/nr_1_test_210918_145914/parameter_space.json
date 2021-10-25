@@ -1,0 +1,162 @@
+{
+    "sdn_testbed_spec_v2:testbed": {
+        "topologyId": "nr_1_test",
+        "autostart": false,
+        "apps": [
+            {
+                "id": "eplb",
+                "config": {
+                    "cookie": "0x400",
+                    "targetSwitches": [
+                        {
+                            "id": "router4"
+                        }
+                    ],
+                    "appAssets": [
+                        {
+                            "id": 1,
+                            "majorAsset": {
+                                "assetKey": "proxy_ip",
+                                "assetValue": "pc2"
+                            },
+                            "minorAssets": {
+                                "assetKey": "servers",
+                                "assetItems": [
+                                    "pc3",
+                                    "pc4"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "hs",
+                "config": {
+                    "cookie": "0x440",
+                    "targetSwitches": [
+                        {
+                            "id": "router2"
+                        }
+                    ],
+                    "appAssets": [
+                        {
+                            "id": 1,
+                            "majorAsset": {
+                                "assetKey": "frontend",
+                                "assetValue": "pc3"
+                            },
+                            "minorAssets": {
+                                "assetKey": "backend",
+                                "assetValue": "pc2"
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "trafficProfiles": [
+            "cbr",
+            "vbr",
+            "bursty"
+        ],
+        "trafficTypes": [
+            "udp",
+            "tcp"
+        ],
+        "switches": [
+            {
+                "id": "router1"
+            },
+            {
+                "id": "router2"
+            },
+            {
+                "id": "router3"
+            },
+            {
+                "id": "router4"
+            }
+        ],
+        "hosts": [
+            {
+                "id": "pc1",
+                "source": true
+            },
+            {
+                "id": "pc2"
+            },
+            {
+                "id": "pc3"
+            },
+            {
+                "id": "pc4"
+            }
+        ],
+        "edges": [
+            {
+                "id": 0,
+                "nodes": [
+                    "router1",
+                    "pc1"
+                ]
+            },
+            {
+                "id": 1,
+                "nodes": [
+                    "router4",
+                    "pc2"
+                ]
+            },
+            {
+                "id": 2,
+                "nodes": [
+                    "router4",
+                    "pc3"
+                ]
+            },
+            {
+                "id": 3,
+                "nodes": [
+                    "router4",
+                    "pc4"
+                ]
+            },
+            {
+                "id": 4,
+                "nodes": [
+                    "router1",
+                    "router2"
+                ]
+            },
+            {
+                "id": 5,
+                "nodes": [
+                    "router1",
+                    "router3"
+                ]
+            },
+            {
+                "id": 6,
+                "nodes": [
+                    "router2",
+                    "router3"
+                ]
+            },
+            {
+                "id": 7,
+                "nodes": [
+                    "router2",
+                    "router4"
+                ]
+            },
+            {
+                "id": 8,
+                "nodes": [
+                    "router3",
+                    "router4"
+                ]
+            }
+        ]
+    }
+}

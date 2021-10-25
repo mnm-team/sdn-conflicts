@@ -1,0 +1,180 @@
+plb pe eplb
+1 1 1
+udp tcp
+7 : 11 14 : 7 5 14
+cbr vbr bursty
+20
+10
+6 9 10 : 1 2 3 4 5 7 8
+random_reconnected_s20_h10_06
+
+210922_224909
+
+plb_config_local1
+{
+  "bw_time": 7,
+  "cookie": "0x300",
+  "switchConfigs": {
+    "7": {
+      "bw_threshold": 5
+    }
+  }
+}
+pe_config_local1
+{
+  "cookie": "0x990",
+  "switchConfigs": {
+    "14": {
+      "switchAssets": {
+        "jumps": [
+          "3",
+          "9"
+        ]
+      },
+      "protos": [
+        6,
+        17
+      ]
+    },
+    "11": {
+      "switchAssets": {
+        "jumps": [
+          "13",
+          "6"
+        ]
+      },
+      "protos": [
+        6,
+        17
+      ]
+    }
+  }
+}
+eplb_config_local1
+{
+  "cookie": "0x400",
+  "appAssets": {
+    "00:16:3e:11:11:03": {
+      "proxy_ip": "192.168.1.3",
+      "servers": [
+        [
+          "192.168.1.3",
+          "00:16:3e:11:11:03"
+        ],
+        [
+          "192.168.1.4",
+          "00:16:3e:11:11:04"
+        ]
+      ]
+    },
+    "00:16:3e:11:11:08": {
+      "proxy_ip": "192.168.1.8",
+      "servers": [
+        [
+          "192.168.1.5",
+          "00:16:3e:11:11:05"
+        ],
+        [
+          "192.168.1.8",
+          "00:16:3e:11:11:08"
+        ]
+      ]
+    },
+    "00:16:3e:11:11:07": {
+      "proxy_ip": "192.168.1.7",
+      "servers": [
+        [
+          "192.168.1.1",
+          "00:16:3e:11:11:01"
+        ],
+        [
+          "192.168.1.2",
+          "00:16:3e:11:11:02"
+        ],
+        [
+          "192.168.1.7",
+          "00:16:3e:11:11:07"
+        ]
+      ]
+    }
+  }
+}gitcommitid=73fd469714fba6900ba3fd2d76e8192928c1e433
+point 1
+plb:1:2:7 
+pe:1:2: 11 14 
+point 2
+plb:1:2:7 
+pe:1:3: 11 14 
+point 3
+plb:1:3:7 
+pe:1:2: 11 14 
+point 4
+plb:1:2:7 
+eplb:1:2: 7 5 14
+point 5
+plb:1:2:7 
+eplb:1:3: 7 5 14
+point 6
+plb:1:3:7 
+eplb:1:2: 7 5 14
+point 7
+pe:1:2: 11 14 
+eplb:1:2: 7 5 14
+point 8
+pe:1:2: 11 14 
+eplb:1:3: 7 5 14
+point 9
+pe:1:3: 11 14 
+eplb:1:2: 7 5 14
+point 10
+plb:1:2:7 
+pe:1:2: 11 14 
+eplb:1:2: 7 5 14
+point 11
+plb:1:2:7 
+pe:1:2: 11 14 
+eplb:1:3: 7 5 14
+point 12
+plb:1:2:7 
+pe:1:3: 11 14 
+eplb:1:2: 7 5 14
+point 13
+plb:1:2:7 
+pe:1:3: 11 14 
+eplb:1:3: 7 5 14
+point 14
+plb:1:2:7 
+pe:1:3: 11 14 
+eplb:1:4: 7 5 14
+point 15
+plb:1:2:7 
+pe:1:4: 11 14 
+eplb:1:3: 7 5 14
+point 16
+plb:1:3:7 
+pe:1:2: 11 14 
+eplb:1:2: 7 5 14
+point 17
+plb:1:3:7 
+pe:1:2: 11 14 
+eplb:1:3: 7 5 14
+point 18
+plb:1:3:7 
+pe:1:2: 11 14 
+eplb:1:4: 7 5 14
+point 19
+plb:1:3:7 
+pe:1:3: 11 14 
+eplb:1:2: 7 5 14
+point 20
+plb:1:3:7 
+pe:1:4: 11 14 
+eplb:1:2: 7 5 14
+point 21
+plb:1:4:7 
+pe:1:2: 11 14 
+eplb:1:3: 7 5 14
+point 22
+plb:1:4:7 
+pe:1:3: 11 14 
+eplb:1:2: 7 5 14

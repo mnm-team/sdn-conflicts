@@ -1,0 +1,45 @@
+hs fw
+1 1
+udp tcp
+5 3 : 8
+cbr vbr bursty
+10
+8
+2 3 : 1 4 5 6 7 8
+random_reconnected_s10_h8_spuriousness_run_02
+
+210928_041435
+
+hs_config_local1
+{
+  "appAssets": {
+    "00:16:3e:11:11:07": {
+      "backend": [
+        "192.168.1.8",
+        "00:16:3e:11:11:08"
+      ],
+      "frontend": "192.168.1.7"
+    }
+  },
+  "cookie": "0x440"
+}
+fw_config_local1
+{
+  "bw_time": 3,
+  "cookie": "0x800",
+  "switchConfigs": {
+    "8": {
+      "bw_port_threshold": 2,
+      "bw_flow_threshold": 1
+    }
+  }
+}gitcommitid=d450062f0bc52ddfb92712f6410ed460cd370111
+point 1
+hs:1:2:5 3 
+fw:1:2: 8
+point 2
+hs:1:2:5 3 
+fw:1:3: 8
+point 3
+hs:1:3:5 3 
+fw:1:2: 8

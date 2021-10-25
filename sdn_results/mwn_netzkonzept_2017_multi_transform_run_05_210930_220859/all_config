@@ -1,0 +1,53 @@
+hs eplb
+1 1
+udp tcp
+6 8 : 3 4
+cbr vbr bursty
+21
+21
+10 11 12 13 20 : 1 2 3 4 5 6 7 8 9 14 15 16 17 18 19 21
+mwn_netzkonzept_2017_multi_transform_run_05
+
+210930_220859
+
+hs_config_local1
+{
+  "cookie": "0x440",
+  "appAssets": {
+    "00:16:3e:11:11:03": {
+      "frontend": "192.168.1.3",
+      "backend": [
+        "192.168.1.4",
+        "00:16:3e:11:11:04"
+      ]
+    }
+  }
+}
+eplb_config_local1
+{
+  "cookie": "0x400",
+  "appAssets": {
+    "00:16:3e:11:11:04": {
+      "proxy_ip": "192.168.1.4",
+      "servers": [
+        [
+          "192.168.1.3",
+          "00:16:3e:11:11:03"
+        ],
+        [
+          "192.168.1.4",
+          "00:16:3e:11:11:04"
+        ]
+      ]
+    }
+  }
+}gitcommitid=e44092846001a19ed107becde00a8b44d9049303
+point 1
+hs:1:2:6 8 
+eplb:1:2: 3 4
+point 2
+hs:1:2:6 8 
+eplb:1:3: 3 4
+point 3
+hs:1:3:6 8 
+eplb:1:2: 3 4

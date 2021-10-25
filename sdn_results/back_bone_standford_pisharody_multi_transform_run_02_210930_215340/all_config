@@ -1,0 +1,53 @@
+eplb hs
+1 1
+udp tcp
+1 2 : 19 20
+cbr vbr bursty
+25
+13
+1 2 : 3 4 5 6 7 8 9 10 11 12 13
+back_bone_standford_pisharody_multi_transform_run_02
+
+210930_215340
+
+eplb_config_local1
+{
+  "appAssets": {
+    "00:16:3e:11:11:07": {
+      "proxy_ip": "192.168.1.7",
+      "servers": [
+        [
+          "192.168.1.8",
+          "00:16:3e:11:11:08"
+        ],
+        [
+          "192.168.1.7",
+          "00:16:3e:11:11:07"
+        ]
+      ]
+    }
+  },
+  "cookie": "0x400"
+}
+hs_config_local1
+{
+  "appAssets": {
+    "00:16:3e:11:11:08": {
+      "backend": [
+        "192.168.1.7",
+        "00:16:3e:11:11:07"
+      ],
+      "frontend": "192.168.1.8"
+    }
+  },
+  "cookie": "0x440"
+}gitcommitid=4ce6a07c2b1b42f9daf463d5f18fee9584548f6f
+point 1
+eplb:1:2:1 2 
+hs:1:2: 19 20
+point 2
+eplb:1:2:1 2 
+hs:1:3: 19 20
+point 3
+eplb:1:3:1 2 
+hs:1:2: 19 20

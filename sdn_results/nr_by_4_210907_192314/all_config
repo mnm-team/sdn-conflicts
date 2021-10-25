@@ -1,0 +1,51 @@
+hs plb
+1 1
+udp tcp
+6 10 : 9
+cbr vbr bursty
+15
+9
+1 4 5 8 9 : 2 3 6 7
+nr_by_4
+
+210907_192314
+
+hs_config_local1
+{
+  "appAssets": {
+    "00:16:3e:11:11:07": {
+      "frontend": "192.168.1.7",
+      "backend": [
+        "192.168.1.6",
+        "00:16:3e:11:11:06"
+      ]
+    },
+    "00:16:3e:11:11:03": {
+      "frontend": "192.168.1.3",
+      "backend": [
+        "192.168.1.2",
+        "00:16:3e:11:11:02"
+      ]
+    }
+  },
+  "cookie": "0x440"
+}
+plb_config_local1
+{
+  "switchConfigs": {
+    "9": {
+      "bw_threshold": 10
+    }
+  },
+  "bw_time": 5,
+  "cookie": ""
+}gitcommitid=2b92580c14cdf05b7590e9a799bb2c6de42c00c0
+point 1
+hs:1:2:6 10 
+plb:1:2: 9
+point 2
+hs:1:2:6 10 
+plb:1:3: 9
+point 3
+hs:1:3:6 10 
+plb:1:2: 9

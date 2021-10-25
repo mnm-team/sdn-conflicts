@@ -1,0 +1,53 @@
+eplb hs
+1 1
+udp tcp
+19 1 : 15 2 7 6
+cbr vbr bursty
+20
+12
+4 8 11 12 : 1 2 3 5 6 7 9 10
+random_smallworld_s20_h12_occlusion_run_04
+
+210928_065947
+
+eplb_config_local1
+{
+  "appAssets": {
+    "00:16:3e:11:11:01": {
+      "proxy_ip": "192.168.1.1",
+      "servers": [
+        [
+          "192.168.1.1",
+          "00:16:3e:11:11:01"
+        ],
+        [
+          "192.168.1.2",
+          "00:16:3e:11:11:02"
+        ]
+      ]
+    }
+  },
+  "cookie": "0x400"
+}
+hs_config_local1
+{
+  "appAssets": {
+    "00:16:3e:11:11:01": {
+      "backend": [
+        "192.168.1.2",
+        "00:16:3e:11:11:02"
+      ],
+      "frontend": "192.168.1.1"
+    }
+  },
+  "cookie": "0x440"
+}gitcommitid=8e1cc3af2b416bc1847506d8eddeac25a466ff57
+point 1
+eplb:1:2:19 1 
+hs:1:2: 15 2 7 6
+point 2
+eplb:1:2:19 1 
+hs:1:3: 15 2 7 6
+point 3
+eplb:1:3:19 1 
+hs:1:2: 15 2 7 6

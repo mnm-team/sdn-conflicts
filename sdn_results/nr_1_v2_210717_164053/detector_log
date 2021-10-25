@@ -1,0 +1,871 @@
+
+
+2021-07-17 15:10:27.086226 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:2
+Action Relationship Pattern:1
+
+2021-07-17 15:10:27.086473 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 6, '192.168.1.1', '192.168.1.2', 32782, 3412, -1, -1)
+
+2021-07-17 15:10:27.086730 CRITICAL: Detector
+Message:
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_dst': '192.168.1.2', 'ip_proto': 6, 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.2'], (1, 2048, 6, -1, '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+
+2021-07-17 15:10:47.954452 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:2
+Action Relationship Pattern:1
+
+2021-07-17 15:10:47.954666 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 47206, 5001)
+
+2021-07-17 15:10:47.954938 CRITICAL: Detector
+Message:
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'eth_type': 2048, 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.2'], (1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+
+2021-07-17 15:11:13.101323 CRITICAL: Detector
+Message:
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+
+2021-07-17 15:11:13.101599 CRITICAL: Detector
+Message:
+Matchmap 1:(4, 2048, 17, '192.168.1.3', '192.168.1.1', -1, -1, -1, -1)
+
+2021-07-17 15:11:13.102761 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'eth_type': 2048, 'udp_src': 5001, 'ipv4_dst': '192.168.1.1', 'ipv4_src': '192.168.1.3', 'ip_proto': 17, 'udp_dst': 47206}), [OFPActionSetField(eth_src='00:16:3e:11:11:02'), OFPActionSetField(ipv4_src='192.168.1.2'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (-1, 2048, 17, '192.168.1.3', '192.168.1.1', -1, -1, 5001, 47206), ('192.168.1.2', -1, -1, -1, -1, -1, {1}))
+
+2021-07-17 15:12:16.619758 CRITICAL: Detector
+Message:
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+
+2021-07-17 15:12:16.619916 CRITICAL: Detector
+Message:
+Matchmap 1:(3, 2048, 6, '192.168.1.3', '192.168.1.1', -1, -1, -1, -1)
+
+2021-07-17 15:12:16.620177 CRITICAL: Detector
+Message:
+Matchmap 2:(1088, 2, OFPMatch(oxm_fields={'eth_type': 2048, 'tcp_dst': 32788, 'ipv4_src': '192.168.1.3', 'ipv4_dst': '192.168.1.1', 'ip_proto': 6}), [OFPActionSetField(eth_src='00:16:3e:11:11:02'), OFPActionSetField(ipv4_src='192.168.1.2'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [1], (-1, 2048, 6, '192.168.1.3', '192.168.1.1', -1, 32788, -1, -1), ('192.168.1.2', -1, -1, -1, -1, -1, {1}))
+
+2021-07-17 15:12:58.829227 CRITICAL: Detector
+Message:
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+
+2021-07-17 15:12:58.829721 CRITICAL: Detector
+Message:
+Matchmap 1:(3, 2048, 17, '192.168.1.3', '192.168.1.1', -1, -1, -1, -1)
+
+2021-07-17 15:12:58.830017 CRITICAL: Detector
+Message:
+Matchmap 2:(1088, 2, OFPMatch(oxm_fields={'udp_dst': 56312, 'eth_type': 2048, 'ipv4_src': '192.168.1.3', 'ipv4_dst': '192.168.1.1', 'ip_proto': 17}), [OFPActionSetField(eth_src='00:16:3e:11:11:02'), OFPActionSetField(ipv4_src='192.168.1.2'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [1], (-1, 2048, 17, '192.168.1.3', '192.168.1.1', -1, -1, -1, 56312), ('192.168.1.2', -1, -1, -1, -1, -1, {1}))
+
+2021-07-17 15:14:36.534778 CRITICAL: Detector
+Message:
+Local Conflict - class Shadowing2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:1
+Action Relationship Pattern:1
+
+2021-07-17 15:14:36.534778 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1)
+
+2021-07-17 15:14:36.539657 CRITICAL: Detector
+Message:
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'in_port': 1, 'ipv4_dst': '192.168.1.4', 'ip_proto': 17, 'ipv4_src': '192.168.1.1', 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [4], (1, 2048, 17, '192.168.1.1', '192.168.1.4', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+
+2021-07-17 16:18:36.794378 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:36.794540 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 6, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:36.794838 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'tcp_dst': 3412, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 6, 'in_port': 1, 'tcp_src': 32800, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:02'), OFPActionSetField(ipv4_dst='192.168.1.2'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.2'], (1, 2048, 6, '192.168.1.1', '192.168.1.2', 32800, 3412, -1, -1), (-1, '192.168.1.2', -1, -1, -1, -1, {3}))
+
+2021-07-17 16:18:57.785584 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.785792 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.785995 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.789912 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.790061 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.790325 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.791761 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.791879 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.792150 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.793468 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.793582 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.793587 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.796110 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.796300 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.796606 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.797987 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.798092 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.798278 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.817367 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.817516 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.817809 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.819737 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.819889 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.820171 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.821556 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.821663 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.821806 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.823313 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.823436 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.823717 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.825112 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.825226 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.825493 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.826844 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.826958 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.827349 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.828695 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.828812 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.828816 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.831233 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.831378 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.831691 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.850844 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.851826 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.852363 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.854519 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.854694 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.855170 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.856982 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.857106 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.857334 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.858791 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.858858 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.859294 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.860743 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.860895 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.861185 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.862515 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.862641 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.862916 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.864531 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.864666 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.864940 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.866292 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.866397 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.866633 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.878495 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.878642 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.878910 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.880405 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.880560 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.880927 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.882296 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.882412 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.882648 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.884226 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.884359 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.884633 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.885994 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.886108 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.886373 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.888151 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.888313 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.888580 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.889946 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.890054 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.890260 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.891703 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.891826 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.892119 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.902788 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.902948 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.903381 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.904784 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.904906 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.905214 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.906745 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.906860 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.907240 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.908697 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.908813 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.909067 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.910471 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.910597 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.910857 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.912484 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.912641 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.912911 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.914190 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.914333 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.914600 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.916216 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.916342 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.916816 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.926464 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.926609 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.927130 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.928537 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.928659 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.928929 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.930260 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.930368 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.930619 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.932216 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.932343 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.932648 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.934017 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.934135 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.934417 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.936726 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.936849 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.937155 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.938538 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.938602 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.938859 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:18:57.940348 CRITICAL: Detector
+Message:
+Local Conflict - class Generalization1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:3
+Action Relationship Pattern:1
+
+2021-07-17 16:18:57.940472 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, -1, '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:18:57.940732 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 5001, 'ipv4_src': '192.168.1.1', 'ipv4_dst': '192.168.1.2', 'ip_proto': 17, 'in_port': 1, 'udp_src': 44300, 'eth_type': 2048}), [OFPActionSetField(eth_dst='00:16:3e:11:11:03'), OFPActionSetField(ipv4_dst='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=4,type=0)], ['host:192.168.1.3'], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, 44300, 5001), (-1, '192.168.1.3', -1, -1, -1, -1, {4}))
+
+2021-07-17 16:19:22.867810 CRITICAL: Detector
+Message:
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+
+2021-07-17 16:19:22.867984 CRITICAL: Detector
+Message:
+Matchmap 1:(4, 2048, 17, '192.168.1.3', '192.168.1.1', -1, -1, -1, -1)
+
+2021-07-17 16:19:22.868271 CRITICAL: Detector
+Message:
+Matchmap 2:(1024, 2, OFPMatch(oxm_fields={'udp_dst': 44300, 'ipv4_src': '192.168.1.3', 'ipv4_dst': '192.168.1.1', 'ip_proto': 17, 'udp_src': 5001, 'eth_type': 2048}), [OFPActionSetField(eth_src='00:16:3e:11:11:02'), OFPActionSetField(ipv4_src='192.168.1.2'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [2], (-1, 2048, 17, '192.168.1.3', '192.168.1.1', -1, -1, 5001, 44300), ('192.168.1.2', -1, -1, -1, -1, -1, {1}))
+
+2021-07-17 16:20:27.176147 CRITICAL: Detector
+Message:
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+
+2021-07-17 16:20:27.176341 CRITICAL: Detector
+Message:
+Matchmap 1:(3, 2048, 6, '192.168.1.3', '192.168.1.1', -1, -1, -1, -1)
+
+2021-07-17 16:20:27.176385 CRITICAL: Detector
+Message:
+Matchmap 2:(1088, 2, OFPMatch(oxm_fields={'eth_type': 2048, 'tcp_dst': 32806, 'ip_proto': 6, 'ipv4_src': '192.168.1.3', 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:02'), OFPActionSetField(ipv4_src='192.168.1.2'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [1], (-1, 2048, 6, '192.168.1.3', '192.168.1.1', -1, 32806, -1, -1), ('192.168.1.2', -1, -1, -1, -1, -1, {1}))
+
+2021-07-17 16:21:09.638708 CRITICAL: Detector
+Message:
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+
+2021-07-17 16:21:09.638757 CRITICAL: Detector
+Message:
+Matchmap 1:(3, 2048, 17, '192.168.1.3', '192.168.1.1', -1, -1, -1, -1)
+
+2021-07-17 16:21:09.638757 CRITICAL: Detector
+Message:
+Matchmap 2:(1088, 2, OFPMatch(oxm_fields={'eth_type': 2048, 'udp_dst': 54220, 'ip_proto': 17, 'ipv4_src': '192.168.1.3', 'ipv4_dst': '192.168.1.1'}), [OFPActionSetField(eth_src='00:16:3e:11:11:02'), OFPActionSetField(ipv4_src='192.168.1.2'), OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [1], (-1, 2048, 17, '192.168.1.3', '192.168.1.1', -1, -1, -1, 54220), ('192.168.1.2', -1, -1, -1, -1, -1, {1}))
+
+2021-07-17 16:22:42.671295 CRITICAL: Detector
+Message:
+Local Conflict - class Shadowing2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:1
+Action Relationship Pattern:1
+
+2021-07-17 16:22:42.671474 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, -1, -1)
+
+2021-07-17 16:22:42.671767 CRITICAL: Detector
+Message:
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.2', 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [4], (1, 2048, 17, '192.168.1.1', '192.168.1.2', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+
+2021-07-17 16:22:47.665267 CRITICAL: Detector
+Message:
+Local Conflict - class Shadowing2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:1
+Action Relationship Pattern:1
+
+2021-07-17 16:22:47.665422 CRITICAL: Detector
+Message:
+Matchmap 1:(1, 2048, 17, '192.168.1.1', '192.168.1.3', -1, -1, -1, -1)
+
+2021-07-17 16:22:47.665694 CRITICAL: Detector
+Message:
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ipv4_src': '192.168.1.1', 'eth_type': 2048, 'ip_proto': 17, 'ipv4_dst': '192.168.1.3', 'in_port': 1}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], [4], (1, 2048, 17, '192.168.1.1', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))

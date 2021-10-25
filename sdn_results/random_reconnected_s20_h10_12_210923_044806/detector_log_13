@@ -1,0 +1,763 @@
+
+
+
+2021-09-23 09:08:19.922850
+number of edges in rule graph = 0
+
+self.ft = 
+Number of rules: [0, {}]
+
+self.lc_cfl_rules = 
+Number of local conflicts by dpid: [0, {}]
+Number of local conflicts by class: [0, {}]
+
+self.hc_cfl_rules = 
+1:{}
+2:{}
+3:{}
+Number of rules causing hidden conflicts by control app: {}
+
+self.dt_cfl_rules = 
+bypass:[]
+multi-transform:[]
+occlusion:[]
+loops:[]
+incomplete-transform:[]
+black-hole:[]
+drop:[]
+injection:[]
+Number of distributed conflicts by class: {'occlusion': 0, 'multi-transform': 0, 'bypass': 0, 'loops': 0, 'incomplete-transform': 0, 'black-hole': 0, 'drop': 0, 'injection': 0}
+
+2021-09-23 09:09:39.558358
+New rule is coming, number of existing rules: [0, {}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,1) to the rule database = 0.10228157043457031
+
+2021-09-23 09:09:39.567969
+New rule is coming, number of existing rules: [1, {14: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,1) to the rule database = 0.15163421630859375
+
+2021-09-23 09:09:39.573841
+New rule is coming, number of existing rules: [2, {8: 1, 14: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,1) to the rule database = 0.09107589721679688
+
+2021-09-23 09:09:39.582283
+New rule is coming, number of existing rules: [3, {8: 1, 10: 1, 14: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,2) to the rule database = 0.21576881408691406
+
+2021-09-23 09:09:39.589877
+New rule is coming, number of existing rules: [4, {8: 1, 10: 2, 14: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,2) to the rule database = 0.2777576446533203
+
+2021-09-23 09:09:39.595997
+New rule is coming, number of existing rules: [5, {8: 2, 10: 2, 14: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,2) to the rule database = 0.13303756713867188
+
+2021-09-23 09:09:43.729560
+New rule is coming, number of existing rules: [6, {8: 2, 10: 2, 14: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,3) to the rule database = 0.7867813110351562
+
+2021-09-23 09:09:43.740166
+New rule is coming, number of existing rules: [7, {8: 2, 10: 2, 14: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,3) to the rule database = 0.39505958557128906
+
+2021-09-23 09:09:43.746757
+New rule is coming, number of existing rules: [8, {8: 3, 10: 2, 14: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,1) to the rule database = 0.09417533874511719
+
+2021-09-23 09:09:43.753771
+New rule is coming, number of existing rules: [9, {8: 3, 1: 1, 10: 2, 14: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (16,0,1) to the rule database = 0.10848045349121094
+
+2021-09-23 09:09:43.760342
+New rule is coming, number of existing rules: [10, {8: 3, 1: 1, 10: 2, 14: 3, 16: 1}]
+Time difference (ms) in checking local conflicts and adding new rule (16,0,2) to the rule database = 0.11539459228515625
+
+2021-09-23 09:09:43.767983
+New rule is coming, number of existing rules: [11, {8: 3, 1: 1, 10: 2, 14: 3, 16: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,2) to the rule database = 0.28443336486816406
+
+2021-09-23 09:09:43.776542
+New rule is coming, number of existing rules: [12, {8: 3, 1: 2, 10: 2, 14: 3, 16: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,4) to the rule database = 0.4169940948486328
+
+2021-09-23 09:09:47.902009
+New rule is coming, number of existing rules: [13, {8: 4, 1: 2, 10: 2, 14: 3, 16: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,4) to the rule database = 0.7061958312988281
+Local Conflict - class Generalization2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:2
+Action Relationship Pattern:1
+Matchmap 1:(3, 2048, 6, '192.168.1.6', '192.168.1.3', 37356, 3463, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ip_proto': 6, 'ipv4_src': '192.168.1.6', 'ipv4_dst': '192.168.1.3', 'in_port': 3, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.6', '192.168.1.3', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))
+
+2021-09-23 09:09:47.913858
+New rule is coming, number of existing rules: [14, {8: 4, 1: 2, 10: 2, 14: 4, 16: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,5) to the rule database = 1.4717578887939453
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.3', '192.168.1.6', 3463, 37356, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ip_proto': 6, 'ipv4_dst': '192.168.1.6', 'in_port': 1, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (1, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+
+2021-09-23 09:09:47.916158
+New rule is coming, number of existing rules: [15, {8: 4, 1: 2, 10: 2, 14: 5, 16: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,6) to the rule database = 1.3806819915771484
+
+2021-09-23 09:09:47.918251
+New rule is coming, number of existing rules: [16, {8: 4, 1: 2, 10: 2, 14: 6, 16: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,1) to the rule database = 0.118255615234375
+
+2021-09-23 09:09:47.919026
+New rule is coming, number of existing rules: [17, {16: 2, 1: 2, 5: 1, 8: 4, 10: 2, 14: 6}]
+Time difference (ms) in checking local conflicts and adding new rule (7,0,1) to the rule database = 0.11610984802246094
+
+2021-09-23 09:09:47.924362
+New rule is coming, number of existing rules: [18, {16: 2, 1: 2, 5: 1, 7: 1, 8: 4, 10: 2, 14: 6}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,5) to the rule database = 0.34618377685546875
+
+2021-09-23 09:09:47.938151
+New rule is coming, number of existing rules: [19, {16: 2, 1: 2, 5: 1, 7: 1, 8: 5, 10: 2, 14: 6}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,6) to the rule database = 0.6504058837890625
+
+2021-09-23 09:09:52.077074
+New rule is coming, number of existing rules: [20, {16: 2, 1: 2, 5: 1, 7: 1, 8: 6, 10: 2, 14: 6}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,7) to the rule database = 0.7131099700927734
+
+2021-09-23 09:09:52.083902
+New rule is coming, number of existing rules: [21, {16: 2, 1: 2, 5: 1, 7: 1, 8: 6, 10: 2, 14: 7}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,7) to the rule database = 0.4572868347167969
+
+2021-09-23 09:09:52.095915
+New rule is coming, number of existing rules: [22, {16: 2, 1: 2, 5: 1, 7: 1, 8: 7, 10: 2, 14: 7}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,8) to the rule database = 0.5986690521240234
+
+2021-09-23 09:09:56.246497
+New rule is coming, number of existing rules: [23, {16: 2, 1: 2, 5: 1, 7: 1, 8: 8, 10: 2, 14: 7}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,8) to the rule database = 1.4889240264892578
+Local Conflict - class Correlation1 (local conflicts)
+:Priority Relationship Pattern:1
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(2, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1)
+Matchmap 2:(1024, 3, OFPMatch(oxm_fields={'ipv4_dst': '192.168.1.6', 'ip_proto': 6, 'eth_type': 2048, 'ipv4_src': '192.168.1.3', 'tcp_src': 3463, 'tcp_dst': 37356}), [OFPActionSetField(eth_src='00:16:3e:11:11:03'), OFPActionSetField(ipv4_src='192.168.1.3'), OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (-1, 2048, 6, '192.168.1.3', '192.168.1.6', 3463, 37356, -1, -1), ('192.168.1.3', -1, -1, -1, -1, -1, {3}))
+
+2021-09-23 09:09:56.258249
+New rule is coming, number of existing rules: [24, {16: 2, 1: 2, 5: 1, 7: 1, 8: 8, 10: 2, 14: 8}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,9) to the rule database = 1.8672943115234375
+
+2021-09-23 09:10:00.418041
+New rule is coming, number of existing rules: [25, {16: 2, 1: 2, 5: 1, 7: 1, 8: 8, 10: 2, 14: 9}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,10) to the rule database = 0.6132125854492188
+Local Conflict - class Generalization2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:2
+Action Relationship Pattern:1
+Matchmap 1:(3, 2048, 6, '192.168.1.6', '192.168.1.7', 51842, 3467, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ip_proto': 6, 'ipv4_src': '192.168.1.6', 'ipv4_dst': '192.168.1.7', 'in_port': 3, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.6', '192.168.1.7', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))
+
+2021-09-23 09:10:00.422852
+New rule is coming, number of existing rules: [26, {16: 2, 1: 2, 5: 1, 7: 1, 8: 8, 10: 2, 14: 10}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,11) to the rule database = 1.027822494506836
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.1', '192.168.1.6', 3467, 51842, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ip_proto': 6, 'ipv4_dst': '192.168.1.6', 'in_port': 1, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (1, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.1', '192.168.1.6', 3467, 51842, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ip_proto': 6, 'ipv4_dst': '192.168.1.6', 'in_port': 2, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (2, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+
+2021-09-23 09:10:00.424257
+New rule is coming, number of existing rules: [27, {16: 2, 1: 2, 5: 1, 7: 1, 8: 8, 10: 2, 14: 11}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,12) to the rule database = 1.4622211456298828
+
+2021-09-23 09:10:00.426160
+New rule is coming, number of existing rules: [28, {16: 2, 1: 2, 5: 1, 7: 1, 8: 8, 10: 2, 14: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,2) to the rule database = 0.1513957977294922
+
+2021-09-23 09:10:00.426725
+New rule is coming, number of existing rules: [29, {16: 2, 1: 2, 5: 2, 7: 1, 8: 8, 10: 2, 14: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (7,0,2) to the rule database = 0.1480579376220703
+
+2021-09-23 09:10:00.429078
+New rule is coming, number of existing rules: [30, {16: 2, 1: 2, 5: 2, 7: 2, 8: 8, 10: 2, 14: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,9) to the rule database = 0.5257129669189453
+
+2021-09-23 09:10:00.439222
+New rule is coming, number of existing rules: [31, {16: 2, 1: 2, 5: 2, 7: 2, 8: 9, 10: 2, 14: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (20,0,1) to the rule database = 0.11610984802246094
+
+2021-09-23 09:10:00.447882
+New rule is coming, number of existing rules: [32, {16: 2, 1: 2, 20: 1, 5: 2, 7: 2, 8: 9, 10: 2, 14: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (20,0,2) to the rule database = 0.13518333435058594
+
+2021-09-23 09:10:00.453844
+New rule is coming, number of existing rules: [33, {16: 2, 1: 2, 20: 2, 5: 2, 7: 2, 8: 9, 10: 2, 14: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,10) to the rule database = 0.5044937133789062
+
+2021-09-23 09:10:04.583365
+New rule is coming, number of existing rules: [34, {16: 2, 1: 2, 20: 2, 5: 2, 7: 2, 8: 10, 10: 2, 14: 12}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,13) to the rule database = 2.830982208251953
+Local Conflict - class Generalization2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:2
+Action Relationship Pattern:1
+Matchmap 1:(3, 2048, 6, '192.168.1.6', '192.168.1.8', 37052, 3468, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ip_proto': 6, 'ipv4_src': '192.168.1.6', 'ipv4_dst': '192.168.1.8', 'in_port': 3, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=1,type=0)], [8], (3, 2048, 6, '192.168.1.6', '192.168.1.8', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {1}))
+
+2021-09-23 09:10:04.596451
+New rule is coming, number of existing rules: [35, {16: 2, 1: 2, 20: 2, 5: 2, 7: 2, 8: 10, 10: 2, 14: 13}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,14) to the rule database = 2.8057098388671875
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.5', '192.168.1.6', 3468, 37052, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ip_proto': 6, 'ipv4_dst': '192.168.1.6', 'in_port': 1, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (1, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+Local Conflict - class Correlation2 (local conflicts)
+:Priority Relationship Pattern:2
+Matchmap Relationship Pattern:4
+Action Relationship Pattern:1
+Matchmap 1:(-1, 2048, 6, '192.168.1.5', '192.168.1.6', 3468, 37052, -1, -1)
+Matchmap 2:(256, 1, OFPMatch(oxm_fields={'ip_proto': 6, 'ipv4_dst': '192.168.1.6', 'in_port': 2, 'eth_type': 2048}), [OFPActionOutput(len=16,max_len=65509,port=3,type=0)], ['host:192.168.1.6'], (2, 2048, 6, -1, '192.168.1.6', -1, -1, -1, -1), (-1, -1, -1, -1, -1, -1, {3}))
+
+2021-09-23 09:10:04.600134
+New rule is coming, number of existing rules: [36, {16: 2, 1: 2, 20: 2, 5: 2, 7: 2, 8: 10, 10: 2, 14: 14}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,15) to the rule database = 2.790689468383789
+
+2021-09-23 09:10:04.603498
+New rule is coming, number of existing rules: [37, {16: 2, 1: 2, 20: 2, 5: 2, 7: 2, 8: 10, 10: 2, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (5,0,3) to the rule database = 0.3218650817871094
+
+2021-09-23 09:10:04.604383
+New rule is coming, number of existing rules: [38, {16: 2, 1: 2, 20: 2, 5: 3, 7: 2, 8: 10, 10: 2, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (7,0,3) to the rule database = 0.3123283386230469
+
+2021-09-23 09:10:04.607857
+New rule is coming, number of existing rules: [39, {16: 2, 1: 2, 20: 2, 5: 3, 7: 3, 8: 10, 10: 2, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,11) to the rule database = 0.9019374847412109
+
+2021-09-23 09:10:04.613978
+New rule is coming, number of existing rules: [40, {16: 2, 1: 2, 20: 2, 5: 3, 7: 3, 8: 11, 10: 2, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (3,0,1) to the rule database = 0.07343292236328125
+
+2021-09-23 09:10:04.619096
+New rule is coming, number of existing rules: [41, {16: 2, 1: 2, 3: 1, 20: 2, 5: 3, 7: 3, 8: 11, 10: 2, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,1) to the rule database = 0.0782012939453125
+
+2021-09-23 09:10:04.627509
+New rule is coming, number of existing rules: [42, {16: 2, 1: 2, 2: 1, 3: 1, 20: 2, 5: 3, 7: 3, 8: 11, 10: 2, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (19,0,1) to the rule database = 0.14090538024902344
+
+2021-09-23 09:10:04.636295
+New rule is coming, number of existing rules: [43, {16: 2, 1: 2, 2: 1, 3: 1, 20: 2, 5: 3, 19: 1, 7: 3, 8: 11, 10: 2, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (19,0,2) to the rule database = 0.1513957977294922
+
+2021-09-23 09:10:04.644508
+New rule is coming, number of existing rules: [44, {16: 2, 1: 2, 2: 1, 3: 1, 20: 2, 5: 3, 19: 2, 7: 3, 8: 11, 10: 2, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,2) to the rule database = 0.32019615173339844
+
+2021-09-23 09:10:04.654342
+New rule is coming, number of existing rules: [45, {16: 2, 1: 2, 2: 2, 3: 1, 20: 2, 5: 3, 19: 2, 7: 3, 8: 11, 10: 2, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,3) to the rule database = 0.29349327087402344
+
+2021-09-23 09:10:04.663427
+New rule is coming, number of existing rules: [46, {16: 2, 1: 3, 2: 2, 3: 1, 20: 2, 5: 3, 19: 2, 7: 3, 8: 11, 10: 2, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,12) to the rule database = 1.2202262878417969
+
+2021-09-23 09:10:08.875149
+New rule is coming, number of existing rules: [47, {16: 2, 1: 3, 2: 2, 3: 1, 20: 2, 5: 3, 19: 2, 7: 3, 8: 12, 10: 2, 14: 15}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,1) to the rule database = 0.12350082397460938
+
+2021-09-23 09:10:08.890403
+New rule is coming, number of existing rules: [48, {1: 3, 2: 2, 3: 1, 5: 3, 7: 3, 8: 12, 10: 2, 14: 15, 16: 2, 18: 1, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,3) to the rule database = 0.27298927307128906
+
+2021-09-23 09:10:08.899381
+New rule is coming, number of existing rules: [49, {1: 3, 2: 2, 3: 1, 5: 3, 7: 3, 8: 12, 10: 3, 14: 15, 16: 2, 18: 1, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,4) to the rule database = 0.3838539123535156
+
+2021-09-23 09:10:08.904586
+New rule is coming, number of existing rules: [50, {1: 3, 2: 2, 3: 1, 5: 3, 7: 3, 8: 12, 10: 4, 14: 15, 16: 2, 18: 1, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,2) to the rule database = 0.12111663818359375
+
+2021-09-23 09:10:13.083414
+New rule is coming, number of existing rules: [51, {1: 3, 2: 2, 3: 1, 5: 3, 7: 3, 8: 12, 10: 4, 14: 15, 16: 2, 18: 2, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,3) to the rule database = 0.22530555725097656
+
+2021-09-23 09:10:13.088826
+New rule is coming, number of existing rules: [52, {1: 3, 2: 2, 3: 1, 5: 3, 7: 3, 8: 12, 10: 4, 14: 15, 16: 2, 18: 3, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,13) to the rule database = 0.4298686981201172
+
+2021-09-23 09:10:13.098485
+New rule is coming, number of existing rules: [53, {1: 3, 2: 2, 3: 1, 5: 3, 7: 3, 8: 13, 10: 4, 14: 15, 16: 2, 18: 3, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,4) to the rule database = 0.6318092346191406
+
+2021-09-23 09:10:13.108521
+New rule is coming, number of existing rules: [54, {1: 4, 2: 2, 3: 1, 5: 3, 7: 3, 8: 13, 10: 4, 14: 15, 16: 2, 18: 3, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (16,0,3) to the rule database = 0.40721893310546875
+
+2021-09-23 09:10:13.117217
+New rule is coming, number of existing rules: [55, {1: 4, 2: 2, 3: 1, 5: 3, 7: 3, 8: 13, 10: 4, 14: 15, 16: 3, 18: 3, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,5) to the rule database = 0.6680488586425781
+
+2021-09-23 09:10:13.125663
+New rule is coming, number of existing rules: [56, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 13, 10: 4, 14: 15, 16: 3, 18: 3, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,14) to the rule database = 0.9851455688476562
+
+2021-09-23 09:10:13.133921
+New rule is coming, number of existing rules: [57, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 14, 10: 4, 14: 15, 16: 3, 18: 3, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,4) to the rule database = 0.2079010009765625
+
+2021-09-23 09:10:17.237488
+New rule is coming, number of existing rules: [58, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 14, 10: 4, 14: 15, 16: 3, 18: 4, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,5) to the rule database = 0.8068084716796875
+
+2021-09-23 09:10:17.246431
+New rule is coming, number of existing rules: [59, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 14, 10: 4, 14: 15, 16: 3, 18: 5, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,15) to the rule database = 0.949859619140625
+
+2021-09-23 09:10:17.252767
+New rule is coming, number of existing rules: [60, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 15, 10: 4, 14: 15, 16: 3, 18: 5, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,16) to the rule database = 0.7429122924804688
+
+2021-09-23 09:10:21.426724
+New rule is coming, number of existing rules: [61, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 16, 10: 4, 14: 15, 16: 3, 18: 5, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,6) to the rule database = 0.8091926574707031
+
+2021-09-23 09:10:21.436438
+New rule is coming, number of existing rules: [62, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 16, 10: 4, 14: 15, 16: 3, 18: 6, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,17) to the rule database = 0.9453296661376953
+
+2021-09-23 09:10:21.444077
+New rule is coming, number of existing rules: [63, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 17, 10: 4, 14: 15, 16: 3, 18: 6, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,18) to the rule database = 0.7739067077636719
+
+2021-09-23 09:10:25.625608
+New rule is coming, number of existing rules: [64, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 18, 10: 4, 14: 15, 16: 3, 18: 6, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,7) to the rule database = 0.42819976806640625
+
+2021-09-23 09:10:25.630596
+New rule is coming, number of existing rules: [65, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 18, 10: 4, 14: 15, 16: 3, 18: 7, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,19) to the rule database = 0.701904296875
+
+2021-09-23 09:10:25.639302
+New rule is coming, number of existing rules: [66, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 19, 10: 4, 14: 15, 16: 3, 18: 7, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,16) to the rule database = 2.252340316772461
+
+2021-09-23 09:10:25.651254
+New rule is coming, number of existing rules: [67, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 19, 10: 4, 14: 16, 16: 3, 18: 7, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,17) to the rule database = 1.8301010131835938
+
+2021-09-23 09:10:25.663331
+New rule is coming, number of existing rules: [68, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 19, 10: 4, 14: 17, 16: 3, 18: 7, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,20) to the rule database = 2.790689468383789
+
+2021-09-23 09:10:29.788694
+New rule is coming, number of existing rules: [69, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 20, 10: 4, 14: 17, 16: 3, 18: 7, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,8) to the rule database = 1.3608932495117188
+
+2021-09-23 09:10:29.796412
+New rule is coming, number of existing rules: [70, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 20, 10: 4, 14: 17, 16: 3, 18: 8, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,21) to the rule database = 1.0139942169189453
+
+2021-09-23 09:10:29.803648
+New rule is coming, number of existing rules: [71, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 21, 10: 4, 14: 17, 16: 3, 18: 8, 19: 2, 20: 2}]
+Time difference (ms) in checking local conflicts and adding new rule (20,0,3) to the rule database = 0.24962425231933594
+
+2021-09-23 09:10:29.812488
+New rule is coming, number of existing rules: [72, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 21, 10: 4, 14: 17, 16: 3, 18: 8, 19: 2, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,22) to the rule database = 2.0422935485839844
+
+2021-09-23 09:10:33.934799
+New rule is coming, number of existing rules: [73, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 22, 10: 4, 14: 17, 16: 3, 18: 8, 19: 2, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (18,0,9) to the rule database = 1.0297298431396484
+
+2021-09-23 09:10:33.942559
+New rule is coming, number of existing rules: [74, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 22, 10: 4, 14: 17, 16: 3, 18: 9, 19: 2, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,23) to the rule database = 1.1456012725830078
+
+2021-09-23 09:10:33.949394
+New rule is coming, number of existing rules: [75, {1: 5, 2: 2, 3: 1, 5: 3, 7: 3, 8: 23, 10: 4, 14: 17, 16: 3, 18: 9, 19: 2, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,6) to the rule database = 0.5009174346923828
+
+2021-09-23 09:10:33.954956
+New rule is coming, number of existing rules: [76, {1: 6, 2: 2, 3: 1, 5: 3, 7: 3, 8: 23, 10: 4, 14: 17, 16: 3, 18: 9, 19: 2, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,3) to the rule database = 0.16689300537109375
+
+2021-09-23 09:10:33.963504
+New rule is coming, number of existing rules: [77, {1: 6, 2: 3, 3: 1, 5: 3, 7: 3, 8: 23, 10: 4, 14: 17, 16: 3, 18: 9, 19: 2, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (19,0,3) to the rule database = 0.44989585876464844
+
+2021-09-23 09:10:33.972179
+New rule is coming, number of existing rules: [78, {1: 6, 2: 3, 3: 1, 5: 3, 7: 3, 8: 23, 10: 4, 14: 17, 16: 3, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,4) to the rule database = 0.6468296051025391
+
+2021-09-23 09:10:33.982299
+New rule is coming, number of existing rules: [79, {1: 6, 2: 4, 3: 1, 5: 3, 7: 3, 8: 23, 10: 4, 14: 17, 16: 3, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (1,0,7) to the rule database = 0.6992816925048828
+
+2021-09-23 09:10:33.991317
+New rule is coming, number of existing rules: [80, {1: 7, 2: 4, 3: 1, 5: 3, 7: 3, 8: 23, 10: 4, 14: 17, 16: 3, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,24) to the rule database = 1.6798973083496094
+
+2021-09-23 09:10:38.194174
+New rule is coming, number of existing rules: [81, {1: 7, 2: 4, 3: 1, 5: 3, 7: 3, 8: 24, 10: 4, 14: 17, 16: 3, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,1) to the rule database = 0.09083747863769531
+
+2021-09-23 09:10:38.200537
+New rule is coming, number of existing rules: [82, {1: 7, 2: 4, 3: 1, 5: 3, 7: 3, 8: 24, 10: 4, 14: 17, 16: 3, 17: 1, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,25) to the rule database = 1.4395713806152344
+
+2021-09-23 09:10:38.208656
+New rule is coming, number of existing rules: [83, {1: 7, 2: 4, 3: 1, 5: 3, 7: 3, 8: 25, 10: 4, 14: 17, 16: 3, 17: 1, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (10,0,5) to the rule database = 0.39076805114746094
+
+2021-09-23 09:10:38.214505
+New rule is coming, number of existing rules: [84, {1: 7, 2: 4, 3: 1, 5: 3, 7: 3, 8: 25, 10: 5, 14: 17, 16: 3, 17: 1, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,26) to the rule database = 1.4600753784179688
+
+2021-09-23 09:10:38.222150
+New rule is coming, number of existing rules: [85, {1: 7, 2: 4, 3: 1, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 3, 17: 1, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,2) to the rule database = 0.18453598022460938
+
+2021-09-23 09:10:42.341846
+New rule is coming, number of existing rules: [86, {1: 7, 2: 4, 3: 1, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 3, 17: 2, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,3) to the rule database = 0.3650188446044922
+
+2021-09-23 09:10:42.350788
+New rule is coming, number of existing rules: [87, {1: 7, 2: 4, 3: 1, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 3, 17: 3, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,5) to the rule database = 0.49805641174316406
+
+2021-09-23 09:10:42.358102
+New rule is coming, number of existing rules: [88, {1: 7, 2: 5, 3: 1, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 3, 17: 3, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (16,0,4) to the rule database = 0.24175643920898438
+
+2021-09-23 09:10:42.367387
+New rule is coming, number of existing rules: [89, {1: 7, 2: 5, 3: 1, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 4, 17: 3, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (16,0,5) to the rule database = 0.7963180541992188
+
+2021-09-23 09:10:42.375760
+New rule is coming, number of existing rules: [90, {1: 7, 2: 5, 3: 1, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 5, 17: 3, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,6) to the rule database = 0.43582916259765625
+
+2021-09-23 09:10:42.384623
+New rule is coming, number of existing rules: [91, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 5, 17: 3, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,4) to the rule database = 0.3638267517089844
+
+2021-09-23 09:10:46.464106
+New rule is coming, number of existing rules: [92, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 5, 17: 4, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,5) to the rule database = 0.28252601623535156
+
+2021-09-23 09:10:46.469179
+New rule is coming, number of existing rules: [93, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 26, 10: 5, 14: 17, 16: 5, 17: 5, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,27) to the rule database = 0.79345703125
+
+2021-09-23 09:10:46.479695
+New rule is coming, number of existing rules: [94, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 27, 10: 5, 14: 17, 16: 5, 17: 5, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,28) to the rule database = 2.8159618377685547
+
+2021-09-23 09:10:50.593351
+New rule is coming, number of existing rules: [95, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 28, 10: 5, 14: 17, 16: 5, 17: 5, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,6) to the rule database = 0.9005069732666016
+
+2021-09-23 09:10:50.600149
+New rule is coming, number of existing rules: [96, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 28, 10: 5, 14: 17, 16: 5, 17: 6, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,29) to the rule database = 0.90789794921875
+
+2021-09-23 09:10:50.610367
+New rule is coming, number of existing rules: [97, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 29, 10: 5, 14: 17, 16: 5, 17: 6, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,30) to the rule database = 2.573728561401367
+
+2021-09-23 09:10:54.734656
+New rule is coming, number of existing rules: [98, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 30, 10: 5, 14: 17, 16: 5, 17: 6, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,7) to the rule database = 0.8141994476318359
+
+2021-09-23 09:10:54.742336
+New rule is coming, number of existing rules: [99, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 30, 10: 5, 14: 17, 16: 5, 17: 7, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,31) to the rule database = 1.811981201171875
+
+2021-09-23 09:10:54.752894
+New rule is coming, number of existing rules: [100, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 31, 10: 5, 14: 17, 16: 5, 17: 7, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,18) to the rule database = 2.029895782470703
+
+2021-09-23 09:10:54.762734
+New rule is coming, number of existing rules: [101, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 31, 10: 5, 14: 18, 16: 5, 17: 7, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,32) to the rule database = 2.338886260986328
+
+2021-09-23 09:10:58.878345
+New rule is coming, number of existing rules: [102, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 32, 10: 5, 14: 18, 16: 5, 17: 7, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,8) to the rule database = 0.47588348388671875
+
+2021-09-23 09:10:58.883894
+New rule is coming, number of existing rules: [103, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 32, 10: 5, 14: 18, 16: 5, 17: 8, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,33) to the rule database = 1.0194778442382812
+
+2021-09-23 09:10:58.894339
+New rule is coming, number of existing rules: [104, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 33, 10: 5, 14: 18, 16: 5, 17: 8, 18: 9, 19: 3, 20: 3}]
+Time difference (ms) in checking local conflicts and adding new rule (20,0,4) to the rule database = 0.7123947143554688
+
+2021-09-23 09:10:58.903317
+New rule is coming, number of existing rules: [105, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 33, 10: 5, 14: 18, 16: 5, 17: 8, 18: 9, 19: 3, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (8,0,34) to the rule database = 2.261638641357422
+
+2021-09-23 09:11:03.018301
+New rule is coming, number of existing rules: [106, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 34, 10: 5, 14: 18, 16: 5, 17: 8, 18: 9, 19: 3, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (17,0,9) to the rule database = 1.5819072723388672
+
+2021-09-23 09:11:03.029747
+New rule is coming, number of existing rules: [107, {1: 7, 2: 6, 3: 1, 5: 3, 7: 3, 8: 34, 10: 5, 14: 18, 16: 5, 17: 9, 18: 9, 19: 3, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,7) to the rule database = 0.8440017700195312
+
+2021-09-23 09:11:03.041299
+New rule is coming, number of existing rules: [108, {1: 7, 2: 7, 3: 1, 5: 3, 7: 3, 8: 34, 10: 5, 14: 18, 16: 5, 17: 9, 18: 9, 19: 3, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (19,0,4) to the rule database = 0.6542205810546875
+
+2021-09-23 09:11:03.049678
+New rule is coming, number of existing rules: [109, {1: 7, 2: 7, 3: 1, 5: 3, 7: 3, 8: 34, 10: 5, 14: 18, 16: 5, 17: 9, 18: 9, 19: 4, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (2,0,8) to the rule database = 0.7572174072265625
+
+
+2021-09-23 09:11:13.118949
+Number of existing rules: [110, {1: 7, 2: 8, 3: 1, 5: 3, 7: 3, 8: 34, 10: 5, 14: 18, 16: 5, 17: 9, 18: 9, 19: 4, 20: 4}]
+number of edges in rule graph = 0
+number of rules to be removed = 0
+number of rules to be added = 110
+Time difference (ms) in checking hidden conflicts for rule (14,0,1) = 0.4074573516845703
+Time difference (ms) in adding rule (14,0,1) to the rule graph = 2.156972885131836
+Time difference (ms) in checking hidden conflicts for rule (8,0,1) = 0.0152587890625
+Time difference (ms) in adding rule (8,0,1) to the rule graph = 4.501104354858398
+Time difference (ms) in checking hidden conflicts for rule (10,0,1) = 0.0152587890625
+Time difference (ms) in adding rule (10,0,1) to the rule graph = 3.5104751586914062
+Time difference (ms) in checking hidden conflicts for rule (10,0,2) = 0.010728836059570312
+Time difference (ms) in adding rule (10,0,2) to the rule graph = 1.2469291687011719
+Time difference (ms) in checking hidden conflicts for rule (8,0,2) = 0.010013580322265625
+Time difference (ms) in adding rule (8,0,2) to the rule graph = 1.2743473052978516
+Time difference (ms) in checking hidden conflicts for rule (14,0,2) = 0.2014636993408203
+Time difference (ms) in adding rule (14,0,2) to the rule graph = 8.935928344726562
+Time difference (ms) in checking hidden conflicts for rule (14,0,3) = 0.1285076141357422
+Time difference (ms) in adding rule (14,0,3) to the rule graph = 1.0154247283935547
+Time difference (ms) in checking hidden conflicts for rule (8,0,3) = 0.0069141387939453125
+Time difference (ms) in adding rule (8,0,3) to the rule graph = 1.2295246124267578
+Time difference (ms) in checking hidden conflicts for rule (1,0,1) = 0.00667572021484375
+Time difference (ms) in adding rule (1,0,1) to the rule graph = 0.4696846008300781
+Time difference (ms) in checking hidden conflicts for rule (16,0,1) = 0.0064373016357421875
+Time difference (ms) in adding rule (16,0,1) to the rule graph = 2.0868778228759766
+Time difference (ms) in checking hidden conflicts for rule (16,0,2) = 0.0069141387939453125
+Time difference (ms) in checking hidden conflicts for rule (1,0,2) = 0.0057220458984375
+Time difference (ms) in checking hidden conflicts for rule (8,0,4) = 0.005245208740234375
+Time difference (ms) in checking hidden conflicts for rule (14,0,4) = 0.1800060272216797
+Time difference (ms) in adding rule (14,0,4) to the rule graph = 0.6754398345947266
+Time difference (ms) in checking hidden conflicts for rule (14,0,5) = 0.10538101196289062
+Time difference (ms) in adding rule (14,0,5) to the rule graph = 0.5316734313964844
+Time difference (ms) for multi-transform conflict check: 0.018835067749023438
+Time difference (ms) for injection conflict check: 0.026464462280273438
+Time difference (ms) for occlusion conflict check: 0.15211105346679688
+Time difference (ms) for bypass conflict check: 0.029802322387695312
+Time difference (ms) in checking hidden conflicts for rule (14,0,6) = 0.102996826171875
+Time difference (ms) in adding rule (14,0,6) to the rule graph = 0.4954338073730469
+Time difference (ms) for multi-transform conflict check: 0.025987625122070312
+Time difference (ms) for injection conflict check: 0.020742416381835938
+Time difference (ms) for occlusion conflict check: 0.011920928955078125
+Time difference (ms) for bypass conflict check: 1243.072509765625
+Time difference (ms) in checking hidden conflicts for rule (5,0,1) = 0.24700164794921875
+Time difference (ms) in adding rule (5,0,1) to the rule graph = 0.2396106719970703
+Time difference (ms) for multi-transform conflict check: 0.023126602172851562
+Time difference (ms) for injection conflict check: 0.02193450927734375
+Time difference (ms) for occlusion conflict check: 0.0362396240234375
+Time difference (ms) for bypass conflict check: 1289.2849445343018
+Time difference (ms) in checking hidden conflicts for rule (7,0,1) = 0.2257823944091797
+Time difference (ms) in adding rule (7,0,1) to the rule graph = 0.2193450927734375
+Time difference (ms) for multi-transform conflict check: 0.024318695068359375
+Time difference (ms) for injection conflict check: 0.013589859008789062
+Time difference (ms) for occlusion conflict check: 0.0438690185546875
+Time difference (ms) for bypass conflict check: 1326.906442642212
+Time difference (ms) in checking hidden conflicts for rule (8,0,5) = 0.007867813110351562
+Time difference (ms) in adding rule (8,0,5) to the rule graph = 1.1053085327148438
+Time difference (ms) in checking hidden conflicts for rule (8,0,6) = 0.021696090698242188
+Time difference (ms) in checking hidden conflicts for rule (14,0,7) = 0.47135353088378906
+Time difference (ms) in adding rule (14,0,7) to the rule graph = 3.941774368286133
+Time difference (ms) in checking hidden conflicts for rule (8,0,7) = 0.01621246337890625
+Time difference (ms) in adding rule (8,0,7) to the rule graph = 2.5162696838378906
+Time difference (ms) in checking hidden conflicts for rule (8,0,8) = 0.01621246337890625
+Time difference (ms) in checking hidden conflicts for rule (14,0,8) = 0.316619873046875
+Time difference (ms) in adding rule (14,0,8) to the rule graph = 0.2543926239013672
+Time difference (ms) in checking hidden conflicts for rule (14,0,9) = 0.3025531768798828
+Time difference (ms) in adding rule (14,0,9) to the rule graph = 0.22554397583007812
+Time difference (ms) in checking hidden conflicts for rule (14,0,10) = 0.3943443298339844
+Time difference (ms) in adding rule (14,0,10) to the rule graph = 1.8644332885742188
+Time difference (ms) in checking hidden conflicts for rule (14,0,11) = 0.21386146545410156
+Time difference (ms) in checking hidden conflicts for rule (14,0,12) = 0.1933574676513672
+Time difference (ms) in adding rule (14,0,12) to the rule graph = 1.142263412475586
+Time difference (ms) for multi-transform conflict check: 0.07796287536621094
+Time difference (ms) for injection conflict check: 0.0705718994140625
+Time difference (ms) for occlusion conflict check: 0.029087066650390625
+Time difference (ms) for bypass conflict check: 2471.3010787963867
+Time difference (ms) in checking hidden conflicts for rule (5,0,2) = 0.1876354217529297
+Time difference (ms) in adding rule (5,0,2) to the rule graph = 0.19979476928710938
+Time difference (ms) for multi-transform conflict check: 0.026226043701171875
+Time difference (ms) for injection conflict check: 0.015735626220703125
+Time difference (ms) for occlusion conflict check: 0.0286102294921875
+Time difference (ms) for bypass conflict check: 2437.5853538513184
+Time difference (ms) in checking hidden conflicts for rule (7,0,2) = 0.15974044799804688
+Time difference (ms) in adding rule (7,0,2) to the rule graph = 0.21004676818847656
+Time difference (ms) for multi-transform conflict check: 0.02288818359375
+Time difference (ms) for injection conflict check: 0.015497207641601562
+Time difference (ms) for occlusion conflict check: 0.024318695068359375
+Time difference (ms) for bypass conflict check: 2396.0652351379395
+Time difference (ms) in checking hidden conflicts for rule (8,0,9) = 0.00762939453125
+Time difference (ms) in adding rule (8,0,9) to the rule graph = 0.9429454803466797
+Time difference (ms) in checking hidden conflicts for rule (20,0,1) = 0.06508827209472656
+Time difference (ms) in adding rule (20,0,1) to the rule graph = 2.1009445190429688
+Time difference (ms) in checking hidden conflicts for rule (20,0,2) = 0.12373924255371094
+Time difference (ms) in checking hidden conflicts for rule (8,0,10) = 0.00476837158203125
+Time difference (ms) in checking hidden conflicts for rule (14,0,13) = 0.09775161743164062
+Time difference (ms) in adding rule (14,0,13) to the rule graph = 0.7028579711914062
+Time difference (ms) in checking hidden conflicts for rule (14,0,14) = 0.08988380432128906
+Time difference (ms) in adding rule (14,0,14) to the rule graph = 0.080108642578125
+Time difference (ms) for multi-transform conflict check: 0.018596649169921875
+Time difference (ms) for injection conflict check: 0.012636184692382812
+Time difference (ms) for occlusion conflict check: 0.06628036499023438
+Time difference (ms) for bypass conflict check: 1228.1641960144043
+Time difference (ms) in checking hidden conflicts for rule (14,0,15) = 0.15974044799804688
+Time difference (ms) in adding rule (14,0,15) to the rule graph = 0.43845176696777344
+Time difference (ms) for multi-transform conflict check: 0.02384185791015625
+Time difference (ms) for injection conflict check: 0.0133514404296875
+Time difference (ms) for occlusion conflict check: 0.014066696166992188
+Time difference (ms) for bypass conflict check: 0.03409385681152344
+Time difference (ms) in checking hidden conflicts for rule (5,0,3) = 0.10633468627929688
+Time difference (ms) in adding rule (5,0,3) to the rule graph = 0.18358230590820312
+Time difference (ms) for multi-transform conflict check: 0.015974044799804688
+Time difference (ms) for injection conflict check: 0.011920928955078125
+Time difference (ms) for occlusion conflict check: 0.019311904907226562
+Time difference (ms) for bypass conflict check: 0.016689300537109375
+Time difference (ms) in checking hidden conflicts for rule (7,0,3) = 0.10371208190917969
+Time difference (ms) in adding rule (7,0,3) to the rule graph = 0.1609325408935547
+Time difference (ms) for multi-transform conflict check: 0.01621246337890625
+Time difference (ms) for injection conflict check: 0.011682510375976562
+Time difference (ms) for occlusion conflict check: 0.0171661376953125
+Time difference (ms) for bypass conflict check: 0.016927719116210938
+Time difference (ms) in checking hidden conflicts for rule (8,0,11) = 0.00476837158203125
+Time difference (ms) in adding rule (8,0,11) to the rule graph = 0.9541511535644531
+Time difference (ms) in checking hidden conflicts for rule (3,0,1) = 0.0050067901611328125
+Time difference (ms) in adding rule (3,0,1) to the rule graph = 0.26488304138183594
+Time difference (ms) in checking hidden conflicts for rule (2,0,1) = 0.00476837158203125
+Time difference (ms) in adding rule (2,0,1) to the rule graph = 0.2396106719970703
+Time difference (ms) in checking hidden conflicts for rule (19,0,1) = 0.0045299530029296875
+Time difference (ms) in adding rule (19,0,1) to the rule graph = 2.1271705627441406
+Time difference (ms) in checking hidden conflicts for rule (19,0,2) = 0.005245208740234375
+Time difference (ms) in checking hidden conflicts for rule (2,0,2) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (1,0,3) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (8,0,12) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (18,0,1) = 0.003814697265625
+Time difference (ms) in adding rule (18,0,1) to the rule graph = 0.15234947204589844
+Time difference (ms) in checking hidden conflicts for rule (10,0,3) = 0.0045299530029296875
+Time difference (ms) in adding rule (10,0,3) to the rule graph = 0.1049041748046875
+Time difference (ms) in checking hidden conflicts for rule (10,0,4) = 0.004291534423828125
+Time difference (ms) in adding rule (10,0,4) to the rule graph = 0.13828277587890625
+Time difference (ms) in checking hidden conflicts for rule (18,0,2) = 0.0045299530029296875
+Time difference (ms) in adding rule (18,0,2) to the rule graph = 0.11420249938964844
+Time difference (ms) in checking hidden conflicts for rule (18,0,3) = 0.0045299530029296875
+Time difference (ms) in checking hidden conflicts for rule (8,0,13) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (1,0,4) = 0.003814697265625
+Time difference (ms) in checking hidden conflicts for rule (16,0,3) = 0.003814697265625
+Time difference (ms) in adding rule (16,0,3) to the rule graph = 0.5471706390380859
+Time difference (ms) in checking hidden conflicts for rule (1,0,5) = 0.0045299530029296875
+Time difference (ms) in adding rule (1,0,5) to the rule graph = 0.54168701171875
+Time difference (ms) in checking hidden conflicts for rule (8,0,14) = 0.00476837158203125
+Time difference (ms) in adding rule (8,0,14) to the rule graph = 0.5919933319091797
+Time difference (ms) in checking hidden conflicts for rule (18,0,4) = 0.0050067901611328125
+Time difference (ms) in adding rule (18,0,4) to the rule graph = 4.258632659912109
+Time difference (ms) in checking hidden conflicts for rule (18,0,5) = 0.0050067901611328125
+Time difference (ms) in adding rule (18,0,5) to the rule graph = 0.4725456237792969
+Time difference (ms) in checking hidden conflicts for rule (8,0,15) = 0.00476837158203125
+Time difference (ms) in adding rule (8,0,15) to the rule graph = 0.5140304565429688
+Time difference (ms) in checking hidden conflicts for rule (8,0,16) = 0.00476837158203125
+Time difference (ms) in checking hidden conflicts for rule (18,0,6) = 0.004291534423828125
+Time difference (ms) in adding rule (18,0,6) to the rule graph = 0.4413127899169922
+Time difference (ms) in checking hidden conflicts for rule (8,0,17) = 0.0045299530029296875
+Time difference (ms) in adding rule (8,0,17) to the rule graph = 0.5323886871337891
+Time difference (ms) in checking hidden conflicts for rule (8,0,18) = 0.0045299530029296875
+Time difference (ms) in checking hidden conflicts for rule (18,0,7) = 0.0040531158447265625
+Time difference (ms) in adding rule (18,0,7) to the rule graph = 0.7431507110595703
+Time difference (ms) in checking hidden conflicts for rule (8,0,19) = 0.00476837158203125
+Time difference (ms) in adding rule (8,0,19) to the rule graph = 0.77056884765625
+Time difference (ms) in checking hidden conflicts for rule (14,0,16) = 0.09799003601074219
+Time difference (ms) in adding rule (14,0,16) to the rule graph = 1.5816688537597656
+Time difference (ms) in checking hidden conflicts for rule (14,0,17) = 0.10704994201660156
+Time difference (ms) in checking hidden conflicts for rule (8,0,20) = 0.0045299530029296875
+Time difference (ms) in checking hidden conflicts for rule (18,0,8) = 0.004291534423828125
+Time difference (ms) in checking hidden conflicts for rule (8,0,21) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (20,0,3) = 0.06127357482910156
+Time difference (ms) in checking hidden conflicts for rule (8,0,22) = 0.004291534423828125
+Time difference (ms) in checking hidden conflicts for rule (18,0,9) = 0.003814697265625
+Time difference (ms) in checking hidden conflicts for rule (8,0,23) = 0.003814697265625
+Time difference (ms) in checking hidden conflicts for rule (1,0,6) = 0.003814697265625
+Time difference (ms) in checking hidden conflicts for rule (2,0,3) = 0.003814697265625
+Time difference (ms) in checking hidden conflicts for rule (19,0,3) = 0.0045299530029296875
+Time difference (ms) in checking hidden conflicts for rule (2,0,4) = 0.0035762786865234375
+Time difference (ms) in checking hidden conflicts for rule (1,0,7) = 0.003814697265625
+Time difference (ms) in checking hidden conflicts for rule (8,0,24) = 0.0035762786865234375
+Time difference (ms) in checking hidden conflicts for rule (17,0,1) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (8,0,25) = 0.003814697265625
+Time difference (ms) in checking hidden conflicts for rule (10,0,5) = 0.003814697265625
+Time difference (ms) in adding rule (10,0,5) to the rule graph = 0.3705024719238281
+Time difference (ms) in checking hidden conflicts for rule (8,0,26) = 0.00476837158203125
+Time difference (ms) in adding rule (8,0,26) to the rule graph = 0.4038810729980469
+Time difference (ms) in checking hidden conflicts for rule (17,0,2) = 0.00476837158203125
+Time difference (ms) in adding rule (17,0,2) to the rule graph = 2.8901100158691406
+Time difference (ms) in checking hidden conflicts for rule (17,0,3) = 0.005245208740234375
+Time difference (ms) in adding rule (17,0,3) to the rule graph = 0.2601146697998047
+Time difference (ms) in checking hidden conflicts for rule (2,0,5) = 0.0045299530029296875
+Time difference (ms) in adding rule (2,0,5) to the rule graph = 0.244140625
+Time difference (ms) in checking hidden conflicts for rule (16,0,4) = 0.0045299530029296875
+Time difference (ms) in adding rule (16,0,4) to the rule graph = 0.23889541625976562
+Time difference (ms) in checking hidden conflicts for rule (16,0,5) = 0.00476837158203125
+Time difference (ms) in adding rule (16,0,5) to the rule graph = 0.21076202392578125
+Time difference (ms) in checking hidden conflicts for rule (2,0,6) = 0.0045299530029296875
+Time difference (ms) in adding rule (2,0,6) to the rule graph = 0.19407272338867188
+Time difference (ms) in checking hidden conflicts for rule (17,0,4) = 0.0050067901611328125
+Time difference (ms) in adding rule (17,0,4) to the rule graph = 0.7102489471435547
+Time difference (ms) in checking hidden conflicts for rule (17,0,5) = 0.0050067901611328125
+Time difference (ms) in adding rule (17,0,5) to the rule graph = 0.42438507080078125
+Time difference (ms) in checking hidden conflicts for rule (8,0,27) = 0.0050067901611328125
+Time difference (ms) in adding rule (8,0,27) to the rule graph = 0.530242919921875
+Time difference (ms) in checking hidden conflicts for rule (8,0,28) = 0.0
+Time difference (ms) in checking hidden conflicts for rule (17,0,6) = 0.004291534423828125
+Time difference (ms) in adding rule (17,0,6) to the rule graph = 0.4074573516845703
+Time difference (ms) in checking hidden conflicts for rule (8,0,29) = 0.0045299530029296875
+Time difference (ms) in adding rule (8,0,29) to the rule graph = 0.4742145538330078
+Time difference (ms) in checking hidden conflicts for rule (8,0,30) = 0.00476837158203125
+Time difference (ms) in checking hidden conflicts for rule (17,0,7) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (8,0,31) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (14,0,18) = 0.09679794311523438
+Time difference (ms) in checking hidden conflicts for rule (8,0,32) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (17,0,8) = 0.003814697265625
+Time difference (ms) in checking hidden conflicts for rule (8,0,33) = 0.003814697265625
+Time difference (ms) in checking hidden conflicts for rule (20,0,4) = 0.05817413330078125
+Time difference (ms) in checking hidden conflicts for rule (8,0,34) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (17,0,9) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (2,0,7) = 0.0040531158447265625
+Time difference (ms) in checking hidden conflicts for rule (19,0,4) = 0.003814697265625
+Time difference (ms) in checking hidden conflicts for rule (2,0,8) = 0.0040531158447265625
+Time difference (ms) after this round of updating the rule graph = 67.108154296875
+Average time difference (ms) in removing 0 rules from rule graph = 0
+Avarage time difference (ms) in adding 10 rules to rule graph = 2.6427268981933594
+Time difference (ms) for bypass/incomplete transform conflict check: 13581.28809928894
+
+2021-09-23 09:11:45.616167
+New rule is coming, number of existing rules: [110, {1: 7, 2: 8, 3: 1, 5: 3, 7: 3, 8: 34, 10: 5, 14: 18, 16: 5, 17: 9, 18: 9, 19: 4, 20: 4}]
+Time difference (ms) in checking local conflicts and adding new rule (14,0,19) to the rule database = 0.5016326904296875
+
+
+2021-09-23 09:12:05.613789
+Number of existing rules: [111, {1: 7, 2: 8, 3: 1, 5: 3, 7: 3, 8: 34, 10: 5, 14: 19, 16: 5, 17: 9, 18: 9, 19: 4, 20: 4}]
+number of edges in rule graph = 112
+number of rules to be removed = 0
+number of rules to be added = 1
+Time difference (ms) in checking hidden conflicts for rule (14,0,19) = 0.24175643920898438

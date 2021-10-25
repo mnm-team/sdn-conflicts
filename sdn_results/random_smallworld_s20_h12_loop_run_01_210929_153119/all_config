@@ -1,0 +1,72 @@
+pe
+1
+udp tcp
+17 14 8 16 20
+cbr vbr bursty
+20
+12
+12 : 1 2 3 4 5 6 7 8 9 10 11
+random_smallworld_s20_h12_loop_run_01
+
+210929_153119
+
+pe_config_local1
+{
+  "cookie": "0x990",
+  "switchConfigs": {
+    "8": {
+      "protos": [
+        6
+      ],
+      "switchAssets": {
+        "jumps": [
+          "17"
+        ]
+      }
+    },
+    "17": {
+      "protos": [
+        6,
+        17
+      ],
+      "switchAssets": {
+        "jumps": [
+          "6",
+          "5",
+          "9",
+          "8"
+        ]
+      }
+    },
+    "20": {
+      "protos": [
+        6
+      ],
+      "switchAssets": {
+        "jumps": [
+          "17"
+        ]
+      }
+    },
+    "14": {
+      "protos": [
+        6
+      ],
+      "switchAssets": {
+        "jumps": [
+          "17"
+        ]
+      }
+    },
+    "16": {
+      "protos": [
+        6
+      ],
+      "switchAssets": {
+        "jumps": [
+          "17"
+        ]
+      }
+    }
+  }
+}gitcommitid=ee96035df0102b72b42ac64fd8619ba7ae7ca5ac

@@ -1,0 +1,73 @@
+hs pe
+1 1
+udp tcp
+1 : 15 7 5
+cbr vbr bursty
+20
+12
+4 8 9 11 12 : 1 2 3 5 6 7 10
+random_smallworld_s20_h12_injection_run_05
+
+210929_015043
+
+hs_config_local1
+{
+  "cookie": "0x440",
+  "appAssets": {
+    "00:16:3e:11:11:01": {
+      "backend": [
+        "192.168.1.1",
+        "00:16:3e:11:11:01"
+      ],
+      "frontend": "192.168.1.1"
+    }
+  }
+}
+pe_config_local1
+{
+  "cookie": "0x990",
+  "switchConfigs": {
+    "15": {
+      "protos": [
+        6,
+        17
+      ],
+      "switchAssets": {
+        "jumps": [
+          "2"
+        ]
+      }
+    },
+    "7": {
+      "protos": [
+        6,
+        17
+      ],
+      "switchAssets": {
+        "jumps": [
+          "2"
+        ]
+      }
+    },
+    "5": {
+      "protos": [
+        6,
+        17
+      ],
+      "switchAssets": {
+        "jumps": [
+          "2"
+        ]
+      }
+    }
+  }
+}gitcommitid=d6c6c68e4aa850c533d9a907049930057d1b646c
+point 1
+hs:1:2:1 
+pe:1:2: 15 7 5
+point 2
+hs:1:2:1 
+pe:1:3: 15 7 5
+point 3
+hs:1:3:1 
+pe:1:2: 15 7 5

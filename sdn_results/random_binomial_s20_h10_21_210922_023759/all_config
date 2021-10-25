@@ -1,0 +1,757 @@
+pplb4d eplb hs plb
+1 1 1 1
+udp tcp
+5 17 20 : 7 5 17 : 11 20 : 7
+cbr vbr bursty
+20
+10
+6 9 10 : 1 2 3 4 5 7 8
+random_binomial_s20_h10_21
+
+210922_023759
+
+pplb4d_config_local1
+{
+  "appAssets": {
+    "servers": [
+      [
+        "192.168.1.1",
+        "00:16:3e:11:11:01"
+      ],
+      [
+        "192.168.1.3",
+        "00:16:3e:11:11:03"
+      ],
+      [
+        "192.168.1.5",
+        "00:16:3e:11:11:05"
+      ],
+      [
+        "192.168.1.6",
+        "00:16:3e:11:11:06"
+      ],
+      [
+        "192.168.1.8",
+        "00:16:3e:11:11:08"
+      ],
+      [
+        "192.168.1.9",
+        "00:16:3e:11:11:09"
+      ],
+      [
+        "192.168.1.10",
+        "00:16:3e:11:11:10"
+      ]
+    ]
+  },
+  "cookie": "0x700"
+}
+eplb_config_local1
+{
+  "appAssets": {
+    "00:16:3e:11:11:07": {
+      "servers": [
+        [
+          "192.168.1.1",
+          "00:16:3e:11:11:01"
+        ],
+        [
+          "192.168.1.2",
+          "00:16:3e:11:11:02"
+        ],
+        [
+          "192.168.1.7",
+          "00:16:3e:11:11:07"
+        ]
+      ],
+      "proxy_ip": "192.168.1.7"
+    },
+    "00:16:3e:11:11:08": {
+      "servers": [
+        [
+          "192.168.1.5",
+          "00:16:3e:11:11:05"
+        ],
+        [
+          "192.168.1.8",
+          "00:16:3e:11:11:08"
+        ]
+      ],
+      "proxy_ip": "192.168.1.8"
+    },
+    "00:16:3e:11:11:03": {
+      "servers": [
+        [
+          "192.168.1.3",
+          "00:16:3e:11:11:03"
+        ],
+        [
+          "192.168.1.4",
+          "00:16:3e:11:11:04"
+        ]
+      ],
+      "proxy_ip": "192.168.1.3"
+    }
+  },
+  "cookie": "0x400"
+}
+hs_config_local1
+{
+  "appAssets": {
+    "00:16:3e:11:11:03": {
+      "frontend": "192.168.1.3",
+      "backend": [
+        "192.168.1.7",
+        "00:16:3e:11:11:07"
+      ]
+    }
+  },
+  "cookie": "0x440"
+}
+plb_config_local1
+{
+  "cookie": "0x300",
+  "bw_time": 5,
+  "switchConfigs": {
+    "7": {
+      "bw_threshold": 5
+    }
+  }
+}gitcommitid=9f4e0df4271ba18837d566a0e746168bd88d909c
+point 1
+pplb4d:1:2:5 17 20 
+eplb:1:2: 7 5 17 
+point 2
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+point 3
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+point 4
+pplb4d:1:2:5 17 20 
+hs:1:2: 11 20 
+point 5
+pplb4d:1:2:5 17 20 
+hs:1:3: 11 20 
+point 6
+pplb4d:1:3:5 17 20 
+hs:1:2: 11 20 
+point 7
+pplb4d:1:2:5 17 20 
+plb:1:2: 7
+point 8
+pplb4d:1:2:5 17 20 
+plb:1:3: 7
+point 9
+pplb4d:1:3:5 17 20 
+plb:1:2: 7
+point 10
+eplb:1:2: 7 5 17 
+hs:1:2: 11 20 
+point 11
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+point 12
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+point 13
+eplb:1:2: 7 5 17 
+plb:1:2: 7
+point 14
+eplb:1:2: 7 5 17 
+plb:1:3: 7
+point 15
+eplb:1:3: 7 5 17 
+plb:1:2: 7
+point 16
+hs:1:2: 11 20 
+plb:1:2: 7
+point 17
+hs:1:2: 11 20 
+plb:1:3: 7
+point 18
+hs:1:3: 11 20 
+plb:1:2: 7
+point 19
+pplb4d:1:2:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:2: 11 20 
+point 20
+pplb4d:1:2:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+point 21
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+point 22
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:3: 11 20 
+point 23
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:4: 11 20 
+point 24
+pplb4d:1:2:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:3: 11 20 
+point 25
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:2: 11 20 
+point 26
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+point 27
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:4: 11 20 
+point 28
+pplb4d:1:3:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+point 29
+pplb4d:1:3:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:2: 11 20 
+point 30
+pplb4d:1:4:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+point 31
+pplb4d:1:4:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+point 32
+pplb4d:1:2:5 17 20 
+eplb:1:2: 7 5 17 
+plb:1:2: 7
+point 33
+pplb4d:1:2:5 17 20 
+eplb:1:2: 7 5 17 
+plb:1:3: 7
+point 34
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+plb:1:2: 7
+point 35
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+plb:1:3: 7
+point 36
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+plb:1:4: 7
+point 37
+pplb4d:1:2:5 17 20 
+eplb:1:4: 7 5 17 
+plb:1:3: 7
+point 38
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+plb:1:2: 7
+point 39
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+plb:1:3: 7
+point 40
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+plb:1:4: 7
+point 41
+pplb4d:1:3:5 17 20 
+eplb:1:3: 7 5 17 
+plb:1:2: 7
+point 42
+pplb4d:1:3:5 17 20 
+eplb:1:4: 7 5 17 
+plb:1:2: 7
+point 43
+pplb4d:1:4:5 17 20 
+eplb:1:2: 7 5 17 
+plb:1:3: 7
+point 44
+pplb4d:1:4:5 17 20 
+eplb:1:3: 7 5 17 
+plb:1:2: 7
+point 45
+pplb4d:1:2:5 17 20 
+hs:1:2: 11 20 
+plb:1:2: 7
+point 46
+pplb4d:1:2:5 17 20 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 47
+pplb4d:1:2:5 17 20 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 48
+pplb4d:1:2:5 17 20 
+hs:1:3: 11 20 
+plb:1:3: 7
+point 49
+pplb4d:1:2:5 17 20 
+hs:1:3: 11 20 
+plb:1:4: 7
+point 50
+pplb4d:1:2:5 17 20 
+hs:1:4: 11 20 
+plb:1:3: 7
+point 51
+pplb4d:1:3:5 17 20 
+hs:1:2: 11 20 
+plb:1:2: 7
+point 52
+pplb4d:1:3:5 17 20 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 53
+pplb4d:1:3:5 17 20 
+hs:1:2: 11 20 
+plb:1:4: 7
+point 54
+pplb4d:1:3:5 17 20 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 55
+pplb4d:1:3:5 17 20 
+hs:1:4: 11 20 
+plb:1:2: 7
+point 56
+pplb4d:1:4:5 17 20 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 57
+pplb4d:1:4:5 17 20 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 58
+eplb:1:2: 7 5 17 
+hs:1:2: 11 20 
+plb:1:2: 7
+point 59
+eplb:1:2: 7 5 17 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 60
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 61
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+plb:1:3: 7
+point 62
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+plb:1:4: 7
+point 63
+eplb:1:2: 7 5 17 
+hs:1:4: 11 20 
+plb:1:3: 7
+point 64
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+plb:1:2: 7
+point 65
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 66
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+plb:1:4: 7
+point 67
+eplb:1:3: 7 5 17 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 68
+eplb:1:3: 7 5 17 
+hs:1:4: 11 20 
+plb:1:2: 7
+point 69
+eplb:1:4: 7 5 17 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 70
+eplb:1:4: 7 5 17 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 71
+pplb4d:1:2:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:2: 11 20 
+plb:1:2: 7
+point 72
+pplb4d:1:2:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 73
+pplb4d:1:2:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 74
+pplb4d:1:2:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+plb:1:3: 7
+point 75
+pplb4d:1:2:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+plb:1:4: 7
+point 76
+pplb4d:1:2:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:4: 11 20 
+plb:1:3: 7
+point 77
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+plb:1:2: 7
+point 78
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 79
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+plb:1:4: 7
+point 80
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 81
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:3: 11 20 
+plb:1:3: 7
+point 82
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:3: 11 20 
+plb:1:4: 7
+point 83
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:4: 11 20 
+plb:1:2: 7
+point 84
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:4: 11 20 
+plb:1:3: 7
+point 85
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:4: 11 20 
+plb:1:4: 7
+point 86
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:4: 11 20 
+plb:1:5: 7
+point 87
+pplb4d:1:2:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:5: 11 20 
+plb:1:4: 7
+point 88
+pplb4d:1:2:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 89
+pplb4d:1:2:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 90
+pplb4d:1:2:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:3: 11 20 
+plb:1:3: 7
+point 91
+pplb4d:1:2:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:3: 11 20 
+plb:1:4: 7
+point 92
+pplb4d:1:2:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:3: 11 20 
+plb:1:5: 7
+point 93
+pplb4d:1:2:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:4: 11 20 
+plb:1:3: 7
+point 94
+pplb4d:1:2:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:5: 11 20 
+plb:1:3: 7
+point 95
+pplb4d:1:2:5 17 20 
+eplb:1:5: 7 5 17 
+hs:1:3: 11 20 
+plb:1:4: 7
+point 96
+pplb4d:1:2:5 17 20 
+eplb:1:5: 7 5 17 
+hs:1:4: 11 20 
+plb:1:3: 7
+point 97
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:2: 11 20 
+plb:1:2: 7
+point 98
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 99
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:2: 11 20 
+plb:1:4: 7
+point 100
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 101
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+plb:1:3: 7
+point 102
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+plb:1:4: 7
+point 103
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:4: 11 20 
+plb:1:2: 7
+point 104
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:4: 11 20 
+plb:1:3: 7
+point 105
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:4: 11 20 
+plb:1:4: 7
+point 106
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:4: 11 20 
+plb:1:5: 7
+point 107
+pplb4d:1:3:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:5: 11 20 
+plb:1:4: 7
+point 108
+pplb4d:1:3:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+plb:1:2: 7
+point 109
+pplb4d:1:3:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 110
+pplb4d:1:3:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+plb:1:4: 7
+point 111
+pplb4d:1:3:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 112
+pplb4d:1:3:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:4: 11 20 
+plb:1:2: 7
+point 113
+pplb4d:1:3:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:2: 11 20 
+plb:1:2: 7
+point 114
+pplb4d:1:3:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 115
+pplb4d:1:3:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:2: 11 20 
+plb:1:4: 7
+point 116
+pplb4d:1:3:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:2: 11 20 
+plb:1:5: 7
+point 117
+pplb4d:1:3:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 118
+pplb4d:1:3:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:4: 11 20 
+plb:1:2: 7
+point 119
+pplb4d:1:3:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:5: 11 20 
+plb:1:2: 7
+point 120
+pplb4d:1:3:5 17 20 
+eplb:1:5: 7 5 17 
+hs:1:2: 11 20 
+plb:1:4: 7
+point 121
+pplb4d:1:3:5 17 20 
+eplb:1:5: 7 5 17 
+hs:1:4: 11 20 
+plb:1:2: 7
+point 122
+pplb4d:1:4:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 123
+pplb4d:1:4:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 124
+pplb4d:1:4:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+plb:1:3: 7
+point 125
+pplb4d:1:4:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+plb:1:4: 7
+point 126
+pplb4d:1:4:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+plb:1:5: 7
+point 127
+pplb4d:1:4:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:4: 11 20 
+plb:1:3: 7
+point 128
+pplb4d:1:4:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:5: 11 20 
+plb:1:3: 7
+point 129
+pplb4d:1:4:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+plb:1:2: 7
+point 130
+pplb4d:1:4:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 131
+pplb4d:1:4:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+plb:1:4: 7
+point 132
+pplb4d:1:4:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+plb:1:5: 7
+point 133
+pplb4d:1:4:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 134
+pplb4d:1:4:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:4: 11 20 
+plb:1:2: 7
+point 135
+pplb4d:1:4:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:5: 11 20 
+plb:1:2: 7
+point 136
+pplb4d:1:4:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 137
+pplb4d:1:4:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 138
+pplb4d:1:4:5 17 20 
+eplb:1:5: 7 5 17 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 139
+pplb4d:1:4:5 17 20 
+eplb:1:5: 7 5 17 
+hs:1:3: 11 20 
+plb:1:2: 7
+point 140
+pplb4d:1:5:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:3: 11 20 
+plb:1:4: 7
+point 141
+pplb4d:1:5:5 17 20 
+eplb:1:2: 7 5 17 
+hs:1:4: 11 20 
+plb:1:3: 7
+point 142
+pplb4d:1:5:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:2: 11 20 
+plb:1:4: 7
+point 143
+pplb4d:1:5:5 17 20 
+eplb:1:3: 7 5 17 
+hs:1:4: 11 20 
+plb:1:2: 7
+point 144
+pplb4d:1:5:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:2: 11 20 
+plb:1:3: 7
+point 145
+pplb4d:1:5:5 17 20 
+eplb:1:4: 7 5 17 
+hs:1:3: 11 20 
+plb:1:2: 7
