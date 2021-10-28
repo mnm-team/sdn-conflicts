@@ -21,7 +21,7 @@ TAR_DIR = os.path.join(ROOT_DIR, "tars", "sdn")
 # set some absolute path to the sdn image templates on your fs
 # or put them in the templates folder of the repo which is preset here
 TEMPLATE_PATH = os.path.join("/home/cuong/gitclone/conflictsdndev20-git/topogen", "templates")
-SDN_SSH_CONFIG = os.path.join(TAR_DIR, "sdn_ssh_config_nick.tar")
+SDN_SSH_CONFIG = os.path.join(TAR_DIR, "sdn_ssh_config.tar")
 CONTROLLER_IMAGE = os.path.join(TEMPLATE_PATH, "controller", "controller.img")
 SWITCH_IMAGE = os.path.join(TEMPLATE_PATH, "router", "router.img")
 HOST_IMAGE = os.path.join(TEMPLATE_PATH, "pc", "disk.img")
