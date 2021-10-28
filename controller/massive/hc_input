@@ -1,0 +1,38 @@
+# implicitly, the description below is only for traffic that concerns either TCP or UDP or both, i.e., not ICMP, ARP or the others
+#eplb 0x400
+#plb 0x300
+#pplb4s 0x700
+#pplb4d 0x900
+#fw 0x800
+#routing 0x100
+
+[eplb]
+cookie = 0x400
+ts = 7 # target switch ts is specified in decimal value
+ipv4_src = 192.168.1.1
+ipv4_dst = 192.168.1.3 192.168.1.4
+ip_proto = 6
+
+[pplb4d]
+cookie = 0x900
+ts = 3 4
+ipv4_dst = 192.168.1.3 192.168.2.0/24
+ip_proto = 6 17
+
+[routing] # empty means it registers for packet-in event and interested in all kinds of traffic
+cookie = 0x100
+
+[sampleapp]
+cookie = 0x1000
+ts = 5 6
+ipv4_src = 192.168.1.1 192.168.1.2
+ipv4_dst = 192.168.1.3 192.168.1.4
+ip_proto = 6 17
+tcp_src = 12345 12346
+tcp_dst = 80
+udp_src = 12345 12346
+udp_dst = 5001 53
+
+# Control applications whose names are not shown here means they do not register for packet-in events
+#===end===#
+#From this line on is comment, ie., won't be parsed by the parsing program.
