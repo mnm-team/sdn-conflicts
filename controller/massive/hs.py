@@ -1,3 +1,5 @@
+# Copyright (C) 2021 Nicholas Reyes - nicholasreyes@hotmail.de
+# 
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -10,6 +12,9 @@
 # implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+__author__ = 'Nicholas Reyes'
+__email__ = 'nicholasreyes@hotmail.de'
+__licence__ = 'GPL2.0'
 
 from ryu.controller import ofp_event
 from ryu.controller.handler import MAIN_DISPATCHER, DEAD_DISPATCHER
