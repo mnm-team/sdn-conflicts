@@ -340,6 +340,7 @@ while IFS= read -r line; do
 
 :
       (( point++ ))
+      sleep 20
 
     done < "priority${#conf[@]}"
 
