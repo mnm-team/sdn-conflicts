@@ -6,5 +6,5 @@ for f in *; do
   sum_point=$(( $sum_point + $np ))
   nc=$(bash datamining_conflict.bash $np $f/conflict.txt) #nc: number of (potential) conflicts
   sum_con=$(( $sum_con + $nc ))
-  echo "sum_point = $sum_point, sum_con = $sum_con"
+  echo "the number of experiment points, sum_point = $sum_point, the number of potential conflicts therein, sum_con = $sum_con"
 done
