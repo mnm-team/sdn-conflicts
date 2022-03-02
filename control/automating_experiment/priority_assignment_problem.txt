@@ -1,0 +1,142 @@
+This problem arises during the work on the dissertation of Cuong Tran
+
+
+## Problem: 
+
+Given n applications, each needs to be assigned a priority before being executed. How many priority combinations in total could be generated in which none of them is redundant?
+
+E.g., for 2 applications a and b, there are 4 combinations: 
+2 2 (app a has the priority of 2, so is app b --> pri_a = pri_b)
+2 3 (app a has the priority of 2, app b has the priority of 3 --> pri_a < pri_b)
+3 2 (app a has the priority of 3, app b has the priority of 2 --> pri_a < pri_b)
+3 3 (app a has the priority of 3, so is app b --> pri_a = pri_b)
+The last combination of 3 3 is a repeat of 2 2 since these two apps have the same priority.
+Note: the choice of 2 and 3 for priority assignment on two apps is not important, one can choose 1 and 2, or 1000 and 1001, it doesn't matter as long as we have two different number for two apps, likewise, we need three different numbers for three apps, I choose 2, 3 and 4 in the below case.
+
+For 3 apps., we have 13 combinations:
+ #    Main combi.   Pattern         Duplicated combi.
+ 1    2 2 2         # a=b,a=c,b=c   3 3 3   4 4 4
+ 2    2 2 3         # a=b,a<c,b<c   2 2 4   3 3 4
+ 3    2 3 2         # a<b,a=c,b>c   2 4 2   3 4 3
+ 4    2 3 3         # a<b,a<c,b=c   2 4 4   3 4 4
+ 5    2 3 4         # a<b,a<c,b<c
+ 6    2 4 3         # a<b,a<c,b>c
+ 7    3 2 2         # a>b,a>c,b=c   4 2 2   4 3 3
+ 8    3 2 3         # a>b,a=c,b<c   4 2 4   4 3 4
+ 9    3 2 4         # a>b,a<c,b<c
+10    3 3 2         # a=b,a>c,b>c   4 4 2   4 4 3
+11    3 4 2         # a<b,a>c,b>c
+12    4 2 3         # a>b,a>c,b<c
+13    4 3 2         # a>b,a>c,b>c
+
+
+--------------------------------------
+
+## Approach:
+
+Our discussion shows four ways of thinking towards the solution.
+
+1. (from Minh) Based on the combination of numbers
+Our observation from the case of 3 apps. shows that there are 3 kinds of combinations:
++ the same: 2 2 2, 3 3 3, 4 4 4 -> two duplicates are removed and the one left is kept -> 2 2 2 
++ Combinations of 3 numbers: 2 3 4 -> there are 3! combi.
++ Combinations of 2 numbers: 2 3 --> Need a way to calculate, I still haven't figured out.
+
+2. (From Matthias) Based on the recursive addition of the new app to the current pattern and expansion of odd relationships, e.g.,
++ for 1 app, we have only 'a'
++ When new app 'b' is added, there are: 
+ a=b
+ a<b
+ a>b
++ When new app 'c' is added, there are:
+a=b=c
+a=b<c
+a=b>c
+
+a<b=c
+a<b<c
+a<b>c (*)
+
+a>b=c
+a>b<c (**)
+a>b>c
+
+Among those, the case (*) and (**) is odd and needs to be expanded:
+Case (*) becomes 3 following cases:
+a<b, a=c, b>c
+a<b, a>c, b>c
+a<b, a<c, b>c
+
+Case (**) becomes:
+a>b, a=c, b<c
+a>b, a>c, b<c
+a>b, a<c, b<c
+
+We have in total 13 patterns for 3 apps.
+
+
+3. (from Tobias G.) Based on ternary tree with the three operators < > = , I haven't thought about how to exploit this method.
+
+4. Applying the second way on an axis:
+
+For 1 app, we have 1 point on the axis:
+           a 
+-----------x------------>
+
+Adding app b, there are 3 possibilities:
+
+          a=b 
+-----------x------------>
+
+           a  <   b
+-----------x------x------>
+
+    b  <   a 
+----x------x------------>
+
+--> there are 1 of 1 point and 2 of 2 points
+Similarly, adding app c, there are 4 possibilities:
++ from 1 point a=b, 1 other point a=b=c and 2 other points: a=b>c, a=b<c are generated
++ from each case of 2 points, e.g., a < b, there are 2 other 2 points (a<b=c, a=c<b) and 3 other 3 points (a<b<c, a<c<b, c<a<b) generated. We have 2 cases of two points in the beginning.
+--> in total, we have: 1(1point) + 2(2point) + 2(2(2point)+3(3point)=1(1point)+6(2point)+6(3point)=13 cases.
+
+This method can be applied recursively for n apps.
+
+
+
+--------------------------------------
+
+Solution:
+
+Denote f(n,k) = the number of cases having k point when n apps are considered. E.g., f(2,1) means the number of cases of 1 point in the axis when considering 2 apps.
+
+Apply the fourth approach, we see that:
+f(1,1)=1
+f(2,1)=1, f(2,2)=2
+f(3,1)=1, f(3,2)=2[(f2,1)+f(2,2)], f3,3)=3[f(2,2)]=3!
+f(4,1)=1, f(4,2)=2[f(3,1)+f(3,2)], f(4,3)=3[f(3,2)+f(3,3)], f(4,4)=4[f(4,3)]=4!
+
+The total number of combinations for n apps is: g(n)=f(n,1)+f(n,2)+...+f(n,k)+...+f(n,n)
+
+We can generalize the recursive functions as follows:
+
+f(n,1)=1
+f(n,n)=n!
+
+f(n,k)=k*(f(n-1,k-1)+f(n-1,k))
+
+g(n)=f(n,1)+f(n,2)+...+f(n,k)+...+f(n,n)
+
+------------------------------
+
+The above functions can be written in R as follows:
+
+fac <- function(n){ if (n == 1) return (1) else return (n*fac(n-1)) } #calculate n!
+
+f <- function(n,k){ if (k==1) return (1) else if (n==k) return (fac(n)) else return (k*(f(n-1,k-1)+f(n-1,k)))}
+
+g <- function(n) {s=0; for (i in (1:n)){ (s = s+f(n,i)) }; return (s) } #e.g. g(3)=13 
+
+-----------------------------
+
+To generate each of those combinations, use the script pri_gen.py. Instruction is provided in the beginning of this pri_gen.py file.
