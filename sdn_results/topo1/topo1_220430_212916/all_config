@@ -1,0 +1,362 @@
+plb eplb routing
+2 2 1
+tcp udp
+7 4 : 7 : all
+cbr
+10
+10
+1 2 : 3 4
+topo1
+
+220430_212916
+
+plb_config_local1
+{
+  "bw_time": 5,
+  "switchConfigs": {
+    "7": {
+      "bw_threshold": 10
+    },
+    "4": {
+      "bw_threshold": 10
+    }
+  }
+}
+
+plb_config_local2
+{
+  "bw_time": 5,
+  "switchConfigs": {
+    "7": {
+      "bw_threshold": 20
+    },
+    "4": {
+      "bw_threshold": 20
+    }
+  }
+}
+
+eplb_config_local1
+{
+  "00:16:3e:11:11:03": {
+    "proxy_ip": "192.168.1.3",
+    "servers": [
+      [
+        "192.168.1.3",
+        "00:16:3e:11:11:03"
+      ],
+      [
+        "192.168.1.4",
+        "00:16:3e:11:11:04"
+      ]
+    ]
+  }
+}
+
+eplb_config_local2
+{
+  "00:16:3e:11:11:03": {
+    "proxy_ip": "192.168.1.3",
+    "servers": [
+      [
+        "192.168.1.3",
+        "00:16:3e:11:11:03"
+      ],
+      [
+        "192.168.1.4",
+        "00:16:3e:11:11:04"
+      ],
+      [
+        "192.168.1.5",
+        "00:16:3e:11:11:05"
+      ]
+    ]
+  }
+}
+
+routing_config_local1
+7 #target switches, first two lines target eplb
+192.168.1.3 00:16:3e:00:00:43 #proxy server of eplb, the first two lines create the data for excluding_info: exclude[0] = [dpid...], exclude[1] = [dst1's IP, dst2's IP...]
+0x0000000000000005 0x0000000000000006 #datapath id, lines 3 and 4 target pplb and create data for excluding info: exclude[2] = [dpid...], exclude[3] = [src1's IP, src2's IP...]
+192.168.1.3 00:16:3e:00:00:43 192.168.1.4 00:16:3e:00:00:44 #servers whose traffic will be balanced on as many paths as possible.
+gitcommitid=
+point 1
+plb:1:2:7 4 
+eplb:1:2: 7 
+point 2
+plb:1:2:7 4 
+eplb:1:3: 7 
+point 3
+plb:1:3:7 4 
+eplb:1:2: 7 
+point 4
+plb:1:2:7 4 
+eplb:2:2: 7 
+point 5
+plb:1:2:7 4 
+eplb:2:3: 7 
+point 6
+plb:1:3:7 4 
+eplb:2:2: 7 
+point 7
+plb:2:2:7 4 
+eplb:1:2: 7 
+point 8
+plb:2:2:7 4 
+eplb:1:3: 7 
+point 9
+plb:2:3:7 4 
+eplb:1:2: 7 
+point 10
+plb:2:2:7 4 
+eplb:2:2: 7 
+point 11
+plb:2:2:7 4 
+eplb:2:3: 7 
+point 12
+plb:2:3:7 4 
+eplb:2:2: 7 
+point 13
+plb:1:2:7 4 
+routing:1:2: all
+point 14
+plb:1:2:7 4 
+routing:1:3: all
+point 15
+plb:1:3:7 4 
+routing:1:2: all
+point 16
+plb:2:2:7 4 
+routing:1:2: all
+point 17
+plb:2:2:7 4 
+routing:1:3: all
+point 18
+plb:2:3:7 4 
+routing:1:2: all
+point 19
+eplb:1:2: 7 
+routing:1:2: all
+point 20
+eplb:1:2: 7 
+routing:1:3: all
+point 21
+eplb:1:3: 7 
+routing:1:2: all
+point 22
+eplb:2:2: 7 
+routing:1:2: all
+point 23
+eplb:2:2: 7 
+routing:1:3: all
+point 24
+eplb:2:3: 7 
+routing:1:2: all
+point 25
+plb:1:2:7 4 
+eplb:1:2: 7 
+routing:1:2: all
+point 26
+plb:1:2:7 4 
+eplb:1:2: 7 
+routing:1:3: all
+point 27
+plb:1:2:7 4 
+eplb:1:3: 7 
+routing:1:2: all
+point 28
+plb:1:2:7 4 
+eplb:1:3: 7 
+routing:1:3: all
+point 29
+plb:1:2:7 4 
+eplb:1:3: 7 
+routing:1:4: all
+point 30
+plb:1:2:7 4 
+eplb:1:4: 7 
+routing:1:3: all
+point 31
+plb:1:3:7 4 
+eplb:1:2: 7 
+routing:1:2: all
+point 32
+plb:1:3:7 4 
+eplb:1:2: 7 
+routing:1:3: all
+point 33
+plb:1:3:7 4 
+eplb:1:2: 7 
+routing:1:4: all
+point 34
+plb:1:3:7 4 
+eplb:1:3: 7 
+routing:1:2: all
+point 35
+plb:1:3:7 4 
+eplb:1:4: 7 
+routing:1:2: all
+point 36
+plb:1:4:7 4 
+eplb:1:2: 7 
+routing:1:3: all
+point 37
+plb:1:4:7 4 
+eplb:1:3: 7 
+routing:1:2: all
+point 38
+plb:1:2:7 4 
+eplb:2:2: 7 
+routing:1:2: all
+point 39
+plb:1:2:7 4 
+eplb:2:2: 7 
+routing:1:3: all
+point 40
+plb:1:2:7 4 
+eplb:2:3: 7 
+routing:1:2: all
+point 41
+plb:1:2:7 4 
+eplb:2:3: 7 
+routing:1:3: all
+point 42
+plb:1:2:7 4 
+eplb:2:3: 7 
+routing:1:4: all
+point 43
+plb:1:2:7 4 
+eplb:2:4: 7 
+routing:1:3: all
+point 44
+plb:1:3:7 4 
+eplb:2:2: 7 
+routing:1:2: all
+point 45
+plb:1:3:7 4 
+eplb:2:2: 7 
+routing:1:3: all
+point 46
+plb:1:3:7 4 
+eplb:2:2: 7 
+routing:1:4: all
+point 47
+plb:1:3:7 4 
+eplb:2:3: 7 
+routing:1:2: all
+point 48
+plb:1:3:7 4 
+eplb:2:4: 7 
+routing:1:2: all
+point 49
+plb:1:4:7 4 
+eplb:2:2: 7 
+routing:1:3: all
+point 50
+plb:1:4:7 4 
+eplb:2:3: 7 
+routing:1:2: all
+point 51
+plb:2:2:7 4 
+eplb:1:2: 7 
+routing:1:2: all
+point 52
+plb:2:2:7 4 
+eplb:1:2: 7 
+routing:1:3: all
+point 53
+plb:2:2:7 4 
+eplb:1:3: 7 
+routing:1:2: all
+point 54
+plb:2:2:7 4 
+eplb:1:3: 7 
+routing:1:3: all
+point 55
+plb:2:2:7 4 
+eplb:1:3: 7 
+routing:1:4: all
+point 56
+plb:2:2:7 4 
+eplb:1:4: 7 
+routing:1:3: all
+point 57
+plb:2:3:7 4 
+eplb:1:2: 7 
+routing:1:2: all
+point 58
+plb:2:3:7 4 
+eplb:1:2: 7 
+routing:1:3: all
+point 59
+plb:2:3:7 4 
+eplb:1:2: 7 
+routing:1:4: all
+point 60
+plb:2:3:7 4 
+eplb:1:3: 7 
+routing:1:2: all
+point 61
+plb:2:3:7 4 
+eplb:1:4: 7 
+routing:1:2: all
+point 62
+plb:2:4:7 4 
+eplb:1:2: 7 
+routing:1:3: all
+point 63
+plb:2:4:7 4 
+eplb:1:3: 7 
+routing:1:2: all
+point 64
+plb:2:2:7 4 
+eplb:2:2: 7 
+routing:1:2: all
+point 65
+plb:2:2:7 4 
+eplb:2:2: 7 
+routing:1:3: all
+point 66
+plb:2:2:7 4 
+eplb:2:3: 7 
+routing:1:2: all
+point 67
+plb:2:2:7 4 
+eplb:2:3: 7 
+routing:1:3: all
+point 68
+plb:2:2:7 4 
+eplb:2:3: 7 
+routing:1:4: all
+point 69
+plb:2:2:7 4 
+eplb:2:4: 7 
+routing:1:3: all
+point 70
+plb:2:3:7 4 
+eplb:2:2: 7 
+routing:1:2: all
+point 71
+plb:2:3:7 4 
+eplb:2:2: 7 
+routing:1:3: all
+point 72
+plb:2:3:7 4 
+eplb:2:2: 7 
+routing:1:4: all
+point 73
+plb:2:3:7 4 
+eplb:2:3: 7 
+routing:1:2: all
+point 74
+plb:2:3:7 4 
+eplb:2:4: 7 
+routing:1:2: all
+point 75
+plb:2:4:7 4 
+eplb:2:2: 7 
+routing:1:3: all
+point 76
+plb:2:4:7 4 
+eplb:2:3: 7 
+routing:1:2: all
