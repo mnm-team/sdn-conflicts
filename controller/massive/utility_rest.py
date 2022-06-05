@@ -49,7 +49,7 @@ class UtilityRest13(utility.Utility):
     def switch_features_handler(self,ev):
         datapath = ev.msg.datapath
         self.datapathmap.update({datapath.id:datapath})
-        print("swittch features handler!!")
+        print("switch features handler!!")
 
 
 class UtilityController(ControllerBase):
