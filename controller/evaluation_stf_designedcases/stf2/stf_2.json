@@ -1,0 +1,48 @@
+{"comment": "run ryu-manager --observe-links utility_rest.py detector.py at the controller to start the rest interface for installing rules and the detector that will intercept these rules"}
+{"comment": "run bash curl_from_file.bash <this file name> to send the rules below to the detector"}
+{"comment": "an empty line like the line below is also ignored, lines containing the string comment or starting with # are also ignored"}
+
+{"comment": "stanford: local conflicts: 5, distributed conflicts:2, hidden conflicts: 1"}
+
+{"comment": "LC: shadow1"}
+{"dpid":13, "cookie":"0x201", "priority":3, "match":{"eth_type":2048, "ipv4_dst":"172.16.22.7"}, "actions":[{"type":"OUTPUT","port":1}]}
+{"dpid":13, "cookie":"0x200", "priority":2, "match":{"in_port":4, "eth_type":2048, "ipv4_src":"172.16.21.1", "ipv4_dst":"172.16.22.7"}, "actions":[{"type":"OUTPUT","port":3}]}
+
+{"comment": "LC: generalization2"}
+{"dpid":3, "cookie":"0x201", "priority":2, "match":{"eth_type":2048, "ipv4_dst":"172.16.22.7"}, "actions":[{"type":"OUTPUT","port":3}]}
+{"dpid":3, "cookie":"0x200", "priority":3, "match":{"in_port":2, "eth_type":2048, "ipv4_src":"172.16.21.1", "ipv4_dst":"172.16.22.7"}, "actions":[{"type":"OUTPUT","port":1}]}
+
+{"comment": "LC: Redundancy"}
+{"dpid":1, "cookie":"0x200", "priority":3, "match":{"in_port":2, "eth_type":2048, "ipv4_src":"172.16.21.1", "ipv4_dst":"172.16.22.7"}, "actions":[{"type":"OUTPUT","port":7}]}
+{"dpid":1, "cookie":"0x201", "priority":4, "match":{"eth_type":2048, "ipv4_dst":"172.16.22.7/24"}, "actions":[{"type":"OUTPUT","port":7}]}
+
+{"comment": "LC: Correlation3"}
+{"dpid":9, "cookie":"0x201", "priority":2, "match":{"eth_type":2048, "ipv4_dst":"172.16.22.7/24"}, "actions":[{"type":"OUTPUT","port":5}]}
+{"dpid":9, "cookie":"0x200", "priority":2, "match":{"in_port":1, "eth_type":2048, "ipv4_src":"172.16.21.1/24"}, "actions":[{"type":"OUTPUT","port":3}]}
+
+{"comment": "LC: Overlap"}
+{"dpid":10, "cookie":"0x200", "priority":3, "match":{"in_port":1, "eth_type":2048, "ipv4_src":"172.16.1.1/24", "ipv4_dst":"172.16.2.7"}, "actions":[{"type":"OUTPUT","port":4}]}
+{"dpid":10, "cookie":"0x201", "priority":2, "match":{"eth_type":2048, "ipv4_dst":"172.16.2.0/24"}, "actions":[{"type":"OUTPUT","port":4}]}
+
+{"comment": "HC: eplb"}
+{"dpid":19, "cookie":"0x201", "priority":3, "match":{"eth_type":2048, "ipv4_src":"172.16.2.0/24"}, "actions":[{"type":"OUTPUT","port":4}]}
+
+{"comment": "DC: Loop 14-4-1-7-17-14"}
+{"dpid":14, "cookie":"0x200", "priority":2, "match":{"eth_type":2048, "ipv4_src":"172.16.1.2", "ipv4_dst":"172.16.1.5"}, "actions":[{"type":"OUTPUT","port":1}]}
+{"dpid":4, "cookie":"0x201", "priority":2, "match":{"eth_type":2048, "ipv4_src":"172.16.1.2", "ipv4_dst":"172.16.1.5"}, "actions":[{"type":"OUTPUT","port":1}]}
+{"dpid":1, "cookie":"0x201", "priority":2, "match":{"eth_type":2048, "ipv4_src":"172.16.1.2", "ipv4_dst":"172.16.1.5"}, "actions":[{"type":"OUTPUT","port":6}]}
+{"dpid":7, "cookie":"0x202", "priority":2, "match":{"eth_type":2048, "ipv4_src":"172.16.1.2", "ipv4_dst":"172.16.1.5"}, "actions":[{"type":"OUTPUT","port":2}]}
+{"dpid":17, "cookie":"0x200", "priority":2, "match":{"eth_type":2048, "ipv4_src":"172.16.1.2", "ipv4_dst":"172.16.1.5"}, "actions":[{"type":"OUTPUT","port":3}]}
+
+{"comment": "DC: Drop at 18"}
+{"dpid":13, "cookie":"0x200", "priority":2, "match":{"in_port":4, "eth_type":2048, "ipv4_src":"172.16.1.1", "ipv4_dst":"172.16.1.6"}, "actions":[{"type":"OUTPUT","port":3}]}
+{"dpid":18, "cookie":"0x201", "priority":2, "match":{"in_port":3, "eth_type":2048, "ipv4_src":"172.16.1.1", "ipv4_dst":"172.16.1.6"}, "actions":[{"type":"SET_FIELD","field":"udp_dst", "value":65002}]}
+
+
+{"===end===": "all lines after this line are ignored"}
+{"dpid":2, "cookie":"0x200", "priority":2, "match":{"in_port":1, "eth_type":2048, "ipv4_src":"172.16.1.1"}, "actions":[{"type":"SET_FIELD","field":"ipv4_src", "value":"172.16.1.2"},{"type":"SET_FIELD","field":"tcp_src", "value":65000},{"type":"SET_FIELD","field":"udp_dst", "value":65002}, {"type":"OUTPUT","port":2}]}
+
+{"dpid":3, "cookie":"0x201", "priority":2, "match":{"eth_type":2048, "ipv4_dst":"172.16.1.3"}, "actions":[{"type":"OUTPUT","port":2}]}
+{"dpid":6,"match":{"in_port":4, "eth_type":2048, "ipv4_src":"192.168.1.1", "ipv4_dst":"192.168.1.3"}, "actions":[{"type":"OUTPUT","port":3}]}
+{"dpid":4,"match":{"in_port":3, "eth_type":2048, "ipv4_src":"192.168.1.1", "ipv4_dst":"192.168.1.3"}, "actions":[{"type":"OUTPUT","port":2}]}
+{"dpid":5,"match":{"in_port":3, "eth_type":2048, "ipv4_src":"192.168.1.1", "ipv4_dst":"192.168.1.3"}, "actions":[{"type":"OUTPUT","port":4}]} 
